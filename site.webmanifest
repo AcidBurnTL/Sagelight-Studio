@@ -1,11 +1,11 @@
 {
   "name": "Sagelight Studio",
   "short_name": "Sagelight",
-  "description": "Independent app studio building privacy-first iOS and macOS apps. SageBills · SageMeet · SageDocs.",
+  "description": "Independent app studio building privacy-first iOS and macOS apps. SageDocs · SageBills · SageMeet.",
   "start_url": "/",
   "display": "browser",
-  "background_color": "#050505",
-  "theme_color": "#55ee71",
+  "background_color": "#191724",
+  "theme_color": "#191724",
   "icons": [
     {
       "src": "/favicon.svg",

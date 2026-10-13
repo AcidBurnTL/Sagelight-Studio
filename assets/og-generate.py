@@ -17,23 +17,22 @@ os.makedirs(OUT, exist_ok=True)
 
 W, H = 1200, 630
 
-# Palette — pure-native direction (Stitch iteration 3)
-BG = (13, 21, 13)            # #0d150d forest dark
-BG_SURFACE = (22, 30, 21)    # #161e15
-GREEN = (85, 238, 113)       # #55ee71
-GREEN_BRIGHT = (108, 255, 130)
-GREEN_DEEP = (48, 209, 88)
-TEXT = (220, 229, 215)       # #dce5d7
-SUB = (188, 203, 183)        # #bccbb7
-DIM = (134, 149, 131)        # #869583
-BORDER = (61, 74, 59)        # #3d4a3b
-BORDER_SOFT = (32, 42, 30)
+# Palette — "Data Manifest" (Oct 2026)
+BG = (25, 23, 36)            # #191724 ink
+BG_SURFACE = (31, 29, 46)    # #1f1d2e
+GREEN = (246, 193, 119)      # #f6c177 amber accent (name kept for the helpers below)
+SAGE = (166, 199, 154)       # #a6c79a
+TEXT = (232, 228, 216)       # #e8e4d8 paper
+SUB = (201, 196, 214)        # #c9c4d6
+DIM = (162, 157, 184)        # #a29db8
+BORDER = (57, 53, 82)        # #393552
+BORDER_SOFT = (36, 34, 52)
 
-# Fonts (downloaded into assets/fonts/)
-F_DISPLAY = os.path.join(FONTS, "HankenGrotesk-Bold.ttf")
-F_ITALIC = os.path.join(FONTS, "PlayfairDisplay-Italic.ttf")
-F_BODY = os.path.join(FONTS, "Inter-Regular.ttf")
-F_MONO = os.path.join(FONTS, "JetBrainsMono-Regular.ttf")
+# Static TTFs for Pillow (web pages use the woff2 variable fonts)
+F_DISPLAY = os.path.join(FONTS, "ttf", "MartianMono-ExtraBold.ttf")
+F_ITALIC = os.path.join(FONTS, "ttf", "MartianMono-ExtraLight.ttf")
+F_BODY = os.path.join(FONTS, "ttf", "InstrumentSans-Regular.ttf")
+F_MONO = os.path.join(FONTS, "ttf", "MartianMono-Regular.ttf")
 
 
 def font(path, size):
@@ -44,47 +43,43 @@ def base_canvas():
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img, "RGBA")
 
-    # Subtle grid that fades toward the bottom
-    grid_color = BORDER_SOFT
-    for i in range(0, W, 80):
-        d.line([(i, 0), (i, H)], fill=grid_color, width=1)
-    for i in range(0, H, 80):
-        d.line([(0, i), (W, i)], fill=grid_color, width=1)
+    # Dot matrix, fading toward the bottom
+    for y in range(11, H, 22):
+        a = max(0, int(34 * (1 - y / H)))
+        for x in range(11, W, 22):
+            d.point((x, y), fill=(224, 222, 244, a))
 
-    # Soft green glow orbs
+    # Soft amber + sage glows
     glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     gd = ImageDraw.Draw(glow)
-    gd.ellipse((W - 540, -200, W + 140, 460), fill=(85, 238, 113, 50))
-    gd.ellipse((-220, H - 360, 420, H + 220), fill=(85, 238, 113, 26))
+    gd.ellipse((W - 540, -200, W + 140, 460), fill=(246, 193, 119, 46))
+    gd.ellipse((-220, H - 360, 420, H + 220), fill=(166, 199, 154, 26))
     glow = glow.filter(ImageFilter.GaussianBlur(radius=90))
     img.paste(glow, (0, 0), glow)
 
     d = ImageDraw.Draw(img, "RGBA")
 
     # Top accent line
-    d.rectangle((0, 0, W, 3), fill=GREEN)
+    for x in range(W):  # sage -> amber progress line
+        t = x / W
+        d.line([(x, 0), (x, 2)], fill=tuple(int(SAGE[i] + (GREEN[i] - SAGE[i]) * t) for i in range(3)))
 
-    # Logo — leaf glyph + wordmark
-    cx, cy = 76, 80
-    leaf = []
-    # Stylized leaf path drawn via points
-    pts = [
-        (0, -1.0), (0.55, -0.85), (0.85, -0.4), (0.95, 0.05),
-        (0.78, 0.55), (0.4, 0.92), (0, 1.0),
-        (-0.35, 0.85), (-0.55, 0.55), (-0.55, 0.18),
-        (-0.4, -0.05), (-0.18, -0.25), (0, -0.35),
-    ]
-    r = 24
-    for nx, ny in pts:
-        leaf.append((cx + int(nx * r), cy + int(ny * r)))
-    d.polygon(leaf, fill=GREEN)
-    # Vein
-    d.line([(cx, cy - 20), (cx, cy + 20)], fill=BG, width=2)
+    # Logo — the site's leaf mark (SVG path M4.5 19.5 C4.5 10.9 11.4 4 20 4 c0 8.6-6.9 15.5-15.5 15.5Z), scaled
+    def bez(p0, p1, p2, p3, n=24):
+        return [tuple((1-t)**3*p0[i] + 3*(1-t)**2*t*p1[i] + 3*(1-t)*t**2*p2[i] + t**3*p3[i] for i in range(2))
+                for t in (k / n for k in range(n + 1))]
+    k, ox, oy = 2.2, 58, 54
+    pts = bez((4.5, 19.5), (4.5, 10.9), (11.4, 4), (20, 4)) + bez((20, 4), (20, 12.6), (13.1, 19.5), (4.5, 19.5))
+    d.polygon([(ox + x * k, oy + y * k) for x, y in pts], fill=GREEN)
+    d.line([(ox + 6.5 * k, oy + 17.5 * k), (ox + 17.5 * k, oy + 6.5 * k)], fill=BG, width=3)
 
-    logo_font = font(F_DISPLAY, 30)
-    d.text((114, 64), "Sagelight Studio", font=logo_font, fill=TEXT)
-    domain = font(F_MONO, 16)
-    d.text((W - 64 - 240, 76), "sagelight-studio.com", font=domain, fill=DIM)
+    logo_font = font(F_DISPLAY, 24)
+    d.text((114, 66), "Sagelight", font=logo_font, fill=TEXT)
+    lw = d.textbbox((0, 0), "Sagelight ", font=logo_font)[2]
+    d.text((114 + lw, 66), "studio", font=font(F_ITALIC, 24), fill=DIM)
+    domain = font(F_MONO, 15)
+    dw = d.textbbox((0, 0), "sagelight-studio.com", font=domain)[2]
+    d.text((W - 64 - dw, 74), "sagelight-studio.com", font=domain, fill=DIM)
 
     return img, d
 
@@ -100,13 +95,6 @@ def draw_pill(d, x, y, text, font_obj):
     d.ellipse(
         (x + 14 - dot_r, y + ph // 2 - dot_r, x + 14 + dot_r, y + ph // 2 + dot_r),
         fill=GREEN,
-    )
-    d.rounded_rectangle(
-        (x, y, x + pw, y + ph),
-        radius=ph // 2,
-        fill=(85, 238, 113, 28),
-        outline=(85, 238, 113, 100),
-        width=1,
     )
     d.text((x + 26, y + 8), text, font=font_obj, fill=GREEN)
     return pw
@@ -128,12 +116,18 @@ def page(out_name, eyebrow, title_lines, subtitle, footer):
     pill_font = font(F_MONO, 16)
     draw_pill(d, 64, 150, eyebrow.upper(), pill_font)
 
-    title_font = font(F_DISPLAY, 92)
-    title_em = font(F_ITALIC, 92)
-    y = 220
+    size = 72
+    while size > 36:
+        title_font, title_em = font(F_DISPLAY, size), font(F_ITALIC, size)
+        widest = max(sum(d.textbbox((0, 0), t, font=title_em if k == "em" else title_font)[2] for t, k in line)
+                     for line in title_lines)
+        if widest <= W - 128:
+            break
+        size -= 2
+    y = 222
     for line in title_lines:
         text_with_em(d, 64, y, line, title_font, title_em, TEXT, GREEN)
-        y += 108
+        y += int(size * 1.22)
 
     sub_font = font(F_BODY, 26)
     wrap = wrap_text(d, subtitle, sub_font, W - 128)
@@ -173,10 +167,10 @@ PAGES = [
         "out": "home.png",
         "eyebrow": "Privacy-first · EU-built",
         "title_lines": [
-            [("Calm software for the", "reg")],
-            [("noisy bits ", "em"), ("of life", "reg")],
+            [("Your paperwork,", "em")],
+            [("sent to us: ", "reg"), ("0 bytes.", "em")],
         ],
-        "subtitle": "SageBills · SageMeet · SageDocs — three privacy-first iOS & macOS apps from an independent studio in Romania, EU.",
+        "subtitle": "SageDocs · SageBills · SageMeet — privacy-first iOS & macOS apps from an independent studio in Romania, EU.",
         "footer": "iOS · macOS · GDPR Compliant · Zero Tracking",
     },
     {
@@ -207,7 +201,7 @@ PAGES = [
             [("Encrypted. ", "em"), ("Yours.", "em")],
         ],
         "subtitle": "AES-256 encrypted vault for IDs, contracts, insurance, and personal documents. Biometric-protected. Encrypted iCloud sync.",
-        "footer": "AES-256-GCM · Face ID · Encrypted iCloud · Free",
+        "footer": "AES-256-GCM · Face ID · Encrypted iCloud · 7-day trial",
     },
     {
         "out": "blog.png",

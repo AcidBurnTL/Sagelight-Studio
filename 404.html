@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>(function(){try{var t=localStorage.getItem('sage-theme')||'dark';var r=t==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;document.documentElement.setAttribute('data-theme',r);}catch(e){}})();</script>
     <!-- Google Ads — Consent Mode v2 (default denied; banner will update on opt-in) -->
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -25,91 +24,44 @@
     <title>Page Not Found — Sagelight Studio</title>
     <meta name="description" content="The page you're looking for doesn't exist. Browse Sagelight Studio's apps — SageBills, SageMeet, and SageDocs.">
     <meta name="robots" content="noindex, follow">
-    <meta name="theme-color" content="#55ee71">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#191724">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preload" href="/assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/assets/fonts/fonts.css">
-    <link rel="stylesheet" href="/assets/sage.css">
+    <link rel="stylesheet" href="/assets/fonts/fonts.css?v=20261013c">
+    <link rel="stylesheet" href="/assets/sage.css?v=20261013c">
     <style>
-        .nf-wrap {
-            max-width: 760px; margin: 0 auto;
-            padding: calc(var(--nav-height) + 96px) 32px 96px;
-            text-align: center;
-            position: relative; z-index: 1;
-        }
-        .nf-code {
-            font-family: var(--font-italic);
-            font-size: clamp(96px, 20vw, 200px);
-            font-weight: 400; line-height: 1;
-            color: var(--green); margin-bottom: 12px;
-            font-style: italic;
-            letter-spacing: -0.04em;
-            text-shadow: 0 0 60px var(--green-shadow);
-        }
-        .nf-title {
-            font-family: var(--font-display);
-            font-size: clamp(32px, 5vw, 48px);
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: 18px;
-            letter-spacing: -0.02em;
-        }
-        .nf-sub {
-            font-size: 18px;
-            color: var(--text-secondary);
-            line-height: 1.55;
-            margin-bottom: 40px;
-            max-width: 560px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .nf-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 12px; margin-bottom: 36px;
-        }
-        .nf-link {
-            display: block; padding: 18px 20px;
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            border: 0.5px solid var(--card-border);
-            border-radius: var(--radius);
-            color: var(--text); text-decoration: none;
-            transition: var(--transition-fast);
-            text-align: left;
-        }
-        .nf-link:hover {
-            border-color: var(--green-dim);
-            color: var(--green);
-            opacity: 1;
-            transform: translateY(-2px);
-            box-shadow: 0 12px 28px -10px var(--green-shadow);
-        }
-        .nf-link__name {
-            font-family: var(--font-display);
-            font-weight: 600; font-size: 16px;
-            margin-bottom: 6px;
-            letter-spacing: -0.01em;
-        }
-        .nf-link__desc {
-            font-family: var(--font-mono); font-size: 11px;
-            color: var(--text-dim); letter-spacing: 1px;
-            text-transform: uppercase;
-        }
+        .nf { padding: calc(var(--nav-height) + 48px) 0 88px; }
+        .nf__grid { display: grid; gap: 40px; }
+        .nf h1 { margin: 18px 0 18px; font-family: var(--font-display); letter-spacing: -.05em; line-height: .98; font-size: clamp(40px, 9vw, 104px); }
+        .nf h1 .thin { display: block; font-weight: 100; font-stretch: 75%; color: var(--paper-2); }
+        .nf h1 .heavy { display: block; font-weight: 800; font-stretch: 112.5%; color: var(--paper); }
+        .nf h1 em { font-style: normal; color: var(--amber); }
+        .nf .lead { color: var(--paper-2); font-size: 18px; max-width: 46ch; margin-bottom: 28px; }
+        .nf .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+        .nf-log { font-family: var(--font-mono); font-size: 13px; padding: 0; }
+        .nf-log__bar { display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--line); color: var(--dim); }
+        .nf-log__bar .err { color: var(--rose); }
+        .nf-log ul { list-style: none; }
+        .nf-log a { display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; align-items: center; min-height: 56px; padding: 12px 16px; border-bottom: 1px solid var(--line-soft); color: var(--paper); }
+        .nf-log li:last-child a { border-bottom: 0; }
+        .nf-log a:hover { background: var(--amber-fade); color: var(--paper); }
+        .nf-log a:hover .arrow { color: var(--amber); transform: translateX(4px); }
+        .nf-log strong { font-weight: 700; }
+        .nf-log small { grid-column: 1; color: var(--dim); font-family: var(--font-body); font-size: 15px; }
+        .nf-log .arrow { grid-row: 1 / 3; grid-column: 2; color: var(--dim); transition: transform .2s var(--ease); }
+        @media (min-width: 960px) { .nf__grid { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 56px; } .nf { padding-top: calc(var(--nav-height) + 80px); } }
     </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<div class="bg-grid" aria-hidden="true"></div>
-<div class="glow-orb glow-orb--1" aria-hidden="true"></div>
-<div class="glow-orb glow-orb--2" aria-hidden="true"></div>
-
-<nav class="nav" role="navigation" aria-label="Main navigation">
+<nav class="nav" aria-label="Main navigation">
     <div class="nav__inner">
-        <a href="/" class="nav__logo">
-            <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round" opacity="0.4"/></svg>
+        <a href="/" class="nav__logo" aria-label="Sagelight Studio home">
+            <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/></svg>
             Sagelight <span>Studio</span>
         </a>
-        <ul class="nav__tabs" id="navTabs" role="list">
+        <ul class="nav__tabs" id="navTabs">
             <li><a href="/sagedocs.html" class="nav__tab">SageDocs</a></li>
             <li><a href="/sagebills.html" class="nav__tab">SageBills</a></li>
             <li><a href="/sagemeet.html" class="nav__tab">SageMeet</a></li>
@@ -117,55 +69,81 @@
             <li><a href="/press-kit.html" class="nav__tab">Press</a></li>
         </ul>
         <div class="nav__actions">
-            <button class="nav__icon-btn" id="themeToggle" onclick="cycleTheme()" aria-label="Toggle theme" title="Toggle theme">
-                <span id="themeIcon" aria-hidden="true">☾</span>
-            </button>
-            <button class="nav__icon-btn mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Open menu" aria-expanded="false">
-                <span aria-hidden="true" class="material-symbols-outlined">menu</span>
-            </button>
+            <button class="nav__icon-btn mobile-menu-btn" id="mobileMenuBtn" type="button" onclick="toggleMobileMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="navTabs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h10"/></svg></button>
         </div>
     </div>
 </nav>
 
-<main class="nf-wrap">
-    <div class="nf-code">404</div>
-    <h1 class="nf-title">Page not found.</h1>
-    <p class="nf-sub">The page you're looking for has either moved or never existed. Here's where you might want to go instead.</p>
-
-    <div class="nf-grid">
-        <a class="nf-link" href="/sagebills.html">
-            <div class="nf-link__name">SageBills</div>
-            <div class="nf-link__desc">Utility bill tracker</div>
-        </a>
-        <a class="nf-link" href="/sagemeet.html">
-            <div class="nf-link__name">SageMeet</div>
-            <div class="nf-link__desc">AI meeting recorder</div>
-        </a>
-        <a class="nf-link" href="/sagedocs.html">
-            <div class="nf-link__name">SageDocs</div>
-            <div class="nf-link__desc">Encrypted vault</div>
-        </a>
-        <a class="nf-link" href="/blog.html">
-            <div class="nf-link__name">Blog</div>
-            <div class="nf-link__desc">Tips &amp; insights</div>
-        </a>
-        <a class="nf-link" href="/privacy-policy.html">
-            <div class="nf-link__name">Privacy Policy</div>
-            <div class="nf-link__desc">Legal</div>
-        </a>
-        <a class="nf-link" href="/press-kit.html">
-            <div class="nf-link__name">Press Kit</div>
-            <div class="nf-link__desc">Media resources</div>
-        </a>
+<main id="main" class="nf">
+    <div class="container nf__grid">
+        <div>
+            <p class="kicker fade-up d1"><span class="dot" aria-hidden="true"></span> Error · <b>404</b></p>
+            <h1 class="fade-up d2" aria-label="404: 0 bytes found.">
+                <span class="thin" aria-hidden="true">404 — page not found.</span>
+                <span class="heavy" aria-hidden="true"><em><span data-scramble="700">0&nbsp;bytes</span></em> found.</span>
+            </h1>
+            <p class="lead fade-up d3">This page has moved or never existed. Like your data, it isn&rsquo;t on our servers. Here&rsquo;s where you probably meant to go.</p>
+            <div class="ctas fade-up d4">
+                <a href="/" class="btn btn--primary btn--lg">← Back home</a>
+                <a href="/#apps" class="btn btn--ghost btn--lg">See the apps</a>
+            </div>
+        </div>
+        <nav class="glass-card nf-log fade-up d3" aria-label="Suggested pages">
+            <div class="nf-log__bar"><span>GET /this-page</span><span class="err">404 · 0 B</span></div>
+            <ul>
+                <li><a href="/sagedocs.html"><strong>SageDocs</strong><small>Encrypted document vault</small><span class="arrow" aria-hidden="true">→</span></a></li>
+                <li><a href="/sagebills.html"><strong>SageBills</strong><small>Utility bill tracker</small><span class="arrow" aria-hidden="true">→</span></a></li>
+                <li><a href="/sagemeet.html"><strong>SageMeet</strong><small>AI meeting recorder</small><span class="arrow" aria-hidden="true">→</span></a></li>
+                <li><a href="/blog.html"><strong>Blog</strong><small>Guides &amp; product notes</small><span class="arrow" aria-hidden="true">→</span></a></li>
+                <li><a href="/privacy-policy.html"><strong>Privacy Policy</strong><small>Legal &amp; support</small><span class="arrow" aria-hidden="true">→</span></a></li>
+            </ul>
+        </nav>
     </div>
-
-    <a href="/" class="btn btn--primary btn--lg">
-        <span aria-hidden="true" class="material-symbols-outlined icon">arrow_back</span>
-        Back to Sagelight Studio
-    </a>
 </main>
 
-<script src="/assets/theme.js"></script>
-<script src="/assets/consent.js" defer></script>
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__brand-block">
+            <div class="footer__brand">
+                <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/></svg>
+                Sagelight <span>Studio</span>
+            </div>
+            <p class="footer__tagline">Privacy through clarity. Local-first iOS and macOS apps from Romania, EU.</p>
+            <p class="footer__tagline"><a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></p>
+        </div>
+        <div>
+            <div class="footer__col-title">Apps</div>
+            <ul class="footer__list">
+                <li><a href="/sagedocs.html">SageDocs</a></li>
+                <li><a href="/sagebills.html">SageBills</a></li>
+                <li><a href="/sagemeet.html">SageMeet</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer__col-title">Studio</div>
+            <ul class="footer__list">
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/press-kit.html">Press Kit</a></li>
+                <li><a href="mailto:contact@sagelight-studio.com">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer__col-title">Legal</div>
+            <ul class="footer__list">
+                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="/gdpr.html">GDPR</a></li>
+                <li><a href="/terms.html">Terms</a></li>
+                <li><button type="button" class="cookie-pref-link" onclick="window.sageConsentOpen && window.sageConsentOpen()">Cookie preferences</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <span>© 2026 Sagelight Studio · Built in Romania, EU</span>
+        <span>sent to us: 0 bytes</span>
+    </div>
+</footer>
+
+<script src="/assets/theme.js?v=20261013c"></script>
+<script src="/assets/consent.js?v=20261013c" defer></script>
 </body>
 </html>

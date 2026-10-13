@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>(function(){try{var t=localStorage.getItem('sage-theme')||'dark';var r=t==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;document.documentElement.setAttribute('data-theme',r);}catch(e){}})();</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -31,7 +30,7 @@
     <meta name="twitter:title" content="Sagelight Studio — Aplikacje iOS i macOS Privacy-First">
     <meta name="twitter:description" content="Aplikacje iOS i macOS w Rumunii. SageBills · SageMeet · SageDocs.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/home.png">
-    <meta name="theme-color" content="#55ee71">
+    <meta name="theme-color" content="#191724">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://sagelight-studio.com/pl/">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/">
@@ -54,8 +53,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css">
-    <link rel="stylesheet" href="../assets/sage.css">
+    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
 
     <script type="application/ld+json">
     {
@@ -120,281 +119,349 @@
     </script>
 
     <style>
-        .hero-home { text-align: center; padding-top: calc(var(--nav-height) + 120px); }
-        .hero-home h1 { margin: 24px auto 28px; max-width: 16ch; }
-        .hero-home p.lead { max-width: 640px; margin: 0 auto 36px; }
-        .hero-home .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
-        .trust-row { display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); }
-        .trust-row span { display: inline-flex; align-items: center; gap: 8px; }
-        .trust-row span .material-symbols-outlined { font-size: 14px; color: var(--green); }
-        .apps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        @media (max-width: 880px) { .apps-grid { grid-template-columns: 1fr; } }
-        .app-card { display: flex; flex-direction: column; padding: 36px; color: inherit; text-decoration: none; min-height: 380px; }
-        .app-card .card-icon { margin-bottom: 28px; }
-        .app-card .h-card { margin-bottom: 8px; }
-        .app-card .app-tagline { font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--green); margin-bottom: 18px; }
-        .app-card .app-desc { color: var(--text-secondary); font-size: 15px; line-height: 1.6; flex: 1; margin-bottom: 24px; }
-        .app-card .app-features { list-style: none; margin: 0 0 24px; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-        .app-card .app-features li { font-size: 14px; color: var(--text-dim); display: flex; align-items: center; gap: 10px; }
-        .app-card .app-features li .material-symbols-outlined { font-size: 16px; color: var(--green); }
-        .app-card .app-meta { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; border-top: 0.5px solid var(--border); }
-        .app-card .app-meta .platforms { display: flex; gap: 6px; flex-wrap: wrap; }
-        .app-card .app-meta .arrow { color: var(--green); transition: transform 0.3s ease; }
-        .app-card:hover .app-meta .arrow { transform: translateX(4px); }
-        .principles { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-        @media (max-width: 980px) { .principles { grid-template-columns: 1fr; gap: 48px; } }
-        .principles__list { display: flex; flex-direction: column; gap: 36px; margin-top: 32px; }
-        .principle { display: flex; gap: 20px; }
-        .principle__icon { flex-shrink: 0; width: 52px; height: 52px; border-radius: var(--radius); background: var(--bg-surface-2); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 24px; }
-        .principle h4 { font-family: var(--font-display); font-size: 19px; font-weight: 600; color: var(--text); margin-bottom: 6px; letter-spacing: -0.01em; }
-        .principle p { color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
-        .cta-block { position: relative; overflow: hidden; padding: 80px 56px; text-align: center; border-radius: var(--radius-xl); border-color: var(--green-dim); }
-        .cta-block::before { content: ''; position: absolute; inset: -4px; background: radial-gradient(circle at 50% 0%, var(--green-fade), transparent 60%); z-index: 0; pointer-events: none; }
-        .cta-block > * { position: relative; z-index: 1; }
-        .cta-block h2 { margin-bottom: 16px; }
-        .cta-block p { max-width: 520px; margin: 0 auto 36px; }
-        .cta-block .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-        @media (max-width: 700px) { .cta-block { padding: 48px 24px; } }
+        /* Home ("Data Manifest") — page-only layout; components live in sage.css */
+        .home-hero { padding-top: calc(var(--nav-height) + 48px); padding-bottom: 64px; }
+        .home-hero__grid { display: grid; gap: 48px; }
+        .home-hero h1 { margin: 20px 0 22px; font-family: var(--font-display); letter-spacing: -.05em; line-height: .98; font-size: clamp(38px, 9vw, 104px); }
+        .home-hero h1 .thin { display: block; font-weight: 100; font-stretch: 75%; color: var(--paper-2); }
+        .home-hero h1 .heavy { display: block; font-weight: 800; font-stretch: 112.5%; }
+        .home-hero h1 .heavy em { font-style: normal; color: var(--amber); }
+        .home-hero .lead { font-size: 18px; color: var(--paper-2); max-width: 46ch; margin: 0 0 30px; }
+        .home-hero .lead strong { color: var(--paper); font-weight: 600; }
+        .home-hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; }
+        .zeros { display: flex; flex-wrap: wrap; gap: 10px 22px; list-style: none; font-family: var(--font-mono); font-size: 13px; color: var(--dim); }
+        .zeros b { color: var(--amber); font-weight: 800; margin-right: 6px; }
+
+        .boot .up { animation: rise .8s var(--ease) both; animation-delay: calc(var(--i, 0) * 110ms + 80ms); }
+        .boot .ln { animation: type .5s steps(18, end) both; animation-delay: calc(var(--i, 0) * 170ms + 650ms); }
+        .boot .ledger__total { animation: land .7s var(--ease) both, glow 1.6s ease-out both; animation-delay: 2.28s, 2.28s; }
+        @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+        @keyframes type { from { clip-path: inset(0 100% 0 0); opacity: .2; } to { clip-path: inset(0 0 0 0); opacity: 1; } }
+        @keyframes land { 0% { opacity: 0; transform: scale(.96); } 60% { opacity: 1; transform: scale(1.02); } 100% { transform: none; } }
+        @keyframes glow { 0% { background: rgba(246, 193, 119, .32); } 100% { background: var(--amber-fade); } }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        .ledger__bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--line); color: var(--dim); }
+        .ledger__bar .live { display: inline-flex; align-items: center; gap: 8px; color: var(--sage); }
+        .ledger__bar .live .dot { animation: pulse 2s ease-in-out infinite; }
+        .ledger__cols, .ledger__row { display: grid; grid-template-columns: 1.1fr 1.5fr .9fr; gap: 10px; padding: 10px 16px; align-items: center; }
+        .ledger__cols { color: var(--dim); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; border-bottom: 1px dashed var(--line); }
+        .ledger__row { border-bottom: 1px solid var(--line-soft); }
+        .ledger__row .app { color: var(--paper); font-weight: 700; }
+        .ledger__row .dest { color: var(--paper-2); }
+        .ledger__row .bytes { text-align: right; color: var(--sage); font-weight: 700; }
+        .ledger__row .bytes.enc { color: var(--amber); font-weight: 500; }
+        .ledger__total { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; padding: 20px 16px 22px; background: var(--amber-fade); }
+        .ledger__total span { color: var(--paper-2); font-size: 13px; }
+        .ledger__total strong { font-size: clamp(30px, 6vw, 44px); font-weight: 800; font-stretch: 112.5%; letter-spacing: -.05em; color: var(--amber); }
+        .ledger__total .cursor { display: inline-block; width: .5ch; height: .9em; background: var(--amber); margin-left: 6px; vertical-align: -.08em; animation: blink 1.1s steps(1) infinite; }
+        .ledger__note { padding: 12px 16px; color: var(--dim); font-size: 12px; border-top: 1px solid var(--line); }
+
+        .sec-title { margin: 0; font-family: var(--font-display); font-size: clamp(30px, 6vw, 60px); line-height: 1.02; letter-spacing: -.04em; font-weight: 200; font-stretch: 75%; }
+        .sec-title strong { display: inline; font-weight: 800; font-stretch: 112.5%; color: var(--paper); }
+
+        .apps { display: grid; gap: 22px; }
+        .manifest__top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 6px; }
+        .manifest h3 { margin: 0; font-family: var(--font-display); font-size: clamp(30px, 5.5vw, 52px); line-height: 1; font-weight: 800; font-stretch: 112.5%; letter-spacing: -.05em; }
+        .manifest h3 span { font-weight: 100; font-stretch: 75%; color: var(--dim); }
+        .manifest__tag { margin: 10px 0 22px; color: var(--paper-2); max-width: 52ch; }
+        .manifest__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+        .manifest .flag { display: block; font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--amber); margin-bottom: 12px; }
+        .textlink { display: inline-flex; align-items: center; min-height: 44px; font-family: var(--font-mono); font-size: 13px; color: var(--paper); }
+        .legal-mini { display: inline-flex; gap: 2px; align-items: center; font-family: var(--font-mono); font-size: 12px; color: var(--dim); }
+        .legal-mini a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; color: var(--dim); }
+        .legal-mini a:hover, .textlink:hover { color: var(--amber); }
+
+        .workshop { display: grid; gap: 18px; }
+        .draft h3 { margin: 12px 0 8px; font-family: var(--font-display); font-size: 28px; font-weight: 700; letter-spacing: -.04em; }
+        .draft p { margin: 0 0 14px; color: var(--paper-2); }
+        .draft .meta { font-family: var(--font-mono); font-size: 12px; color: var(--dim); margin: 0; }
+        .idea { border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 24px 22px; display: flex; flex-direction: column; justify-content: space-between; gap: 18px; }
+        .idea p { margin: 0; font-family: var(--font-display); font-size: 20px; font-weight: 200; letter-spacing: -.03em; line-height: 1.3; }
+        .idea p b { font-weight: 800; }
+        .idea .btn { white-space: normal; text-align: center; }
+
+        .princ { display: grid; gap: 40px; }
+
+        .legal-hub { border: 1px solid var(--line); border-radius: var(--radius-xl); overflow: hidden; background: var(--card-bg); }
+        .legal-hub__head { padding: 28px 22px; border-bottom: 1px solid var(--line); display: grid; gap: 10px; align-content: start; }
+        .legal-hub__head h2 { margin: 0; font-family: var(--font-display); font-size: clamp(26px, 5vw, 40px); font-weight: 800; letter-spacing: -.04em; line-height: 1.1; }
+        .legal-hub__head p { margin: 0; color: var(--paper-2); }
+        .legal-hub ul { list-style: none; }
+        .legal-hub li a { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; align-items: center; padding: 18px 22px; min-height: 64px; color: var(--text); border-bottom: 1px solid var(--line-soft); transition: background .2s; }
+        .legal-hub li:last-child a { border-bottom: 0; }
+        .legal-hub li a:hover { background: var(--amber-fade); color: var(--text); }
+        .legal-hub li a:hover .arrow { transform: translateX(4px); color: var(--amber); }
+        .legal-hub strong { font-family: var(--font-mono); font-size: 16px; font-weight: 700; }
+        .legal-hub small { grid-column: 1; color: var(--dim); font-size: 15px; }
+        .legal-hub .arrow { grid-row: 1 / 3; grid-column: 2; font-family: var(--font-mono); color: var(--dim); transition: transform .2s var(--ease); }
+
+        @media (min-width: 640px) {
+            .workshop { grid-template-columns: 1fr 1fr; }
+            .workshop .idea { grid-column: 1 / -1; }
+        }
+        @media (min-width: 960px) {
+            .home-hero { padding-top: calc(var(--nav-height) + 72px); padding-bottom: 96px; }
+            .home-hero__grid { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 56px; }
+            .apps { grid-template-columns: 7fr 5fr; }
+            .manifest.card--flag { grid-column: 1 / -1; display: grid; grid-template-columns: 5fr 6fr; gap: 0 48px; padding: 36px; }
+            .manifest.card--flag .manifest__intro { display: flex; flex-direction: column; justify-content: space-between; }
+            .apps > .manifest:nth-child(3) { margin-top: 48px; }
+            .workshop { grid-template-columns: 1fr 1fr 1fr; }
+            .workshop .idea { grid-column: auto; }
+            .princ { grid-template-columns: 7fr 5fr; gap: 72px; }
+            .princ .data-map { position: sticky; top: 96px; }
+            .legal-hub { display: grid; grid-template-columns: 5fr 7fr; }
+            .legal-hub__head { border-bottom: 0; border-right: 1px solid var(--line); padding: 40px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .boot .up, .boot .ln, .boot .ledger__total { animation: none !important; opacity: 1 !important; clip-path: none !important; }
+        }
     </style>
 </head>
-<body>
+<body class="boot">
+<a class="skip-link" href="#main">Przejdź do treści</a>
 
-<div class="bg-grid" aria-hidden="true"></div>
-<div class="glow-orb glow-orb--1" aria-hidden="true"></div>
-<div class="glow-orb glow-orb--2" aria-hidden="true"></div>
-
-<nav class="nav" role="navigation" aria-label="Nawigacja główna">
+<nav class="nav" aria-label="Główna nawigacja">
     <div class="nav__inner">
-        <a href="../index.html" class="nav__logo">
-            <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round" opacity="0.4"/></svg>
+        <a href="index.html" class="nav__logo" aria-label="Sagelight Studio, strona główna">
+            <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/></svg>
             Sagelight <span>Studio</span>
         </a>
-        <ul class="nav__tabs" id="navTabs" role="list">
+        <ul class="nav__tabs" id="navTabs">
             <li><a href="sagedocs.html" class="nav__tab">SageDocs</a></li>
             <li><a href="sagebills.html" class="nav__tab">SageBills</a></li>
             <li><a href="sagemeet.html" class="nav__tab">SageMeet</a></li>
             <li><a href="../blog.html" class="nav__tab">Blog</a></li>
+            <li><a href="../press-kit.html" class="nav__tab">Prasa</a></li>
         </ul>
         <div class="nav__actions">
-            <button class="nav__icon-btn" id="themeToggle" onclick="cycleTheme()" aria-label="Zmień motyw" title="Zmień motyw">
-                <span id="themeIcon" aria-hidden="true">☾</span>
-            </button>
+            <button class="nav__icon-btn mobile-menu-btn" id="mobileMenuBtn" type="button" onclick="toggleMobileMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="navTabs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h10"/></svg></button>
         </div>
     </div>
 </nav>
 
-<main>
-    <section class="hero hero-home">
-        <div class="container">
-            <div class="hero__inner">
-                <div class="eyebrow fade-up d1">Niezależny · Privacy-First · Zbudowane w UE</div>
-                <h1 class="h-display fade-up d2">
-                    Aplikacje iOS i macOS privacy-first<br>
-                    <em class="italic-em">na głośne części</em> życia.
+<main id="main">
+    <!-- Hero: the outbound log -->
+    <section class="home-hero" aria-labelledby="hero-title">
+        <div class="container home-hero__grid">
+            <div>
+                <p class="kicker up" style="--i:0"><span class="dot" aria-hidden="true"></span> Niezależne studio · <b>Rumunia, UE</b></p>
+                <h1 id="hero-title" class="up" style="--i:1" aria-label="Twoje papiery, wysłane do nas: 0 bajtów.">
+                    <span class="thin" aria-hidden="true">Twoje papiery,</span>
+                    <span class="heavy" aria-hidden="true">wysłane do nas: <em><span data-scramble="900">0&nbsp;bajtów.</span></em></span>
                 </h1>
-                <p class="text-lead lead fade-up d3">
-                    Sagelight Studio buduje aplikacje iOS i macOS privacy-first do codziennych rzeczy, które większość aplikacji niepotrzebnie komplikuje &mdash; rachunki, spotkania i osobiste dokumenty. Bez śledzenia. Bez reklam. Bez kont. Tylko narzędzia, które szanują Twoje dane.
-                </p>
-                <div class="ctas fade-up d4">
-                    <a href="#apps" class="btn btn--primary btn--lg">
-                        Zobacz aplikacje
-                        <span aria-hidden="true" class="material-symbols-outlined icon">arrow_forward</span>
+                <p class="lead up" style="--i:2">Aplikacje privacy-first na iPhone’a i Maca do codziennej papierologii: dokumenty, rachunki, spotkania. <strong>Bez śledzenia. Bez reklam. Bez kont.</strong> Tworzone przez jedną osobę w Rumunii.</p>
+                <div class="ctas up" style="--i:3">
+                    <a class="btn btn--primary btn--lg" href="https://apps.apple.com/us/app/sagedocs/id6762064711" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.5-3.9ZM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4Z"/></svg>
+                        Pobierz SageDocs z App Store
                     </a>
-                    <a href="#why" class="btn btn--ghost btn--lg">Dlaczego Sagelight</a>
+                    <a class="btn btn--ghost btn--lg" href="#apps">Zobacz wszystkie aplikacje <span aria-hidden="true">↓</span></a>
                 </div>
-                <div class="trust-row fade-up d5">
-                    <span><span aria-hidden="true" class="material-symbols-outlined fill">verified_user</span> Zgodne z RODO</span>
-                    <span><span aria-hidden="true" class="material-symbols-outlined fill">visibility_off</span> Zero śledzenia</span>
-                    <span><span aria-hidden="true" class="material-symbols-outlined fill">public</span> Zbudowane w Rumunii</span>
-                    <span><span aria-hidden="true" class="material-symbols-outlined fill">devices</span> iOS i macOS</span>
+                <ul class="zeros up" style="--i:4" aria-label="Gwarancje studia">
+                    <li><b>0</b>trackerów</li><li><b>0</b>sieci reklamowych</li><li><b>0</b>kont</li><li><b>0</b>serwerów z Twoimi danymi</li>
+                </ul>
+            </div>
+
+            <div class="tilt" data-tilt>
+                <figure class="ledger up" style="--i:2; margin:0" aria-labelledby="ledger-cap">
+                    <div class="ledger__bar"><span>outbound.log</span><span class="live"><span class="dot" aria-hidden="true"></span> by design</span></div>
+                    <div class="ledger__cols" aria-hidden="true"><span>Aplikacja</span><span>Twoje dane trafiają do</span><span style="text-align:right">Do nas</span></div>
+                    <div class="ledger__row ln" style="--i:0"><span class="app">SageDocs</span><span class="dest">to urządzenie, AES-256-GCM</span><span class="bytes">0 B</span></div>
+                    <div class="ledger__row ln" style="--i:1"><span class="app">SageDocs</span><span class="dest">Twój iCloud, zaszyfrowany</span><span class="bytes enc">Twoje</span></div>
+                    <div class="ledger__row ln" style="--i:2"><span class="app">SageBills</span><span class="dest">OCR na urządzeniu</span><span class="bytes">0 B</span></div>
+                    <div class="ledger__row ln" style="--i:3"><span class="app">SageBills</span><span class="dest">lokalne prognozy</span><span class="bytes">0 B</span></div>
+                    <div class="ledger__row ln" style="--i:4"><span class="app">SageMeet</span><span class="dest">OpenAI, Twój klucz*</span><span class="bytes enc">Twoje</span></div>
+                    <div class="ledger__row ln" style="--i:5"><span class="app">SageMeet</span><span class="dest">Tryb prywatny</span><span class="bytes">0 B</span></div>
+                    <div class="ledger__row ln" style="--i:6"><span class="app">—</span><span class="dest">SDK analityczne</span><span class="bytes">brak</span></div>
+                    <div class="ledger__row ln" style="--i:7"><span class="app">—</span><span class="dest">sieci reklamowe</span><span class="bytes">brak</span></div>
+                    <div class="ledger__total">
+                        <span id="ledger-cap">Wysłane do Sagelight</span>
+                        <strong><span data-scramble="2300">0 bajtów</span><span class="cursor" aria-hidden="true"></span></strong>
+                    </div>
+                    <div class="ledger__note">*Funkcje AI w SageMeet łączą się z OpenAI <em>Twoim</em> kluczem API; Sagelight nigdy nie widzi nagrania. Tryb prywatny nie wysyła niczego nigdzie.</div>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps -->
+    <section id="apps" aria-labelledby="apps-title">
+        <div class="container">
+            <div class="section-head section-head--split reveal">
+                <div>
+                    <p class="kicker">01 / Wydane</p>
+                    <h2 id="apps-title" class="sec-title">Trzy aplikacje. <strong>Przeczytaj manifest.</strong></h2>
+                </div>
+                <p>Każda aplikacja składa tę samą obietnicę, więc drukujemy ją jak specyfikację: co przechowuje, gdzie to leży i co opuszcza urządzenie.</p>
+            </div>
+
+            <div class="apps">
+                <article class="manifest card--flag reveal" aria-labelledby="m-docs">
+                    <div class="manifest__intro">
+                        <div>
+                            <span class="flag">Flagowa</span>
+                            <div class="manifest__top">
+                                <h3 id="m-docs">Sage<span>Docs</span></h3>
+                                <span class="chip chip--sage"><span class="dot" aria-hidden="true"></span> W App Store</span>
+                            </div>
+                            <p class="manifest__tag">Zaszyfrowany sejf na dowody, umowy, polisy i dokumenty medyczne. Odzyskać go możesz tylko Ty. My nie możemy go odczytać, z założenia.</p>
+                        </div>
+                        <div class="manifest__actions">
+                            <a class="badge" href="https://apps.apple.com/us/app/sagedocs/id6762064711" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Pobierz SageDocs z App Store" width="156" height="52"></a>
+                            <a class="textlink" href="sagedocs.html">Szczegóły →</a>
+                            <span class="legal-mini"><a href="privacy-policy.html">Prywatność</a>·<a href="terms.html">Regulamin</a></span>
+                        </div>
+                    </div>
+                    <dl class="spec">
+                        <div><dt>Przechowuje</dt><dd>Dokumenty, skany, daty ważności</dd></div>
+                        <div><dt>Miejsce</dt><dd>Na Twoim urządzeniu, AES-256-GCM</dd></div>
+                        <div><dt>Odblokowanie</dt><dd>Face ID / Touch ID + główny PIN</dd></div>
+                        <div><dt>Synchronizacja</dt><dd>Twój iCloud, zaszyfrowany (opcjonalnie)</dd></div>
+                        <div><dt>Opuszcza urządzenie</dt><dd class="zero">0 bajtów do Sagelight</dd></div>
+                        <div><dt>Dodatki</dt><dd>Śledzenie ważności i przypomnienia</dd></div>
+                        <div><dt>Platformy</dt><dd>iOS 17+ · macOS 14+</dd></div>
+                        <div><dt>Cena</dt><dd>$2.99/mies. lub $24.99/rok · 7 dni za darmo</dd></div>
+                    </dl>
+                </article>
+
+                <article class="manifest reveal" aria-labelledby="m-bills">
+                    <div class="manifest__top">
+                        <h3 id="m-bills">Sage<span>Bills</span></h3>
+                        <span class="chip chip--sage"><span class="dot" aria-hidden="true"></span> Za darmo</span>
+                    </div>
+                    <p class="manifest__tag">Każdy rachunek za media, od każdego europejskiego dostawcy. Skanujesz fakturę, widzisz trend.</p>
+                    <dl class="spec">
+                        <div><dt>Przechowuje</dt><dd>Rachunki w ponad 40 kategoriach</dd></div>
+                        <div><dt>Skanowanie</dt><dd>OCR na urządzeniu</dd></div>
+                        <div><dt>Prognozy</dt><dd>Przewidywanie kosztów, liczone lokalnie</dd></div>
+                        <div><dt>Konto</dt><dd>Niepotrzebne</dd></div>
+                        <div><dt>Opuszcza urządzenie</dt><dd class="zero">0 bajtów</dd></div>
+                        <div><dt>Platformy</dt><dd>iOS 17+ · macOS 14+</dd></div>
+                    </dl>
+                    <div class="manifest__actions">
+                        <a class="badge" href="https://apps.apple.com/us/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Pobierz SageBills z App Store" width="156" height="52" loading="lazy"></a>
+                        <a class="textlink" href="sagebills.html">Szczegóły →</a>
+                        <span class="legal-mini"><a href="privacy-policy.html">Prywatność</a>·<a href="terms.html">Regulamin</a></span>
+                    </div>
+                </article>
+
+                <article class="manifest reveal" aria-labelledby="m-meet">
+                    <div class="manifest__top">
+                        <h3 id="m-meet">Sage<span>Meet</span></h3>
+                        <span class="chip chip--amber">Za darmo · własny klucz</span>
+                    </div>
+                    <p class="manifest__tag">Nagraj spotkanie i otrzymaj transkrypcję, podsumowanie oraz listę zadań.</p>
+                    <dl class="spec">
+                        <div><dt>Transkrypcja</dt><dd>Whisper, mowa na tekst</dd></div>
+                        <div><dt>Notatki</dt><dd>Podsumowania GPT-4o i zadania</dd></div>
+                        <div><dt>Opuszcza urządzenie</dt><dd class="warn">Dźwięk trafia do OpenAI z <b>Twoim kluczem</b>. Nigdy do nas.</dd></div>
+                        <div><dt>Tryb prywatny</dt><dd class="zero">0 bajtów, nigdzie</dd></div>
+                        <div><dt>Platformy</dt><dd>iOS 17+</dd></div>
+                    </dl>
+                    <div class="manifest__actions">
+                        <a class="badge" href="https://apps.apple.com/pl/app/sagemeet/id6761443109" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/RE8zCOai2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Pobierz SageMeet z App Store" width="156" height="52" loading="lazy"></a>
+                        <a class="textlink" href="sagemeet.html">Szczegóły →</a>
+                        <span class="legal-mini"><a href="privacy-policy.html">Prywatność</a>·<a href="terms.html">Regulamin</a></span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop -->
+    <section id="workshop" aria-labelledby="ws-title">
+        <div class="container">
+            <div class="section-head section-head--split reveal">
+                <div>
+                    <p class="kicker">02 / W warsztacie</p>
+                    <h2 id="ws-title" class="sec-title">Jeszcze niewydane. <strong>Te same zasady.</strong></h2>
+                </div>
+                <p>Pomysły, które są teraz na warsztacie. Żaden nie jest jeszcze dostępny; oba będą trzymać się tego samego manifestu.</p>
+            </div>
+            <div class="workshop">
+                <article class="draft reveal" aria-labelledby="w-pantry">
+                    <span class="chip chip--draft">status: w budowie</span>
+                    <span class="build" aria-hidden="true"></span>
+                    <h3 id="w-pantry">SagePantry</h3>
+                    <p>Kuchenny mózg dla europejskich rodzin: plany posiłków, listy zakupów, spiżarnia, mniej marnowania jedzenia. Dane zostają na urządzeniu lub w Twoim prywatnym iCloud.</p>
+                    <p class="meta">iPhone · iPad · Mac · Watch</p>
+                </article>
+                <article class="draft reveal" aria-labelledby="w-depot">
+                    <span class="chip chip--draft">status: w budowie</span>
+                    <span class="build" aria-hidden="true"></span>
+                    <h3 id="w-depot">SageDepot</h3>
+                    <p>Osiedlowa szopa z narzędziami. Prywatne społeczności do pożyczania narzędzi i sprzętu między sąsiadami, przyjaciółmi i współpracownikami.</p>
+                    <p class="meta">Jeszcze niedostępna</p>
+                </article>
+                <div class="idea reveal">
+                    <p>Masz pomysł na <b>coś prywatnego</b>, co powinno istnieć?</p>
+                    <a class="btn btn--ghost" href="mailto:contact@sagelight-studio.com?subject=Pomys%C5%82%20na%20aplikacj%C4%99">contact@sagelight-studio.com</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="apps" class="section--lg">
+    <!-- Principles -->
+    <section id="principles" aria-labelledby="pr-title">
         <div class="container">
-            <div class="section-head reveal">
-                <div class="eyebrow eyebrow--static">Trzy Aplikacje · Jedna Filozofia</div>
-                <h2 class="h-section">Trzy aplikacje. <span class="italic-em">Jedna filozofia.</span></h2>
-                <p>Każda aplikacja Sagelight Studio jest lokalna-pierwsza, bez reklam, bez kont, zbudowana wokół jednej zasady: Twoje dane są Twoje i nie opuszczają urządzenia, dopóki ty tego nie powiesz.</p>
-            </div>
-
-            <div class="apps-grid">
-                <a class="glass-card app-card reveal" href="sagedocs.html" aria-label="SageDocs — Zaszyfrowany sejf dokumentów">
-                    <div class="card-icon card-icon--solid">
-                        <span aria-hidden="true" class="material-symbols-outlined fill">shield_lock</span>
-                    </div>
-                    <div class="app-tagline">Flagship · Zaszyfrowany Sejf Dokumentów</div>
-                    <h3 class="h-card">SageDocs</h3>
-                    <p class="app-desc">
-                        Nasz główny produkt. Trzymaj dowód osobisty, umowy, polisy i dokumenty medyczne w zaszyfrowanym sejfie AES-256-GCM. Ochrona biometryczna. Zaszyfrowana synchronizacja iCloud. Odzyskać może tylko Ciebie &mdash; nawet studio nie może odczytać Twoich dokumentów, by design.
-                    </p>
-                    <ul class="app-features">
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Szyfrowanie AES-256-GCM</li>
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Face ID / Touch ID + PIN główny</li>
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Zaszyfrowana synchronizacja iCloud</li>
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Powiadomienia o wygaśnięciu</li>
-                    </ul>
-                    <div class="app-meta">
-                        <div class="platforms">
-                            <span class="chip">iOS 17+</span>
-                            <span class="chip">macOS 14+</span>
-                            <span class="chip chip--green">od $2.99/mies. · 7-dniowy okres próbny</span>
-                        </div>
-                        <span aria-hidden="true" class="material-symbols-outlined arrow">arrow_forward</span>
-                    </div>
-                </a>
-
-                <a class="glass-card app-card reveal" href="sagebills.html" aria-label="SageBills — Tracker rachunków za media">
-                    <div class="card-icon card-icon--solid">
-                        <span aria-hidden="true" class="material-symbols-outlined fill">bolt</span>
-                    </div>
-                    <div class="app-tagline">Tracker Rachunków za Media</div>
-                    <h3 class="h-card">SageBills</h3>
-                    <p class="app-desc">
-                        Śledź każdy rachunek za media &mdash; prąd, gaz, woda, internet, telekomunikacja. Skanowanie OCR faktur, prognozy kosztów, wykrywanie anomalii &mdash; wszystko na Twoim urządzeniu, dane nigdzie nie wychodzą.
-                    </p>
-                    <ul class="app-features">
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> 40+ kategorii rachunków</li>
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Skanowanie OCR na urządzeniu</li>
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> W pełni lokalne prognozy AI</li>
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Bez konta</li>
-                    </ul>
-                    <div class="app-meta">
-                        <div class="platforms">
-                            <span class="chip">iOS 17+</span>
-                            <span class="chip">macOS 14+</span>
-                            <span class="chip chip--green">Bezpłatne</span>
-                        </div>
-                        <span aria-hidden="true" class="material-symbols-outlined arrow">arrow_forward</span>
-                    </div>
-                </a>
-
-                <a class="glass-card app-card reveal" href="sagemeet.html" aria-label="SageMeet — AI rejestrator spotkań">
-                    <div class="card-icon card-icon--solid">
-                        <span aria-hidden="true" class="material-symbols-outlined fill">mic</span>
-                    </div>
-                    <div class="app-tagline">AI Rejestrator Spotkań</div>
-                    <h3 class="h-card">SageMeet</h3>
-                    <p class="app-desc">
-                        Nagrywaj spotkania, otrzymuj dokładne transkrypcje, podsumowania AI i listy zadań &mdash; używając swojego klucza OpenAI. Tryb Prywatny wyłącza całą transmisję zewnętrzną, więc zachowujesz pełną kontrolę.
-                    </p>
-                    <ul class="app-features">
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Transkrypcja Whisper</li>
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Notatki z GPT-4o</li>
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Wyszukiwanie semantyczne</li>
-                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Tryb Prywatny (zero danych zewnętrznych)</li>
-                    </ul>
-                    <div class="app-meta">
-                        <div class="platforms">
-                            <span class="chip">iOS 17+</span>
-                            <span class="chip chip--green">Bezpłatne</span>
-                            <span class="chip">BYOK</span>
-                        </div>
-                        <span aria-hidden="true" class="material-symbols-outlined arrow">arrow_forward</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="why" class="section--lg" style="background: linear-gradient(180deg, transparent, var(--bg-surface) 50%, transparent);">
-        <div class="container">
-            <div class="principles">
-                <div class="reveal">
-                    <div class="eyebrow eyebrow--static">Zasady Studia</div>
-                    <h2 class="h-section" style="margin-top: 16px;">
-                        Zbudowane na <span class="italic-em">solidnych zasadach</span>.
-                    </h2>
-                    <div class="principles__list">
-                        <div class="principle">
-                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">storage</span></div>
-                            <div>
-                                <h4>Domyślnie lokalne</h4>
-                                <p>Twoje dane pozostają na Twoim urządzeniu. Nie prowadzimy serwerów przechowujących Twoje rachunki, spotkania czy dokumenty &mdash; nawet nie moglibyśmy uzyskać do nich dostępu, gdybyśmy chcieli.</p>
-                            </div>
-                        </div>
-                        <div class="principle">
-                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">verified_user</span></div>
-                            <div>
-                                <h4>RODO to punkt wyjścia, nie cel</h4>
-                                <p>Każda aplikacja jest zaprojektowana wokół artykułów 5, 25 i 32 RODO. Privacy by design, privacy by default, bezpieczeństwo wbudowane w architekturę.</p>
-                            </div>
-                        </div>
-                        <div class="principle">
-                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">visibility_off</span></div>
-                            <div>
-                                <h4>Bez reklam. Bez kont. Bez śledzenia.</h4>
-                                <p>Bez SDK stron trzecich, bez analityki, bez identyfikatorów reklamowych, bez telemetrii. Zero. Otwierasz aplikację, używasz, zamykasz. Nigdy nie widzimy, co robisz.</p>
-                            </div>
-                        </div>
-                        <div class="principle">
-                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">phone_iphone</span></div>
-                            <div>
-                                <h4>Tylko natywne frameworki Apple</h4>
-                                <p>Zbudowane z SwiftData, SwiftUI, Vision, CoreSpotlight i CloudKit. Bez Electron, bez React Native, bez platform trzecich. Szybkie, lekkie i idiomatyczne.</p>
-                            </div>
-                        </div>
-                        <div class="principle">
-                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">savings</span></div>
-                            <div>
-                                <h4>Uczciwe ceny</h4>
-                                <p>SageBills i SageMeet są darmowe; SageDocs to prosta subskrypcja $2,99/mies. lub $24,99/rok. Bez dark patterns, bez niespodziewanych aktualizacji, bez „premium" funkcji ukrytych za paywallem.</p>
-                            </div>
-                        </div>
-                        <div class="principle">
-                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">person</span></div>
-                            <div>
-                                <h4>Zbudowane przez jedną osobę, w Rumunii</h4>
-                                <p>Niezależna jednoosobowa operacja z UE. Bez inwestorów, bez zespołu wzrostu, bez metryk zaangażowania &mdash; tylko oprogramowanie wykonane z troską dla ludzi, którzy go używają.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="section-head section-head--split reveal">
+                <div>
+                    <p class="kicker">03 / Zasady</p>
+                    <h2 id="pr-title" class="sec-title">Zasady, <strong>z którymi przychodzi każda aplikacja.</strong></h2>
                 </div>
-                <div class="glass-card data-map reveal">
-                    <div class="data-map__label">Gdzie mieszkają Twoje dane</div>
+                <p>Bez inwestorów, bez zespołu growth, bez wskaźników zaangażowania. Oprogramowanie robione z troską o ludzi, którzy z niego korzystają.</p>
+            </div>
+            <div class="princ">
+                <ol class="rules reveal">
+                    <li><div><h3>Domyślnie local-first</h3><p>Twoje dane żyją na Twoim urządzeniu. Nie mamy serwerów przechowujących Twoje rachunki, spotkania czy dokumenty.</p></div></li>
+                    <li><div><h3>RODO to podłoga, nie sufit</h3><p>Projektowane wokół art. 5, 25 i 32: prywatność w fazie projektowania i domyślnie, bezpieczeństwo w architekturze.</p></div></li>
+                    <li><div><h3>Bez reklam. Bez kont. Bez śledzenia.</h3><p>Bez zewnętrznych SDK, bez analityki, bez identyfikatorów reklamowych, bez telemetrii.</p></div></li>
+                    <li><div><h3>Tylko natywne frameworki Apple</h3><p>SwiftUI, SwiftData, Vision, CloudKit. Szybkie, lekkie i idiomatyczne.</p></div></li>
+                    <li><div><h3>Uczciwe ceny</h3><p>SageBills i SageMeet są darmowe. SageDocs to zwykła subskrypcja. Bez dark patterns.</p></div></li>
+                    <li><div><h3>Tworzone przez jedną osobę w Rumunii</h3><p>Niezależne, jednoosobowe studio w UE, z tożsamością zweryfikowaną przez Apple.</p></div></li>
+                </ol>
+                <aside class="glass-card data-map reveal" aria-label="Gdzie są Twoje dane">
+                    <div class="data-map__label">Gdzie są Twoje dane</div>
                     <div class="data-map__row">
                         <div class="data-map__icon"><span aria-hidden="true" class="material-symbols-outlined">phone_iphone</span></div>
-                        <div class="data-map__text">
-                            <strong>Twój iPhone i Mac</strong>
-                            <span>Magazyn SwiftData, szyfrowany AES-256-GCM</span>
-                        </div>
-                        <span class="chip chip--green">Na urządzeniu</span>
+                        <div class="data-map__text"><strong>Twój iPhone i Mac</strong><span>Zaszyfrowany magazyn lokalny.</span></div>
+                        <span class="chip chip--sage">Na urządzeniu</span>
                     </div>
                     <div class="data-map__link" aria-hidden="true"></div>
                     <div class="data-map__row">
                         <div class="data-map__icon"><span aria-hidden="true" class="material-symbols-outlined">cloud_sync</span></div>
-                        <div class="data-map__text">
-                            <strong>Twój iCloud — opcjonalnie</strong>
-                            <span>Synchronizacja szyfrowana end-to-end, z Twoim Apple ID</span>
-                        </div>
-                        <span class="chip chip--green">Szyfrowane</span>
+                        <div class="data-map__text"><strong>Twój iCloud</strong><span>Zaszyfrowana synchronizacja w Twoim Apple ID.</span></div>
+                        <span class="chip chip--amber">Opcjonalnie</span>
                     </div>
                     <div class="data-map__link" aria-hidden="true"></div>
                     <div class="data-map__row data-map__row--void">
                         <div class="data-map__icon"><span aria-hidden="true" class="material-symbols-outlined">cloud_off</span></div>
-                        <div class="data-map__text">
-                            <strong>Serwery Sagelight</strong>
-                            <span>Nie istnieją. Nie widzimy Twoich danych — nie ma czego wykraść.</span>
-                        </div>
+                        <div class="data-map__text"><strong>Serwery Sagelight</strong><span>Nie istnieją. Nie ma czego włamać. Nie ma kopii.</span></div>
                         <span class="chip">Zero</span>
                     </div>
-                </div>
+                </aside>
             </div>
         </div>
     </section>
 
-    <section class="section--lg">
+    <!-- Legal & support -->
+    <section id="legal" aria-labelledby="lg-title">
         <div class="container">
-            <div class="glass-card cta-block reveal">
-                <div class="eyebrow eyebrow--static" style="margin-bottom: 20px;">Zacznij teraz</div>
-                <h2 class="h-section">Mniej szumu. <span class="italic-em">Więcej sygnału.</span></h2>
-                <p class="text-lead">Wybierz aplikację, która rozwiązuje Twój problem. Albo pobierz wszystkie trzy. Każda usuwa się na bok, dopóki jej nie potrzebujesz.</p>
-                <div class="ctas">
-                    <a href="#apps" class="btn btn--primary btn--xl">Zobacz aplikacje</a>
-                    <a href="mailto:contact@sagelight-studio.com" class="btn btn--ghost btn--xl">Skontaktuj się</a>
+            <div class="legal-hub reveal">
+                <div class="legal-hub__head">
+                    <p class="kicker">04 / Prawne i wsparcie</p>
+                    <h2 id="lg-title">Drobny druk, na widoku.</h2>
+                    <p>Jeden zestaw dokumentów obejmuje SageDocs, SageBills i SageMeet. Na pytania odpowiada osoba, która napisała kod.</p>
                 </div>
+                <ul>
+                    <li><a href="privacy-policy.html"><strong>Polityka Prywatności</strong><small>Co przechowuje każda aplikacja i gdzie</small><span class="arrow" aria-hidden="true">→</span></a></li>
+                    <li><a href="terms.html"><strong>Regulamin</strong><small>Subskrypcje, licencje, Twoje prawa</small><span class="arrow" aria-hidden="true">→</span></a></li>
+                    <li><a href="gdpr.html"><strong>RODO</strong><small>Dane administratora i Twoje żądania</small><span class="arrow" aria-hidden="true">→</span></a></li>
+                    <li><a href="mailto:contact@sagelight-studio.com"><strong>Wsparcie</strong><small>contact@sagelight-studio.com</small><span class="arrow" aria-hidden="true">→</span></a></li>
+                    <li><a href="../press-kit.html"><strong>Materiały prasowe</strong><small>Logo, zrzuty ekranu, fakty</small><span class="arrow" aria-hidden="true">→</span></a></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -404,15 +471,11 @@
     <div class="footer__inner">
         <div class="footer__brand-block">
             <div class="footer__brand">
-                <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round" opacity="0.4"/></svg>
+                <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/></svg>
                 Sagelight <span>Studio</span>
             </div>
-            <p class="footer__tagline">
-                Prywatność przez przejrzystość. Niezależne studio tworzące lokalne aplikacje iOS i macOS w Rumunii, UE.
-            </p>
-            <p class="footer__tagline" style="margin-bottom: 0;">
-                <a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a>
-            </p>
+            <p class="footer__tagline">Prywatność przez przejrzystość. Aplikacje iOS i macOS local-first z Rumunii, UE.</p>
+            <p class="footer__tagline"><a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></p>
         </div>
         <div>
             <div class="footer__col-title">Aplikacje</div>
@@ -441,28 +504,11 @@
         </div>
     </div>
     <div class="footer__bottom">
-        <span>© 2026 Sagelight Studio · Wykonane z troską w Rumunii, UE</span>
-        <span>Prywatność przez przejrzystość</span>
+        <span>© 2026 Sagelight Studio · Zbudowane w Rumunii, UE</span>
+        <span>wysłane do nas: 0 bajtów</span>
     </div>
 </footer>
-
-<script src="../assets/theme.js"></script>
-<script src="../assets/consent.js" defer></script>
-<script>
-    const revealEls = document.querySelectorAll('.reveal');
-    if ('IntersectionObserver' in window) {
-        const io = new IntersectionObserver((entries) => {
-            entries.forEach((entry, i) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => entry.target.classList.add('is-visible'), i * 60);
-                    io.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
-        revealEls.forEach(el => io.observe(el));
-    } else {
-        revealEls.forEach(el => el.classList.add('is-visible'));
-    }
-</script>
+<script src="../assets/theme.js?v=20261013c"></script>
+<script src="../assets/consent.js?v=20261013c" defer></script>
 </body>
 </html>

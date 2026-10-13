@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>(function(){try{var t=localStorage.getItem('sage-theme')||'dark';var r=t==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;document.documentElement.setAttribute('data-theme',r);}catch(e){}})();</script>
     <!-- Google Ads — Consent Mode v2 (default denied; banner will update on opt-in) -->
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -44,7 +43,7 @@
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/sagedocs.png">
     <meta name="apple-itunes-app" content="app-id=6762064711">
     <meta name="application-name" content="SageDocs">
-    <meta name="theme-color" content="#55ee71">
+    <meta name="theme-color" content="#191724">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/sv/sagedocs.html">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/sagedocs.html">
@@ -66,8 +65,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css">
-    <link rel="stylesheet" href="../assets/sage.css">
+    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
 
     <script type="application/ld+json">
     {
@@ -104,200 +103,159 @@
     </script>
 
     <style>
-        .hero-docs { text-align: center; padding-top: calc(var(--nav-height) + 96px); }
-        .hero-docs h1 { margin: 24px auto 28px; max-width: 16ch; }
-        .hero-docs p.lead { max-width: 620px; margin: 0 auto 36px; }
-        .hero-docs .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 64px; }
+        /* SageDocs ("Data Manifest") — page layout; shared components live in sage.css */
+        .hero-docs { text-align: left; padding-bottom: 72px; }
+        .hero-docs h1 { margin: 20px 0 22px; max-width: 18ch; }
+        .hero-docs h1 .italic-em { display: block; }
+        .hero-docs p.lead { max-width: 56ch; margin: 0 0 30px; }
+        .hero-docs .ctas { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 56px; }
 
-        /* Vault interface */
-        .vault {
-            position: relative;
-            padding: 36px;
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 32px;
-        }
-        @media (max-width: 880px) { .vault { grid-template-columns: 1fr; padding: 24px; } }
+        /* Vault mock-up (decorative) */
+        .vault { position: relative; padding: 24px; border-radius: var(--radius-xl); display: grid; grid-template-columns: 1fr; gap: 24px; text-align: left; }
         .vault::before {
-            content: 'enhanced_encryption';
-            font-family: 'Material Symbols Outlined';
-            font-size: 320px;
-            position: absolute;
-            top: -40px; right: -60px;
-            color: var(--green);
-            opacity: 0.04;
-            pointer-events: none;
+            content: 'enhanced_encryption'; font-family: 'Material Symbols Outlined';
+            font-size: 320px; position: absolute; top: -40px; right: -60px;
+            color: var(--amber); opacity: .035; pointer-events: none;
         }
-        .vault::after {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-            background: linear-gradient(90deg, transparent, var(--green), transparent);
-            animation: scan 3.5s linear infinite;
-            pointer-events: none;
+        .vault__scan {
+            position: absolute; top: 0; left: 0; right: 0; height: 2px; pointer-events: none; z-index: 2;
+            background: linear-gradient(90deg, transparent, var(--amber), transparent);
+            animation: vaultscan 4.5s linear infinite;
         }
-        @keyframes scan {
-            0% { transform: translateY(0); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(640px); opacity: 0; }
-        }
-
-        .vault__main { position: relative; z-index: 1; text-align: left; }
-        .vault__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
-        .vault__head h2 { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text); }
-
+        @keyframes vaultscan { 0% { transform: translateY(0); opacity: 0; } 10%, 90% { opacity: 1; } 100% { transform: translateY(420px); opacity: 0; } }
+        .vault__main, .vault__sidebar { position: relative; z-index: 1; min-width: 0; }
+        .vault__head { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; }
+        .vault__head h2 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); }
+        .vault__add { min-height: 36px; padding: 0 14px; font-size: 12.5px; pointer-events: none; }
         .doc-row {
-            display: flex; align-items: center; justify-content: space-between;
-            padding: 16px 20px;
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            border: 0.5px solid var(--card-border);
-            border-radius: var(--radius);
-            margin-bottom: 12px;
-            transition: var(--transition-fast);
-            cursor: pointer;
+            display: flex; align-items: center; justify-content: space-between; gap: 12px;
+            padding: 14px 16px; margin-bottom: 10px;
+            background: var(--ink-2); border: 1px solid var(--line); border-radius: var(--radius);
+            transition: border-color .25s;
         }
-        .doc-row:hover {
-            transform: translateY(-3px);
-            border-color: var(--green-dim);
-            box-shadow: 0 10px 30px -10px var(--green-shadow);
-        }
+        .doc-row:hover { border-color: var(--amber-line); }
         .doc-row__left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+        .doc-row__left > div:last-child { min-width: 0; }
         .doc-row__icon {
-            width: 44px; height: 44px;
-            border-radius: var(--radius-sm);
-            background: var(--bg-surface-3);
-            display: flex; align-items: center; justify-content: center;
-            color: var(--green); font-size: 22px;
-            flex-shrink: 0;
+            width: 42px; height: 42px; flex-shrink: 0; border-radius: var(--radius-sm);
+            background: var(--amber-fade); border: 1px solid var(--amber-line);
+            display: flex; align-items: center; justify-content: center; color: var(--amber); font-size: 21px;
         }
-        .doc-row__name { font-weight: 500; font-size: 15px; color: var(--text); }
-        .doc-row__filename { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-top: 2px; }
-        .doc-row__right { display: flex; align-items: center; gap: 16px; }
+        .doc-row__name { font-weight: 600; font-size: 15px; color: var(--text); }
+        .doc-row__filename { font-family: var(--font-mono); font-size: 12px; color: var(--dim); margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .doc-row__right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
         .doc-row__modified { display: none; flex-direction: column; align-items: flex-end; }
-        @media (min-width: 700px) { .doc-row__modified { display: flex; } }
-        .doc-row__modified .label { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
-        .doc-row__modified .value { font-size: 12px; color: var(--text-secondary); }
-        .doc-row__chip {
-            font-family: var(--font-mono); font-size: 10px; font-weight: 500;
-            padding: 4px 10px; border-radius: 100px;
-            text-transform: uppercase; letter-spacing: 0.5px;
-            white-space: nowrap;
-        }
-        .doc-row__chip--secure { background: rgba(85, 238, 113, 0.1); border: 1px solid rgba(85, 238, 113, 0.3); color: var(--green); }
-        .doc-row__chip--warn { background: rgba(255, 196, 186, 0.08); border: 1px solid rgba(255, 196, 186, 0.3); color: #ffc4ba; }
-        .doc-row .arrow { color: var(--text-dim); transition: transform 0.2s ease; font-size: 22px; }
-        .doc-row:hover .arrow { color: var(--green); transform: translateX(2px); }
+        @media (min-width: 760px) { .doc-row__modified { display: flex; } }
+        .doc-row__modified .label { font-family: var(--font-mono); font-size: 11px; color: var(--dim); text-transform: uppercase; letter-spacing: .08em; }
+        .doc-row__modified .value { font-size: 13px; color: var(--paper-2); }
+        .doc-row__chip { font-family: var(--font-mono); font-size: 11px; font-weight: 500; padding: 4px 10px; border-radius: 999px; letter-spacing: .04em; white-space: nowrap; }
+        .doc-row__chip--secure { background: var(--sage-fade); border: 1px solid var(--sage-line); color: var(--sage); }
+        .doc-row__chip--warn { background: rgba(235, 159, 174, .08); border: 1px dashed rgba(235, 159, 174, .45); color: var(--rose); }
+        .doc-row .arrow { color: var(--dim); font-size: 22px; display: none; }
+        @media (min-width: 560px) { .doc-row .arrow { display: block; } }
+        @media (max-width: 480px) { .doc-row { flex-wrap: wrap; } .doc-row__right { margin-left: 56px; } }
 
-        .vault__sidebar { position: relative; z-index: 1; text-align: left; }
-        .status-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            border: 0.5px solid var(--green-dim);
-            border-radius: var(--radius);
-            padding: 24px;
-        }
-        .status-card__head { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
-        .status-card__head .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse 2s ease-in-out infinite; }
-        .status-card__head .label { font-family: var(--font-mono); font-size: 11px; font-weight: 600; color: var(--green); text-transform: uppercase; letter-spacing: 1.5px; }
-        .status-card__row {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 10px 0;
-            border-bottom: 0.5px solid var(--border);
-            font-size: 13px;
-        }
+        .status-card { background: var(--ink-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; font-family: var(--font-mono); }
+        .status-card__head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+        .status-card__head .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--sage); animation: pulse 2s ease-in-out infinite; }
+        .status-card__head .label { font-size: 11px; font-weight: 600; color: var(--sage); text-transform: uppercase; letter-spacing: .12em; }
+        .status-card__row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }
         .status-card__row:last-child { border-bottom: none; }
-        .status-card__row .k { color: var(--text-dim); }
-        .status-card__row .v { font-family: var(--font-mono); color: var(--text); }
-        .status-card__row .v--green { color: var(--green); }
+        .status-card__row .k { color: var(--dim); }
+        .status-card__row .v { color: var(--text); text-align: right; }
+        .status-card__row .v--green { color: var(--sage); font-weight: 700; }
 
-        /* Security Specs */
-        .specs-section { background: var(--bg-surface); padding: 120px 0; }
-        @media (max-width: 700px) { .specs-section { padding: 72px 0; } }
-        .specs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-        @media (max-width: 880px) { .specs-grid { grid-template-columns: 1fr; gap: 48px; } }
-        .specs-list { display: flex; flex-direction: column; gap: 32px; margin-top: 36px; }
-        .spec { display: flex; gap: 20px; }
-        .spec__icon {
-            flex-shrink: 0;
-            width: 48px; height: 48px;
-            border-radius: var(--radius);
-            background: var(--bg-surface-2); border: 0.5px solid var(--green-dim);
-            display: flex; align-items: center; justify-content: center;
-            color: var(--green); font-size: 24px;
-        }
-        .spec h4 { font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
-        .spec p { color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
-        .spec .mono-spec {
-            font-family: var(--font-mono); font-size: 11px;
-            color: var(--green); text-transform: uppercase; letter-spacing: 1px;
-            margin-top: 8px;
-        }
-        .spec .mono-spec span.dim { color: var(--text-dim); }
+        /* Manifest */
+        .docs-manifest { display: grid; gap: 28px; }
+        .docs-manifest .flag { display: block; font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--amber); margin-bottom: 12px; }
+        .docs-manifest__top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 6px; }
+        .docs-manifest h3 { font-family: var(--font-display); font-size: clamp(32px, 6vw, 56px); line-height: 1; font-weight: 800; font-stretch: 112.5%; letter-spacing: -.05em; }
+        .docs-manifest h3 span { font-weight: 100; font-stretch: 75%; color: var(--dim); }
+        .docs-manifest__tag { margin: 12px 0 24px; color: var(--paper-2); max-width: 46ch; }
+        .docs-manifest__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+        .docs-manifest .spec { margin: 0; }
+        .sec-title { font-family: var(--font-display); font-size: clamp(30px, 6vw, 60px); line-height: 1.02; letter-spacing: -.04em; font-weight: 200; font-stretch: 75%; }
+        .sec-title strong { font-weight: 800; font-stretch: 112.5%; color: var(--paper); }
 
-        .spec-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-        .spec-tile {
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            border: 0.5px solid var(--card-border);
-            border-radius: var(--radius);
-            padding: 28px 16px;
-            text-align: center;
-            transition: var(--transition-fast);
+        /* Security model */
+        .specs-section { background: linear-gradient(180deg, transparent, rgba(31, 29, 46, .6) 40%, transparent); }
+        .specs-grid { display: grid; grid-template-columns: 1fr; gap: 48px; }
+        .crypto-list { display: flex; flex-direction: column; margin-top: 32px; border-top: 1px solid var(--line); }
+        .crypto { display: flex; gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+        .crypto__icon {
+            flex-shrink: 0; width: 46px; height: 46px; border-radius: var(--radius);
+            background: var(--amber-fade); border: 1px solid var(--amber-line);
+            display: flex; align-items: center; justify-content: center; color: var(--amber); font-size: 22px;
         }
-        .spec-tile:hover { border-color: var(--green-dim); transform: translateY(-2px); }
-        .spec-tile .material-symbols-outlined { color: var(--green); font-size: 32px; margin-bottom: 12px; }
-        .spec-tile .label { font-family: var(--font-mono); font-size: 12px; color: var(--text); }
+        .crypto h4 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .crypto p { color: var(--paper-2); font-size: 16px; line-height: 1.6; }
+        .crypto .mono-spec { font-family: var(--font-mono); font-size: 12px; color: var(--sage); text-transform: uppercase; letter-spacing: .06em; margin-top: 10px; }
+        .crypto .mono-spec span.dim { color: var(--dim); }
+        .docs-map { position: relative; }
+        .docs-map__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; padding-top: 18px; border-top: 1px dashed var(--line); }
+        .docs-map__tags .chip .material-symbols-outlined { font-size: 15px; }
 
-        /* Defense in Depth */
-        .layers {
-            display: flex; justify-content: center; flex-wrap: wrap;
-            gap: 32px;
+        /* Defense in depth */
+        .layers { display: grid; grid-template-columns: 1fr; gap: 16px; counter-reset: layer; }
+        .layer {
+            counter-increment: layer; position: relative; text-align: left;
+            border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 24px 22px;
+            background: var(--card-bg); transition: border-color .3s;
         }
-        .layer { text-align: center; max-width: 200px; }
+        .layer:hover { border-color: var(--amber-line); }
+        .layer::before {
+            content: "L" counter(layer, decimal-leading-zero);
+            position: absolute; top: 20px; right: 22px;
+            font-family: var(--font-mono); font-weight: 100; font-size: 26px; color: var(--amber); line-height: 1;
+        }
         .layer__circle {
-            width: 96px; height: 96px;
-            margin: 0 auto 16px;
-            border-radius: 50%;
-            background: var(--green-glow);
-            border: 2px solid var(--green-dim);
-            display: flex; align-items: center; justify-content: center;
-            color: var(--green); font-size: 36px;
-            transition: var(--transition);
+            width: 46px; height: 46px; margin: 0 0 18px; border-radius: var(--radius);
+            background: var(--sage-fade); border: 1px solid var(--sage-line);
+            display: flex; align-items: center; justify-content: center; color: var(--sage); font-size: 22px;
         }
-        .layer:hover .layer__circle {
-            background: var(--green-fade);
-            border-color: var(--green);
-            transform: scale(1.05);
-            box-shadow: 0 0 30px var(--green-shadow);
-        }
-        .layer h5 { font-family: var(--font-display); font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
-        .layer p { font-size: 13px; color: var(--text-dim); line-height: 1.5; }
+        .layer h5 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .layer p { font-size: 16px; color: var(--paper-2); line-height: 1.55; }
 
         /* FAQ */
-        .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
-        .faq { border: 0.5px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: var(--transition-fast); background: var(--bg-surface); }
-        .faq[open] { border-color: var(--green-dim); }
-        .faq summary { padding: 18px 24px; cursor: pointer; font-weight: 500; font-size: 16px; color: var(--text); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .faq-list { max-width: 820px; display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+        .faq { border-bottom: 1px solid var(--line); }
+        .faq summary {
+            min-height: 60px; padding: 16px 0; cursor: pointer; list-style: none;
+            display: flex; justify-content: space-between; align-items: center; gap: 16px;
+            font-family: var(--font-mono); font-weight: 600; font-size: 15.5px; letter-spacing: -.02em; color: var(--text);
+            transition: color .2s;
+        }
+        .faq summary:hover { color: var(--amber); }
         .faq summary::-webkit-details-marker { display: none; }
-        .faq summary::after { content: 'add'; font-family: 'Material Symbols Outlined'; color: var(--text-dim); font-size: 22px; }
-        .faq[open] summary::after { content: 'remove'; color: var(--green); }
-        .faq__body { padding: 0 24px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.7; }
+        .faq summary::after { content: '+'; font-family: var(--font-mono); font-weight: 200; font-size: 26px; color: var(--amber); transition: transform .3s var(--ease); flex-shrink: 0; }
+        .faq[open] summary::after { transform: rotate(45deg); }
+        .faq__body { padding: 0 0 22px; color: var(--paper-2); font-size: 17px; line-height: 1.7; max-width: 68ch; }
+        .faq__body strong { color: var(--text); }
 
         /* Final CTA */
-        .final-cta { padding: 96px 56px; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); text-align: center; }
-        .final-cta h2 { margin-bottom: 16px; }
-        .final-cta p { max-width: 520px; margin: 0 auto 36px; }
-        .final-cta .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-        @media (max-width: 700px) { .final-cta { padding: 64px 20px; } }
+        .final-cta { padding: 56px 24px; text-align: left; border-radius: var(--radius-xl); }
+        .final-cta::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(40rem 20rem at 0% 0%, var(--amber-fade), transparent 60%); }
+        .final-cta > * { position: relative; z-index: 1; }
+        .final-cta h2 { margin-bottom: 16px; max-width: 20ch; }
+        .final-cta p { max-width: 52ch; margin: 0 0 32px; }
+        .final-cta .ctas { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+
+        @media (min-width: 640px) { .layers { grid-template-columns: 1fr 1fr; } }
+        @media (min-width: 960px) {
+            .vault { grid-template-columns: 2fr 1fr; padding: 32px; gap: 28px; }
+            .docs-manifest { grid-template-columns: 5fr 6fr; gap: 0 48px; padding: 40px; }
+            .docs-manifest__intro { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; }
+            .specs-grid { grid-template-columns: 7fr 5fr; gap: 72px; align-items: start; }
+            .docs-map { position: sticky; top: 96px; }
+            .layers { grid-template-columns: repeat(4, 1fr); }
+            .final-cta { padding: 80px 56px; }
+        }
+        @media (prefers-reduced-motion: reduce) { .vault__scan { display: none; } }
     </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Hoppa till innehållet</a>
 
-<div class="bg-grid" aria-hidden="true"></div>
-<div class="glow-orb glow-orb--1" aria-hidden="true"></div>
-<div class="glow-orb glow-orb--2" aria-hidden="true"></div>
 
 <nav class="nav" role="navigation" aria-label="Huvudnavigering">
     <div class="nav__inner">
@@ -313,17 +271,12 @@
             <li><a href="../press-kit.html" class="nav__tab">Press</a></li>
         </ul>
         <div class="nav__actions">
-            <button class="nav__icon-btn" id="themeToggle" onclick="cycleTheme()" aria-label="Byt tema" title="Byt tema">
-                <span id="themeIcon" aria-hidden="true">☾</span>
-            </button>
-            <button class="nav__icon-btn mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Öppna menyn" aria-expanded="false">
-                <span aria-hidden="true" class="material-symbols-outlined">menu</span>
-            </button>
+            <button type="button" class="nav__icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-controls="navTabs" onclick="toggleMobileMenu()" aria-label="Öppna menyn" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h10"/></svg></button>
         </div>
     </div>
 </nav>
 
-<main>
+<main id="main">
     <section class="hero hero-docs">
         <div class="container">
             <div class="hero__inner">
@@ -336,18 +289,20 @@
                     Det digitala valvet för dina känsligaste uppgifter &mdash; id-handlingar, avtal, försäkringar, journaler. Krypterat med AES-256-GCM på din enhet. Kan bara återställas av dig.
                 </p>
                 <div class="ctas fade-up d4">
-                    <a href="https://apps.apple.com/se/app/sagedocs/id6762064711" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');" class="app-store-badge-link" aria-label="Ladda ner SageDocs från App Store"><img src="../assets/badges/app-store-badge.svg" alt="Ladda ner från App Store" width="200" height="60" loading="lazy"></a>
+                    <a href="https://apps.apple.com/se/app/sagedocs/id6762064711" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');" class="app-store-badge-link" aria-label="Ladda ner SageDocs från App Store"><img src="../assets/badges/app-store-badge.svg" alt="Ladda ner från App Store" width="200" height="60" loading="lazy"></a>
                     <a href="#security" class="btn btn--ghost btn--lg">Läs om säkerhetsmodellen</a>
                 </div>
 
-                <div class="glass-card vault fade-up d5">
+                <div class="fade-up d5"><div class="tilt" data-tilt>
+                <div class="glass-card vault" aria-hidden="true">
+                    <span class="vault__scan"></span>
                     <div class="vault__main">
                         <div class="vault__head">
                             <h2>Säkra dokument</h2>
-                            <button class="btn btn--primary" style="padding: 8px 16px; font-size: 13px;">
-                                <span aria-hidden="true" class="material-symbols-outlined icon" style="font-size: 18px;">add</span>
+                            <span class="btn btn--primary vault__add">
+                                <span aria-hidden="true" class="material-symbols-outlined icon">add</span>
                                 Lägg till
-                            </button>
+                            </span>
                         </div>
                         <article class="doc-row">
                             <div class="doc-row__left">
@@ -415,11 +370,50 @@
                         </div>
                     </aside>
                 </div>
+                </div></div>
             </div>
         </div>
     </section>
 
-    <!-- Security Specs -->
+    <!-- Manifest -->
+    <section id="manifest" aria-labelledby="manifest-title">
+        <div class="container">
+            <div class="section-head section-head--split reveal">
+                <div>
+                    <p class="kicker">01 / Datablad</p>
+                    <h2 id="manifest-title" class="sec-title">Vad den sparar. <strong>Vad som lämnar den.</strong></h2>
+                </div>
+                <p>Varje Sagelight-app ger samma löfte, så vi skriver ut det som ett datablad.</p>
+            </div>
+            <article class="manifest card--flag docs-manifest reveal">
+                <div class="docs-manifest__intro">
+                    <div>
+                        <span class="flag">Flaggskepp</span>
+                        <div class="docs-manifest__top">
+                            <h3>Sage<span>Docs</span></h3>
+                            <span class="chip chip--sage"><span class="dot" aria-hidden="true"></span> På App Store</span>
+                        </div>
+                        <p class="docs-manifest__tag">Ett krypterat valv för id-handlingar, avtal, försäkringar och journaler. Bara du kan återställa det. Vi kan inte läsa det – så är det byggt.</p>
+                    </div>
+                    <div class="docs-manifest__actions">
+                        <a href="https://apps.apple.com/se/app/sagedocs/id6762064711" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');" class="app-store-badge-link app-store-badge-link--sm" aria-label="Ladda ner SageDocs från App Store"><img src="../assets/badges/app-store-badge.svg" alt="Ladda ner från App Store" width="200" height="60" ></a>
+                    </div>
+                </div>
+                <dl class="spec">
+                        <div><dt>Sparar</dt><dd>Dokument, skanningar, utgångsdatum</dd></div>
+                        <div><dt>Var</dt><dd>På din enhet, AES-256-GCM</dd></div>
+                        <div><dt>Upplåsning</dt><dd>Face ID / Touch ID + huvud-PIN</dd></div>
+                        <div><dt>Nycklar</dt><dd>PBKDF2-SHA256 · 600 000 iterationer</dd></div>
+                        <div><dt>Synk</dt><dd>Din iCloud, krypterad (valfritt)</dd></div>
+                        <div><dt>Lämnar enheten</dt><dd class="zero">0 byte till Sagelight</dd></div>
+                        <div><dt>Plattformar</dt><dd>iOS 17+ · iPadOS 17+ · macOS 14+</dd></div>
+                        <div><dt>Pris</dt><dd>2,99 $/månad eller 24,99 $/år</dd></div>
+                </dl>
+            </article>
+        </div>
+    </section>
+
+    <!-- Security model -->
     <section id="security" class="specs-section">
         <div class="container">
             <div class="specs-grid">
@@ -428,25 +422,25 @@
                     <h2 class="h-section" style="margin-top: 16px;">
                         Säkerhet utan <span class="italic-em">kompromisser</span>.
                     </h2>
-                    <div class="specs-list">
-                        <div class="spec">
-                            <div class="spec__icon"><span aria-hidden="true" class="material-symbols-outlined fill">key</span></div>
+                    <div class="crypto-list">
+                        <div class="crypto">
+                            <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">key</span></div>
                             <div>
                                 <h4>Autentiserad kryptering med AES-256-GCM</h4>
                                 <p>Varje bilaga krypteras med AES-256-GCM &mdash; samma chiffer som används för hemligstämplade uppgifter på högsta nivå. Varje fil får sitt eget nonce och sin egen integritetstagg.</p>
                                 <div class="mono-spec"><span class="dim">Spec:</span> 256-BITARS SYMMETRISK NYCKEL · GCM-LÄGE</div>
                             </div>
                         </div>
-                        <div class="spec">
-                            <div class="spec__icon"><span aria-hidden="true" class="material-symbols-outlined fill">vibration</span></div>
+                        <div class="crypto">
+                            <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">vibration</span></div>
                             <div>
                                 <h4>Nyckelhärledning med PBKDF2-SHA256</h4>
                                 <p>Din huvud-PIN sträcks i 600 000 iterationer med ett 256-bitars salt per installation. Brute force-attacker är matematiskt opraktiska med all datorkraft som finns i dag.</p>
                                 <div class="mono-spec"><span class="dim">Spec:</span> 600 000 ITERATIONER · HMAC-SHA256</div>
                             </div>
                         </div>
-                        <div class="spec">
-                            <div class="spec__icon"><span aria-hidden="true" class="material-symbols-outlined fill">fingerprint</span></div>
+                        <div class="crypto">
+                            <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">fingerprint</span></div>
                             <div>
                                 <h4>Nyckelring + biometriskt skydd</h4>
                                 <p>Krypteringsnycklarna förvaras i iOS-nyckelringen, skyddade av Face ID, Touch ID eller din huvud-PIN. De förekommer aldrig i klartext utanför Secure Enclave.</p>
@@ -455,12 +449,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="spec-tiles reveal">
-                    <div class="spec-tile"><span aria-hidden="true" class="material-symbols-outlined fill">shield_lock</span><div class="label">Integritet först</div></div>
-                    <div class="spec-tile"><span aria-hidden="true" class="material-symbols-outlined fill">memory</span><div class="label">Secure Enclave</div></div>
-                    <div class="spec-tile"><span aria-hidden="true" class="material-symbols-outlined fill">cloud_off</span><div class="label">Noll kännedom</div></div>
-                    <div class="spec-tile"><span aria-hidden="true" class="material-symbols-outlined fill">fingerprint</span><div class="label">Biometrisk koppling</div></div>
-                </div>
+                <aside class="glass-card data-map docs-map reveal" aria-label="Var dina dokument finns">
+                    <div class="data-map__label">Var dina dokument finns</div>
+                    <div class="data-map__row">
+                        <div class="data-map__icon"><span aria-hidden="true" class="material-symbols-outlined">phone_iphone</span></div>
+                        <div class="data-map__text"><strong>Din iPhone, iPad och Mac</strong><span>Krypterade med AES-256-GCM. Nycklar i nyckelringen.</span></div>
+                        <span class="chip chip--sage">På enheten</span>
+                    </div>
+                    <div class="data-map__link" aria-hidden="true"></div>
+                    <div class="data-map__row">
+                        <div class="data-map__icon"><span aria-hidden="true" class="material-symbols-outlined">cloud_sync</span></div>
+                        <div class="data-map__text"><strong>Din iCloud (valfritt)</strong><span>Endast chiffertext. Apple kan inte dekryptera den.</span></div>
+                        <span class="chip chip--amber">Krypterad</span>
+                    </div>
+                    <div class="data-map__link" aria-hidden="true"></div>
+                    <div class="data-map__row data-map__row--void">
+                        <div class="data-map__icon"><span aria-hidden="true" class="material-symbols-outlined">cloud_off</span></div>
+                        <div class="data-map__text"><strong>Sagelight-servrar</strong><span>Inga. Dina dokument når aldrig oss.</span></div>
+                        <span class="chip ">Noll</span>
+                    </div>
+                    <div class="docs-map__tags">
+                        <span class="chip"><span aria-hidden="true" class="material-symbols-outlined">shield_lock</span>Integritet först</span>
+                        <span class="chip"><span aria-hidden="true" class="material-symbols-outlined">memory</span>Secure Enclave</span>
+                        <span class="chip"><span aria-hidden="true" class="material-symbols-outlined">cloud_off</span>Noll kännedom</span>
+                        <span class="chip"><span aria-hidden="true" class="material-symbols-outlined">fingerprint</span>Biometrisk koppling</span>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
@@ -506,32 +520,32 @@
                 <p>SageDocs tar hand om hela livscykeln för dina viktiga dokument &mdash; inte bara var de förvaras.</p>
             </div>
             <div class="bento">
-                <div class="solid-card col-4" style="padding: 36px;">
+                <div class="solid-card col-4 reveal" style="padding: 36px;">
                     <div class="card-icon"><span aria-hidden="true" class="material-symbols-outlined">event</span></div>
                     <h3 class="h-card" style="margin-bottom: 8px;">Koll på utgångsdatum</h3>
                     <p style="color: var(--text-secondary); font-size: 15px;">Få en påminnelse innan ditt pass, id-kort, din försäkring eller fordonsregistrering går ut. Påminnelserna körs på din enhet.</p>
                 </div>
-                <div class="solid-card col-4" style="padding: 36px;">
+                <div class="solid-card col-4 reveal" style="padding: 36px;">
                     <div class="card-icon"><span aria-hidden="true" class="material-symbols-outlined">cloud_sync</span></div>
                     <h3 class="h-card" style="margin-bottom: 8px;">Krypterad iCloud-synk</h3>
                     <p style="color: var(--text-secondary); font-size: 15px;">Valfri synk till iPhone, iPad och Mac. Krypteras på enheten och lämnas sedan över till Apple som chiffertext.</p>
                 </div>
-                <div class="solid-card col-4" style="padding: 36px;">
+                <div class="solid-card col-4 reveal" style="padding: 36px;">
                     <div class="card-icon"><span aria-hidden="true" class="material-symbols-outlined">share</span></div>
                     <h3 class="h-card" style="margin-bottom: 8px;">Selektiv delning</h3>
                     <p style="color: var(--text-secondary); font-size: 15px;">Dekryptera och dela bara det dokument du väljer. Tillfälliga filer raderas säkert efter delningen.</p>
                 </div>
-                <div class="solid-card col-4" style="padding: 36px;">
+                <div class="solid-card col-4 reveal" style="padding: 36px;">
                     <div class="card-icon"><span aria-hidden="true" class="material-symbols-outlined">phone_iphone</span></div>
                     <h3 class="h-card" style="margin-bottom: 8px;">iPhone, iPad, Mac</h3>
                     <p style="color: var(--text-secondary); font-size: 15px;">Universell app som körs inbyggt på alla dina Apple-enheter. iOS 17+ och macOS 14+.</p>
                 </div>
-                <div class="solid-card col-4" style="padding: 36px;">
+                <div class="solid-card col-4 reveal" style="padding: 36px;">
                     <div class="card-icon"><span aria-hidden="true" class="material-symbols-outlined">ios_share</span></div>
                     <h3 class="h-card" style="margin-bottom: 8px;">Krypterad export</h3>
                     <p style="color: var(--text-secondary); font-size: 15px;">Ta med dig dina data. Exportera allt som ett krypterat paket &mdash; flyttbart, återställbart och ditt.</p>
                 </div>
-                <div class="solid-card col-4" style="padding: 36px;">
+                <div class="solid-card col-4 reveal" style="padding: 36px;">
                     <div class="card-icon"><span aria-hidden="true" class="material-symbols-outlined">delete_forever</span></div>
                     <h3 class="h-card" style="margin-bottom: 8px;">Radering som standard</h3>
                     <p style="color: var(--text-secondary); font-size: 15px;">Radera ett dokument så raderas chiffertexten. Ingen mjuk radering, inga skuggkopior, inget återställningsvalv.</p>
@@ -579,11 +593,11 @@
     <!-- Final CTA -->
     <section>
         <div class="container">
-            <div class="final-cta reveal">
+            <div class="glass-card final-cta reveal">
                 <h2 class="h-section">Suverän lagring för dina <span class="italic-em">känsligaste</span> dokument.</h2>
                 <p class="text-lead">2,99 $/månad eller 24,99 $/år på App Store. Krypterat från grunden. Kan bara återställas av dig.</p>
                 <div class="ctas">
-                    <a href="https://apps.apple.com/se/app/sagedocs/id6762064711" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');" class="app-store-badge-link" aria-label="Ladda ner SageDocs från App Store"><img src="../assets/badges/app-store-badge.svg" alt="Ladda ner från App Store" width="200" height="60" loading="lazy"></a>
+                    <a href="https://apps.apple.com/se/app/sagedocs/id6762064711" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');" class="app-store-badge-link" aria-label="Ladda ner SageDocs från App Store"><img src="../assets/badges/app-store-badge.svg" alt="Ladda ner från App Store" width="200" height="60" loading="lazy"></a>
                     <a href="privacy-policy.html" class="btn btn--ghost btn--xl">Läs integritetspolicyn</a>
                 </div>
             </div>
@@ -633,23 +647,7 @@
     </div>
 </footer>
 
-<script src="../assets/theme.js"></script>
-<script src="../assets/consent.js" defer></script>
-<script>
-    const revealEls = document.querySelectorAll('.reveal');
-    if ('IntersectionObserver' in window) {
-        const io = new IntersectionObserver((entries) => {
-            entries.forEach((entry, i) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => entry.target.classList.add('is-visible'), i * 50);
-                    io.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-        revealEls.forEach(el => io.observe(el));
-    } else {
-        revealEls.forEach(el => el.classList.add('is-visible'));
-    }
-</script>
+<script src="../assets/theme.js?v=20261013c"></script>
+<script src="../assets/consent.js?v=20261013c" defer></script>
 </body>
 </html>

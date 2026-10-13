@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>(function(){try{var t=localStorage.getItem('sage-theme')||'dark';var r=t==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;document.documentElement.setAttribute('data-theme',r);}catch(e){}})();</script>
     <!-- Google Ads — Consent Mode v2 -->
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -35,7 +34,7 @@
     <meta name="twitter:title" content="Hidden Costs in Romanian Intretinere Fees">
     <meta name="twitter:description" content="What is legally mandatory, what is add-on, and how to audit your statement.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/blog-building-maintenance-fees-romania.png">
-    <meta name="theme-color" content="#55ee71">
+    <meta name="theme-color" content="#191724">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/blog/building-maintenance-fees-romania.html">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/building-maintenance-fees-romania.html">
@@ -46,8 +45,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css">
-    <link rel="stylesheet" href="../assets/sage.css">
+    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
 
     <script type="application/ld+json">
     {
@@ -75,58 +74,101 @@
     </script>
 
     <style>
-        .article-page { padding-top: calc(var(--nav-height) + 80px); padding-bottom: 80px; }
-        .article-page__container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-        .article-page__breadcrumb { font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 16px; }
-        .article-page__breadcrumb a { color: var(--green); text-decoration: none; }
-        .article-page__meta-row { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-dim); }
-        .article-page__category { display: inline-block; padding: 4px 10px; background: var(--green-fade); color: var(--green); border-radius: 999px; font-weight: 600; }
-        .article-page__dot { width: 4px; height: 4px; border-radius: 50%; background: var(--text-dim); display: inline-block; }
-        .article-page h1 { font-family: var(--font-display); font-size: clamp(28px, 5vw, 44px); font-weight: 700; line-height: 1.15; margin: 0 0 24px; letter-spacing: -0.02em; color: var(--text); }
-        .article-page__body { font-size: 17px; line-height: 1.7; color: var(--text-secondary); }
+        /* Blog article ("Data Manifest") */
+        .article-page { padding-top: calc(var(--nav-height) + 48px); padding-bottom: 72px; }
+        .article-page__container { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+        .article-page__breadcrumb { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--dim); margin-bottom: 20px; }
+        .article-page__breadcrumb a { color: var(--paper-2); display: inline-flex; align-items: center; min-height: 44px; }
+        .article-page__breadcrumb a:hover { color: var(--amber); }
+        .article-page__meta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 22px; font-family: var(--font-mono); font-size: 12px; letter-spacing: .04em; color: var(--dim); }
+        .article-page__category { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--amber-line); background: var(--amber-fade); color: var(--amber); font-weight: 500; }
+        .article-page__dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line); display: inline-block; }
+        .article-page h1 { font-family: var(--font-display); font-size: clamp(30px, 5.6vw, 54px); font-weight: 800; font-stretch: 112.5%; line-height: 1.05; letter-spacing: -.05em; margin: 0 0 32px; color: var(--paper); }
+        .article-page__body { font-size: 18px; line-height: 1.75; color: var(--paper-2); }
+        .article-page__body > * { max-width: 68ch; }
         .article-page__body p { margin: 0 0 22px; }
-        .article-page__body h2 { font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--text); margin: 40px 0 16px; letter-spacing: -0.01em; }
-        .article-page__body strong { color: var(--text); font-weight: 600; }
-        .article-page__footer { margin-top: 48px; padding-top: 32px; border-top: 0.5px solid var(--border); }
-        .article-page__back { display: inline-flex; align-items: center; gap: 8px; color: var(--green); text-decoration: none; font-weight: 600; }
-        .article-page__back:hover { gap: 12px; transition: gap 0.2s; }
-        .article-page__author { margin-top: 40px; padding: 18px 20px; background: var(--bg-surface-2); border-radius: var(--radius); font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
-        .article-page__author a { color: var(--green); text-decoration: none; }
-        .related { margin-top: 48px; padding-top: 32px; border-top: 0.5px solid var(--border); }
-        .related__title { font-family: var(--font-display); font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); margin: 0 0 20px; }
-        .related__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-        @media (max-width: 600px) { .related__grid { grid-template-columns: 1fr; } }
-        .related__card { display: block; padding: 18px; border: 0.5px solid var(--border); border-radius: var(--radius); background: var(--bg-surface); color: var(--text); text-decoration: none; transition: var(--transition-fast); }
-        .related__card:hover { border-color: var(--green-dim); }
-        .related__card-cat { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--green); }
-        .related__card-title { display: block; margin-top: 8px; font-size: 15px; font-weight: 600; line-height: 1.4; }
+        .article-page__body > p:first-child { font-size: 19px; color: var(--paper); }
+        .article-page__body h2 { font-family: var(--font-display); font-size: clamp(21px, 3vw, 26px); font-weight: 700; letter-spacing: -.035em; line-height: 1.2; color: var(--paper); margin: 48px 0 16px; padding-top: 18px; border-top: 1px dashed var(--line); }
+        .article-page__body h3 { font-family: var(--font-display); font-size: 18px; font-weight: 700; letter-spacing: -.02em; color: var(--paper); margin: 32px 0 12px; }
+        .article-page__body strong { color: var(--paper); font-weight: 600; }
+        .article-page__body em { font-style: italic; }
+        .article-page__body a { color: var(--amber); text-decoration: underline; text-decoration-color: var(--amber-line); text-underline-offset: 3px; }
+        .article-page__body a:hover { text-decoration-color: var(--amber); }
+        .article-page__body ul, .article-page__body ol { margin: 0 0 24px; padding-left: 1.4em; }
+        .article-page__body li { margin-bottom: 10px; padding-left: 4px; }
+        .article-page__body ul li::marker { color: var(--amber); content: "▸  "; }
+        .article-page__body ol li::marker { color: var(--amber); font-family: var(--font-mono); font-size: .85em; }
+        .article-page__body blockquote { margin: 32px 0; padding: 4px 0 4px 22px; border-left: 3px solid var(--amber); font-family: var(--font-display); font-weight: 200; font-stretch: 87.5%; font-size: 21px; line-height: 1.45; letter-spacing: -.02em; color: var(--paper); }
+        .article-page__body code { font-family: var(--font-mono); font-size: .85em; background: var(--ink-3); border: 1px solid var(--line); padding: 2px 6px; border-radius: 5px; color: var(--paper); }
+        .article-page__body table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 16px; display: block; overflow-x: auto; }
+        .article-page__body th { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--dim); text-align: left; padding: 10px 12px; border-bottom: 1px dashed var(--line); }
+        .article-page__body td { padding: 12px; border-bottom: 1px solid var(--line-soft); }
+        .article-page__body .callout { background: var(--card-bg); border: 1px solid var(--line); border-left: 3px solid var(--amber); border-radius: 12px; padding: 20px 22px; margin: 32px 0; }
+        .article-page__body .callout p { margin: 0; color: var(--paper); }
+        .article-page__body .stat-row { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 32px 0; max-width: none; }
+        .article-page__body .stat-box { background: var(--card-bg); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+        .article-page__body .stat-num { display: block; font-family: var(--font-display); font-size: 32px; font-weight: 800; font-stretch: 112.5%; letter-spacing: -.05em; color: var(--amber); margin-bottom: 4px; }
+        .article-page__body .stat-label { display: block; font-family: var(--font-mono); font-size: 12px; letter-spacing: .04em; color: var(--paper-2); line-height: 1.5; }
+        @media (min-width: 640px) { .article-page__body .stat-row { grid-template-columns: repeat(3, 1fr); } }
+
+        .post-cta { margin: 48px 0 0; }
+        .post-cta .kicker { margin-bottom: 10px; }
+        .post-cta__apps { display: grid; gap: 28px; }
+        .post-cta__title { font-family: var(--font-display); font-size: clamp(28px, 5vw, 40px); font-weight: 800; font-stretch: 112.5%; letter-spacing: -.05em; line-height: 1; margin: 0 0 10px; color: var(--paper); }
+        .post-cta__title span { font-weight: 100; font-stretch: 75%; color: var(--dim); }
+        .post-cta__tag { color: var(--paper-2); margin: 0 0 18px; max-width: 52ch; }
+        .post-cta .spec { margin-bottom: 20px; }
+        .post-cta__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+        .post-cta__actions .textlink { display: inline-flex; align-items: center; min-height: 44px; font-family: var(--font-mono); font-size: 13px; color: var(--paper); }
+        .post-cta__actions .textlink:hover { color: var(--amber); }
+        @media (min-width: 720px) { .post-cta__apps--two { grid-template-columns: 1fr 1fr; } }
+
+        .post-nav { margin-top: 48px; display: grid; gap: 12px; }
+        .post-nav a { display: grid; gap: 6px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--card-bg); color: var(--paper); transition: border-color .2s; }
+        .post-nav a:hover { border-color: var(--amber-line); color: var(--paper); }
+        .post-nav small { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--amber); }
+        .post-nav span { font-weight: 600; line-height: 1.4; }
+        .post-nav .next { text-align: right; }
+        @media (min-width: 640px) { .post-nav { grid-template-columns: 1fr 1fr; } .post-nav .next { grid-column: 2; } }
+
+        .related { margin-top: 48px; padding-top: 28px; border-top: 1px dashed var(--line); }
+        .related__title { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); margin: 0 0 18px; }
+        .related__grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+        @media (min-width: 640px) { .related__grid { grid-template-columns: repeat(3, 1fr); } }
+        .related__card { display: block; padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--card-bg); color: var(--paper); transition: border-color .2s; }
+        .related__card:hover { border-color: var(--amber-line); color: var(--paper); }
+        .related__card-cat { font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--amber); }
+        .related__card-title { display: block; margin-top: 8px; font-size: 16px; font-weight: 600; line-height: 1.4; }
+
+        .article-page__footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+        .article-page__back { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-family: var(--font-mono); font-size: 14px; color: var(--amber); }
+        .article-page__back:hover { gap: 12px; }
+        @media (prefers-reduced-motion: reduce) { .article-page__back:hover { gap: 8px; } }
     </style>
 </head>
 <body>
-<div class="bg-grid" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<nav class="nav" role="navigation" aria-label="Main navigation">
+<nav class="nav" aria-label="Main navigation">
     <div class="nav__inner">
-        <a href="../index.html" class="nav__logo">
-            <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round" opacity="0.4"/></svg>
+        <a href="../index.html" class="nav__logo" aria-label="Sagelight Studio home">
+            <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/></svg>
             Sagelight <span>Studio</span>
         </a>
-        <ul class="nav__tabs" id="navTabs" role="list">
+        <ul class="nav__tabs" id="navTabs">
+            <li><a href="../sagedocs.html" class="nav__tab">SageDocs</a></li>
             <li><a href="../sagebills.html" class="nav__tab">SageBills</a></li>
             <li><a href="../sagemeet.html" class="nav__tab">SageMeet</a></li>
-            <li><a href="../sagedocs.html" class="nav__tab">SageDocs</a></li>
             <li><a href="../blog.html" class="nav__tab nav__tab--active" aria-current="page">Blog</a></li>
             <li><a href="../press-kit.html" class="nav__tab">Press</a></li>
         </ul>
         <div class="nav__actions">
-            <button class="nav__icon-btn" id="themeToggle" onclick="cycleTheme()" aria-label="Toggle theme" title="Toggle theme">
-                <span id="themeIcon" aria-hidden="true">☾</span>
-            </button>
+            <button class="nav__icon-btn mobile-menu-btn" id="mobileMenuBtn" type="button" onclick="toggleMobileMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="navTabs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h10"/></svg></button>
         </div>
     </div>
 </nav>
 
-<main>
+<main id="main">
     <article class="article-page">
         <div class="article-page__container">
             <nav class="article-page__breadcrumb" aria-label="Breadcrumb">
@@ -153,7 +195,7 @@
                 <p><strong>Inflated lift maintenance:</strong> Lift maintenance contracts in Romania typically cost RON 200&ndash;500/month for a standard residential lift. If your block has one lift and the invoice allocates RON 800+, request the contract and verify.</p>
                 <p><strong>Repair fund without a vote:</strong> Contributions to the repair fund must be approved by an owners&rsquo; association meeting. If you are paying into a repair fund but have never been invited to an association meeting, that is a procedural violation.</p>
                 <h2>How to Audit Your Invoice</h2>
-                <p>Request a full breakdown from your administrator in writing (an SMS or email is legally sufficient as documentary evidence). Cross-reference the common area electricity allocation against the meter reading from the distributor. Compare the administrator fee to the rate approved at the last association meeting. Log your intretinere in <a href="../sagebills.html" style="color: var(--green);">SageBills</a> every month and flag months where the total increases without prior notification &mdash; unannounced increases are a common early indicator of irregularities.</p>
+                <p>Request a full breakdown from your administrator in writing (an SMS or email is legally sufficient as documentary evidence). Cross-reference the common area electricity allocation against the meter reading from the distributor. Compare the administrator fee to the rate approved at the last association meeting. Log your intretinere in <a href="../sagebills.html">SageBills</a> every month and flag months where the total increases without prior notification &mdash; unannounced increases are a common early indicator of irregularities.</p>
                 <p>The administrative effort to audit one year of intretinere statements is roughly three to four hours. For a household in a Bucharest block where overcharging is present, the typical recovery is RON 600&ndash;1,200 in credits or adjustments &mdash; approximately &euro;120&ndash;&euro;240.</p>
             </div>
             <section class="related" aria-label="Related articles">
@@ -161,8 +203,12 @@
                 <div class="related__grid"><a class="related__card" href="save-utility-bills-europe.html"><span class="related__card-cat">Money Saving</span><span class="related__card-title">How to Save €1,200/Year on Utility Bills</span></a><a class="related__card" href="romanian-electricity-bill-guide.html"><span class="related__card-cat">Guides</span><span class="related__card-title">Your Romanian Electricity Bill, Explained</span></a><a class="related__card" href="winter-heating-cee-2025-2026.html"><span class="related__card-cat">Money Saving</span><span class="related__card-title">Winter Heating Costs Across CEE 2025–2026</span></a></div>
             </section>
 
+            <nav class="post-nav" aria-label="More posts">
+                <a class="prev" href="winter-heating-cee-2025-2026.html" rel="prev"><small>← Newer</small><span>Winter heating costs in CEE: 2025–2026 review</span></a>
+            </nav>
+
             <div class="article-page__footer">
-                <a href="../blog.html" class="article-page__back">&larr; More articles</a>
+                <a href="../blog.html" class="article-page__back">&larr; All posts</a>
             </div>
         </div>
     </article>
@@ -171,21 +217,46 @@
 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__brand-block">
-            <div class="footer__brand"><svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round" opacity="0.4"/></svg> Sagelight <span>Studio</span></div>
-            <p class="footer__tagline">Privacy through clarity. An independent studio building local-first iOS and macOS apps from Romania, EU.</p>
-            <p class="footer__tagline" style="margin-bottom: 0;"><a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></p>
+            <div class="footer__brand">
+                <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/></svg>
+                Sagelight <span>Studio</span>
+            </div>
+            <p class="footer__tagline">Privacy through clarity. Local-first iOS and macOS apps from Romania, EU.</p>
+            <p class="footer__tagline"><a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></p>
         </div>
-        <div><div class="footer__col-title">Apps</div><ul class="footer__list"><li><a href="../sagebills.html">SageBills</a></li><li><a href="../sagemeet.html">SageMeet</a></li><li><a href="../sagedocs.html">SageDocs</a></li></ul></div>
-        <div><div class="footer__col-title">Studio</div><ul class="footer__list"><li><a href="../blog.html">Blog</a></li><li><a href="../press-kit.html">Press Kit</a></li><li><a href="mailto:contact@sagelight-studio.com">Contact</a></li></ul></div>
-        <div><div class="footer__col-title">Legal</div><ul class="footer__list"><li><a href="../privacy-policy.html">Privacy Policy</a></li><li><a href="../gdpr.html">GDPR</a></li><li><a href="../terms.html">Terms</a></li><li><button type="button" class="cookie-pref-link" onclick="window.sageConsentOpen && window.sageConsentOpen()">Cookie preferences</button></li></ul></div>
+        <div>
+            <div class="footer__col-title">Apps</div>
+            <ul class="footer__list">
+                <li><a href="../sagedocs.html">SageDocs</a></li>
+                <li><a href="../sagebills.html">SageBills</a></li>
+                <li><a href="../sagemeet.html">SageMeet</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer__col-title">Studio</div>
+            <ul class="footer__list">
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../press-kit.html">Press Kit</a></li>
+                <li><a href="mailto:contact@sagelight-studio.com">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer__col-title">Legal</div>
+            <ul class="footer__list">
+                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="../gdpr.html">GDPR</a></li>
+                <li><a href="../terms.html">Terms</a></li>
+                <li><button type="button" class="cookie-pref-link" onclick="window.sageConsentOpen && window.sageConsentOpen()">Cookie preferences</button></li>
+            </ul>
+        </div>
     </div>
     <div class="footer__bottom">
-        <span>&copy; 2026 Sagelight Studio &middot; Built with care in Romania, EU</span>
-        <span>Privacy through clarity</span>
+        <span>© 2026 Sagelight Studio · Built in Romania, EU</span>
+        <span>sent to us: 0 bytes</span>
     </div>
 </footer>
 
-<script src="../assets/theme.js"></script>
-<script src="../assets/consent.js" defer></script>
+<script src="../assets/theme.js?v=20261013c"></script>
+<script src="../assets/consent.js?v=20261013c" defer></script>
 </body>
 </html>

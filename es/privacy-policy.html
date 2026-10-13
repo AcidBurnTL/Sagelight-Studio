@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>(function(){try{var t=localStorage.getItem('sage-theme')||'dark';var r=t==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;document.documentElement.setAttribute('data-theme',r);}catch(e){}})();</script>
     <!-- Google Ads — Consent Mode v2 -->
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -34,7 +33,7 @@
     <meta name="twitter:title" content="Política de privacidad — Sagelight Studio">
     <meta name="twitter:description" content="Política de privacidad local-first y conforme al RGPD que cubre SageBills, SageMeet y SageDocs.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/legal.png">
-    <meta name="theme-color" content="#55ee71">
+    <meta name="theme-color" content="#191724">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/es/privacy-policy.html">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/privacy-policy.html">
@@ -56,9 +55,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css">
-    <link rel="stylesheet" href="../assets/sage.css">
-    <link rel="stylesheet" href="../assets/legal.css">
+    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
+    <link rel="stylesheet" href="../assets/legal.css?v=20261013c">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -90,12 +89,14 @@
         }
     }
     </script>
+    <style>/* reduced motion: legal.css .animate-in--dN start at opacity 0 and sage.css disables animations */
+    @media (prefers-reduced-motion: reduce) { .animate-in { opacity: 1 !important; transform: none !important; } }
+    /* long code tokens / URLs must wrap instead of widening the page at 390px */
+    .legal-main, .legal-main > * { min-width: 0; } .section code, .section a { overflow-wrap: anywhere; } .key-points { grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); }</style>
 </head>
 <body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
 
-<div class="bg-grid" aria-hidden="true"></div>
-<div class="glow-orb glow-orb--1" aria-hidden="true"></div>
-<div class="glow-orb glow-orb--2" aria-hidden="true"></div>
 
 <nav class="nav" role="navigation" aria-label="Navegación principal">
     <div class="nav__inner">
@@ -112,17 +113,12 @@
             <li><a href="terms.html" class="nav__tab">Términos</a></li>
         </ul>
         <div class="nav__actions">
-            <button class="nav__icon-btn" id="themeToggle" onclick="cycleTheme()" aria-label="Cambiar tema" title="Cambiar tema">
-                <span id="themeIcon" aria-hidden="true">☾</span>
-            </button>
-            <button class="nav__icon-btn mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Abrir menú" aria-expanded="false">
-                <span aria-hidden="true" class="material-symbols-outlined">menu</span>
-            </button>
+            <button type="button" class="nav__icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-controls="navTabs" onclick="toggleMobileMenu()" aria-label="Abrir menú" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h10"/></svg></button>
         </div>
     </div>
 </nav>
 
-<main class="legal-main">
+<main class="legal-main" id="main">
     <article>
         <header class="doc-header animate-in">
             <div class="doc-header__badge">Legal</div>
@@ -639,7 +635,7 @@
     </div>
 </footer>
 
-<script src="../assets/theme.js"></script>
-<script src="../assets/consent.js" defer></script>
+<script src="../assets/theme.js?v=20261013c"></script>
+<script src="../assets/consent.js?v=20261013c" defer></script>
 </body>
 </html>
