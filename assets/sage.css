@@ -987,3 +987,17 @@ em.italic, .italic-em {
 @media (prefers-reduced-motion: reduce) {
     .consent-banner { transition: opacity 0.001ms !important; transform: none !important; }
 }
+
+/* ============ Guide links (SageDocs "Learn more") ============ */
+.guide-links { display: grid; gap: 14px; }
+.guide-links a {
+    display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center;
+    padding: 20px 22px; min-height: 64px; border: 1px solid var(--line); border-radius: var(--radius-lg);
+    background: var(--card-bg); color: var(--text); transition: border-color .2s, background .2s;
+}
+.guide-links a:hover { border-color: var(--amber-line); background: var(--amber-fade); color: var(--text); }
+.guide-links strong { font-family: var(--font-mono); font-size: 15px; font-weight: 700; letter-spacing: -.02em; line-height: 1.35; }
+.guide-links small { grid-column: 1; color: var(--dim); font-size: 14.5px; }
+.guide-links .arrow { grid-row: 1 / 3; grid-column: 2; font-family: var(--font-mono); color: var(--dim); transition: transform .2s var(--ease); }
+.guide-links a:hover .arrow { transform: translateX(4px); color: var(--amber); }
+@media (min-width: 760px) { .guide-links { grid-template-columns: 1fr 1fr; } }

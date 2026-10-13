@@ -70,23 +70,48 @@
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013f">
 
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org", "@type": "SoftwareApplication",
-        "name": "SageDocs", "applicationCategory": "SecurityApplication",
-        "operatingSystem": "iOS 17+, macOS 14+",
-        "offers": {"@type": "AggregateOffer", "priceCurrency": "USD", "lowPrice": "2.99", "highPrice": "24.99", "offerCount": 2, "url": "https://apps.apple.com/app/sagedocs/id6762064711", "offers": [
-            {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "category": "Suscripción mensual"},
-            {"@type": "Offer", "price": "24.99", "priceCurrency": "USD", "category": "Suscripción anual"}
-        ]},
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SageDocs",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS 17, iPadOS 17, macOS 14",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": "2.99",
+            "highPrice": "24.99",
+            "offerCount": 2,
+            "url": "https://apps.apple.com/app/sagedocs/id6762064711",
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "price": "2.99",
+                    "priceCurrency": "USD",
+                    "category": "Monthly subscription"
+                },
+                {
+                    "@type": "Offer",
+                    "price": "24.99",
+                    "priceCurrency": "USD",
+                    "category": "Annual subscription"
+                }
+            ]
+        },
         "description": "Bóveda cifrada para documentos personales. Cifrado AES-256-GCM, protección con biometría/PIN, sincronización cifrada con iCloud, control de vencimientos. Hecha para la privacidad.",
         "inLanguage": "es",
         "url": "https://apps.apple.com/app/sagedocs/id6762064711",
         "image": "https://sagelight-studio.com/assets/og/sagedocs.png",
-        "author": {"@id": "https://sagelight-studio.com/#organization"},
-        "publisher": {"@id": "https://sagelight-studio.com/#organization"}
+        "author": {
+            "@id": "https://sagelight-studio.com/#organization"
+        },
+        "publisher": {
+            "@id": "https://sagelight-studio.com/#organization"
+        },
+        "downloadUrl": "https://apps.apple.com/app/sagedocs/id6762064711"
     }
     </script>
     <script type="application/ld+json">
@@ -559,6 +584,25 @@
     </section>
 
     <!-- FAQ -->
+    <section id="guides" aria-labelledby="guides-title">
+        <div class="container">
+            <div class="section-head section-head--split reveal">
+                <div>
+                    <p class="kicker">Más información</p>
+                    <h2 id="guides-title" class="h-section">Guías sobre los documentos que guarda SageDocs</h2>
+                </div>
+            </div>
+            <div class="guide-links reveal">
+                <a href="../blog/passport-id-expiry-reminders.html" hreflang="en"><strong>How to get reminded before your passport or ID expires</strong><small>Validity rules, renewal windows, reminder setups · en inglés</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/store-passport-id-scans-safely.html" hreflang="en"><strong>Where to store passport and ID scans safely</strong><small>Camera roll, email, chat apps or a vault · en inglés</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/icloud-google-drive-identity-documents.html" hreflang="en"><strong>Is iCloud or Google Drive safe for your ID?</strong><small>Who actually holds the encryption keys · en inglés</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/best-encrypted-document-vault-apps-iphone.html" hreflang="en"><strong>Best encrypted document vault apps for iPhone</strong><small>An honest comparison, including our bias · en inglés</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/lost-passport-abroad.html" hreflang="en"><strong>Lost your passport abroad?</strong><small>What EU citizens should do, in order · en inglés</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/eu-passport-id-card-validity.html" hreflang="en"><strong>EU passport &amp; ID card validity, by country</strong><small>11 countries, from official sources · en inglés</small><span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
     <section class="section--lg">
         <div class="container">
             <div class="section-head reveal">
@@ -630,6 +674,7 @@
         <div>
             <div class="footer__col-title">Estudio</div>
             <ul class="footer__list">
+                <li><a href="../about.html">Sobre mí</a></li>
                 <li><a href="../blog.html">Blog</a></li>
                 <li><a href="../press-kit.html">Kit de prensa</a></li>
                 <li><a href="mailto:contact@sagelight-studio.com">Contacto</a></li>
@@ -651,7 +696,7 @@
     </div>
 </footer>
 
-<script src="../assets/theme.js?v=20261013e"></script>
-<script src="../assets/consent.js?v=20261013e" defer></script>
+<script src="../assets/theme.js?v=20261013f"></script>
+<script src="../assets/consent.js?v=20261013f" defer></script>
 </body>
 </html>

@@ -19,6 +19,12 @@
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/about.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/about.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html"/>
@@ -307,9 +313,21 @@
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/blog/apple-notes-files-vs-document-vault.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/apple-notes-files-vs-document-vault.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/apple-notes-files-vs-document-vault.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/blog/apps-european-renter-iphone.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/apps-european-renter-iphone.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/apps-european-renter-iphone.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/best-encrypted-document-vault-apps-iphone.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/best-encrypted-document-vault-apps-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/best-encrypted-document-vault-apps-iphone.html"/>
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>
@@ -320,21 +338,115 @@
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/blog/car-documents-checklist.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/car-documents-checklist.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/acte-masina-expirare.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/car-documents-checklist.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/blog/documents-to-keep-after-buying-car-or-home.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/documents-to-keep-after-buying-car-or-home.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/acte-de-pastrat-dupa-cumparare-masina-casa.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/documents-to-keep-after-buying-car-or-home.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/eu-passport-id-card-validity.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/eu-passport-id-card-validity.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/eu-passport-id-card-validity.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/family-documents-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/family-documents-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/family-documents-organization.html"/>
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/blog/icloud-google-drive-identity-documents.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/icloud-google-drive-identity-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/icloud-google-drive-acte-identitate.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/icloud-google-drive-identity-documents.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/lost-passport-abroad.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/lost-passport-abroad.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/lost-passport-abroad.html"/>
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/blog/passport-id-expiry-reminders.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-expiry-reminders.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/reminder-expirare-pasaport-buletin.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-expiry-reminders.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/czechia.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/czechia.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/czechia.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/france.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/france.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/france.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/germany.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/germany.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/germany.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/hungary.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/hungary.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/hungary.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/italy.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/italy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/italy.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/netherlands.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/netherlands.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/netherlands.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/poland.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/poland.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/poland.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/portugal.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/portugal.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/portugal.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/romania.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/romania.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/romania.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/spain.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/spain.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/spain.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/passport-id-validity/sweden.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-validity/sweden.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-validity/sweden.html"/>
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>
@@ -351,6 +463,12 @@
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/blog/sagedocs-vs-google-drive.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-vs-google-drive.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-vs-google-drive.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/blog/save-utility-bills-europe.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/save-utility-bills-europe.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/save-utility-bills-europe.html"/>
@@ -359,6 +477,7 @@
     <url>
         <loc>https://sagelight-studio.com/blog/store-passport-id-scans-safely.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/store-passport-id-scans-safely.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanari-pasaport-buletin-in-siguranta.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/store-passport-id-scans-safely.html"/>
         <lastmod>2026-10-13</lastmod>
     </url>
@@ -1049,10 +1168,31 @@
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/ro/blog/acte-de-pastrat-dupa-cumparare-masina-casa.html</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/acte-de-pastrat-dupa-cumparare-masina-casa.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/documents-to-keep-after-buying-car-or-home.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/documents-to-keep-after-buying-car-or-home.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/ro/blog/acte-masina-expirare.html</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/acte-masina-expirare.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/car-documents-checklist.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/car-documents-checklist.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/ro/blog/factura-curent-explicata.html</loc>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/factura-curent-explicata.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/romanian-electricity-bill-guide.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/romanian-electricity-bill-guide.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/ro/blog/icloud-google-drive-acte-identitate.html</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/icloud-google-drive-acte-identitate.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/icloud-google-drive-identity-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/icloud-google-drive-identity-documents.html"/>
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>
@@ -1067,6 +1207,20 @@
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/intretinere-bloc-costuri.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/building-maintenance-fees-romania.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/building-maintenance-fees-romania.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/ro/blog/reminder-expirare-pasaport-buletin.html</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/reminder-expirare-pasaport-buletin.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-expiry-reminders.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-expiry-reminders.html"/>
+        <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/ro/blog/scanari-pasaport-buletin-in-siguranta.html</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanari-pasaport-buletin-in-siguranta.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/store-passport-id-scans-safely.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/store-passport-id-scans-safely.html"/>
         <lastmod>2026-10-13</lastmod>
     </url>
     <url>

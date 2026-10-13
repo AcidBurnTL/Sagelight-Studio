@@ -65,20 +65,48 @@
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013f">
 
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org", "@type": "SoftwareApplication",
-        "name": "SageDocs", "applicationCategory": "SecurityApplication",
-        "operatingSystem": "iOS 17+, macOS 14+",
-        "offers": {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "description": "Havi előfizetés"},
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SageDocs",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS 17, iPadOS 17, macOS 14",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": "2.99",
+            "highPrice": "24.99",
+            "offerCount": 2,
+            "url": "https://apps.apple.com/app/sagedocs/id6762064711",
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "price": "2.99",
+                    "priceCurrency": "USD",
+                    "category": "Monthly subscription"
+                },
+                {
+                    "@type": "Offer",
+                    "price": "24.99",
+                    "priceCurrency": "USD",
+                    "category": "Annual subscription"
+                }
+            ]
+        },
         "description": "Titkosított személyes dokumentumtároló. AES-256-GCM titkosítás, biometrikus/PIN védelem, titkosított iCloud szinkronizálás.",
         "inLanguage": "hu",
         "url": "https://apps.apple.com/app/sagedocs/id6762064711",
         "image": "https://sagelight-studio.com/assets/og/sagedocs.png",
-        "author": {"@id": "https://sagelight-studio.com/#organization"},
-        "publisher": {"@id": "https://sagelight-studio.com/#organization"}
+        "author": {
+            "@id": "https://sagelight-studio.com/#organization"
+        },
+        "publisher": {
+            "@id": "https://sagelight-studio.com/#organization"
+        },
+        "downloadUrl": "https://apps.apple.com/app/sagedocs/id6762064711"
     }
     </script>
     <script type="application/ld+json">
@@ -540,6 +568,25 @@
         </div>
     </section>
 
+    <section id="guides" aria-labelledby="guides-title">
+        <div class="container">
+            <div class="section-head section-head--split reveal">
+                <div>
+                    <p class="kicker">Tudj meg többet</p>
+                    <h2 id="guides-title" class="h-section">Útmutatók a SageDocsban tárolt iratokhoz</h2>
+                </div>
+            </div>
+            <div class="guide-links reveal">
+                <a href="../blog/passport-id-expiry-reminders.html" hreflang="en"><strong>How to get reminded before your passport or ID expires</strong><small>Validity rules, renewal windows, reminder setups · angolul</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/store-passport-id-scans-safely.html" hreflang="en"><strong>Where to store passport and ID scans safely</strong><small>Camera roll, email, chat apps or a vault · angolul</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/icloud-google-drive-identity-documents.html" hreflang="en"><strong>Is iCloud or Google Drive safe for your ID?</strong><small>Who actually holds the encryption keys · angolul</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/best-encrypted-document-vault-apps-iphone.html" hreflang="en"><strong>Best encrypted document vault apps for iPhone</strong><small>An honest comparison, including our bias · angolul</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/lost-passport-abroad.html" hreflang="en"><strong>Lost your passport abroad?</strong><small>What EU citizens should do, in order · angolul</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/eu-passport-id-card-validity.html" hreflang="en"><strong>EU passport &amp; ID card validity, by country</strong><small>11 countries, from official sources · angolul</small><span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
     <section class="section--lg">
         <div class="container">
             <div class="section-head reveal">
@@ -597,13 +644,13 @@
             <p class="footer__tagline" style="margin-bottom: 0;"><a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></p>
         </div>
         <div><div class="footer__col-title">Alkalmazások</div><ul class="footer__list"><li><a href="sagedocs.html">SageDocs</a></li><li><a href="sagebills.html">SageBills</a></li><li><a href="sagemeet.html">SageMeet</a></li></ul></div>
-        <div><div class="footer__col-title">Stúdió</div><ul class="footer__list"><li><a href="../blog.html">Blog</a></li><li><a href="../press-kit.html">Press Kit</a></li><li><a href="mailto:contact@sagelight-studio.com">Kapcsolat</a></li></ul></div>
+        <div><div class="footer__col-title">Stúdió</div><ul class="footer__list"><li><a href="../about.html">Rólam</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../press-kit.html">Press Kit</a></li><li><a href="mailto:contact@sagelight-studio.com">Kapcsolat</a></li></ul></div>
         <div><div class="footer__col-title">Jogi</div><ul class="footer__list"><li><a href="privacy-policy.html">Adatvédelmi Szabályzat</a></li><li><a href="gdpr.html">GDPR</a></li><li><a href="terms.html">Feltételek</a></li><li><button type="button" class="cookie-pref-link" onclick="window.sageConsentOpen && window.sageConsentOpen()">Süti beállítások</button></li></ul></div>
     </div>
     <div class="footer__bottom"><span>© 2026 Sagelight Studio · Gondossággal készült Romániában, EU</span><span>Adatvédelem világossággal</span></div>
 </footer>
 
-<script src="../assets/theme.js?v=20261013e"></script>
-<script src="../assets/consent.js?v=20261013e" defer></script>
+<script src="../assets/theme.js?v=20261013f"></script>
+<script src="../assets/consent.js?v=20261013f" defer></script>
 </body>
 </html>

@@ -18,6 +18,10 @@ for (const file of files) {
   const html = readFileSync(join(ROOT, file), 'utf8');
   const is404 = file === '404.html';
 
+  // every <script> must be closed (an unclosed one swallows the markup after it)
+  const opens = (html.match(/<script[\s>]/g) || []).length, closes = (html.match(/<\/script>/g) || []).length;
+  if (opens !== closes) err(file, `unbalanced <script> tags (${opens} open, ${closes} close)`);
+
   // links and assets
   for (const [, raw] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     if (/^(https?:|mailto:|tel:|data:|javascript:|#)/.test(raw)) {

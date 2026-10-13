@@ -67,20 +67,48 @@
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013f">
 
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org", "@type": "SoftwareApplication",
-        "name": "SageDocs", "applicationCategory": "SecurityApplication",
-        "operatingSystem": "iOS 17+, macOS 14+",
-        "offers": {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "description": "Abonament lunar"},
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SageDocs",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS 17, iPadOS 17, macOS 14",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": "2.99",
+            "highPrice": "24.99",
+            "offerCount": 2,
+            "url": "https://apps.apple.com/app/sagedocs/id6762064711",
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "price": "2.99",
+                    "priceCurrency": "USD",
+                    "category": "Monthly subscription"
+                },
+                {
+                    "@type": "Offer",
+                    "price": "24.99",
+                    "priceCurrency": "USD",
+                    "category": "Annual subscription"
+                }
+            ]
+        },
         "description": "Seif criptat pentru documente personale. Criptare AES-256-GCM, protecție biometric/PIN, sincronizare iCloud criptată, urmărire expirări.",
         "inLanguage": "ro",
         "url": "https://apps.apple.com/app/sagedocs/id6762064711",
         "image": "https://sagelight-studio.com/assets/og/sagedocs.png",
-        "author": {"@id": "https://sagelight-studio.com/#organization"},
-        "publisher": {"@id": "https://sagelight-studio.com/#organization"}
+        "author": {
+            "@id": "https://sagelight-studio.com/#organization"
+        },
+        "publisher": {
+            "@id": "https://sagelight-studio.com/#organization"
+        },
+        "downloadUrl": "https://apps.apple.com/app/sagedocs/id6762064711"
     }
     </script>
     <script type="application/ld+json">
@@ -549,6 +577,25 @@
         </div>
     </section>
 
+    <section id="guides" aria-labelledby="guides-title">
+        <div class="container">
+            <div class="section-head section-head--split reveal">
+                <div>
+                    <p class="kicker">Află mai multe</p>
+                    <h2 id="guides-title" class="h-section">Ghiduri pentru actele pe care le ține SageDocs</h2>
+                </div>
+            </div>
+            <div class="guide-links reveal">
+                <a href="blog/reminder-expirare-pasaport-buletin.html"><strong>Când expiră buletinul sau pașaportul</strong><small>Termene, costuri și remindere care funcționează</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/scanari-pasaport-buletin-in-siguranta.html"><strong>Unde păstrezi scanările actelor de identitate</strong><small>Galerie, e-mail, WhatsApp sau un seif criptat</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/icloud-google-drive-acte-identitate.html"><strong>E sigur iCloud sau Google Drive pentru buletin?</strong><small>Cine ține de fapt cheile</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/acte-masina-expirare.html"><strong>Actele mașinii: când expiră fiecare</strong><small>RCA, ITP, rovinietă, permis</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/acte-de-pastrat-dupa-cumparare-masina-casa.html"><strong>Ce acte păstrezi după o mașină sau o casă</strong><small>Ce păstrezi și cât timp</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="../blog/eu-passport-id-card-validity.html"><strong>Valabilitatea pașapoartelor și buletinelor în UE (în engleză)</strong><small>11 țări, din surse oficiale</small><span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
     <section class="section--lg">
         <div class="container">
             <div class="section-head reveal">
@@ -619,6 +666,7 @@
         <div>
             <div class="footer__col-title">Studio</div>
             <ul class="footer__list">
+                <li><a href="../about.html">Despre</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="../press-kit.html">Press Kit</a></li>
                 <li><a href="mailto:contact@sagelight-studio.com">Contact</a></li>
@@ -640,7 +688,7 @@
     </div>
 </footer>
 
-<script src="../assets/theme.js?v=20261013e"></script>
-<script src="../assets/consent.js?v=20261013e" defer></script>
+<script src="../assets/theme.js?v=20261013f"></script>
+<script src="../assets/consent.js?v=20261013f" defer></script>
 </body>
 </html>
