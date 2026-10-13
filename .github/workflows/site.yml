@@ -1,0 +1,41 @@
+name: Site checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check pages, links, metadata, hreflang, JSON-LD
+        run: node scripts/check-site.mjs
+      - name: Sitemap is up to date
+        run: node scripts/build-sitemap.mjs --check
+
+  indexnow:
+    if: github.event_name == 'push'
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Submit changed URLs to IndexNow once Pages has deployed
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: node scripts/indexnow.mjs "$BEFORE" "$AFTER"
