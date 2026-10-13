@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17758801825"></script>
     <title>Sagelight Studio — Aplicații iOS și macOS Privacy-First</title>
-    <meta name="description" content="Aplicații iOS și macOS privacy-first construite în România. SageBills urmărește facturile, SageMeet transcrie ședințe, SageDocs criptează documente.">
+    <meta name="description" content="SageDocs criptează documentele tale pe dispozitiv. SageBills urmărește facturile, SageMeet transcrie ședințe. Aplicații iOS și macOS privacy-first din România.">
     <meta property="og:title" content="Sagelight Studio — Aplicații iOS și macOS Privacy-First">
     <meta property="og:description" content="Trei aplicații privacy-first construite în România: SageBills (urmărire facturi), SageMeet (AI pentru ședințe), SageDocs (seif criptat).">
     <meta property="og:type" content="website">
@@ -24,6 +24,16 @@
     <meta property="og:site_name" content="Sagelight Studio">
     <meta property="og:locale" content="ro_RO">
     <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="hu_HU">
+    <meta property="og:locale:alternate" content="pl_PL">
+    <meta property="og:locale:alternate" content="cs_CZ">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="nl_NL">
+    <meta property="og:locale:alternate" content="pt_PT">
+    <meta property="og:locale:alternate" content="sv_SE">
     <meta property="og:image" content="https://sagelight-studio.com/assets/og/home.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -48,7 +58,7 @@
     <link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/">
     <link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/">
     <link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/">
-    <meta name="apple-itunes-app" content="app-id=6762021142">
+    <meta name="apple-itunes-app" content="app-id=6762064711">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -71,14 +81,14 @@
         "foundingDate": "2026",
         "foundingLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressCountry": "RO", "addressRegion": "Romania"}},
         "contactPoint": {"@type": "ContactPoint", "email": "contact@sagelight-studio.com", "contactType": "customer support", "availableLanguage": ["Romanian", "English"]},
-        "sameAs": ["https://apps.apple.com/us/developer/sagelight-studio"],
+        "sameAs": ["https://apps.apple.com/developer/florin-nica/id1889684772"],
         "founder": {
             "@type": "Person",
             "@id": "https://sagelight-studio.com/#florin-nica",
             "name": "Florin Nica",
             "jobTitle": "Dezvoltator Independent",
             "description": "Dezvoltator solo de aplicații iOS și macOS care construiește aplicații privacy-first în România, UE; identitate verificată în cadrul Apple Developer Program.",
-            "sameAs": ["https://apps.apple.com/us/developer/sagelight-studio"]
+            "sameAs": ["https://apps.apple.com/developer/florin-nica/id1889684772"]
         }
     }
     </script>
@@ -97,10 +107,11 @@
         /* Home ("Data Manifest") — page-only layout; components live in sage.css */
         .home-hero { padding-top: calc(var(--nav-height) + 48px); padding-bottom: 64px; }
         .home-hero__grid { display: grid; gap: 48px; }
-        .home-hero h1 { margin: 20px 0 22px; font-family: var(--font-display); letter-spacing: -.05em; line-height: .98; font-size: clamp(38px, 9vw, 104px); }
-        .home-hero h1 .thin { display: block; font-weight: 100; font-stretch: 75%; color: var(--paper-2); }
-        .home-hero h1 .heavy { display: block; font-weight: 800; font-stretch: 112.5%; }
-        .home-hero h1 .heavy em { font-style: normal; color: var(--amber); }
+        .home-hero .hero-slogan { margin: 20px 0 22px; font-family: var(--font-display); letter-spacing: -.05em; line-height: .98; font-size: clamp(38px, 9vw, 104px); }
+        .home-hero .hero-slogan .thin { display: block; font-weight: 100; font-stretch: 75%; color: var(--paper-2); }
+        .home-hero .hero-slogan .heavy { display: block; font-weight: 800; font-stretch: 112.5%; }
+        .home-hero .hero-slogan .heavy em { font-style: normal; color: var(--amber); }
+        .home-hero .hero-h1 { margin: 14px 0 0; max-width: 36ch; font-family: var(--font-mono); font-size: 15px; font-weight: 600; line-height: 1.5; letter-spacing: -.01em; color: var(--paper); }
         .home-hero .lead { font-size: 18px; color: var(--paper-2); max-width: 46ch; margin: 0 0 30px; }
         .home-hero .lead strong { color: var(--paper); font-weight: 600; }
         .home-hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; }
@@ -199,7 +210,7 @@
 
 <nav class="nav" aria-label="Navigare principală">
     <div class="nav__inner">
-        <a href="index.html" class="nav__logo" aria-label="Sagelight Studio, acasă">
+        <a href="./" class="nav__logo" aria-label="Sagelight Studio, acasă">
             <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/></svg>
             Sagelight <span>Studio</span>
         </a>
@@ -222,13 +233,14 @@
         <div class="container home-hero__grid">
             <div>
                 <p class="kicker up" style="--i:0"><span class="dot" aria-hidden="true"></span> Studio independent · <b>România, UE</b></p>
-                <h1 id="hero-title" class="up" style="--i:1" aria-label="Actele tale, trimise nouă: 0 octeți.">
-                    <span class="thin" aria-hidden="true">Actele tale,</span>
-                    <span class="heavy" aria-hidden="true">trimise nouă: <em><span data-scramble="900">0&nbsp;octeți.</span></em></span>
-                </h1>
-                <p class="lead up" style="--i:2">Aplicații privacy-first pentru iPhone și Mac, pentru hârțogăraia de zi cu zi: documente, facturi, ședințe. <strong>Fără tracking. Fără reclame. Fără conturi.</strong> Construite de un singur om, în România.</p>
+                <h1 id="hero-title" class="hero-h1 up" style="--i:0">Aplicații pentru iPhone și Mac care îți respectă confidențialitatea: documente, facturi și ședințe</h1>
+                <p class="hero-slogan up" style="--i:1">
+                    <span class="thin">Actele tale,</span>
+                    <span class="heavy">trimise nouă: <em><span data-scramble="900">0&nbsp;octeți.</span></em></span>
+                </p>
+                <p class="lead up" style="--i:2"><strong>Fără tracking. Fără reclame. Fără conturi.</strong> Construite de un singur om, în România.</p>
                 <div class="ctas up" style="--i:3">
-                    <a class="btn btn--primary btn--lg" href="https://apps.apple.com/us/app/sagedocs/id6762064711" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');">
+                    <a class="btn btn--primary btn--lg" href="https://apps.apple.com/app/sagedocs/id6762064711" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.5-3.9ZM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4Z"/></svg>
                         Descarcă SageDocs din App Store
                     </a>
@@ -284,7 +296,7 @@
                             <p class="manifest__tag">Un seif criptat pentru acte de identitate, contracte, asigurări și documente medicale. Recuperabil doar de tine. Noi nu îl putem citi, prin design.</p>
                         </div>
                         <div class="manifest__actions">
-                            <a class="badge" href="https://apps.apple.com/us/app/sagedocs/id6762064711" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Descarcă SageDocs din App Store" width="156" height="52"></a>
+                            <a class="badge" href="https://apps.apple.com/app/sagedocs/id6762064711" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Descarcă SageDocs din App Store" width="156" height="52"></a>
                             <a class="textlink" href="sagedocs.html">Detalii →</a>
                             <span class="legal-mini"><a href="privacy-policy.html">Confidențialitate</a>·<a href="terms.html">Termeni</a></span>
                         </div>
@@ -316,7 +328,7 @@
                         <div><dt>Platforme</dt><dd>iOS 17+ · macOS 14+</dd></div>
                     </dl>
                     <div class="manifest__actions">
-                        <a class="badge" href="https://apps.apple.com/us/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Descarcă SageBills din App Store" width="156" height="52" loading="lazy"></a>
+                        <a class="badge" href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Descarcă SageBills din App Store" width="156" height="52" loading="lazy"></a>
                         <a class="textlink" href="sagebills.html">Detalii →</a>
                         <span class="legal-mini"><a href="privacy-policy.html">Confidențialitate</a>·<a href="terms.html">Termeni</a></span>
                     </div>
@@ -336,7 +348,7 @@
                         <div><dt>Platforme</dt><dd>iOS 17+</dd></div>
                     </dl>
                     <div class="manifest__actions">
-                        <a class="badge" href="https://apps.apple.com/ro/app/sagemeet/id6761443109" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/RE8zCOai2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Descarcă SageMeet din App Store" width="156" height="52" loading="lazy"></a>
+                        <a class="badge" href="https://apps.apple.com/app/sagemeet/id6761443109" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/RE8zCOai2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Descarcă SageMeet din App Store" width="156" height="52" loading="lazy"></a>
                         <a class="textlink" href="sagemeet.html">Detalii →</a>
                         <span class="legal-mini"><a href="privacy-policy.html">Confidențialitate</a>·<a href="terms.html">Termeni</a></span>
                     </div>

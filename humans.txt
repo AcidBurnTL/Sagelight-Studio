@@ -4,14 +4,14 @@ Contact: contact [at] sagelight-studio.com
 Location: Romania, European Union
 
 /* SITE */
-Last update: 2026-05-10
+Last update: 2026-10-13
 Standards: HTML5, CSS3, ES2015
 Components: Static HTML — no build step, no tracking
 Hosted on: GitHub Pages
 Software: Built with Apple frameworks (SwiftData, SwiftUI, Vision, CoreSpotlight, CloudKit)
-Typography: Hanken Grotesk · Inter · Playfair Display · JetBrains Mono
-Brand color: #55ee71 (Sage Green) on #0d150d (Forest Dark)
+Typography: Martian Mono · Instrument Sans (self-hosted)
+Brand colors: #f6c177 (Amber) and #a6c79a (Sage) on #191724 (Ink)
 
 /* PHILOSOPHY */
 Privacy by design. Local-first by default. No accounts, no analytics, no third-party SDKs.
-Built with care in Romania, EU. 🌿
+Built with care in Romania, EU.

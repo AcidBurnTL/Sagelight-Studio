@@ -1,6 +1,6 @@
 # Sagelight Studio — sagelight-studio.com
 # Privacy-first iOS & macOS apps from Europe.
-# SageBills · SageMeet · SageDocs
+# SageDocs · SageBills · SageMeet
 
 # Default — search engines welcome
 User-agent: *
@@ -57,6 +57,18 @@ User-agent: ChatGPT-User
 Allow: /
 
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic: Claude-SearchBot indexes for Claude's search results (citations);
+# Claude-User only fetches pages a user explicitly asks about. ClaudeBot
+# (training) stays blocked above.
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: YouBot

@@ -255,7 +255,7 @@ BLOG_POSTS = [
             [("decoded ", "em"), ("line by line.", "reg")],
         ],
         "subtitle": "A line-by-line decoder for Romanian electricity invoices: tariffs, network fees, green certificates, and how to spot errors.",
-        "footer": "Enel · Electrica · Tariffs · Certificates",
+        "footer": "PPC · Electrica · Tariffs · Certificates",
     },
     {
         "out": "blog-sagebills-v1-launch.png",

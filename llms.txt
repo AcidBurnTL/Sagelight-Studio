@@ -4,9 +4,9 @@
 
 ## Apps
 
-- [SageDocs](https://sagelight-studio.com/sagedocs.html) — **flagship product**. Encrypted personal document vault for IDs, contracts, insurance, and medical records. AES-256-GCM encryption with PBKDF2-SHA256 key derivation (600,000 iterations). Biometric/PIN auth, encrypted iCloud sync via CloudKit. The studio cannot read the documents — by design. iOS 17+ and macOS 14+. **Subscription:** $2.99/month or $24.99/year via the App Store, with a 7-day free trial. Read-only mode after trial expiry; users on v1.0.5 or earlier are grandfathered to free Pro access.
-- [SageBills](https://sagelight-studio.com/sagebills.html): Smart utility bill tracker for European households. 40+ bill categories, on-device OCR invoice scanning, cost predictions, anomaly detection. iOS 17+ and macOS 14+. Free. Local-only architecture — zero data leaves the device.
-- [SageMeet](https://sagelight-studio.com/sagemeet.html): AI meeting recorder and transcription for iPhone. Whisper transcription and GPT-4o note generation using a user-provided OpenAI API key (BYOK). Includes Private Mode that disables all external transmission. Free.
+- [SageDocs](https://sagelight-studio.com/sagedocs.html) — **flagship product**. Encrypted personal document vault for IDs, contracts, insurance, and medical records. AES-256-GCM encryption with PBKDF2-SHA256 key derivation (600,000 iterations). Biometric/PIN auth, encrypted iCloud sync via CloudKit. The studio cannot read the documents — by design. iOS 17+ and macOS 14+. [App Store](https://apps.apple.com/app/sagedocs/id6762064711). **Subscription:** $2.99/month or $24.99/year via the App Store, with a 7-day free trial. Read-only mode after trial expiry; users on v1.0.5 or earlier are grandfathered to free Pro access.
+- [SageBills](https://sagelight-studio.com/sagebills.html): Smart utility bill tracker for European households. 40+ bill categories, on-device OCR invoice scanning, cost predictions, anomaly detection. iOS 17+ and macOS 14+. Free. [App Store](https://apps.apple.com/app/sagebills/id6762021142). Local-only architecture — zero data leaves the device.
+- [SageMeet](https://sagelight-studio.com/sagemeet.html): AI meeting recorder and transcription for iPhone. Whisper transcription and GPT-4o note generation using a user-provided OpenAI API key (BYOK). Includes Private Mode that disables all external transmission. iOS 17+. Free. [App Store](https://apps.apple.com/app/sagemeet/id6761443109)
 
 ## Legal
 
@@ -16,13 +16,14 @@
 
 ## Content
 
-- [Blog](https://sagelight-studio.com/blog.html): Money-saving guides and product updates for European households. Topics include utility bill optimization, electricity contract audits, gas pricing, smart home savings, and country-specific guides for Romania, Poland, Hungary, and Czech Republic.
+- [Blog](https://sagelight-studio.com/blog.html): Money-saving guides and product updates for European households: utility bill savings, a line-by-line Romanian electricity invoice guide, building maintenance fees, winter heating costs in Central and Eastern Europe, and SageBills release notes.
+- Languages: English, Română, Magyar, Polski, Čeština, Deutsch, Français, Español, Italiano, Nederlands, Português (PT), Svenska. Each locale has its own home page (e.g. https://sagelight-studio.com/ro/).
 - [Press Kit](https://sagelight-studio.com/press-kit.html): Brand assets, press release, and media contact for Sagelight Studio.
 
 ## About
 
 - Sagelight Studio is the trading name of Florin Nica, an independent individual developer (natural person) based in Romania, EU. No separate legal entity.
-- Apple Developer (publicly verified): https://apps.apple.com/developer/sagelight-studio
+- Apple Developer (publicly verified): https://apps.apple.com/developer/florin-nica/id1889684772
 - Contact: contact@sagelight-studio.com
 - All apps are built entirely with Apple frameworks (SwiftData, SwiftUI, Vision, CoreSpotlight, CloudKit). No third-party SDKs, no analytics, no telemetry inside any app.
 - All web fonts are self-hosted on sagelight-studio.com — no visitor data is sent to Google Fonts or any font CDN.
