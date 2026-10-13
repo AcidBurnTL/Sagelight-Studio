@@ -89,11 +89,22 @@ window.gtagReportConversion = function (sendTo) {
    Built with safe DOM methods (no innerHTML, no untrusted strings). */
 (function () {
     var LOCALE_NAMES = {
-        en: 'English', ro: 'Română', hu: 'Magyar', pl: 'Polski', cs: 'Čeština', cz: 'Čeština'
+        en: 'English', ro: 'Română', hu: 'Magyar', pl: 'Polski', cs: 'Čeština', cz: 'Čeština',
+        de: 'Deutsch', fr: 'Français', es: 'Español', it: 'Italiano', nl: 'Nederlands',
+        'pt-pt': 'Português', sv: 'Svenska'
     };
-    var LOCALE_SHORT = { en: 'EN', ro: 'RO', hu: 'HU', pl: 'PL', cs: 'CZ', cz: 'CZ' };
-    var ORDER = { en: 0, ro: 1, hu: 2, pl: 3, cs: 4, cz: 4 };
-    var ALLOWED = { en: 1, ro: 1, hu: 1, pl: 1, cs: 1, cz: 1 };
+    var LOCALE_SHORT = {
+        en: 'EN', ro: 'RO', hu: 'HU', pl: 'PL', cs: 'CZ', cz: 'CZ',
+        de: 'DE', fr: 'FR', es: 'ES', it: 'IT', nl: 'NL', 'pt-pt': 'PT', sv: 'SV'
+    };
+    var ORDER = {
+        en: 0, ro: 1, hu: 2, pl: 3, cs: 4, cz: 4,
+        de: 5, fr: 6, es: 7, it: 8, nl: 9, 'pt-pt': 10, sv: 11
+    };
+    var ALLOWED = {
+        en: 1, ro: 1, hu: 1, pl: 1, cs: 1, cz: 1,
+        de: 1, fr: 1, es: 1, it: 1, nl: 1, 'pt-pt': 1, sv: 1
+    };
 
     function makeEl(tag, attrs, text) {
         var el = document.createElement(tag);

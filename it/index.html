@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(){try{var t=localStorage.getItem('sage-theme')||'dark';var r=t==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;document.documentElement.setAttribute('data-theme',r);}catch(e){}})();</script>
+    <!-- Google Ads — Consent Mode v2 (default denied; banner will update on opt-in) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+      gtag('set', 'url_passthrough', true);
+      gtag('set', 'ads_data_redaction', true);
+      gtag('js', new Date());
+      gtag('config', 'AW-17758801825');
+    </script>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17758801825"></script>
+    <title>Sagelight Studio — App iOS e macOS che rispettano la privacy</title>
+    <meta name="description" content="SageDocs cifra i tuoi documenti. SageBills tiene traccia delle bollette. SageMeet trascrive le riunioni. App iOS e macOS privacy-first dalla Romania. Zero tracciamento.">
+    <meta name="keywords" content="Sagelight Studio, SageDocs, SageBills, SageMeet, cassaforte documenti cifrata, app documenti AES-256, app privacy-first, app iOS GDPR, app local-first, studio app UE, app per Mac, app per iPhone">
+    <meta name="author" content="Sagelight Studio">
+    <meta property="og:title" content="Sagelight Studio — App iOS e macOS che rispettano la privacy">
+    <meta property="og:description" content="Tre app privacy-first guidate da SageDocs (cassaforte cifrata), più SageBills (bollette) e SageMeet (riunioni con AI). Sviluppate in Romania, UE.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sagelight-studio.com/it/">
+    <meta property="og:site_name" content="Sagelight Studio">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://sagelight-studio.com/assets/og/home.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Sagelight Studio — app iOS e macOS che rispettano la privacy">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sagelight Studio — App iOS e macOS che rispettano la privacy">
+    <meta name="twitter:description" content="App iOS e macOS privacy-first. SageDocs · SageBills · SageMeet.">
+    <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/home.png">
+    <meta name="theme-color" content="#55ee71">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://sagelight-studio.com/it/">
+    <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/">
+    <link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/">
+    <link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/">
+    <link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/">
+    <link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/">
+    <link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/">
+    <link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/">
+    <link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/">
+    <link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/">
+    <link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/">
+    <link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/">
+    <link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/">
+    <link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/">
+    <meta name="apple-itunes-app" content="app-id=6762064711">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
+    <link rel="stylesheet" href="../assets/sage.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://sagelight-studio.com/#organization",
+        "name": "Sagelight Studio",
+        "url": "https://sagelight-studio.com/",
+        "logo": "https://sagelight-studio.com/icon-512.png",
+        "image": "https://sagelight-studio.com/assets/og/home.png",
+        "email": "contact@sagelight-studio.com",
+        "description": "Studio indipendente che sviluppa app iOS e macOS privacy-first per la vita di tutti i giorni.",
+        "foundingDate": "2026",
+        "foundingLocation": {
+            "@type": "Place",
+            "address": {"@type": "PostalAddress", "addressCountry": "RO", "addressRegion": "Romania"}
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@sagelight-studio.com",
+            "contactType": "customer support",
+            "availableLanguage": ["English", "Romanian"]
+        },
+        "sameAs": ["https://apps.apple.com/us/developer/sagelight-studio"],
+        "founder": {
+            "@type": "Person",
+            "@id": "https://sagelight-studio.com/#florin-nica",
+            "name": "Florin Nica",
+            "jobTitle": "Sviluppatore indipendente",
+            "description": "Sviluppatore iOS e macOS indipendente che realizza app privacy-first in Romania, UE; identità verificata nell'ambito dell'Apple Developer Program.",
+            "sameAs": ["https://apps.apple.com/us/developer/sagelight-studio"]
+        },
+        "makesOffer": [
+            {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "itemOffered": {"@type": "SoftwareApplication", "name": "SageDocs", "applicationCategory": "SecurityApplication", "operatingSystem": "iOS 17+, macOS 14+", "url": "https://sagelight-studio.com/it/sagedocs.html"}},
+            {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "itemOffered": {"@type": "SoftwareApplication", "name": "SageBills", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS 17+, macOS 14+", "url": "https://sagelight-studio.com/sagebills.html"}},
+            {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "itemOffered": {"@type": "SoftwareApplication", "name": "SageMeet", "applicationCategory": "ProductivityApplication", "operatingSystem": "iOS 17+", "url": "https://sagelight-studio.com/sagemeet.html"}}
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org", "@type": "WebSite",
+        "@id": "https://sagelight-studio.com/#website",
+        "name": "Sagelight Studio", "url": "https://sagelight-studio.com/",
+        "publisher": {"@id": "https://sagelight-studio.com/#organization"},
+        "inLanguage": "it"
+    }
+    </script>
+
+    <style>
+        /* Home-only styles */
+        .hero-home { text-align: center; padding-top: calc(var(--nav-height) + 120px); }
+        .hero-home h1 { margin: 24px auto 28px; max-width: 16ch; }
+        .hero-home p.lead { max-width: 640px; margin: 0 auto 36px; }
+        .hero-home .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+        .trust-row {
+            display: flex; gap: 28px; justify-content: center; flex-wrap: wrap;
+            font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px;
+            text-transform: uppercase; color: var(--text-dim);
+        }
+        .trust-row span { display: inline-flex; align-items: center; gap: 8px; }
+        .trust-row span .material-symbols-outlined {
+            font-size: 14px; color: var(--green);
+        }
+
+        /* Apps grid */
+        .apps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        @media (max-width: 880px) { .apps-grid { grid-template-columns: 1fr; } }
+        .app-card {
+            display: flex; flex-direction: column; padding: 36px;
+            color: inherit; text-decoration: none; min-height: 380px;
+        }
+        .app-card .card-icon { margin-bottom: 28px; }
+        .app-card .h-card { margin-bottom: 8px; }
+        .app-card .app-tagline {
+            font-family: var(--font-mono); font-size: 11px;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            color: var(--green); margin-bottom: 18px;
+        }
+        .app-card .app-desc {
+            color: var(--text-secondary); font-size: 15px; line-height: 1.6;
+            flex: 1; margin-bottom: 24px;
+        }
+        .app-card .app-features {
+            list-style: none; margin: 0 0 24px; padding: 0;
+            display: flex; flex-direction: column; gap: 10px;
+        }
+        .app-card .app-features li {
+            font-size: 14px; color: var(--text-dim);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .app-card .app-features li .material-symbols-outlined {
+            font-size: 16px; color: var(--green);
+        }
+        .app-card .app-meta {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-top: 20px; border-top: 0.5px solid var(--border);
+        }
+        .app-card .app-meta .platforms {
+            display: flex; gap: 6px; flex-wrap: wrap;
+        }
+        .app-card .app-meta .arrow {
+            color: var(--green);
+            transition: transform 0.3s ease;
+        }
+        .app-card:hover .app-meta .arrow { transform: translateX(4px); }
+
+        /* Principles section */
+        .principles {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+        }
+        @media (max-width: 980px) { .principles { grid-template-columns: 1fr; gap: 48px; } }
+        .principles__list { display: flex; flex-direction: column; gap: 36px; margin-top: 32px; }
+        .principle {
+            display: flex; gap: 20px;
+        }
+        .principle__icon {
+            flex-shrink: 0; width: 52px; height: 52px; border-radius: var(--radius);
+            background: var(--bg-surface-2); border: 1px solid var(--border);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--green); font-size: 24px;
+        }
+        .principle h4 {
+            font-family: var(--font-display); font-size: 19px; font-weight: 600;
+            color: var(--text); margin-bottom: 6px; letter-spacing: -0.01em;
+        }
+        .principle p { color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
+
+        /* CTA Section */
+        .cta-block {
+            position: relative; overflow: hidden;
+            padding: 80px 56px; text-align: center;
+            border-radius: var(--radius-xl);
+            border-color: var(--green-dim);
+        }
+        .cta-block::before {
+            content: ''; position: absolute; inset: -4px;
+            background: radial-gradient(circle at 50% 0%, var(--green-fade), transparent 60%);
+            z-index: 0; pointer-events: none;
+        }
+        .cta-block > * { position: relative; z-index: 1; }
+        .cta-block h2 { margin-bottom: 16px; }
+        .cta-block p { max-width: 520px; margin: 0 auto 36px; }
+        .cta-block .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        @media (max-width: 700px) { .cta-block { padding: 48px 24px; } }
+    </style>
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="glow-orb glow-orb--1" aria-hidden="true"></div>
+<div class="glow-orb glow-orb--2" aria-hidden="true"></div>
+
+<nav class="nav" role="navigation" aria-label="Navigazione principale">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+            <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round" opacity="0.4"/></svg>
+            Sagelight <span>Studio</span>
+        </a>
+        <ul class="nav__tabs" id="navTabs" role="list">
+            <li><a href="sagedocs.html" class="nav__tab">SageDocs</a></li>
+            <li><a href="../sagebills.html" class="nav__tab">SageBills</a></li>
+            <li><a href="../sagemeet.html" class="nav__tab">SageMeet</a></li>
+            <li><a href="../blog.html" class="nav__tab">Blog</a></li>
+            <li><a href="../press-kit.html" class="nav__tab">Stampa</a></li>
+        </ul>
+        <div class="nav__actions">
+            <button class="nav__icon-btn" id="themeToggle" onclick="cycleTheme()" aria-label="Cambia tema" title="Cambia tema">
+                <span id="themeIcon" aria-hidden="true">☾</span>
+            </button>
+            <button class="nav__icon-btn mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Apri il menu" aria-expanded="false">
+                <span aria-hidden="true" class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- Hero -->
+    <section class="hero hero-home">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="eyebrow fade-up d1">Indipendente · Privacy-First · Made in UE</div>
+                <h1 class="h-display fade-up d2">
+                    App iOS e macOS che rispettano la privacy<br>
+                    per <em class="italic-em">le parti più caotiche</em> della vita.
+                </h1>
+                <p class="text-lead lead fade-up d3">
+                    Sagelight Studio crea app iOS e macOS privacy-first per le incombenze quotidiane che la maggior parte delle app complica inutilmente &mdash; bollette, riunioni e documenti personali. Niente tracciamento. Niente pubblicità. Niente account. Solo strumenti che rispettano i tuoi dati.
+                </p>
+                <div class="ctas fade-up d4">
+                    <a href="#apps" class="btn btn--primary btn--lg">
+                        Scopri le app
+                        <span aria-hidden="true" class="material-symbols-outlined icon">arrow_forward</span>
+                    </a>
+                    <a href="#why" class="btn btn--ghost btn--lg">Perché Sagelight</a>
+                </div>
+                <div class="trust-row fade-up d5">
+                    <span><span aria-hidden="true" class="material-symbols-outlined fill">verified_user</span> Conforme al GDPR</span>
+                    <span><span aria-hidden="true" class="material-symbols-outlined fill">visibility_off</span> Zero tracciamento</span>
+                    <span><span aria-hidden="true" class="material-symbols-outlined fill">public</span> Sviluppate in Romania</span>
+                    <span><span aria-hidden="true" class="material-symbols-outlined fill">devices</span> iOS e macOS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps -->
+    <section id="apps" class="section--lg">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="eyebrow eyebrow--static">Tre app · Una filosofia</div>
+                <h2 class="h-section">Tre app. <span class="italic-em">Una sola filosofia.</span></h2>
+                <p>Ogni app di Sagelight Studio è local-first, senza pubblicità, senza account e costruita attorno a un'unica regola: i tuoi dati sono tuoi e non lasciano mai il tuo dispositivo, a meno che non sia tu a deciderlo.</p>
+            </div>
+
+            <div class="apps-grid">
+                <a class="glass-card app-card reveal" href="sagedocs.html" aria-label="SageDocs — Cassaforte cifrata per documenti">
+                    <div class="card-icon card-icon--solid">
+                        <span aria-hidden="true" class="material-symbols-outlined fill">shield_lock</span>
+                    </div>
+                    <div class="app-tagline">App di punta · Cassaforte cifrata per documenti</div>
+                    <h3 class="h-card">SageDocs</h3>
+                    <p class="app-desc">
+                        Il nostro prodotto di punta. Conserva documenti d'identità, contratti, polizze assicurative e referti medici in una cassaforte cifrata con AES-256-GCM. Protetta da biometria. Sincronizzata in forma cifrata sul tuo iCloud. Recuperabile solo da te &mdash; per come è progettata, nemmeno lo studio può leggere i tuoi documenti.
+                    </p>
+                    <ul class="app-features">
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Crittografia AES-256-GCM</li>
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Face ID / Touch ID + PIN principale</li>
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Sincronizzazione iCloud cifrata</li>
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Monitoraggio scadenze e promemoria</li>
+                    </ul>
+                    <div class="app-meta">
+                        <div class="platforms">
+                            <span class="chip">iOS 17+</span>
+                            <span class="chip">macOS 14+</span>
+                            <span class="chip chip--green">Da $2.99/mese · prova di 7 giorni</span>
+                        </div>
+                        <span aria-hidden="true" class="material-symbols-outlined arrow">arrow_forward</span>
+                    </div>
+                </a>
+
+                <a class="glass-card app-card reveal" href="../sagebills.html" aria-label="SageBills — Gestione delle bollette">
+                    <div class="card-icon card-icon--solid">
+                        <span aria-hidden="true" class="material-symbols-outlined fill">bolt</span>
+                    </div>
+                    <div class="app-tagline">Gestione bollette</div>
+                    <h3 class="h-card">SageBills</h3>
+                    <p class="app-desc">
+                        Tieni traccia di ogni bolletta, di qualsiasi fornitore europeo. Scansione OCR delle fatture, previsioni dei costi, rilevamento delle anomalie &mdash; tutto sul tuo dispositivo, senza che nessun dato ne esca.
+                    </p>
+                    <ul class="app-features">
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Oltre 40 categorie di bollette</li>
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Scansione OCR sul dispositivo</li>
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Previsioni dei costi con AI, completamente in locale</li>
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Nessun account richiesto</li>
+                    </ul>
+                    <div class="app-meta">
+                        <div class="platforms">
+                            <span class="chip">iOS 17+</span>
+                            <span class="chip">macOS 14+</span>
+                            <span class="chip chip--green">Gratis</span>
+                        </div>
+                        <span aria-hidden="true" class="material-symbols-outlined arrow">arrow_forward</span>
+                    </div>
+                </a>
+
+                <a class="glass-card app-card reveal" href="../sagemeet.html" aria-label="SageMeet — Registratore di riunioni con AI">
+                    <div class="card-icon card-icon--solid">
+                        <span aria-hidden="true" class="material-symbols-outlined fill">mic</span>
+                    </div>
+                    <div class="app-tagline">Registratore di riunioni con AI</div>
+                    <h3 class="h-card">SageMeet</h3>
+                    <p class="app-desc">
+                        Registra le riunioni e ottieni trascrizioni accurate, riepiloghi con AI e attività da svolgere &mdash; usando la tua chiave API OpenAI. La Modalità privata disattiva ogni trasmissione esterna, così mantieni il pieno controllo.
+                    </p>
+                    <ul class="app-features">
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Trascrizione con Whisper</li>
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Note generate con GPT-4o</li>
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Ricerca semantica</li>
+                        <li><span aria-hidden="true" class="material-symbols-outlined">check</span> Modalità privata (zero dati verso l'esterno)</li>
+                    </ul>
+                    <div class="app-meta">
+                        <div class="platforms">
+                            <span class="chip">iOS 17+</span>
+                            <span class="chip chip--green">Gratis</span>
+                            <span class="chip">BYOK</span>
+                        </div>
+                        <span aria-hidden="true" class="material-symbols-outlined arrow">arrow_forward</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why / Principles -->
+    <section id="why" class="section--lg" style="background: linear-gradient(180deg, transparent, var(--bg-surface) 50%, transparent);">
+        <div class="container">
+            <div class="principles">
+                <div class="reveal">
+                    <div class="eyebrow eyebrow--static">I principi dello studio</div>
+                    <h2 class="h-section" style="margin-top: 16px;">
+                        Fondate su <span class="italic-em">principi incrollabili</span>.
+                    </h2>
+                    <div class="principles__list">
+                        <div class="principle">
+                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">storage</span></div>
+                            <div>
+                                <h4>Local-first per impostazione predefinita</h4>
+                                <p>I tuoi dati vivono sul tuo dispositivo. Non gestiamo server che conservano le tue bollette, le tue riunioni o i tuoi documenti &mdash; non potremmo accedervi nemmeno se lo volessimo.</p>
+                            </div>
+                        </div>
+                        <div class="principle">
+                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">verified_user</span></div>
+                            <div>
+                                <h4>Il GDPR è il punto di partenza, non il traguardo</h4>
+                                <p>Ogni app è progettata attorno agli articoli 5, 25 e 32 del GDPR. Privacy fin dalla progettazione, privacy per impostazione predefinita, sicurezza integrata nell'architettura.</p>
+                            </div>
+                        </div>
+                        <div class="principle">
+                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">visibility_off</span></div>
+                            <div>
+                                <h4>Niente pubblicità. Niente account. Niente tracciamento.</h4>
+                                <p>Nessun SDK di terze parti, nessuno strumento di analisi, nessun identificativo pubblicitario, nessuna telemetria. Zero. Apri l'app, la usi, la chiudi. Non vediamo mai cosa fai.</p>
+                            </div>
+                        </div>
+                        <div class="principle">
+                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">phone_iphone</span></div>
+                            <div>
+                                <h4>Solo framework nativi Apple</h4>
+                                <p>Sviluppate con SwiftData, SwiftUI, Vision, CoreSpotlight e CloudKit. Niente Electron, niente React Native, nessuna piattaforma di terze parti. Veloci, leggere e idiomatiche.</p>
+                            </div>
+                        </div>
+                        <div class="principle">
+                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">savings</span></div>
+                            <div>
+                                <h4>Prezzi onesti</h4>
+                                <p>SageBills e SageMeet sono gratuite; SageDocs è un semplice abbonamento da $2.99 al mese o $24.99 all'anno. Nessun dark pattern, nessun upgrade a sorpresa, nessuna funzione "premium" tenuta in ostaggio dietro un paywall fin dal primo giorno.</p>
+                            </div>
+                        </div>
+                        <div class="principle">
+                            <div class="principle__icon"><span aria-hidden="true" class="material-symbols-outlined">person</span></div>
+                            <div>
+                                <h4>Creato da una sola persona, in Romania</h4>
+                                <p>Una realtà indipendente, composta da una sola persona, con sede nell'UE. Niente investitori, niente team di growth, niente metriche di engagement &mdash; solo software realizzato con cura per le persone che lo usano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card data-map reveal">
+                    <div class="data-map__label">Dove vivono i tuoi dati</div>
+                    <div class="data-map__row">
+                        <div class="data-map__icon"><span aria-hidden="true" class="material-symbols-outlined">phone_iphone</span></div>
+                        <div class="data-map__text">
+                            <strong>Il tuo iPhone e il tuo Mac</strong>
+                            <span>Archivio SwiftData, cifrato con AES-256-GCM</span>
+                        </div>
+                        <span class="chip chip--green">Sul dispositivo</span>
+                    </div>
+                    <div class="data-map__link" aria-hidden="true"></div>
+                    <div class="data-map__row">
+                        <div class="data-map__icon"><span aria-hidden="true" class="material-symbols-outlined">cloud_sync</span></div>
+                        <div class="data-map__text">
+                            <strong>Il tuo iCloud — facoltativo</strong>
+                            <span>Sincronizzazione cifrata end-to-end con il tuo Apple ID</span>
+                        </div>
+                        <span class="chip chip--green">Cifrato</span>
+                    </div>
+                    <div class="data-map__link" aria-hidden="true"></div>
+                    <div class="data-map__row data-map__row--void">
+                        <div class="data-map__icon"><span aria-hidden="true" class="material-symbols-outlined">cloud_off</span></div>
+                        <div class="data-map__text">
+                            <strong>Server di Sagelight</strong>
+                            <span>Nessuno. Non possiamo vedere i tuoi dati — non c'è nulla da violare.</span>
+                        </div>
+                        <span class="chip">Zero</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section--lg">
+        <div class="container">
+            <div class="glass-card cta-block reveal">
+                <div class="eyebrow eyebrow--static" style="margin-bottom: 20px;">Inizia ora</div>
+                <h2 class="h-section">Meno rumore. <span class="italic-em">Più sostanza.</span></h2>
+                <p class="text-lead">Scegli l'app che risolve il tuo problema. Oppure scaricale tutte e tre. Ognuna resta in disparte finché non ti serve.</p>
+                <div class="ctas">
+                    <a href="#apps" class="btn btn--primary btn--xl">Sfoglia le app</a>
+                    <a href="mailto:contact@sagelight-studio.com" class="btn btn--ghost btn--xl">Contattaci</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__brand-block">
+            <div class="footer__brand">
+                <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round" opacity="0.4"/></svg>
+                Sagelight <span>Studio</span>
+            </div>
+            <p class="footer__tagline">
+                Privacy attraverso la chiarezza. Uno studio indipendente che sviluppa app iOS e macOS local-first dalla Romania, UE.
+            </p>
+            <p class="footer__tagline" style="margin-bottom: 0;">
+                <a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a>
+            </p>
+        </div>
+        <div>
+            <div class="footer__col-title">App</div>
+            <ul class="footer__list">
+                <li><a href="sagedocs.html">SageDocs</a></li>
+                <li><a href="../sagebills.html">SageBills</a></li>
+                <li><a href="../sagemeet.html">SageMeet</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer__col-title">Studio</div>
+            <ul class="footer__list">
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../press-kit.html">Cartella stampa</a></li>
+                <li><a href="mailto:contact@sagelight-studio.com">Contatti</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer__col-title">Note legali</div>
+            <ul class="footer__list">
+                <li><a href="privacy-policy.html">Informativa sulla privacy</a></li>
+                <li><a href="gdpr.html">GDPR</a></li>
+                <li><a href="terms.html">Termini</a></li>
+                <li><button type="button" class="cookie-pref-link" onclick="window.sageConsentOpen && window.sageConsentOpen()">Preferenze cookie</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <span>© 2026 Sagelight Studio · Creato con cura in Romania, UE</span>
+        <span>Privacy attraverso la chiarezza</span>
+    </div>
+</footer>
+
+<script src="../assets/theme.js"></script>
+<script src="../assets/consent.js" defer></script>
+<script>
+    // Reveal-on-scroll
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('is-visible'), i * 60);
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+        revealEls.forEach(el => io.observe(el));
+    } else {
+        revealEls.forEach(el => el.classList.add('is-visible'));
+    }
+</script>
+</body>
+</html>
