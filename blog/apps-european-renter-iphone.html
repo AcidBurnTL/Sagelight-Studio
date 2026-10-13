@@ -27,7 +27,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="article:published_time" content="2026-03-22">
-    <meta property="article:modified_time" content="2026-05-21">
+    <meta property="article:modified_time" content="2026-10-13">
     <meta property="article:author" content="Florin Nica">
     <meta property="article:section" content="Guides">
     <meta name="twitter:card" content="summary_large_image">
@@ -44,9 +44,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
-    <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
+    <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
 
     <script type="application/ld+json">
     {
@@ -55,7 +55,7 @@
         "headline": "5 Apps Every European Renter Should Have on Their iPhone",
         "description": "Five iPhone apps that cover the renter's essential workflow in Europe.",
         "datePublished": "2026-03-22",
-        "dateModified": "2026-05-21",
+        "dateModified": "2026-10-13",
         "author": {"@type": "Person", "@id": "https://sagelight-studio.com/#florin-nica", "name": "Florin Nica", "url": "https://sagelight-studio.com/press-kit.html"},
         "publisher": {"@type": "Organization", "name": "Sagelight Studio", "logo": {"@type": "ImageObject", "url": "https://sagelight-studio.com/icon-512.png"}},
         "inLanguage": "en",
@@ -144,6 +144,12 @@
         .article-page__back { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-family: var(--font-mono); font-size: 14px; color: var(--amber); }
         .article-page__back:hover { gap: 12px; }
         @media (prefers-reduced-motion: reduce) { .article-page__back:hover { gap: 8px; } }
+
+        /* sources + callout (added 2026-10-13) */
+        .article-page__body ol.sources { font-size: 15px; line-height: 1.6; }
+        .article-page__body ol.sources a { overflow-wrap: anywhere; }
+        .article-page__body .callout { background: var(--card-bg); border: 1px solid var(--line); border-left: 3px solid var(--amber); border-radius: 12px; padding: 18px 20px; margin: 28px 0; }
+        .article-page__body .callout p { margin: 0; color: var(--paper); }
     </style>
 </head>
 <body>
@@ -177,35 +183,80 @@
             <div class="article-page__meta-row">
                 <span class="article-page__category">Guides</span>
                 <span class="article-page__dot" aria-hidden="true"></span>
-                <span>2 min read</span>
+                <span>4 min read</span>
                 <span class="article-page__dot" aria-hidden="true"></span>
                 <span>March 2026</span>
+                <span class="article-page__dot" aria-hidden="true"></span>
+                <span>Updated 13 Oct 2026</span>
                 <span class="article-page__dot" aria-hidden="true"></span>
                 <span>By Florin Nica</span>
             </div>
             <h1>5 Apps Every European Renter Should Have on Their iPhone</h1>
             <div class="article-page__body">
-                <p>Renting in a European city in 2026 means managing a surprising amount of administrative complexity: utility bills in a language you might not fully read, building maintenance requests that go unanswered, rental contracts with clauses that vary dramatically by country, and a landlord who may or may not respond promptly. These five iPhone apps cover the core workflow without redundancy.</p>
-                <h2>1. SageBills &mdash; Utility Bill Tracking</h2>
-                <p>The most practical utility tracker built specifically for the European context. <a href="../sagebills.html">SageBills</a> supports all standard European utility categories, scans invoices via OCR, and keeps everything on-device with iCloud backup. For renters, the budget tracking features are particularly useful for anticipating the autumn-to-winter heating spike and avoiding bill shock. Free, no account required.</p>
-                <h2>2. SageDocs &mdash; Rental Document Vault</h2>
-                <p>Every renter accumulates a small archive of high-stakes documents: the rental contract, the move-in inventory and photos, the move-out condition report, copies of utility welcome packets, insurance policies, and ID scans you may need to send the landlord. These belong in something built for sensitive documents &mdash; not in a notes app, not in a generic cloud drive, and certainly not in your Photos library where they get backed up to whatever you've enabled.</p>
-                <p><a href="../sagedocs.html">SageDocs</a> is the document vault built for exactly this. AES-256-GCM encryption on every attachment, biometric/PIN protection, encrypted iCloud sync &mdash; meaning the only person who can decrypt your rental contract is you. Categories cover identity, insurance, contracts, and medical, and you can set expiry reminders for things like rental term end dates so you get a notification before you need to act. For correspondence threads, ongoing notes, or password storage, pair it with whatever you already use (email, a notes app, a password manager); SageDocs handles the document layer.</p>
-                <h2>3. Revolut or Wise &mdash; Cross-Border Payments</h2>
-                <p>If you pay rent to a landlord in a different country, or receive salary in one currency and pay bills in another, a multi-currency account is essential. Both Revolut and Wise offer real exchange rates with minimal fees, standing orders, and instant notifications. For the specific use case of cross-border rent and utility payments, they reduce friction significantly.</p>
-                <h2>4. Google Translate Camera Mode &mdash; Invoice Reading</h2>
-                <p>For renters who moved from another country, reading utility invoices in Romanian, Polish, or Hungarian can be genuinely difficult. Google Translate&rsquo;s live camera mode overlays English text in real time. Point it at any invoice and it gives you a readable version instantly &#8212; good enough to tell whether a bill is routine or requires attention.</p>
-                <h2>5. Fixly or TaskRabbit &mdash; Maintenance Requests</h2>
-                <p>When the landlord is slow to respond to maintenance issues, having a platform-vetted tradesperson you can book directly &#8212; and subsequently invoice the landlord for &#8212; gives you leverage and resolution. Fixly operates in Romania and Poland; TaskRabbit has coverage in major CEE cities. Document everything through the platform for a clean paper trail.</p>
-                <p><strong>Bonus &mdash; SageMeet:</strong> if you record calls or in-person meetings with letting agents or landlords (where local law permits), <a href="../sagemeet.html">SageMeet</a> transcribes them with Whisper and turns them into searchable notes using your own OpenAI key &mdash; so verbal agreements don&rsquo;t get lost. Free, with a Private Mode that keeps everything on your device.</p>
+                <p>Renting in a European city means a surprising amount of admin: utility bills in a language you may not read well, a contract and inventory you will need again at move-out, payments in more than one currency, and repairs that do not always get done quickly. These five iPhone apps cover that workflow without overlapping. Two of them are ours, and we say so.</p>
+                <h2>1. SageBills: track every utility bill</h2>
+                <p><a href="../sagebills.html">SageBills</a> is our free utility tracker. It covers 40+ bill categories, reads invoices with on-device OCR, and keeps everything on your iPhone, iPad or Mac, with optional iCloud sync and no account. For renters, the useful part is seeing the autumn-to-winter heating jump coming and checking that what the landlord passes on matches the actual invoices.</p>
+                <h2>2. SageDocs: keep the rental paperwork safe</h2>
+                <p>Every renter collects a small archive of documents that matter at the worst possible moment: the rental contract, the move-in inventory and photos, the move-out report, insurance policies, and ID scans the landlord asked for. They should not live in your camera roll or a chat thread.</p>
+                <p><a href="../sagedocs.html">SageDocs</a>, also ours, is an encrypted vault for exactly this: AES-256-GCM encryption on your device, Face ID / Touch ID plus a master PIN, optional encrypted iCloud sync, and expiry reminders, so you get a nudge before the lease term or an insurance policy runs out.</p>
+                <h2>3. Wise or Revolut: pay across currencies</h2>
+                <p>If you earn in one currency and pay rent or bills in another, a multi-currency account saves real money compared with a traditional bank transfer. Wise converts at the mid-market rate and shows its fee upfront. Revolut includes a monthly allowance of currency exchange that depends on your plan, with extra fees above it and, on some plans, at weekends. Check each one&rsquo;s current fee page for the amounts you send.</p>
+                <h2>4. Google Translate: read invoices in another language</h2>
+                <p>Google Translate can translate text through your iPhone&rsquo;s camera: point it at an invoice or a notice from the building and read it in your language. It is not a legal translation, but it is enough to tell a routine bill from one that needs action.</p>
+                <h2>5. A local repairs marketplace</h2>
+                <p>When a repair is your responsibility, or the landlord agrees you can book it yourself, a marketplace with reviews and written quotes saves time. In Poland, Fixly, an OLX Group service, lets you post a job and get offers from local professionals. Its reviews are mixed, so check each contractor&rsquo;s history and agree the price and scope in writing. Elsewhere, look for the established local equivalent, and keep the quote and invoice in the same place as your contract.</p>
+                <p><strong>Bonus: SageMeet.</strong> If you record calls or meetings with a letting agent or landlord, where local law allows it, <a href="../sagemeet.html">SageMeet</a>, our third app, transcribes them with Whisper and turns them into searchable notes using your own OpenAI key, so verbal agreements do not get lost. Private Mode sends nothing anywhere.</p>
+                <section class="post-cta" aria-label="Get our apps for renters">
+                    <p class="kicker">The two we make</p>
+                    <div class="post-cta__apps">
+                        <article class="manifest">
+                            <h3 class="post-cta__title">Sage<span>Docs</span></h3>
+                            <p class="post-cta__tag">Our encrypted vault for the contract, inventory, insurance and ID scans. We can’t read it, by design.</p>
+                            <dl class="spec">
+                                <div><dt>Encryption</dt><dd>AES-256-GCM, on your device</dd></div>
+                                <div><dt>Unlock</dt><dd>Face ID / Touch ID + master PIN</dd></div>
+                                <div><dt>Sync</dt><dd>Your iCloud, encrypted (optional)</dd></div>
+                                <div><dt>Leaves device</dt><dd class="zero">0 bytes to Sagelight</dd></div>
+                                <div><dt>Price</dt><dd>$2.99/mo or $24.99/yr · 7-day free trial</dd></div>
+                            </dl>
+                            <div class="post-cta__actions">
+                                <a class="badge" href="https://apps.apple.com/app/sagedocs/id6762064711" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/fQISCOmi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Download SageDocs on the App Store" width="156" height="52" loading="lazy"></a>
+                                <a class="textlink" href="../sagedocs.html">Details →</a>
+                            </div>
+                        </article>
+                        <article class="manifest">
+                            <h3 class="post-cta__title">Sage<span>Bills</span></h3>
+                            <p class="post-cta__tag">Our free utility tracker. Scan each invoice and see the winter heating jump before it lands.</p>
+                            <dl class="spec">
+                                <div><dt>Scanning</dt><dd>On-device OCR</dd></div>
+                                <div><dt>Forecasts</dt><dd>Cost predictions, computed locally</dd></div>
+                                <div><dt>Account</dt><dd>None required</dd></div>
+                                <div><dt>Leaves device</dt><dd class="zero">0 bytes</dd></div>
+                                <div><dt>Price</dt><dd>Free · iOS 17+ · macOS 14+</dd></div>
+                            </dl>
+                            <div class="post-cta__actions">
+                                <a class="badge" href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Download SageBills on the App Store" width="156" height="52" loading="lazy"></a>
+                                <a class="textlink" href="../sagebills.html">Details →</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <h2 id="sources">Sources</h2>
+                <ol class="sources">
+                    <li><a href="https://wise.com/gb/pricing/" target="_blank" rel="noopener">Wise: pricing (mid-market rate, fees shown upfront)</a> (accessed 13 Oct 2026)</li>
+                    <li><a href="https://www.revolut.com/our-pricing-plans/" target="_blank" rel="noopener">Revolut: pricing plans and exchange allowances</a> (accessed 13 Oct 2026)</li>
+                    <li><a href="https://support.google.com/translate/answer/6142483?co=GENIE.Platform%3DiOS&amp;hl=en" target="_blank" rel="noopener">Google Translate Help: translate images with your camera (iPhone &amp; iPad)</a> (accessed 13 Oct 2026)</li>
+                    <li><a href="https://apps.apple.com/app/id1508502089" target="_blank" rel="noopener">Fixly – zleć usługę on the App Store (Fixly Sp. z o.o., OLX Group)</a> (accessed 13 Oct 2026)</li>
+                    <li><a href="https://ca.trustpilot.com/review/fixly.pl" target="_blank" rel="noopener">Trustpilot: fixly.pl reviews</a> (accessed 13 Oct 2026)</li>
+                </ol>
             </div>
             <section class="related" aria-label="Related articles">
                 <h2 class="related__title">Related articles</h2>
-                <div class="related__grid"><a class="related__card" href="save-utility-bills-europe.html"><span class="related__card-cat">Money Saving</span><span class="related__card-title">How to Save €1,200/Year on Utility Bills</span></a><a class="related__card" href="sagebills-v1-launch.html"><span class="related__card-cat">Product</span><span class="related__card-title">SageBills v1 is here</span></a><a class="related__card" href="romanian-electricity-bill-guide.html"><span class="related__card-cat">Guides</span><span class="related__card-title">Your Romanian Electricity Bill, Explained</span></a></div>
+                <div class="related__grid"><a class="related__card" href="save-utility-bills-europe.html"><span class="related__card-cat">Money Saving</span><span class="related__card-title">How to Cut Your Utility Bills: A 7-Step Audit</span></a><a class="related__card" href="sagebills-v1-launch.html"><span class="related__card-cat">Product</span><span class="related__card-title">SageBills v1 is here</span></a><a class="related__card" href="romanian-electricity-bill-guide.html"><span class="related__card-cat">Guides</span><span class="related__card-title">Your Romanian Electricity Bill, Explained</span></a></div>
             </section>
 
             <nav class="post-nav" aria-label="More posts">
-                <a class="prev" href="save-utility-bills-europe.html" rel="prev"><small>← Newer</small><span>How to save €1,200/year on utility bills</span></a>
+                <a class="prev" href="save-utility-bills-europe.html" rel="prev"><small>← Newer</small><span>How to cut your utility bills: a 7-step audit</span></a>
                 <a class="next" href="romanian-electricity-bill-guide.html" rel="next"><small>Older →</small><span>Your Romanian electricity bill, explained</span></a>
             </nav>
 
@@ -258,7 +309,7 @@
     </div>
 </footer>
 
-<script src="../assets/theme.js?v=20261013c"></script>
-<script src="../assets/consent.js?v=20261013c" defer></script>
+<script src="../assets/theme.js?v=20261013e"></script>
+<script src="../assets/consent.js?v=20261013e" defer></script>
 </body>
 </html>

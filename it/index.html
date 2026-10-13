@@ -72,8 +72,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
+    <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
 
     <script type="application/ld+json">
     {
@@ -129,8 +130,8 @@
         .home-hero { padding-top: calc(var(--nav-height) + 48px); padding-bottom: 64px; }
         .home-hero__grid { display: grid; gap: 48px; }
         .home-hero .hero-slogan { margin: 20px 0 22px; font-family: var(--font-display); letter-spacing: -.05em; line-height: .98; font-size: clamp(38px, 9vw, 104px); }
-        .home-hero .hero-slogan .thin { display: block; font-weight: 100; font-stretch: 75%; color: var(--paper-2); }
-        .home-hero .hero-slogan .heavy { display: block; font-weight: 800; font-stretch: 112.5%; }
+        .home-hero .hero-slogan .thin { font-weight: 100; font-stretch: 75%; color: var(--paper-2); }
+        .home-hero .hero-slogan .heavy { font-weight: 800; font-stretch: 112.5%; }
         .home-hero .hero-slogan .heavy em { font-style: normal; color: var(--amber); }
         .home-hero .hero-h1 { margin: 14px 0 0; max-width: 36ch; font-family: var(--font-mono); font-size: 15px; font-weight: 600; line-height: 1.5; letter-spacing: -.01em; color: var(--paper); }
         .home-hero .lead { font-size: 18px; color: var(--paper-2); max-width: 46ch; margin: 0 0 30px; }
@@ -139,6 +140,9 @@
         .zeros { display: flex; flex-wrap: wrap; gap: 10px 22px; list-style: none; font-family: var(--font-mono); font-size: 13px; color: var(--dim); }
         .zeros b { color: var(--amber); font-weight: 800; margin-right: 6px; }
 
+        /* slogan = LCP element: visible from first paint, only slides */
+        .boot .slide { animation: slide .8s var(--ease) both .1s; }
+        @keyframes slide { from { transform: translateY(14px); } to { transform: none; } }
         .boot .up { animation: rise .8s var(--ease) both; animation-delay: calc(var(--i, 0) * 110ms + 80ms); }
         .boot .ln { animation: type .5s steps(18, end) both; animation-delay: calc(var(--i, 0) * 170ms + 650ms); }
         .boot .ledger__total { animation: land .7s var(--ease) both, glow 1.6s ease-out both; animation-delay: 2.28s, 2.28s; }
@@ -222,7 +226,7 @@
             .legal-hub__head { border-bottom: 0; border-right: 1px solid var(--line); padding: 40px; }
         }
         @media (prefers-reduced-motion: reduce) {
-            .boot .up, .boot .ln, .boot .ledger__total { animation: none !important; opacity: 1 !important; clip-path: none !important; }
+            .boot .up, .boot .slide, .boot .ln, .boot .ledger__total { animation: none !important; opacity: 1 !important; clip-path: none !important; }
         }
     </style>
 </head>
@@ -255,8 +259,8 @@
             <div>
                 <p class="kicker up" style="--i:0"><span class="dot" aria-hidden="true"></span> Studio indipendente · <b>Romania, UE</b></p>
                 <h1 id="hero-title" class="hero-h1 up" style="--i:0">App per iPhone e Mac che rispettano la privacy: documenti, bollette e riunioni</h1>
-                <p class="hero-slogan up" style="--i:1">
-                    <span class="thin">I tuoi documenti,</span>
+                <p class="hero-slogan slide">
+                    <span class="thin">I tuoi documenti,</span><br>
                     <span class="heavy">inviati a noi: <em><span data-scramble="900">0&nbsp;byte.</span></em></span>
                 </p>
                 <p class="lead up" style="--i:2"><strong>Nessun tracciamento. Nessuna pubblicità. Nessun account.</strong> Create da una sola persona, in Romania.</p>
@@ -516,7 +520,7 @@
         <span>inviato a noi: 0 byte</span>
     </div>
 </footer>
-<script src="../assets/theme.js?v=20261013c"></script>
-<script src="../assets/consent.js?v=20261013c" defer></script>
+<script src="../assets/theme.js?v=20261013e"></script>
+<script src="../assets/consent.js?v=20261013e" defer></script>
 </body>
 </html>

@@ -63,8 +63,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
+    <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
 
     <script type="application/ld+json">
     {
@@ -182,7 +183,7 @@
             background: var(--amber-fade); border: 1px solid var(--amber-line);
             display: flex; align-items: center; justify-content: center; color: var(--amber); font-size: 22px;
         }
-        .crypto h4 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .crypto h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .crypto p { color: var(--paper-2); font-size: 16px; line-height: 1.6; }
         .crypto .mono-spec { font-family: var(--font-mono); font-size: 12px; color: var(--sage); text-transform: uppercase; letter-spacing: .06em; margin-top: 10px; }
         .crypto .mono-spec span.dim { color: var(--dim); }
@@ -208,7 +209,7 @@
             background: var(--sage-fade); border: 1px solid var(--sage-line);
             display: flex; align-items: center; justify-content: center; color: var(--sage); font-size: 22px;
         }
-        .layer h5 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .layer h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .layer p { font-size: 16px; color: var(--paper-2); line-height: 1.55; }
 
         /* FAQ */
@@ -413,7 +414,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">key</span></div>
                             <div>
-                                <h4>AES-256-GCM hitelesített titkosítás</h4>
+                                <h3>AES-256-GCM hitelesített titkosítás</h3>
                                 <p>Minden melléklet AES-256-GCM-mel titkosítva &mdash; ugyanaz a titkosítás, amelyet legfelsőbb minősített adatokhoz használnak. Minden fájl saját nonce-szal és integritási taggel rendelkezik.</p>
                                 <div class="mono-spec"><span class="dim">Specifikáció:</span> 256-BITES SZIMMETRIKUS KULCS · GCM MÓD</div>
                             </div>
@@ -421,7 +422,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">vibration</span></div>
                             <div>
-                                <h4>PBKDF2-SHA256 kulcs származtatás</h4>
+                                <h3>PBKDF2-SHA256 kulcs származtatás</h3>
                                 <p>A mester PIN-edet 600.000 iterációval és 256-bites telepítésenkénti sóval nyújtjuk meg. A brute-force támadás matematikailag kivitelezhetetlen jelenlegi számítási kapacitással.</p>
                                 <div class="mono-spec"><span class="dim">Specifikáció:</span> 600.000 ITERÁCIÓ · HMAC-SHA256</div>
                             </div>
@@ -429,7 +430,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">fingerprint</span></div>
                             <div>
-                                <h4>Keychain + biometrikus védelem</h4>
+                                <h3>Keychain + biometrikus védelem</h3>
                                 <p>A titkosítási kulcsok az iOS Keychain-ben vannak Face ID, Touch ID vagy mester PIN védelemmel. Sosem jelennek meg sima szövegként a Secure Enclave-en kívül.</p>
                                 <div class="mono-spec"><span class="dim">Specifikáció:</span> SECURE ENCLAVE · BIOMETRIKUS</div>
                             </div>
@@ -476,22 +477,22 @@
             <div class="layers">
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">lock</span></div>
-                    <h5>Széf réteg</h5>
+                    <h3>Széf réteg</h3>
                     <p>AES-256-GCM minden mellékletre. Fájlonkénti kulcsok.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">vpn_key</span></div>
-                    <h5>Hozzáférési réteg</h5>
+                    <h3>Hozzáférési réteg</h3>
                     <p>Mester PIN, Face ID, Touch ID. PBKDF2 kulcs származtatás.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">cloud</span></div>
-                    <h5>Szinkronizációs réteg</h5>
+                    <h3>Szinkronizációs réteg</h3>
                     <p>iCloud nyugalmi állapotban titkosítva CloudKit-en keresztül. Az Apple csak titkosított szöveget tárol.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">visibility_off</span></div>
-                    <h5>Adatvédelmi réteg</h5>
+                    <h3>Adatvédelmi réteg</h3>
                     <p>Nincs telemetria, nincs analitika, nincs metaadat-gyűjtés. Soha.</p>
                 </div>
             </div>
@@ -602,7 +603,7 @@
     <div class="footer__bottom"><span>© 2026 Sagelight Studio · Gondossággal készült Romániában, EU</span><span>Adatvédelem világossággal</span></div>
 </footer>
 
-<script src="../assets/theme.js?v=20261013c"></script>
-<script src="../assets/consent.js?v=20261013c" defer></script>
+<script src="../assets/theme.js?v=20261013e"></script>
+<script src="../assets/consent.js?v=20261013e" defer></script>
 </body>
 </html>

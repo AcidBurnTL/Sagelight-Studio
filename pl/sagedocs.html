@@ -63,8 +63,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
+    <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
 
     <script type="application/ld+json">
     {
@@ -182,7 +183,7 @@
             background: var(--amber-fade); border: 1px solid var(--amber-line);
             display: flex; align-items: center; justify-content: center; color: var(--amber); font-size: 22px;
         }
-        .crypto h4 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .crypto h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .crypto p { color: var(--paper-2); font-size: 16px; line-height: 1.6; }
         .crypto .mono-spec { font-family: var(--font-mono); font-size: 12px; color: var(--sage); text-transform: uppercase; letter-spacing: .06em; margin-top: 10px; }
         .crypto .mono-spec span.dim { color: var(--dim); }
@@ -208,7 +209,7 @@
             background: var(--sage-fade); border: 1px solid var(--sage-line);
             display: flex; align-items: center; justify-content: center; color: var(--sage); font-size: 22px;
         }
-        .layer h5 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .layer h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .layer p { font-size: 16px; color: var(--paper-2); line-height: 1.55; }
 
         /* FAQ */
@@ -413,7 +414,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">key</span></div>
                             <div>
-                                <h4>Uwierzytelnione szyfrowanie AES-256-GCM</h4>
+                                <h3>Uwierzytelnione szyfrowanie AES-256-GCM</h3>
                                 <p>Każdy załącznik jest szyfrowany za pomocą AES-256-GCM &mdash; tego samego szyfru używanego do danych ściśle tajnych. Każdy plik ma własny nonce i znacznik integralności.</p>
                                 <div class="mono-spec"><span class="dim">Specyfikacja:</span> KLUCZ SYMETRYCZNY 256-BIT · TRYB GCM</div>
                             </div>
@@ -421,7 +422,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">vibration</span></div>
                             <div>
-                                <h4>Wyprowadzenie klucza PBKDF2-SHA256</h4>
+                                <h3>Wyprowadzenie klucza PBKDF2-SHA256</h3>
                                 <p>Twój PIN główny jest rozciągany przez 600 000 iteracji z 256-bitową solą na instalację. Ataki brute-force są matematycznie niewykonalne przy obecnych mocach obliczeniowych.</p>
                                 <div class="mono-spec"><span class="dim">Specyfikacja:</span> 600 000 ITERACJI · HMAC-SHA256</div>
                             </div>
@@ -429,7 +430,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">fingerprint</span></div>
                             <div>
-                                <h4>Keychain + ochrona biometryczna</h4>
+                                <h3>Keychain + ochrona biometryczna</h3>
                                 <p>Klucze szyfrowania przechowywane są w iOS Keychain, chronione przez Face ID, Touch ID lub PIN. Nigdy nie pojawiają się w postaci jawnej poza Secure Enclave.</p>
                                 <div class="mono-spec"><span class="dim">Specyfikacja:</span> SECURE ENCLAVE · BIOMETRIA</div>
                             </div>
@@ -476,22 +477,22 @@
             <div class="layers">
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">lock</span></div>
-                    <h5>Warstwa sejfu</h5>
+                    <h3>Warstwa sejfu</h3>
                     <p>AES-256-GCM dla każdego załącznika. Klucze na plik.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">vpn_key</span></div>
-                    <h5>Warstwa dostępu</h5>
+                    <h3>Warstwa dostępu</h3>
                     <p>PIN, Face ID, Touch ID. PBKDF2 wyprowadzenie klucza.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">cloud</span></div>
-                    <h5>Warstwa synchronizacji</h5>
+                    <h3>Warstwa synchronizacji</h3>
                     <p>Zaszyfrowany w spoczynku iCloud przez CloudKit. Apple przechowuje tylko szyfrogram.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">visibility_off</span></div>
-                    <h5>Warstwa prywatności</h5>
+                    <h3>Warstwa prywatności</h3>
                     <p>Bez telemetrii, bez analityki, bez zbierania metadanych. Nigdy.</p>
                 </div>
             </div>
@@ -602,7 +603,7 @@
     <div class="footer__bottom"><span>© 2026 Sagelight Studio · Wykonane z troską w Rumunii, UE</span><span>Prywatność przez przejrzystość</span></div>
 </footer>
 
-<script src="../assets/theme.js?v=20261013c"></script>
-<script src="../assets/consent.js?v=20261013c" defer></script>
+<script src="../assets/theme.js?v=20261013e"></script>
+<script src="../assets/consent.js?v=20261013e" defer></script>
 </body>
 </html>

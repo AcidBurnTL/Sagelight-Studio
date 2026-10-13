@@ -74,8 +74,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
+    <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
 
     <script type="application/ld+json">
     {
@@ -196,7 +197,7 @@
             background: var(--amber-fade); border: 1px solid var(--amber-line);
             display: flex; align-items: center; justify-content: center; color: var(--amber); font-size: 22px;
         }
-        .crypto h4 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .crypto h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .crypto p { color: var(--paper-2); font-size: 16px; line-height: 1.6; }
         .crypto .mono-spec { font-family: var(--font-mono); font-size: 12px; color: var(--sage); text-transform: uppercase; letter-spacing: .06em; margin-top: 10px; }
         .crypto .mono-spec span.dim { color: var(--dim); }
@@ -222,7 +223,7 @@
             background: var(--sage-fade); border: 1px solid var(--sage-line);
             display: flex; align-items: center; justify-content: center; color: var(--sage); font-size: 22px;
         }
-        .layer h5 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .layer h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .layer p { font-size: 16px; color: var(--paper-2); line-height: 1.55; }
 
         /* FAQ */
@@ -435,7 +436,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">key</span></div>
                             <div>
-                                <h4>Autentiserad kryptering med AES-256-GCM</h4>
+                                <h3>Autentiserad kryptering med AES-256-GCM</h3>
                                 <p>Varje bilaga krypteras med AES-256-GCM &mdash; samma chiffer som används för hemligstämplade uppgifter på högsta nivå. Varje fil får sitt eget nonce och sin egen integritetstagg.</p>
                                 <div class="mono-spec"><span class="dim">Spec:</span> 256-BITARS SYMMETRISK NYCKEL · GCM-LÄGE</div>
                             </div>
@@ -443,7 +444,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">vibration</span></div>
                             <div>
-                                <h4>Nyckelhärledning med PBKDF2-SHA256</h4>
+                                <h3>Nyckelhärledning med PBKDF2-SHA256</h3>
                                 <p>Din huvud-PIN sträcks i 600 000 iterationer med ett 256-bitars salt per installation. Brute force-attacker är matematiskt opraktiska med all datorkraft som finns i dag.</p>
                                 <div class="mono-spec"><span class="dim">Spec:</span> 600 000 ITERATIONER · HMAC-SHA256</div>
                             </div>
@@ -451,7 +452,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">fingerprint</span></div>
                             <div>
-                                <h4>Nyckelring + biometriskt skydd</h4>
+                                <h3>Nyckelring + biometriskt skydd</h3>
                                 <p>Krypteringsnycklarna förvaras i iOS-nyckelringen, skyddade av Face ID, Touch ID eller din huvud-PIN. De förekommer aldrig i klartext utanför Secure Enclave.</p>
                                 <div class="mono-spec"><span class="dim">Spec:</span> SECURE ENCLAVE · BIOMETRISKT SKYDDAD</div>
                             </div>
@@ -499,22 +500,22 @@
             <div class="layers">
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">lock</span></div>
-                    <h5>Valvlagret</h5>
+                    <h3>Valvlagret</h3>
                     <p>AES-256-GCM runt varje bilaga. Nycklar per fil.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">vpn_key</span></div>
-                    <h5>Åtkomstlagret</h5>
+                    <h3>Åtkomstlagret</h3>
                     <p>Huvud-PIN, Face ID, Touch ID. Nyckelhärledning med PBKDF2.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">cloud</span></div>
-                    <h5>Synklagret</h5>
+                    <h3>Synklagret</h3>
                     <p>iCloud med kryptering i vila via CloudKit. Apple lagrar endast chiffertext.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">visibility_off</span></div>
-                    <h5>Integritetslagret</h5>
+                    <h3>Integritetslagret</h3>
                     <p>Ingen telemetri, ingen analys, ingen insamling av metadata. Aldrig.</p>
                 </div>
             </div>
@@ -656,7 +657,7 @@
     </div>
 </footer>
 
-<script src="../assets/theme.js?v=20261013c"></script>
-<script src="../assets/consent.js?v=20261013c" defer></script>
+<script src="../assets/theme.js?v=20261013e"></script>
+<script src="../assets/consent.js?v=20261013e" defer></script>
 </body>
 </html>

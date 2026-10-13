@@ -74,8 +74,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="preload" href="assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/fonts/fonts.css?v=20261013c">
-    <link rel="stylesheet" href="assets/sage.css?v=20261013c">
+    <link rel="preload" href="assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/sage.css?v=20261013e">
 
     <script type="application/ld+json">
     {
@@ -195,7 +196,7 @@
             background: var(--amber-fade); border: 1px solid var(--amber-line);
             display: flex; align-items: center; justify-content: center; color: var(--amber); font-size: 22px;
         }
-        .crypto h4 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .crypto h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .crypto p { color: var(--paper-2); font-size: 16px; line-height: 1.6; }
         .crypto .mono-spec { font-family: var(--font-mono); font-size: 12px; color: var(--sage); text-transform: uppercase; letter-spacing: .06em; margin-top: 10px; }
         .crypto .mono-spec span.dim { color: var(--dim); }
@@ -221,7 +222,7 @@
             background: var(--sage-fade); border: 1px solid var(--sage-line);
             display: flex; align-items: center; justify-content: center; color: var(--sage); font-size: 22px;
         }
-        .layer h5 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .layer h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .layer p { font-size: 16px; color: var(--paper-2); line-height: 1.55; }
 
         /* FAQ */
@@ -434,7 +435,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">key</span></div>
                             <div>
-                                <h4>AES-256-GCM authenticated encryption</h4>
+                                <h3>AES-256-GCM authenticated encryption</h3>
                                 <p>Every attachment is encrypted with AES-256-GCM &mdash; the same cipher trusted for top-secret data. Each file gets its own per-file nonce and integrity tag.</p>
                                 <div class="mono-spec"><span class="dim">Spec:</span> 256-BIT SYMMETRIC KEY · GCM MODE</div>
                             </div>
@@ -442,7 +443,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">vibration</span></div>
                             <div>
-                                <h4>PBKDF2-SHA256 key derivation</h4>
+                                <h3>PBKDF2-SHA256 key derivation</h3>
                                 <p>Your master PIN is stretched 600,000 iterations with a 256-bit per-installation salt. Brute-force attacks are mathematically impractical at any current compute scale.</p>
                                 <div class="mono-spec"><span class="dim">Spec:</span> 600,000 ITERATIONS · HMAC-SHA256</div>
                             </div>
@@ -450,7 +451,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">fingerprint</span></div>
                             <div>
-                                <h4>Keychain + biometric protection</h4>
+                                <h3>Keychain + biometric protection</h3>
                                 <p>Encryption keys live in the iOS Keychain protected by Face ID, Touch ID, or your master PIN. They never appear in plaintext outside of the Secure Enclave.</p>
                                 <div class="mono-spec"><span class="dim">Spec:</span> SECURE ENCLAVE · BIOMETRIC GATED</div>
                             </div>
@@ -498,22 +499,22 @@
             <div class="layers">
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">lock</span></div>
-                    <h5>Vault layer</h5>
+                    <h3>Vault layer</h3>
                     <p>AES-256-GCM wrapping for every attachment. Per-file keys.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">vpn_key</span></div>
-                    <h5>Access layer</h5>
+                    <h3>Access layer</h3>
                     <p>Master PIN, Face ID, Touch ID. PBKDF2 key derivation.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">cloud</span></div>
-                    <h5>Sync layer</h5>
+                    <h3>Sync layer</h3>
                     <p>Encrypted-at-rest iCloud via CloudKit. Apple stores ciphertext only.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">visibility_off</span></div>
-                    <h5>Privacy layer</h5>
+                    <h3>Privacy layer</h3>
                     <p>No telemetry, no analytics, no metadata collection. Ever.</p>
                 </div>
             </div>
@@ -655,7 +656,7 @@
     </div>
 </footer>
 
-<script src="assets/theme.js?v=20261013c"></script>
-<script src="assets/consent.js?v=20261013c" defer></script>
+<script src="assets/theme.js?v=20261013e"></script>
+<script src="assets/consent.js?v=20261013e" defer></script>
 </body>
 </html>

@@ -395,3 +395,7 @@ details.collapsible .collapsible__body, details.collapsible .collapsible__body p
 @media (prefers-reduced-motion: reduce) { .animate-in { opacity: 1 !important; transform: none !important; } }
 /* long compound words (nl/de "Verwerkingsverantwoordelijke") must break inside flex headings on phones */
 .section__heading, .section__subheading, .doc-header__title, .toc__item a { overflow-wrap: anywhere; min-width: 0; }
+/* LCP: the document header must be visible from first paint — slide only, no fade */
+.animate-in { animation-name: slideUpOnly; }
+.animate-in--d1, .animate-in--d2, .animate-in--d3 { opacity: 1; }
+@keyframes slideUpOnly { from { transform: translateY(12px); } to { transform: none; } }

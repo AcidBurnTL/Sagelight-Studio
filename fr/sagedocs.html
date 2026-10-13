@@ -67,8 +67,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
+    <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
 
     <script type="application/ld+json">
     {
@@ -189,7 +190,7 @@
             background: var(--amber-fade); border: 1px solid var(--amber-line);
             display: flex; align-items: center; justify-content: center; color: var(--amber); font-size: 22px;
         }
-        .crypto h4 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .crypto h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .crypto p { color: var(--paper-2); font-size: 16px; line-height: 1.6; }
         .crypto .mono-spec { font-family: var(--font-mono); font-size: 12px; color: var(--sage); text-transform: uppercase; letter-spacing: .06em; margin-top: 10px; }
         .crypto .mono-spec span.dim { color: var(--dim); }
@@ -215,7 +216,7 @@
             background: var(--sage-fade); border: 1px solid var(--sage-line);
             display: flex; align-items: center; justify-content: center; color: var(--sage); font-size: 22px;
         }
-        .layer h5 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .layer h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .layer p { font-size: 16px; color: var(--paper-2); line-height: 1.55; }
 
         /* FAQ */
@@ -428,7 +429,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">key</span></div>
                             <div>
-                                <h4>Chiffrement authentifié AES-256-GCM</h4>
+                                <h3>Chiffrement authentifié AES-256-GCM</h3>
                                 <p>Chaque pièce jointe est chiffrée en AES-256-GCM &mdash; l'algorithme de référence pour les données classifiées « très secret ». Chaque fichier reçoit son propre nonce et sa propre balise d'intégrité.</p>
                                 <div class="mono-spec"><span class="dim">Spéc. :</span> CLÉ SYMÉTRIQUE 256 BITS · MODE GCM</div>
                             </div>
@@ -436,7 +437,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">vibration</span></div>
                             <div>
-                                <h4>Dérivation de clé PBKDF2-SHA256</h4>
+                                <h3>Dérivation de clé PBKDF2-SHA256</h3>
                                 <p>Votre code PIN principal est renforcé par 600 000 itérations avec un sel de 256 bits propre à chaque installation. Les attaques par force brute deviennent mathématiquement irréalistes, quelle que soit la puissance de calcul actuelle.</p>
                                 <div class="mono-spec"><span class="dim">Spéc. :</span> 600 000 ITÉRATIONS · HMAC-SHA256</div>
                             </div>
@@ -444,7 +445,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">fingerprint</span></div>
                             <div>
-                                <h4>Trousseau + protection biométrique</h4>
+                                <h3>Trousseau + protection biométrique</h3>
                                 <p>Les clés de chiffrement résident dans le trousseau iOS, protégées par Face ID, Touch ID ou votre code PIN principal. Elles n'apparaissent jamais en clair en dehors de la Secure Enclave.</p>
                                 <div class="mono-spec"><span class="dim">Spéc. :</span> SECURE ENCLAVE · ACCÈS BIOMÉTRIQUE</div>
                             </div>
@@ -491,22 +492,22 @@
             <div class="layers">
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">lock</span></div>
-                    <h5>Couche coffre-fort</h5>
+                    <h3>Couche coffre-fort</h3>
                     <p>Chaque pièce jointe enveloppée en AES-256-GCM. Clés propres à chaque fichier.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">vpn_key</span></div>
-                    <h5>Couche d'accès</h5>
+                    <h3>Couche d'accès</h3>
                     <p>Code PIN principal, Face ID, Touch ID. Dérivation de clé PBKDF2.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">cloud</span></div>
-                    <h5>Couche de synchronisation</h5>
+                    <h3>Couche de synchronisation</h3>
                     <p>iCloud chiffré au repos via CloudKit. Apple ne stocke que des données chiffrées.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">visibility_off</span></div>
-                    <h5>Couche confidentialité</h5>
+                    <h3>Couche confidentialité</h3>
                     <p>Aucune télémétrie, aucun outil d'analyse, aucune collecte de métadonnées. Jamais.</p>
                 </div>
             </div>
@@ -645,7 +646,7 @@
     </div>
 </footer>
 
-<script src="../assets/theme.js?v=20261013c"></script>
-<script src="../assets/consent.js?v=20261013c" defer></script>
+<script src="../assets/theme.js?v=20261013e"></script>
+<script src="../assets/consent.js?v=20261013e" defer></script>
 </body>
 </html>

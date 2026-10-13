@@ -240,11 +240,8 @@ BLOG_POSTS = [
     {
         "out": "blog-save-utility-bills-europe.png",
         "eyebrow": "Blog · Money Saving",
-        "title_lines": [
-            [("Save ", "reg"), ("€1,200/year", "em")],
-            [("on utility bills.", "reg")],
-        ],
-        "subtitle": "Where European households overpay on electricity, gas, water, and building services — and how to recover it, country by country.",
+        "title_lines": [[("Cut your utility bills", "reg")], [("in ", "reg"), ("7 steps.", "em")]],
+        "subtitle": "A practical household audit: inventory every bill, catch estimated reads and billing errors, and compare offers with the official regulator tools.",
         "footer": "Electricity · Gas · Water · Building Fees",
     },
     {
@@ -255,7 +252,7 @@ BLOG_POSTS = [
             [("decoded ", "em"), ("line by line.", "reg")],
         ],
         "subtitle": "A line-by-line decoder for Romanian electricity invoices: tariffs, network fees, green certificates, and how to spot errors.",
-        "footer": "PPC · Electrica · Tariffs · Certificates",
+        "footer": "PPC · Electrica · Tariffs · 2026",
     },
     {
         "out": "blog-sagebills-v1-launch.png",
@@ -296,6 +293,55 @@ BLOG_POSTS = [
         ],
         "subtitle": "Romanian building maintenance fees are rarely explained and almost never audited. What's mandatory, what's added, and your rights.",
         "footer": "Întreținere · Audits · Tenant Rights",
+    },
+    {
+        "out": "blog-store-passport-id-scans-safely.png",
+        "eyebrow": "Blog · Documents",
+        "title_lines": [[("Passport scans", "reg")], [("stored ", "reg"), ("safely.", "em")]],
+        "subtitle": "Camera roll, email, chat apps or an encrypted vault? Where passport and ID scans belong, and what encryption really protects.",
+        "footer": "Passport · ID Card · Encryption · iPhone",
+    },
+    {
+        "out": "blog-icloud-google-drive-identity-documents.png",
+        "eyebrow": "Blog · Documents",
+        "title_lines": [[("iCloud or Google Drive", "reg")], [("for your ", "reg"), ("passport?", "em")]],
+        "subtitle": "Standard iCloud, Advanced Data Protection and Google Drive compared: who actually holds the keys to your identity documents.",
+        "footer": "iCloud · Google Drive · ADP · Encryption",
+    },
+    {
+        "out": "blog-passport-id-expiry-reminders.png",
+        "eyebrow": "Blog · Documents",
+        "title_lines": [[("Your passport expires", "reg")], [("sooner ", "em"), ("than you think.", "reg")]],
+        "subtitle": "Validity rules for travel, Romania's ID renewal window, and simple reminder setups so an expired passport never ruins a trip.",
+        "footer": "Passport · ID Card · Travel Rules · Reminders",
+    },
+    {
+        "out": "blog-documents-to-keep-after-buying-car-or-home.png",
+        "eyebrow": "Blog · Documents",
+        "title_lines": [[("Bought a car or home?", "reg")], [("Keep ", "reg"), ("these papers.", "em")]],
+        "subtitle": "Contracts, CIV, land register extract, energy certificate, PAD insurance: which papers to keep after a car or home purchase in Romania.",
+        "footer": "Romania · Car · Home · Paperwork",
+    },
+    {
+        "out": "blog-ro-intretinere-bloc-costuri.png",
+        "eyebrow": "Blog · Întreținere",
+        "title_lines": [[("Întreținerea la bloc,", "reg")], [("explicată.", "em")]],
+        "subtitle": "Ce include lista de plată, cum se calculează și cum o contești în 10 zile, pe baza Legii 196/2018.",
+        "footer": "Legea 196/2018 · Cota-parte · Contestație · Penalități",
+    },
+    {
+        "out": "blog-ro-incalzire-iarna-2025-2026.png",
+        "eyebrow": "Blog · Încălzire",
+        "title_lines": [[("Încălzirea în iarna", "reg")], [("2025–2026.", "em")]],
+        "subtitle": "TVA la energia termică, prețul gigacaloriei, gazele după plafonul de 0,31 lei/kWh și ajutorul de încălzire.",
+        "footer": "Termoficare · Gaze · TVA · Ajutor de încălzire",
+    },
+    {
+        "out": "blog-ro-factura-curent-explicata.png",
+        "eyebrow": "Blog · Ghid",
+        "title_lines": [[("Factura de curent,", "reg")], [("explicată ", "em"), ("rând cu rând.", "reg")]],
+        "subtitle": "Fiecare rând de pe factura de curent, cu valorile reglementate din 2026 și diferențele dintre PPC, Electrica, Hidroelectrica și E.ON.",
+        "footer": "PPC · Electrica · Hidroelectrica · E.ON · TVA 21%",
     },
 ]
 

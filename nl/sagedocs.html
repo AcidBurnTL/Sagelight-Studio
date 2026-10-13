@@ -67,8 +67,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
+    <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
 
     <script type="application/ld+json">
     {
@@ -189,7 +190,7 @@
             background: var(--amber-fade); border: 1px solid var(--amber-line);
             display: flex; align-items: center; justify-content: center; color: var(--amber); font-size: 22px;
         }
-        .crypto h4 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .crypto h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .crypto p { color: var(--paper-2); font-size: 16px; line-height: 1.6; }
         .crypto .mono-spec { font-family: var(--font-mono); font-size: 12px; color: var(--sage); text-transform: uppercase; letter-spacing: .06em; margin-top: 10px; }
         .crypto .mono-spec span.dim { color: var(--dim); }
@@ -215,7 +216,7 @@
             background: var(--sage-fade); border: 1px solid var(--sage-line);
             display: flex; align-items: center; justify-content: center; color: var(--sage); font-size: 22px;
         }
-        .layer h5 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .layer h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .layer p { font-size: 16px; color: var(--paper-2); line-height: 1.55; }
 
         /* FAQ */
@@ -428,7 +429,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">key</span></div>
                             <div>
-                                <h4>Geauthenticeerde versleuteling met AES-256-GCM</h4>
+                                <h3>Geauthenticeerde versleuteling met AES-256-GCM</h3>
                                 <p>Elke bijlage wordt versleuteld met AES-256-GCM &mdash; hetzelfde algoritme dat wordt vertrouwd voor staatsgeheime gegevens. Elk bestand krijgt een eigen nonce en integriteitstag.</p>
                                 <div class="mono-spec"><span class="dim">Specificatie:</span> SYMMETRISCHE SLEUTEL VAN 256 BIT · GCM-MODUS</div>
                             </div>
@@ -436,7 +437,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">vibration</span></div>
                             <div>
-                                <h4>Sleutelafleiding met PBKDF2-SHA256</h4>
+                                <h3>Sleutelafleiding met PBKDF2-SHA256</h3>
                                 <p>Je hoofdpincode wordt 600.000 keer doorgerekend, met een salt van 256 bits per installatie. Brute-force-aanvallen zijn daardoor wiskundig onhaalbaar met alle rekenkracht die vandaag bestaat.</p>
                                 <div class="mono-spec"><span class="dim">Specificatie:</span> 600.000 ITERATIES · HMAC-SHA256</div>
                             </div>
@@ -444,7 +445,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">fingerprint</span></div>
                             <div>
-                                <h4>Sleutelhanger + biometrische beveiliging</h4>
+                                <h3>Sleutelhanger + biometrische beveiliging</h3>
                                 <p>Versleutelingssleutels staan in de iOS-sleutelhanger, beschermd door Face ID, Touch ID of je hoofdpincode. Buiten de Secure Enclave verschijnen ze nooit als leesbare tekst.</p>
                                 <div class="mono-spec"><span class="dim">Specificatie:</span> SECURE ENCLAVE · BIOMETRISCH AFGESCHERMD</div>
                             </div>
@@ -491,22 +492,22 @@
             <div class="layers">
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">lock</span></div>
-                    <h5>Kluislaag</h5>
+                    <h3>Kluislaag</h3>
                     <p>AES-256-GCM rond elke bijlage. Sleutels per bestand.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">vpn_key</span></div>
-                    <h5>Toegangslaag</h5>
+                    <h3>Toegangslaag</h3>
                     <p>Hoofdpincode, Face ID, Touch ID. Sleutelafleiding met PBKDF2.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">cloud</span></div>
-                    <h5>Synchronisatielaag</h5>
+                    <h3>Synchronisatielaag</h3>
                     <p>iCloud via CloudKit, versleuteld in opslag. Apple bewaart alleen versleutelde data.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">visibility_off</span></div>
-                    <h5>Privacylaag</h5>
+                    <h3>Privacylaag</h3>
                     <p>Geen telemetrie, geen analytics, geen verzameling van metadata. Nooit.</p>
                 </div>
             </div>
@@ -645,7 +646,7 @@
     </div>
 </footer>
 
-<script src="../assets/theme.js?v=20261013c"></script>
-<script src="../assets/consent.js?v=20261013c" defer></script>
+<script src="../assets/theme.js?v=20261013e"></script>
+<script src="../assets/consent.js?v=20261013e" defer></script>
 </body>
 </html>

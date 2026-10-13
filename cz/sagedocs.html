@@ -63,8 +63,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css?v=20261013c">
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013c">
+    <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/sage.css?v=20261013e">
 
     <script type="application/ld+json">
     {
@@ -182,7 +183,7 @@
             background: var(--amber-fade); border: 1px solid var(--amber-line);
             display: flex; align-items: center; justify-content: center; color: var(--amber); font-size: 22px;
         }
-        .crypto h4 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .crypto h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .crypto p { color: var(--paper-2); font-size: 16px; line-height: 1.6; }
         .crypto .mono-spec { font-family: var(--font-mono); font-size: 12px; color: var(--sage); text-transform: uppercase; letter-spacing: .06em; margin-top: 10px; }
         .crypto .mono-spec span.dim { color: var(--dim); }
@@ -208,7 +209,7 @@
             background: var(--sage-fade); border: 1px solid var(--sage-line);
             display: flex; align-items: center; justify-content: center; color: var(--sage); font-size: 22px;
         }
-        .layer h5 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
+        .layer h3 { font-family: var(--font-mono); font-size: 16px; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 6px; }
         .layer p { font-size: 16px; color: var(--paper-2); line-height: 1.55; }
 
         /* FAQ */
@@ -413,7 +414,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">key</span></div>
                             <div>
-                                <h4>AES-256-GCM autentizované šifrování</h4>
+                                <h3>AES-256-GCM autentizované šifrování</h3>
                                 <p>Každá příloha je šifrována AES-256-GCM &mdash; stejnou šifrou používanou pro přísně tajná data. Každý soubor má vlastní nonce a integritní značku.</p>
                                 <div class="mono-spec"><span class="dim">Specifikace:</span> 256-BITOVÝ SYMETRICKÝ KLÍČ · REŽIM GCM</div>
                             </div>
@@ -421,7 +422,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">vibration</span></div>
                             <div>
-                                <h4>PBKDF2-SHA256 odvození klíče</h4>
+                                <h3>PBKDF2-SHA256 odvození klíče</h3>
                                 <p>Váš master PIN je natahován 600.000 iteracemi s 256-bitovou solí na instalaci. Brute-force útoky jsou matematicky neproveditelné při současných výpočetních kapacitách.</p>
                                 <div class="mono-spec"><span class="dim">Specifikace:</span> 600.000 ITERACÍ · HMAC-SHA256</div>
                             </div>
@@ -429,7 +430,7 @@
                         <div class="crypto">
                             <div class="crypto__icon"><span aria-hidden="true" class="material-symbols-outlined fill">fingerprint</span></div>
                             <div>
-                                <h4>Keychain + biometrická ochrana</h4>
+                                <h3>Keychain + biometrická ochrana</h3>
                                 <p>Šifrovací klíče v iOS Keychain chráněné Face ID, Touch ID nebo master PIN. Nikdy se neobjevují v otevřené podobě mimo Secure Enclave.</p>
                                 <div class="mono-spec"><span class="dim">Specifikace:</span> SECURE ENCLAVE · BIOMETRICKY</div>
                             </div>
@@ -476,22 +477,22 @@
             <div class="layers">
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">lock</span></div>
-                    <h5>Vrstva trezoru</h5>
+                    <h3>Vrstva trezoru</h3>
                     <p>AES-256-GCM pro každou přílohu. Klíče na soubor.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">vpn_key</span></div>
-                    <h5>Přístupová vrstva</h5>
+                    <h3>Přístupová vrstva</h3>
                     <p>Master PIN, Face ID, Touch ID. PBKDF2 odvození klíče.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">cloud</span></div>
-                    <h5>Synchronizační vrstva</h5>
+                    <h3>Synchronizační vrstva</h3>
                     <p>Šifrovaný v klidu iCloud přes CloudKit. Apple ukládá pouze šifrovaný text.</p>
                 </div>
                 <div class="layer reveal">
                     <div class="layer__circle"><span aria-hidden="true" class="material-symbols-outlined fill">visibility_off</span></div>
-                    <h5>Vrstva soukromí</h5>
+                    <h3>Vrstva soukromí</h3>
                     <p>Žádná telemetrie, žádná analytika, žádný sběr metadat. Nikdy.</p>
                 </div>
             </div>
@@ -602,7 +603,7 @@
     <div class="footer__bottom"><span>© 2026 Sagelight Studio · Vytvořeno s péčí v Rumunsku, EU</span><span>Soukromí skrze jasnost</span></div>
 </footer>
 
-<script src="../assets/theme.js?v=20261013c"></script>
-<script src="../assets/consent.js?v=20261013c" defer></script>
+<script src="../assets/theme.js?v=20261013e"></script>
+<script src="../assets/consent.js?v=20261013e" defer></script>
 </body>
 </html>

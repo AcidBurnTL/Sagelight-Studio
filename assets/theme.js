@@ -139,11 +139,13 @@ window.gtagReportConversion = function (sendTo) {
         var btn = makeEl('button', {
             type: 'button', id: 'langPickerBtn',
             'class': 'nav__icon-btn lang-picker__btn',
-            'aria-label': 'Language', 'aria-haspopup': 'true', 'aria-expanded': 'false',
+            'aria-haspopup': 'true', 'aria-expanded': 'false',
             'aria-controls': 'langPickerMenu'
         });
         var cur = LOCALES.filter(function (l) { return l.code === currentLang; })[0] || LOCALES[0];
         btn.appendChild(svgGlobe());
+        // accessible name "Language: EN" contains the visible text (WCAG 2.5.3)
+        btn.appendChild(makeEl('span', { 'class': 'visually-hidden' }, 'Language: '));
         btn.appendChild(makeEl('span', { 'class': 'lang-picker__current' }, cur.short));
         btn.appendChild(makeEl('span', { 'class': 'lang-picker__caret', 'aria-hidden': 'true' }, '▾'));
 
@@ -223,7 +225,19 @@ window.gtagReportConversion = function (sendTo) {
                     if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
                 });
             }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-            revealEls.forEach(function (el) { io.observe(el); });
+            // Anything already on screen at load shows at once (no fade): keeps the
+            // above-the-fold content paintable immediately, which is what LCP measures.
+            var vh = window.innerHeight || document.documentElement.clientHeight;
+            revealEls.forEach(function (el) {
+                var r = el.getBoundingClientRect();
+                if (r.top < vh && r.bottom > 0) {
+                    el.style.transition = 'none';
+                    el.classList.add('is-visible');
+                    requestAnimationFrame(function () { requestAnimationFrame(function () { el.style.transition = ''; }); });
+                } else {
+                    io.observe(el);
+                }
+            });
         }
 
         // numbered principles light up while crossing the middle of the viewport

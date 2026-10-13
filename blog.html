@@ -29,6 +29,7 @@
     <meta property="og:url" content="https://sagelight-studio.com/blog.html">
     <meta property="og:site_name" content="Sagelight Studio">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ro_RO">
     <meta property="og:image" content="https://sagelight-studio.com/assets/og/blog.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -41,6 +42,7 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/blog.html">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html">
+    <link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html">
     <link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog.html">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -54,7 +56,7 @@
         "@type": "Blog",
         "name": "Sagelight Studio Blog",
         "url": "https://sagelight-studio.com/blog.html",
-        "description": "Money-saving guides for European households and product updates for SageBills, SageMeet, and SageDocs.",
+        "description": "Money-saving guides, identity-document privacy guides and product updates from Sagelight Studio (SageDocs, SageBills, SageMeet).",
         "inLanguage": "en",
         "publisher": {
             "@type": "Organization",
@@ -75,9 +77,9 @@
         ]
     }
     </script>
-    <link rel="preload" href="assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/fonts/fonts.css?v=20261013c">
-    <link rel="stylesheet" href="assets/sage.css?v=20261013c">
+    <link rel="preload" href="assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/sage.css?v=20261013e">
 
     <style>
         /* Blog index ("Data Manifest") — posts as log entries */
@@ -166,11 +168,12 @@
             <p class="lead fade-up d3">Country guides, utility cost breakdowns and product updates from Sagelight Studio, for smarter bill tracking, meetings and document storage across Europe.</p>
             <div class="filters fade-up d4" role="group" aria-label="Filter posts by category">
                 <button type="button" class="filter" data-cat="All" aria-pressed="true">All posts</button>
+                <button type="button" class="filter" data-cat="Documents" aria-pressed="false">Documents</button>
                 <button type="button" class="filter" data-cat="Money Saving" aria-pressed="false">Money saving</button>
                 <button type="button" class="filter" data-cat="Guides" aria-pressed="false">Guides</button>
                 <button type="button" class="filter" data-cat="Updates" aria-pressed="false">Updates</button>
                 <button type="button" class="filter" data-cat="Market Insights" aria-pressed="false">Market insights</button>
-                <span class="filters__count" id="postCount" role="status" aria-live="polite">6 entries</span>
+                <span class="filters__count" id="postCount" role="status" aria-live="polite">10 entries</span>
             </div>
         </div>
     </section>
@@ -178,35 +181,79 @@
     <section class="blog-list" aria-label="Posts">
         <div class="container">
             <!-- Featured: latest post -->
-            <article class="manifest card--flag featured reveal" data-cat="Updates" aria-labelledby="featured-title">
+            <article class="manifest card--flag featured reveal" data-cat="Documents" aria-labelledby="featured-title">
                 <div>
                     <span class="flag">Latest entry</span>
                     <div class="entry-meta">
-                        <span class="chip chip--amber">Updates</span>
-                        <time datetime="2026-04-08">8 Apr 2026</time>
+                        <span class="chip chip--amber">Documents</span>
+                        <time datetime="2026-10-13">13 Oct 2026</time>
                         <span aria-hidden="true">·</span>
-                        <span>1 min read</span>
+                        <span>5 min read</span>
                     </div>
-                    <h2 id="featured-title"><a href="blog/sagebills-v1-launch.html">SageBills v1.0: what’s inside and what’s coming next</a></h2>
-                    <p>We shipped. After months of building in private, SageBills is live on the App Store. Here is everything you get on day one, and a transparent look at the roadmap for the months ahead.</p>
-                    <a class="btn btn--primary" href="blog/sagebills-v1-launch.html">Read the launch notes <span aria-hidden="true">→</span></a>
+                    <h2 id="featured-title"><a href="blog/store-passport-id-scans-safely.html">How to store passport and ID scans safely on your phone</a></h2>
+                    <p>Most of us keep a photo of our passport somewhere on the phone. Where it lives matters: the camera roll, email and chat apps all leave copies you don't control. Here's where scans belong, and how to share a safer copy.</p>
+                    <a class="btn btn--primary" href="blog/store-passport-id-scans-safely.html">Read the guide <span aria-hidden="true">→</span></a>
                 </div>
                 <dl class="spec">
-                    <div><dt>Ships with</dt><dd>40+ bill categories</dd></div>
-                    <div><dt>Scanning</dt><dd>On-device OCR</dd></div>
-                    <div><dt>Watches for</dt><dd>Anomalies vs. your baseline</dd></div>
-                    <div><dt>Leaves device</dt><dd class="zero">0 bytes</dd></div>
+                    <div><dt>Covers</dt><dd>Passport &amp; ID scans</dd></div>
+                    <div><dt>Avoid</dt><dd>Camera roll, email, chat backups</dd></div>
+                    <div><dt>Look for</dt><dd>End-to-end encryption</dd></div>
+                    <div><dt>Sources</dt><dd>Apple, Google, Rijksoverheid</dd></div>
                     <div><dt>Author</dt><dd>Florin Nica</dd></div>
                 </dl>
             </article>
 
             <ol class="log" id="postLog">
+                <li class="log__item reveal" data-cat="Documents">
+                    <a class="log__link" href="blog/icloud-google-drive-identity-documents.html">
+                        <span class="log__date"><b>10</b><time datetime="2026-10-13">13 Oct 2026</time></span>
+                        <span class="log__body">
+                            <span class="entry-meta"><span class="chip chip--amber">Documents</span><span>4 min read</span></span>
+                            <span class="log__title">Is iCloud or Google Drive safe for your passport and ID?</span>
+                            <span class="log__excerpt">Both services encrypt your files. The difference that matters for a passport scan is who holds the key, and by default it isn’t you.</span>
+                        </span>
+                        <span class="log__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+                <li class="log__item reveal" data-cat="Documents">
+                    <a class="log__link" href="blog/passport-id-expiry-reminders.html">
+                        <span class="log__date"><b>10</b><time datetime="2026-10-13">13 Oct 2026</time></span>
+                        <span class="log__body">
+                            <span class="entry-meta"><span class="chip chip--amber">Documents</span><span>4 min read</span></span>
+                            <span class="log__title">How to get reminded before your passport or ID card expires</span>
+                            <span class="log__excerpt">The validity rules that catch travellers out, Romania’s ID renewal window, and reminder setups that actually work.</span>
+                        </span>
+                        <span class="log__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+                <li class="log__item reveal" data-cat="Documents">
+                    <a class="log__link" href="blog/documents-to-keep-after-buying-car-or-home.html">
+                        <span class="log__date"><b>10</b><time datetime="2026-10-13">13 Oct 2026</time></span>
+                        <span class="log__body">
+                            <span class="entry-meta"><span class="chip chip--amber">Documents</span><span>4 min read</span></span>
+                            <span class="log__title">Which documents to keep after buying a car or a home in Romania</span>
+                            <span class="log__excerpt">The papers that matter, the deadlines that start on signing day, and how long to hold on to each document.</span>
+                        </span>
+                        <span class="log__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+                <li class="log__item reveal" data-cat="Updates">
+                    <a class="log__link" href="blog/sagebills-v1-launch.html">
+                        <span class="log__date"><b>04</b><time datetime="2026-04-08">8 Apr 2026</time></span>
+                        <span class="log__body">
+                            <span class="entry-meta"><span class="chip chip--amber">Updates</span><span>1 min read</span></span>
+                            <span class="log__title">SageBills v1.0: what’s inside and what’s coming next</span>
+                            <span class="log__excerpt">We shipped. Everything you get on day one, and a transparent look at the roadmap for the months ahead.</span>
+                        </span>
+                        <span class="log__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
                 <li class="log__item reveal" data-cat="Money Saving">
                     <a class="log__link" href="blog/save-utility-bills-europe.html">
                         <span class="log__date"><b>04</b><time datetime="2026-04-01">1 Apr 2026</time></span>
                         <span class="log__body">
                             <span class="entry-meta"><span class="chip chip--amber">Money saving</span><span>5 min read</span></span>
-                            <span class="log__title">How European households can save €1,200/year on utility bills</span>
+                            <span class="log__title">How to cut your utility bills: a 7-step household audit</span>
                             <span class="log__excerpt">Most families overpay on electricity, gas, water and building services without realising it. A practical, country-by-country breakdown of where the money goes and how to claw it back.</span>
                         </span>
                         <span class="log__arrow" aria-hidden="true">→</span>
@@ -229,7 +276,7 @@
                         <span class="log__body">
                             <span class="entry-meta"><span class="chip chip--amber">Guides</span><span>2 min read</span></span>
                             <span class="log__title">Understanding your Romanian electricity bill: a complete guide</span>
-                            <span class="log__excerpt">Enel and Electrica invoices are notoriously confusing. Every line item decoded, from the capacity tariff and network fee to green certificates, so you know what you are paying for.</span>
+                            <span class="log__excerpt">PPC (formerly Enel) and Electrica invoices are notoriously confusing. Every line item decoded, from the capacity tariff and network fee to green certificates, so you know what you are paying for.</span>
                         </span>
                         <span class="log__arrow" aria-hidden="true">→</span>
                     </a>
@@ -331,7 +378,7 @@
     });
 })();
 </script>
-<script src="assets/theme.js?v=20261013c"></script>
-<script src="assets/consent.js?v=20261013c" defer></script>
+<script src="assets/theme.js?v=20261013e"></script>
+<script src="assets/consent.js?v=20261013e" defer></script>
 </body>
 </html>
