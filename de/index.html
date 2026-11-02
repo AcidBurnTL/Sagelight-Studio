@@ -3,22 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Ads — Consent Mode v2 -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('consent', 'default', {'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
-      gtag('set', 'url_passthrough', true);
-      gtag('set', 'ads_data_redaction', true);
-      gtag('js', new Date());
-      gtag('config', 'AW-17758801825');
-    </script>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17758801825"></script>
-    <title>Sagelight Studio — Datenschutzfreundliche Apps für iOS &amp; macOS</title>
-    <meta name="description" content="SageDocs verschlüsselt deine Dokumente. SageBills behält Nebenkosten im Blick. SageMeet transkribiert Meetings. Datenschutzfreundliche iOS- &amp; macOS-Apps aus Rumänien. Kein Tracking.">
+    <script src="../assets/gtag.js?v=20261102a"></script>
+    <title>Sagelight Studio — Apps für iOS und macOS</title>
+    <meta name="description" content="SageDocs verschlüsselt Dokumente. SageBills behält Nebenkosten im Blick. SageMeet transkribiert Meetings. Apps aus Rumänien, ohne Tracking.">
     <meta name="author" content="Sagelight Studio">
-    <meta property="og:title" content="Sagelight Studio — Datenschutzfreundliche Apps für iOS &amp; macOS">
+    <meta property="og:title" content="Sagelight Studio — Apps für iOS und macOS">
     <meta property="og:description" content="Drei datenschutzfreundliche Apps, angeführt von SageDocs (verschlüsselter Tresor), dazu SageBills (Nebenkosten-Tracker) und SageMeet (Meeting-KI). Entwickelt in Rumänien, EU.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sagelight-studio.com/de/">
@@ -40,10 +29,11 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Sagelight Studio — datenschutzfreundliche Apps für iOS und macOS">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sagelight Studio — Datenschutzfreundliche Apps für iOS &amp; macOS">
+    <meta name="twitter:title" content="Sagelight Studio — Apps für iOS und macOS">
     <meta name="twitter:description" content="Datenschutzfreundliche Apps für iOS &amp; macOS. SageDocs · SageBills · SageMeet.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/home.png">
     <meta name="theme-color" content="#191724">
+    <meta name="lastmod" content="2026-11-02">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/de/">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/">
@@ -65,10 +55,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
-    <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013f">
+    <link rel="stylesheet" href="../assets/sage.css?v=20261102a">
 
     <script type="application/ld+json">
     {
@@ -83,6 +72,7 @@
         "foundingDate": "2026",
         "foundingLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressCountry": "RO", "addressRegion": "Romania"}},
         "contactPoint": {"@type": "ContactPoint", "email": "contact@sagelight-studio.com", "contactType": "customer support", "availableLanguage": ["English", "Romanian"]},
+        "alternateName": "Sagelight",
         "sameAs": ["https://apps.apple.com/developer/florin-nica/id1889684772"],
         "founder": {
             "@type": "Person",
@@ -99,7 +89,7 @@
     {
         "@context": "https://schema.org", "@type": "WebSite",
         "@id": "https://sagelight-studio.com/#website",
-        "name": "Sagelight Studio", "url": "https://sagelight-studio.com/",
+        "name": "Sagelight Studio", "alternateName": "Sagelight", "url": "https://sagelight-studio.com/",
         "publisher": {"@id": "https://sagelight-studio.com/#organization"},
         "inLanguage": "de"
     }
@@ -113,7 +103,7 @@
         .home-hero .hero-slogan .thin { font-weight: 100; font-stretch: 75%; color: var(--paper-2); }
         .home-hero .hero-slogan .heavy { font-weight: 800; font-stretch: 112.5%; }
         .home-hero .hero-slogan .heavy em { font-style: normal; color: var(--amber); }
-        .home-hero .hero-h1 { margin: 14px 0 0; max-width: 36ch; font-family: var(--font-mono); font-size: 15px; font-weight: 600; line-height: 1.5; letter-spacing: -.01em; color: var(--paper); }
+        .home-hero .hero-h1 { margin: 14px 0 0; max-width: 48ch; font-family: var(--font-mono); font-size: clamp(17px, 2.1vw, 22px); font-weight: 600; line-height: 1.5; letter-spacing: -.01em; color: var(--paper); }
         .home-hero .lead { font-size: 18px; color: var(--paper-2); max-width: 46ch; margin: 0 0 30px; }
         .home-hero .lead strong { color: var(--paper); font-weight: 600; }
         .home-hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; }
@@ -238,10 +228,10 @@
         <div class="container home-hero__grid">
             <div>
                 <p class="kicker up" style="--i:0"><span class="dot" aria-hidden="true"></span> Unabhängiges Studio · <b>Rumänien, EU</b></p>
-                <h1 id="hero-title" class="hero-h1 up" style="--i:0">Datenschutzfreundliche iPhone- und Mac-Apps für Dokumente, Rechnungen und Meetings</h1>
+                <h1 id="hero-title" class="hero-h1 up" style="--i:0">Sagelight Studio — Datenschutzfreundliche iPhone- und Mac-Apps für Dokumente, Rechnungen und Meetings</h1>
                 <p class="hero-slogan slide">
                     <span class="thin">Deine Unterlagen,</span><br>
-                    <span class="heavy">an uns gesendet: <em><span data-scramble="900">0&nbsp;Bytes.</span></em></span>
+                    <span class="heavy">an uns gesendet: <em>0&nbsp;Bytes.</em></span>
                 </p>
                 <p class="lead up" style="--i:2"><strong>Kein Tracking. Keine Werbung. Keine Konten.</strong> Entwickelt von einer Person, in Rumänien.</p>
                 <div class="ctas up" style="--i:3">
@@ -333,7 +323,7 @@
                         <div><dt>Plattformen</dt><dd>iOS 17+ · macOS 14+</dd></div>
                     </dl>
                     <div class="manifest__actions">
-                        <a class="badge" href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="SageBills im App Store laden" width="156" height="52" loading="lazy"></a>
+                        <a class="badge" href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="SageBills im App Store laden" width="156" height="52"></a>
                         <a class="textlink" href="../sagebills.html" hreflang="en">Details (Englisch) →</a>
                         <span class="legal-mini"><a href="privacy-policy.html">Datenschutz</a>·<a href="terms.html">Bedingungen</a></span>
                     </div>
@@ -501,7 +491,7 @@
         <span>an uns gesendet: 0 Bytes</span>
     </div>
 </footer>
-<script src="../assets/theme.js?v=20261013f"></script>
+<script src="../assets/theme.js?v=20261102a"></script>
 <script src="../assets/consent.js?v=20261013f" defer></script>
 </body>
 </html>

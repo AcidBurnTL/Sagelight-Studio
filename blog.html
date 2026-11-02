@@ -3,24 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Ads — Consent Mode v2 (default denied; banner will update on opt-in) -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied',
-        'wait_for_update': 500
-      });
-      gtag('set', 'url_passthrough', true);
-      gtag('set', 'ads_data_redaction', true);
-      gtag('js', new Date());
-      gtag('config', 'AW-17758801825');
-    </script>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17758801825"></script>
+    <script src="assets/gtag.js?v=20261102a"></script>
     <title>Sagelight Studio Blog — Tips for European Households</title>
     <meta name="description" content="Utility bill tips, money-saving insights, and Sagelight Studio product updates for European households. Country guides for Romania, Poland, Hungary, Czechia.">
     <meta property="og:title" content="Sagelight Studio Blog — Tips, Insights &amp; Updates">
@@ -39,6 +22,7 @@
     <meta name="twitter:description" content="Money-saving guides and product updates for European households.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/blog.png">
     <meta name="theme-color" content="#191724">
+    <meta name="lastmod" content="2026-11-02">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/blog.html">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html">
@@ -79,7 +63,7 @@
     </script>
     <link rel="preload" href="assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/sage.css?v=20261013f">
+    <link rel="stylesheet" href="assets/sage.css?v=20261102a">
 
     <style>
         /* Blog index ("Data Manifest") — posts as log entries */
@@ -165,7 +149,7 @@
                 <span class="thin">Money &amp; privacy tips</span>
                 <span class="heavy">for <em>European households.</em></span>
             </h1>
-            <p class="lead fade-up d3">Country guides, utility cost breakdowns and product updates from Sagelight Studio, for smarter bill tracking, meetings and document storage across Europe.</p>
+            <p class="lead fade-up d3">Country guides, utility breakdowns and document notes from Sagelight Studio. Written by <a href="about.html">Florin Nica</a>. Romanian readers: <a href="ro/blog.html">ghidurile în română</a>.</p>
             <div class="filters fade-up d4" role="group" aria-label="Filter posts by category">
                 <button type="button" class="filter" data-cat="All" aria-pressed="true">All posts</button>
                 <button type="button" class="filter" data-cat="Documents" aria-pressed="false">Documents</button>
@@ -374,7 +358,7 @@
                         <span class="log__date"><b>01</b><time datetime="2026-01-20">20 Jan 2026</time></span>
                         <span class="log__body">
                             <span class="entry-meta"><span class="chip chip--amber">Money saving</span><span>2 min read</span></span>
-                            <span class="log__title">The hidden cost of building maintenance fees in Romania</span>
+                            <span class="log__title">Romania building fees (întreținere): what you pay and how to contest</span>
                             <span class="log__excerpt">That monthly întreținere amount is rarely explained and almost never audited. What it covers, which charges are legally mandatory, and how to spot overcharges early.</span>
                         </span>
                         <span class="log__arrow" aria-hidden="true">→</span>
@@ -382,6 +366,25 @@
                 </li>
                 <li class="log__empty" id="emptyState" hidden>No entries in this category yet. Check back soon.</li>
             </ol>
+
+            
+            <nav class="country-index" aria-labelledby="countries-title">
+                <h2 id="countries-title">Passport and ID validity by country</h2>
+                <p>Eleven country pages, each checked against that country’s official sources in October 2026. The comparison table is the <a href="blog/eu-passport-id-card-validity.html">EU passport and ID card guide</a>. Written by <a href="about.html">Florin Nica</a>.</p>
+                <div class="guide-links">
+                    <a href="blog/passport-id-validity/czechia.html"><strong>Czechia</strong><small>Passport 10 years, 600 Kč; ID 35 years after 70</small><span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="blog/passport-id-validity/france.html"><strong>France</strong><small>Passport €86; ID card free, any mairie</small><span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="blog/passport-id-validity/germany.html"><strong>Germany</strong><small>10 years from 24, 6 years under 24</small><span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="blog/passport-id-validity/hungary.html"><strong>Hungary</strong><small>Passport 17,000 HUF; expired ID replacement is free</small><span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="blog/passport-id-validity/italy.html"><strong>Italy</strong><small>Passport €116.20; paper ID not valid for travel</small><span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="blog/passport-id-validity/netherlands.html"><strong>Netherlands</strong><small>2026 maximum €88.65; your gemeente may charge less</small><span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="blog/passport-id-validity/poland.html"><strong>Poland</strong><small>Passport 140 zł; ID card free</small><span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="blog/passport-id-validity/portugal.html"><strong>Portugal</strong><small>Passport 5 years, €65</small><span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="blog/passport-id-validity/romania.html"><strong>Romania</strong><small>Passport 265 lei; CEI free while the PNRR quota lasts</small><span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="blog/passport-id-validity/spain.html"><strong>Spain</strong><small>Passport €30; DNI mandatory from 14</small><span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="blog/passport-id-validity/sweden.html"><strong>Sweden</strong><small>Passport 5 years, 500 kronor</small><span class="arrow" aria-hidden="true">→</span></a>
+                </div>
+            </nav>
 
             <div class="soon glass-card reveal">
                 <p class="kicker">Newsletter · coming soon</p>
@@ -456,7 +459,7 @@
     });
 })();
 </script>
-<script src="assets/theme.js?v=20261013f"></script>
+<script src="assets/theme.js?v=20261102a"></script>
 <script src="assets/consent.js?v=20261013f" defer></script>
 </body>
 </html>

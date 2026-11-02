@@ -3,28 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Ads — Consent Mode v2 (default denied; banner will update on opt-in) -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied',
-        'wait_for_update': 500
-      });
-      gtag('set', 'url_passthrough', true);
-      gtag('set', 'ads_data_redaction', true);
-      gtag('js', new Date());
-      gtag('config', 'AW-17758801825');
-    </script>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17758801825"></script>
-    <title>SageMeet — AI Meeting Recorder &amp; Transcription for iPhone</title>
-    <meta name="description" content="AI meeting recorder for iPhone. Whisper transcripts and GPT-4o summaries with your own OpenAI key. Private Mode disables all external data. Free, GDPR-ready.">
-    <meta property="og:title" content="SageMeet — AI Meeting Recorder &amp; Transcription">
-    <meta property="og:description" content="Record meetings. Get Whisper transcripts and GPT-4o summaries with your own API key. Private Mode for full local control. Free for iOS.">
+    <script src="assets/gtag.js?v=20261102a"></script>
+    <title>SageMeet — Private AI Meeting Recorder for iPhone</title>
+    <meta name="description" content="Private meeting transcription for iPhone. Whisper and GPT-4o with your own OpenAI key. Private Mode sends nothing off the phone. Free.">
+    <meta property="og:title" content="SageMeet — Private AI Meeting Recorder for iPhone">
+    <meta property="og:description" content="Record a meeting on iPhone. Whisper transcripts and GPT-4o summaries with your own OpenAI key. Private Mode is fully local. Free.">
     <meta property="og:type" content="product">
     <meta property="og:url" content="https://sagelight-studio.com/sagemeet.html">
     <meta property="og:site_name" content="Sagelight Studio">
@@ -38,12 +21,13 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="SageMeet — AI meeting recorder and transcription for iPhone">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SageMeet — AI Meeting Recorder for iPhone">
-    <meta name="twitter:description" content="Whisper transcripts, GPT-4o summaries, BYOK. Free for iOS.">
+    <meta name="twitter:title" content="SageMeet — Private AI Meeting Recorder for iPhone">
+    <meta name="twitter:description" content="Record a meeting on iPhone. Whisper transcripts and GPT-4o summaries with your own OpenAI key. Private Mode is fully local. Free.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/sagemeet.png">
     <meta name="apple-itunes-app" content="app-id=6761443109">
     <meta name="application-name" content="SageMeet">
     <meta name="theme-color" content="#191724">
+    <meta name="lastmod" content="2026-11-02">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/sagemeet.html">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/sagemeet.html">
@@ -57,10 +41,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="preload" href="assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/sage.css?v=20261013f">
+    <link rel="stylesheet" href="assets/sage.css?v=20261102a">
 
     <script type="application/ld+json">
     {
@@ -69,6 +52,8 @@
         "name": "SageMeet",
         "applicationCategory": "ProductivityApplication",
         "operatingSystem": "iOS 17+",
+        "isAccessibleForFree": true,
+        "featureList": ["Private AI meeting recorder for iPhone", "Whisper transcription", "GPT-4o summaries with your own OpenAI key", "Private Mode that sends nothing off the phone"],
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -345,7 +330,7 @@
                     <p class="kicker">Manifest</p>
                     <h2 id="manifest-title" class="sec-title">What leaves your iPhone, <strong>line by line.</strong></h2>
                     <p>SageMeet is honest about the network: AI features use OpenAI with your own key. Turn on Private Mode and nothing leaves at all.</p>
-                    <a href="https://apps.apple.com/app/sagemeet/id6761443109" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/RE8zCOai2aocEKGfh5RC');" class="app-store-badge-link" aria-label="Download SageMeet on the App Store"><img src="assets/badges/app-store-badge.svg" alt="Download on the App Store" width="173" height="52" loading="lazy"></a>
+                    <a href="https://apps.apple.com/app/sagemeet/id6761443109" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/RE8zCOai2aocEKGfh5RC');" class="app-store-badge-link" aria-label="Download SageMeet on the App Store"><img src="assets/badges/app-store-badge.svg" alt="Download on the App Store" width="173" height="52"></a>
                 </div>
                 <dl class="spec">
                     <div><dt>Records</dt><dd>Meetings, locally on your iPhone (M4A)</dd></div>
@@ -367,7 +352,7 @@
         <div class="container">
             <div class="section-head reveal">
                 <div class="eyebrow eyebrow--static">How SageMeet works</div>
-                <h2 class="h-section">Privacy without <span class="italic-em">compromise</span>.</h2>
+                <h2 class="h-section">Private meeting transcription <span class="italic-em">on iPhone</span>.</h2>
                 <p>Three layers of protection &mdash; local-first recording, BYOK authentication, and a single-toggle Private Mode that severs every external connection.</p>
             </div>
             <div class="bento">
@@ -450,6 +435,25 @@
         </div>
     </section>
 
+
+    <section id="guides" aria-labelledby="guides-title">
+        <div class="container">
+            <div class="section-head section-head--split">
+                <div>
+                    <p class="kicker">From the studio</p>
+                    <h2 id="guides-title" class="h-section">Private meeting transcription, and the rest of the studio</h2>
+                </div>
+                <p>SageMeet does not have its own how-to articles yet. The studio notes that do exist cover documents and bills, and the person who builds the apps.</p>
+            </div>
+            <div class="guide-links">
+                <a href="about.html"><strong>About Florin Nica</strong><small>Who ships SageMeet, SageDocs and SageBills</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="privacy-policy.html"><strong>Privacy policy</strong><small>What each app stores, and where</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog.html"><strong>Studio blog</strong><small>Passports, bills and document storage</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="ro/sagemeet.html"><strong>SageMeet în română</strong><small>Aceeași aplicație, pagina în română</small><span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
     <section class="section--lg">
         <div class="container">
             <div class="section-head reveal">
@@ -488,7 +492,7 @@
     <section>
         <div class="container">
             <div class="final-cta reveal">
-                <h2 class="h-section">Own your <span class="italic-em">intelligence</span>.</h2>
+                <h2 class="h-section">Transcribe meetings with <span class="italic-em">your OpenAI key</span>.</h2>
                 <p class="text-lead">Free for iPhone. No accounts, no subscription. Bring your own OpenAI key &mdash; or run fully local.</p>
                 <div class="ctas">
                     <a href="https://apps.apple.com/app/sagemeet/id6761443109" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/RE8zCOai2aocEKGfh5RC');" class="app-store-badge-link" aria-label="Download SageMeet on the App Store"><img src="assets/badges/app-store-badge.svg" alt="Download on the App Store" width="173" height="52" loading="lazy"></a>
@@ -542,7 +546,7 @@
     </div>
 </footer>
 
-<script src="assets/theme.js?v=20261013f"></script>
+<script src="assets/theme.js?v=20261102a"></script>
 <script src="assets/consent.js?v=20261013f" defer></script>
 </body>
 </html>

@@ -12,6 +12,7 @@
 // survives navigation. Generates a unique transaction_id per click so Google can
 // deduplicate cleanly when "Una" counting is selected.
 window.gtagReportConversion = function (sendTo) {
+    if (typeof window.sageLoadGtag === 'function') window.sageLoadGtag();
     if (typeof window.gtag === 'function') {
         var txId = 'sgl-' + Date.now().toString(36) + '-' +
                    Math.random().toString(36).slice(2, 10);
