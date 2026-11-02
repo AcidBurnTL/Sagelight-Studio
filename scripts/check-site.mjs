@@ -25,7 +25,11 @@ for (const file of files) {
   // links and assets
   for (const [, raw] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     if (/^(https?:|mailto:|tel:|data:|javascript:|#)/.test(raw)) {
-      if (/^https?:\/\/apps\.apple\.com\/[a-z]{2}\//.test(raw)) err(file, `App Store link is not region-less: ${raw}`);
+      // Own apps stay region-less. Fixly (id1508502089) 404s on the region-less URL
+      // outside Poland, so that one listing keeps the Polish storefront.
+      if (/^https?:\/\/apps\.apple\.com\/[a-z]{2}\//.test(raw) && !/\/pl\/app\/(?:fixly\/)?id1508502089(?:[/?#"]|$)/.test(raw)) {
+        err(file, `App Store link is not region-less: ${raw}`);
+      }
       continue;
     }
     const path = raw.split(/[?#]/)[0];

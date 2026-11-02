@@ -663,13 +663,20 @@ em.italic, .italic-em {
 @keyframes indet { 0% { transform: translateX(-100%); } 100% { transform: translateX(300%); } }
 
 /* ============ Animations ============ */
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
-.fade-up { opacity: 0; animation: fadeInUp .8s var(--ease) forwards; }
-.fade-up.d1 { animation-delay: .08s; }
-.fade-up.d2 { animation-delay: .19s; }
-.fade-up.d3 { animation-delay: .30s; }
-.fade-up.d4 { animation-delay: .41s; }
-.fade-up.d5 { animation-delay: .52s; }
+/* Hero / LCP text paints immediately. Entrance motion used to start at
+   opacity 0 (fade-up, and the home "boot" rise/slide), which pushed mobile
+   LCP out by several seconds. Below-the-fold .reveal still fades in. */
+.fade-up,
+.fade-up.d1, .fade-up.d2, .fade-up.d3, .fade-up.d4, .fade-up.d5,
+.boot .up,
+.boot .slide,
+.boot .ln,
+.boot .ledger__total {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+    clip-path: none !important;
+}
 .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
 .js .reveal.is-visible { opacity: 1; transform: none; }
 

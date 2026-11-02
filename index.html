@@ -3,29 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Google Ads — Consent Mode v2 (default denied; banner will update on opt-in) -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied',
-        'wait_for_update': 500
-      });
-      gtag('set', 'url_passthrough', true);
-      gtag('set', 'ads_data_redaction', true);
-      gtag('js', new Date());
-      gtag('config', 'AW-17758801825');
-    </script>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17758801825"></script>
+    <script src="assets/gtag.js?v=20261102a"></script>
     <meta name="google-site-verification" content="2tFp3Vmp80gSlkKAebVeu9H55QZlseEEn9rCK36P7rs" />
-    <title>Sagelight Studio — Privacy-First iOS &amp; macOS Apps</title>
-    <meta name="description" content="SageDocs encrypts your documents. SageBills tracks utility bills. SageMeet transcribes meetings. Privacy-first iOS &amp; macOS apps from Romania. No tracking.">
+    <title>Sagelight Studio — Privacy-First iPhone and Mac Apps</title>
+    <meta name="description" content="Sagelight Studio builds SageDocs, SageBills and SageMeet: privacy-first iPhone and Mac apps from Romania. No accounts. No tracking.">
     <meta name="author" content="Sagelight Studio">
-    <meta property="og:title" content="Sagelight Studio — Privacy-First iOS &amp; macOS Apps">
+    <meta property="og:title" content="Sagelight Studio — Privacy-First iPhone and Mac Apps">
     <meta property="og:description" content="Three privacy-first apps led by SageDocs (encrypted vault), plus SageBills (utility tracker) and SageMeet (meeting AI). Built in Romania, EU.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sagelight-studio.com/">
@@ -47,10 +30,11 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Sagelight Studio — privacy-first iOS and macOS apps">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sagelight Studio — Privacy-First iOS &amp; macOS Apps">
+    <meta name="twitter:title" content="Sagelight Studio — Privacy-First iPhone and Mac Apps">
     <meta name="twitter:description" content="Privacy-first iOS &amp; macOS apps. SageDocs · SageBills · SageMeet.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/home.png">
     <meta name="theme-color" content="#191724">
+    <meta name="lastmod" content="2026-11-02">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/">
@@ -72,10 +56,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="preload" href="assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/sage.css?v=20261013f">
+    <link rel="stylesheet" href="assets/sage.css?v=20261102a">
 
     <script type="application/ld+json">
     {
@@ -112,6 +95,7 @@
             "contactType": "customer support",
             "availableLanguage": ["English", "Romanian"]
         },
+        "alternateName": "Sagelight",
         "sameAs": ["https://apps.apple.com/developer/florin-nica/id1889684772"],
         "founder": {
             "@type": "Person",
@@ -122,7 +106,7 @@
             "sameAs": ["https://apps.apple.com/developer/florin-nica/id1889684772"]
         },
         "makesOffer": [
-            {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "itemOffered": {"@type": "SoftwareApplication", "name": "SageDocs", "applicationCategory": "SecurityApplication", "operatingSystem": "iOS 17+, macOS 14+", "url": "https://sagelight-studio.com/sagedocs.html"}},
+            {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "itemOffered": {"@type": "SoftwareApplication", "name": "SageDocs", "applicationCategory": "SecurityApplication", "operatingSystem": "iOS 17+, macOS 14+", "isAccessibleForFree": false, "url": "https://sagelight-studio.com/sagedocs.html"}},
             {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "itemOffered": {"@type": "SoftwareApplication", "name": "SageBills", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS 17+, macOS 14+", "url": "https://sagelight-studio.com/sagebills.html"}},
             {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "itemOffered": {"@type": "SoftwareApplication", "name": "SageMeet", "applicationCategory": "ProductivityApplication", "operatingSystem": "iOS 17+", "url": "https://sagelight-studio.com/sagemeet.html"}}
         ]
@@ -133,7 +117,7 @@
     {
         "@context": "https://schema.org", "@type": "WebSite",
         "@id": "https://sagelight-studio.com/#website",
-        "name": "Sagelight Studio", "url": "https://sagelight-studio.com/",
+        "name": "Sagelight Studio", "alternateName": "Sagelight", "url": "https://sagelight-studio.com/",
         "publisher": {"@id": "https://sagelight-studio.com/#organization"},
         "inLanguage": "en"
     }
@@ -147,7 +131,7 @@
         .home-hero .hero-slogan .thin { font-weight: 100; font-stretch: 75%; color: var(--paper-2); }
         .home-hero .hero-slogan .heavy { font-weight: 800; font-stretch: 112.5%; }
         .home-hero .hero-slogan .heavy em { font-style: normal; color: var(--amber); }
-        .home-hero .hero-h1 { margin: 14px 0 0; max-width: 36ch; font-family: var(--font-mono); font-size: 15px; font-weight: 600; line-height: 1.5; letter-spacing: -.01em; color: var(--paper); }
+        .home-hero .hero-h1 { margin: 14px 0 0; max-width: 48ch; font-family: var(--font-mono); font-size: clamp(17px, 2.1vw, 22px); font-weight: 600; line-height: 1.5; letter-spacing: -.01em; color: var(--paper); }
         .home-hero .lead { font-size: 18px; color: var(--paper-2); max-width: 46ch; margin: 0 0 30px; }
         .home-hero .lead strong { color: var(--paper); font-weight: 600; }
         .home-hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; }
@@ -272,10 +256,10 @@
         <div class="container home-hero__grid">
             <div>
                 <p class="kicker up" style="--i:0"><span class="dot" aria-hidden="true"></span> Independent studio · <b>Romania, EU</b></p>
-                <h1 id="hero-title" class="hero-h1 up" style="--i:0">Privacy-first iPhone &amp; Mac apps for documents, bills and meetings</h1>
+                <h1 id="hero-title" class="hero-h1 up" style="--i:0">Sagelight Studio — Privacy-first iPhone &amp; Mac apps for documents, bills and meetings</h1>
                 <p class="hero-slogan slide">
                     <span class="thin">Your paperwork,</span><br>
-                    <span class="heavy">sent to us: <em><span data-scramble="900">0&nbsp;bytes.</span></em></span>
+                    <span class="heavy">sent to us: <em>0&nbsp;bytes.</em></span>
                 </p>
                 <p class="lead up" style="--i:2"><strong>No tracking. No ads. No accounts.</strong> Built by one person, in Romania.</p>
                 <div class="ctas up" style="--i:3">
@@ -367,7 +351,7 @@
                         <div><dt>Platforms</dt><dd>iOS 17+ · macOS 14+</dd></div>
                     </dl>
                     <div class="manifest__actions">
-                        <a class="badge" href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');"><img src="assets/badges/app-store-badge.svg" alt="Download SageBills on the App Store" width="156" height="52" loading="lazy"></a>
+                        <a class="badge" href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');"><img src="assets/badges/app-store-badge.svg" alt="Download SageBills on the App Store" width="156" height="52"></a>
                         <a class="textlink" href="sagebills.html">Details →</a>
                         <span class="legal-mini"><a href="privacy-policy.html">Privacy</a>·<a href="terms.html">Terms</a></span>
                     </div>
@@ -472,12 +456,37 @@
         </div>
     </section>
 
+    
+    <section id="guides" aria-labelledby="guides-title">
+        <div class="container">
+            <div class="section-head section-head--split">
+                <div>
+                    <p class="kicker">04 / Guides</p>
+                    <h2 id="guides-title" class="sec-title">From the studio. <strong>Read a guide.</strong></h2>
+                </div>
+                <p>Notes on bills, passports and the person who writes the apps. <a href="about.html">About Florin Nica</a>.</p>
+            </div>
+            <div class="guide-links">
+                <a href="blog/building-maintenance-fees-romania.html"><strong>Romania building fees (întreținere)</strong><small>Law 196/2018, what you pay, 10 days to contest</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/romanian-electricity-bill-guide.html"><strong>Romanian electricity bill, line by line</strong><small>PPC, Electrica and the 2026 charges</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/save-utility-bills-europe.html"><strong>How to cut utility bills in Europe</strong><small>A 7-step household audit</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/apps-european-renter-iphone.html"><strong>iPhone apps for renters in Europe</strong><small>Bills, repairs and the paperwork of renting</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/apple-notes-files-vs-document-vault.html"><strong>Apple Notes vs Files vs a document vault</strong><small>Where a passport scan should live</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/sagedocs-vs-google-drive.html"><strong>SageDocs vs Google Drive</strong><small>Who holds the keys to your IDs</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/family-documents-organization.html"><strong>Organize a family's documents</strong><small>Kids' IDs, health cards, insurance</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/eu-passport-id-card-validity.html"><strong>Passport and ID validity, 11 EU countries</strong><small>Fees and renewal, from official sources</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="ro/blog.html"><strong>Ghiduri în română</strong><small>Întreținere, factura de curent, buletin</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="about.html"><strong>About Florin Nica</strong><small>One person, three apps, Romania</small><span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
     <!-- Legal & support -->
     <section id="legal" aria-labelledby="lg-title">
         <div class="container">
             <div class="legal-hub reveal">
                 <div class="legal-hub__head">
-                    <p class="kicker">04 / Legal &amp; support</p>
+                    <p class="kicker">05 / Legal &amp; support</p>
                     <h2 id="lg-title">The fine print, in plain sight.</h2>
                     <p>One set of documents covers SageDocs, SageBills and SageMeet. Questions get a reply from the person who wrote the code.</p>
                 </div>
@@ -535,7 +544,7 @@
         <span>sent to us: 0 bytes</span>
     </div>
 </footer>
-<script src="assets/theme.js?v=20261013f"></script>
+<script src="assets/theme.js?v=20261102a"></script>
 <script src="assets/consent.js?v=20261013f" defer></script>
 </body>
 </html>

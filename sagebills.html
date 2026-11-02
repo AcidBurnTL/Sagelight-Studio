@@ -3,28 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Ads — Consent Mode v2 (default denied; banner will update on opt-in) -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied',
-        'wait_for_update': 500
-      });
-      gtag('set', 'url_passthrough', true);
-      gtag('set', 'ads_data_redaction', true);
-      gtag('js', new Date());
-      gtag('config', 'AW-17758801825');
-    </script>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17758801825"></script>
-    <title>SageBills — Utility Bill Tracker for Europe</title>
-    <meta name="description" content="The smart utility bill tracker for European households. Track, predict, and save — zero data leaves your device. Free, no account, GDPR compliant.">
-    <meta property="og:title" content="SageBills — Every bill. Every provider. One app.">
-    <meta property="og:description" content="Track utility bills, predict costs, detect anomalies. Built for Europe. Free forever.">
+    <script src="assets/gtag.js?v=20261102a"></script>
+    <title>SageBills — Utility Bill Tracking App for Europe</title>
+    <meta name="description" content="Utility bill tracking for Europe. Scan invoices on your iPhone, see the trend, and keep every bill on the device. Free, no account.">
+    <meta property="og:title" content="SageBills — Utility Bill Tracking for Europe">
+    <meta property="og:description" content="Track utility bills from European providers on your iPhone. On-device OCR, local forecasts, no account. Free.">
     <meta property="og:type" content="product">
     <meta property="og:url" content="https://sagelight-studio.com/sagebills.html">
     <meta property="og:site_name" content="Sagelight Studio">
@@ -38,12 +21,13 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="SageBills — Every bill. Every provider. One app.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SageBills — Every bill. Every provider. One app.">
-    <meta name="twitter:description" content="The smart utility tracker built for European households. Free, private, no account required.">
+    <meta name="twitter:title" content="SageBills — Utility Bill Tracking for Europe">
+    <meta name="twitter:description" content="Track utility bills from European providers on your iPhone. On-device OCR, local forecasts, no account. Free.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/sagebills.png">
     <meta name="apple-itunes-app" content="app-id=6762021142">
     <meta name="application-name" content="SageBills">
     <meta name="theme-color" content="#191724">
+    <meta name="lastmod" content="2026-11-02">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/sagebills.html">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/sagebills.html">
@@ -57,10 +41,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="preload" href="assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/sage.css?v=20261013f">
+    <link rel="stylesheet" href="assets/sage.css?v=20261102a">
 
     <script type="application/ld+json">
     {
@@ -69,6 +52,8 @@
         "name": "SageBills",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "iOS 17+, macOS 14+",
+        "isAccessibleForFree": true,
+        "featureList": ["Utility bill tracking for European providers", "On-device invoice OCR", "Local cost predictions", "Due-date reminders and anomaly alerts"],
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -357,7 +342,7 @@
                     <p class="kicker">Manifest</p>
                     <h2 id="manifest-title" class="sec-title">Read the label. <strong>Before you install.</strong></h2>
                     <p>Everything SageBills keeps, where it lives, and what leaves your device. Short version: nothing reaches us.</p>
-                    <a href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');" class="app-store-badge-link" aria-label="Download SageBills on the App Store"><img src="assets/badges/app-store-badge.svg" alt="Download on the App Store" width="173" height="52" loading="lazy"></a>
+                    <a href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');" class="app-store-badge-link" aria-label="Download SageBills on the App Store"><img src="assets/badges/app-store-badge.svg" alt="Download on the App Store" width="173" height="52"></a>
                 </div>
                 <dl class="spec">
                     <div><dt>Stores</dt><dd>Bills, readings and due dates across 40+ categories</dd></div>
@@ -378,7 +363,7 @@
         <div class="container">
             <div class="section-head reveal">
                 <div class="eyebrow eyebrow--static">Features</div>
-                <h2 class="h-section">Intelligence built on <span class="italic-em">privacy</span>.</h2>
+                <h2 class="h-section">Track utility bills from <span class="italic-em">every European provider</span>.</h2>
                 <p>Local OCR and on-device processing keep your sensitive financial data where it belongs &mdash; with you.</p>
             </div>
             <div class="bento">
@@ -439,7 +424,7 @@
         <div class="container">
             <div class="glass-card promise-block reveal">
                 <div class="eyebrow eyebrow--static">Your data stays yours</div>
-                <h2 class="h-section">Period.</h2>
+                <h2 class="h-section">Your utility bills stay <span class="italic-em">on this iPhone</span>.</h2>
                 <p class="text-lead">SageBills is a fully local app. There is no SageBills server. There is no Sagelight Studio backend that could read your bills. Optional iCloud sync is encrypted by Apple end-to-end.</p>
                 <div class="promise-grid">
                     <div class="promise-tile"><span aria-hidden="true" class="material-symbols-outlined fill">cloud_off</span><div class="label">Zero cloud</div></div>
@@ -447,6 +432,27 @@
                     <div class="promise-tile"><span aria-hidden="true" class="material-symbols-outlined fill">person_off</span><div class="label">No accounts</div></div>
                     <div class="promise-tile"><span aria-hidden="true" class="material-symbols-outlined fill">verified_user</span><div class="label">GDPR-native</div></div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="guides" aria-labelledby="guides-title">
+        <div class="container">
+            <div class="section-head section-head--split">
+                <div>
+                    <p class="kicker">Guides</p>
+                    <h2 id="guides-title" class="h-section">Utility bill guides for Europe</h2>
+                </div>
+                <p>The same topics SageBills is built to track. Romanian readers: <a href="ro/sagebills.html">aplicația în română</a> and the <a href="ro/blog.html">Romanian guides</a>.</p>
+            </div>
+            <div class="guide-links">
+                <a href="blog/building-maintenance-fees-romania.html"><strong>Romania building maintenance fees</strong><small>Întreținere, Law 196/2018, 10 days to contest</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/romanian-electricity-bill-guide.html"><strong>Romanian electricity bill explained</strong><small>Every regulated line, 2026 values</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/save-utility-bills-europe.html"><strong>Save on utility bills in Europe</strong><small>A 7-step household audit</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/winter-heating-cee-2025-2026.html"><strong>Winter heating in CEE, 2025–2026</strong><small>Romania, Poland, Hungary, Czechia</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/apps-european-renter-iphone.html"><strong>Apps for renters in Europe</strong><small>Bills, repairs, paperwork</small><span class="arrow" aria-hidden="true">→</span></a>
+                <a href="blog/sagebills-v1-launch.html"><strong>What SageBills v1 tracks</strong><small>Categories, on-device OCR, reminders</small><span class="arrow" aria-hidden="true">→</span></a>
             </div>
         </div>
     </section>
@@ -491,7 +497,7 @@
     <section>
         <div class="container">
             <div class="glass-card download-block reveal">
-                <h2 class="h-section">Control your <span class="italic-em">clarity</span> today.</h2>
+                <h2 class="h-section">Start <span class="italic-em">utility bill tracking</span> for free.</h2>
                 <p class="text-lead">Free. No account. No subscription. Available on iPhone, iPad, and Mac.</p>
                 <div class="download-row">
                     <a href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');" class="app-store-badge-link" aria-label="Download SageBills on the App Store"><img src="assets/badges/app-store-badge.svg" alt="Download on the App Store" width="173" height="52" loading="lazy"></a>
@@ -549,7 +555,7 @@
     </div>
 </footer>
 
-<script src="assets/theme.js?v=20261013f"></script>
+<script src="assets/theme.js?v=20261102a"></script>
 <script src="assets/consent.js?v=20261013f" defer></script>
 </body>
 </html>

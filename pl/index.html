@@ -3,19 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('consent', 'default', {'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
-      gtag('set', 'url_passthrough', true);
-      gtag('set', 'ads_data_redaction', true);
-      gtag('js', new Date());
-      gtag('config', 'AW-17758801825');
-    </script>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17758801825"></script>
+    <script src="../assets/gtag.js?v=20261102a"></script>
     <title>Sagelight Studio — Aplikacje iOS i macOS Privacy-First</title>
-    <meta name="description" content="SageDocs szyfruje Twoje dokumenty na urządzeniu. SageBills śledzi rachunki, SageMeet transkrybuje spotkania. Aplikacje iOS i macOS chroniące prywatność, z Rumunii.">
+    <meta name="description" content="SageDocs szyfruje dokumenty na urządzeniu. SageBills śledzi rachunki, SageMeet transkrybuje spotkania. Aplikacje z Rumunii, bez śledzenia.">
     <meta property="og:title" content="Sagelight Studio — Aplikacje iOS i macOS Privacy-First">
     <meta property="og:description" content="Trzy aplikacje privacy-first zbudowane w Rumunii: SageBills (śledzenie rachunków), SageMeet (AI dla spotkań), SageDocs (zaszyfrowany sejf).">
     <meta property="og:type" content="website">
@@ -41,7 +31,8 @@
     <meta name="twitter:description" content="Aplikacje iOS i macOS w Rumunii. SageBills · SageMeet · SageDocs.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/home.png">
     <meta name="theme-color" content="#191724">
-    <meta name="robots" content="index, follow">
+    <meta name="lastmod" content="2026-11-02">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/pl/">
     <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/">
     <link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/">
@@ -62,10 +53,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
-    <link rel="preload" href="../assets/fonts/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../assets/sage.css?v=20261013f">
+    <link rel="stylesheet" href="../assets/sage.css?v=20261102a">
 
     <script type="application/ld+json">
     {
@@ -102,6 +92,7 @@
             "contactType": "obsługa klienta",
             "availableLanguage": ["Polish", "English", "Romanian"]
         },
+        "alternateName": "Sagelight",
         "sameAs": ["https://apps.apple.com/developer/florin-nica/id1889684772"],
         "founder": {
             "@type": "Person",
@@ -112,7 +103,7 @@
             "sameAs": ["https://apps.apple.com/developer/florin-nica/id1889684772"]
         },
         "makesOffer": [
-            {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "itemOffered": {"@type": "SoftwareApplication", "name": "SageDocs", "applicationCategory": "SecurityApplication", "operatingSystem": "iOS 17+, macOS 14+", "url": "https://sagelight-studio.com/pl/sagedocs.html"}},
+            {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "itemOffered": {"@type": "SoftwareApplication", "name": "SageDocs", "applicationCategory": "SecurityApplication", "operatingSystem": "iOS 17+, macOS 14+", "isAccessibleForFree": false, "url": "https://sagelight-studio.com/pl/sagedocs.html"}},
             {"@type": "Offer", "price": "0", "priceCurrency": "PLN", "itemOffered": {"@type": "SoftwareApplication", "name": "SageBills", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS 17+, macOS 14+", "url": "https://sagelight-studio.com/pl/sagebills.html"}},
             {"@type": "Offer", "price": "0", "priceCurrency": "PLN", "itemOffered": {"@type": "SoftwareApplication", "name": "SageMeet", "applicationCategory": "ProductivityApplication", "operatingSystem": "iOS 17+", "url": "https://sagelight-studio.com/pl/sagemeet.html"}}
         ]
@@ -123,7 +114,7 @@
     {
         "@context": "https://schema.org", "@type": "WebSite",
         "@id": "https://sagelight-studio.com/#website",
-        "name": "Sagelight Studio", "url": "https://sagelight-studio.com/pl/",
+        "name": "Sagelight Studio", "alternateName": "Sagelight", "url": "https://sagelight-studio.com/pl/",
         "publisher": {"@id": "https://sagelight-studio.com/#organization"},
         "inLanguage": "pl"
     }
@@ -137,7 +128,7 @@
         .home-hero .hero-slogan .thin { font-weight: 100; font-stretch: 75%; color: var(--paper-2); }
         .home-hero .hero-slogan .heavy { font-weight: 800; font-stretch: 112.5%; }
         .home-hero .hero-slogan .heavy em { font-style: normal; color: var(--amber); }
-        .home-hero .hero-h1 { margin: 14px 0 0; max-width: 36ch; font-family: var(--font-mono); font-size: 15px; font-weight: 600; line-height: 1.5; letter-spacing: -.01em; color: var(--paper); }
+        .home-hero .hero-h1 { margin: 14px 0 0; max-width: 48ch; font-family: var(--font-mono); font-size: clamp(17px, 2.1vw, 22px); font-weight: 600; line-height: 1.5; letter-spacing: -.01em; color: var(--paper); }
         .home-hero .lead { font-size: 18px; color: var(--paper-2); max-width: 46ch; margin: 0 0 30px; }
         .home-hero .lead strong { color: var(--paper); font-weight: 600; }
         .home-hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; }
@@ -262,10 +253,10 @@
         <div class="container home-hero__grid">
             <div>
                 <p class="kicker up" style="--i:0"><span class="dot" aria-hidden="true"></span> Niezależne studio · <b>Rumunia, UE</b></p>
-                <h1 id="hero-title" class="hero-h1 up" style="--i:0">Aplikacje na iPhone’a i Maca, które chronią prywatność: dokumenty, rachunki i spotkania</h1>
+                <h1 id="hero-title" class="hero-h1 up" style="--i:0">Sagelight Studio — Aplikacje na iPhone’a i Maca, które chronią prywatność: dokumenty, rachunki i spotkania</h1>
                 <p class="hero-slogan slide">
                     <span class="thin">Twoje papiery,</span><br>
-                    <span class="heavy">wysłane do nas: <em><span data-scramble="900">0&nbsp;bajtów.</span></em></span>
+                    <span class="heavy">wysłane do nas: <em>0&nbsp;bajtów.</em></span>
                 </p>
                 <p class="lead up" style="--i:2"><strong>Bez śledzenia. Bez reklam. Bez kont.</strong> Tworzone przez jedną osobę w Rumunii.</p>
                 <div class="ctas up" style="--i:3">
@@ -357,7 +348,7 @@
                         <div><dt>Platformy</dt><dd>iOS 17+ · macOS 14+</dd></div>
                     </dl>
                     <div class="manifest__actions">
-                        <a class="badge" href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Pobierz SageBills z App Store" width="156" height="52" loading="lazy"></a>
+                        <a class="badge" href="https://apps.apple.com/app/sagebills/id6762021142" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/g6_NCOOi2aocEKGfh5RC');"><img src="../assets/badges/app-store-badge.svg" alt="Pobierz SageBills z App Store" width="156" height="52"></a>
                         <a class="textlink" href="sagebills.html">Szczegóły →</a>
                         <span class="legal-mini"><a href="privacy-policy.html">Prywatność</a>·<a href="terms.html">Regulamin</a></span>
                     </div>
@@ -525,7 +516,7 @@
         <span>wysłane do nas: 0 bajtów</span>
     </div>
 </footer>
-<script src="../assets/theme.js?v=20261013f"></script>
+<script src="../assets/theme.js?v=20261102a"></script>
 <script src="../assets/consent.js?v=20261013f" defer></script>
 </body>
 </html>
