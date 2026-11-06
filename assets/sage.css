@@ -1008,3 +1008,70 @@ em.italic, .italic-em {
 .guide-links .arrow { grid-row: 1 / 3; grid-column: 2; font-family: var(--font-mono); color: var(--dim); transition: transform .2s var(--ease); }
 .guide-links a:hover .arrow { transform: translateX(4px); color: var(--amber); }
 @media (min-width: 760px) { .guide-links { grid-template-columns: 1fr 1fr; } }
+
+/* ============ Custom app request ============ */
+.req { padding-top: calc(var(--nav-height) + 48px); padding-bottom: 88px; }
+.req h1 {
+    font-family: var(--font-display); letter-spacing: -.05em; line-height: 1;
+    font-size: clamp(36px, 8vw, 80px); margin: 18px 0 22px;
+}
+.req h1 .thin { display: block; font-weight: 100; font-stretch: 75%; color: var(--paper-2); }
+.req h1 .heavy { display: block; font-weight: 800; font-stretch: 112.5%; }
+.req .prose p { color: var(--paper-2); font-size: 18px; line-height: 1.65; max-width: 68ch; margin: 0 0 14px; }
+.req .prose strong { color: var(--paper); font-weight: 600; }
+.req .dest {
+    margin: 8px 0 28px; padding: 16px 18px; max-width: 68ch;
+    border: 1px solid var(--amber-line); border-radius: var(--radius); background: var(--amber-fade);
+}
+.req .dest p { margin: 0 0 6px; color: var(--paper-2); }
+.req .dest a {
+    display: inline-flex; align-items: center; min-height: 44px;
+    font-family: var(--font-mono); font-size: clamp(14px, 3.6vw, 16px); overflow-wrap: anywhere;
+}
+.req-form {
+    margin-top: 8px; padding: 22px 16px 24px; max-width: 720px;
+    background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius-lg);
+}
+.req-form h2 {
+    margin: 0 0 8px; font-family: var(--font-display); font-weight: 800; letter-spacing: -.04em;
+    font-size: clamp(26px, 4vw, 36px); line-height: 1.1;
+}
+.req-form .req-intro { margin: 0 0 20px; color: var(--paper-2); max-width: 62ch; }
+.req-field { display: flex; flex-direction: column; gap: 6px; margin: 0 0 18px; }
+.req-field label { font-family: var(--font-mono); font-size: 13px; font-weight: 600; color: var(--paper); }
+.req-hint { margin: 0; color: var(--dim); font-size: 14.5px; line-height: 1.45; }
+.req-error { margin: 0; color: var(--rose); font-size: 14.5px; line-height: 1.45; }
+.req-error:empty { display: none; }
+.req input, .req textarea {
+    width: 100%; min-height: 48px; padding: 12px 14px; border-radius: 10px;
+    border: 1px solid var(--line); background: var(--ink); color: var(--paper);
+    font: 16px/1.45 var(--font-body);
+}
+.req textarea { min-height: 140px; resize: vertical; }
+.req input:focus, .req textarea:focus { outline: 2px solid var(--amber); outline-offset: 2px; border-color: var(--amber); }
+.req input[aria-invalid="true"], .req textarea[aria-invalid="true"] { border-color: var(--rose); }
+.req-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.req-form .btn { white-space: normal; text-align: center; max-width: 100%; }
+.req-note { margin: 0; color: var(--paper-2); font-size: 15px; line-height: 1.5; max-width: 62ch; }
+.req-status {
+    margin: 16px 0 0; padding: 14px 16px; border-radius: 10px; border: 1px solid var(--sage-line);
+    background: var(--sage-fade); color: var(--paper); max-width: 68ch; line-height: 1.5;
+}
+.req-status:empty { display: none; }
+.req-overflow { margin-top: 14px; }
+.req-overflow label { display: block; margin: 0 0 6px; font-family: var(--font-mono); font-size: 13px; font-weight: 600; color: var(--paper); }
+.req-overflow textarea { min-height: 180px; }
+.req-fallback { margin-top: 36px; max-width: 68ch; }
+.req-fallback h2 {
+    margin: 0 0 10px; font-family: var(--font-display); font-weight: 800; letter-spacing: -.04em;
+    font-size: clamp(24px, 4vw, 34px); line-height: 1.1;
+}
+.req-fallback p { margin: 0 0 12px; color: var(--paper-2); font-size: 17px; line-height: 1.6; }
+.req-fallback a { overflow-wrap: anywhere; }
+@media (min-width: 720px) {
+    .req { padding-top: calc(var(--nav-height) + 72px); }
+    .req-form { padding: 28px 28px 32px; }
+}
+@media (max-width: 1180px) and (min-width: 961px) {
+    .nav__tab { padding: 0 8px; }
+}
