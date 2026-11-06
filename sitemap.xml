@@ -29,7 +29,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog.html"/>
-        <lastmod>2026-11-02</lastmod>
+        <lastmod>2026-11-06</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/cz/</loc>
@@ -191,6 +191,13 @@
         <lastmod>2026-11-02</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/partners.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/partners.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/parteneri.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/partners.html"/>
+        <lastmod>2026-11-06</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/privacy-policy.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/privacy-policy.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/privacy-policy.html"/>
@@ -311,6 +318,13 @@
         <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/terms.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/terms.html"/>
         <lastmod>2026-05-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/blog/alovoce-virtual-phone-assistant-romania.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/alovoce-virtual-phone-assistant-romania.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/alovoce-asistenta-virtuala-telefon.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/alovoce-virtual-phone-assistant-romania.html"/>
+        <lastmod>2026-11-06</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/blog/apple-notes-files-vs-document-vault.html</loc>
@@ -1165,7 +1179,14 @@
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog.html"/>
-        <lastmod>2026-11-02</lastmod>
+        <lastmod>2026-11-06</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/ro/blog/alovoce-asistenta-virtuala-telefon.html</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/alovoce-asistenta-virtuala-telefon.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/alovoce-virtual-phone-assistant-romania.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/alovoce-virtual-phone-assistant-romania.html"/>
+        <lastmod>2026-11-06</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/blog/acte-de-pastrat-dupa-cumparare-masina-casa.html</loc>
@@ -1239,6 +1260,13 @@
         <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/gdpr.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/gdpr.html"/>
         <lastmod>2026-05-25</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/ro/parteneri.html</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/parteneri.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/partners.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/partners.html"/>
+        <lastmod>2026-11-06</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/privacy-policy.html</loc>
