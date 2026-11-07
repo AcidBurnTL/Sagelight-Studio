@@ -1349,7 +1349,7 @@
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog.html"/>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-07</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/blog/acte-de-pastrat-dupa-cumparare-masina-casa.html</loc>
@@ -1406,6 +1406,12 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/passport-id-expiry-reminders.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/passport-id-expiry-reminders.html"/>
         <lastmod>2026-11-02</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <lastmod>2026-11-07</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/blog/scanari-pasaport-buletin-in-siguranta.html</loc>
