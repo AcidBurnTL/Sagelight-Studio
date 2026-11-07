@@ -29,7 +29,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog.html"/>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-07</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/cz/</loc>
@@ -494,6 +494,23 @@
         <lastmod>2026-04-08</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/blog/sagedocs-vs-google-drive.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-vs-google-drive.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-vs-google-drive.html"/>
@@ -518,6 +535,29 @@
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/incalzire-iarna-2025-2026.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/winter-heating-cee-2025-2026.html"/>
         <lastmod>2026-11-06</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/cz/blog.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/cz/blog.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/cz/gdpr.html</loc>
@@ -625,6 +665,29 @@
         <lastmod>2026-11-02</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/de/blog.html</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/de/blog.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/de/gdpr.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/gdpr.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/gdpr.html"/>
@@ -708,6 +771,29 @@
         <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/terms.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/terms.html"/>
         <lastmod>2026-10-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/es/blog.html</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/es/blog.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/es/gdpr.html</loc>
@@ -795,6 +881,29 @@
         <lastmod>2026-11-02</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/fr/blog.html</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/fr/blog.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/fr/gdpr.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/gdpr.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/gdpr.html"/>
@@ -878,6 +987,29 @@
         <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/terms.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/terms.html"/>
         <lastmod>2026-11-02</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/hu/blog.html</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/hu/blog.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/hu/gdpr.html</loc>
@@ -985,6 +1117,29 @@
         <lastmod>2026-11-02</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/it/blog.html</loc>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/it/blog.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/it/gdpr.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/gdpr.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/gdpr.html"/>
@@ -1070,6 +1225,29 @@
         <lastmod>2026-11-02</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/nl/blog.html</loc>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/nl/blog.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/nl/gdpr.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/gdpr.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/gdpr.html"/>
@@ -1153,6 +1331,29 @@
         <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/terms.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/terms.html"/>
         <lastmod>2026-11-02</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/pl/blog.html</loc>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/pl/blog.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/pl/gdpr.html</loc>
@@ -1258,6 +1459,29 @@
         <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/terms.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/terms.html"/>
         <lastmod>2026-11-02</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/pt/blog.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/pt/blog.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/pt/gdpr.html</loc>
@@ -1409,8 +1633,19 @@
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
         <lastmod>2026-11-07</lastmod>
     </url>
     <url>
@@ -1531,6 +1766,29 @@
         <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/terms.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/terms.html"/>
         <lastmod>2026-11-02</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/sv/blog.html</loc>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/sv/blog.html"/>
+        <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
+        <lastmod>2026-11-07</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/sv/gdpr.html</loc>
