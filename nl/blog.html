@@ -20,7 +20,7 @@
     <meta name="twitter:description" content="De Nederlandstalige notitie over SageDocs, de versleutelde documentkluis. De andere gidsen staan in het Engels.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/blog.png">
     <meta name="theme-color" content="#191724">
-    <meta name="lastmod" content="2026-11-07">
+    <meta name="lastmod" content="2026-11-10">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/nl/blog.html">
     <link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog.html">
@@ -49,6 +49,13 @@
         }
     },
     "blogPost": [
+        {
+            "@type": "BlogPosting",
+            "headline": "Hoe je documenten ordent in SageDocs: categorieën, uitgever en notities",
+            "url": "https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html",
+            "datePublished": "2026-11-10T00:00:00+02:00",
+            "inLanguage": "nl"
+        },
         {
             "@type": "BlogPosting",
             "headline": "SageDocs: waar een versleutelde documentkluis voor dient",
@@ -99,6 +106,21 @@
             .featured { grid-template-columns: 7fr 5fr; align-items: stretch; padding: 36px; }
             .featured .spec { align-self: end; margin-bottom: 0; }
         }
+            .log { list-style: none; border-top: 1px dashed var(--line); margin: 8px 0 28px; padding: 0; }
+        .log__item { border-bottom: 1px dashed var(--line); }
+        .log__link { display: grid; grid-template-columns: 1fr; gap: 10px; padding: 24px 4px; color: var(--paper); }
+        .log__link:hover { color: var(--paper); }
+        .log__date { font-family: var(--font-mono); font-size: 12px; color: var(--dim); display: flex; gap: 10px; align-items: baseline; }
+        .log__date b { font-size: 22px; font-weight: 100; font-stretch: 75%; color: var(--amber); letter-spacing: -.03em; }
+        .log__title { font-family: var(--font-display); font-size: clamp(19px, 2.4vw, 24px); font-weight: 700; letter-spacing: -.035em; line-height: 1.25; display: block; }
+        .log__excerpt { color: var(--paper-2); font-size: 16px; max-width: 64ch; display: block; }
+        .log__arrow { font-family: var(--font-mono); color: var(--dim); }
+        @media (min-width: 760px) {
+            .log__link { grid-template-columns: 150px 1fr 40px; gap: 8px 28px; align-items: start; padding: 28px 8px; }
+            .log__date { flex-direction: column; gap: 4px; padding-top: 4px; }
+            .log__body { display: grid; gap: 10px; }
+            .log__arrow { align-self: center; justify-self: end; font-size: 18px; }
+        }
     </style>
 </head>
 <body>
@@ -130,7 +152,7 @@
         <div class="container">
             <p class="kicker"><span class="dot" aria-hidden="true"></span> Blog van Sagelight Studio</p>
             <h1 id="blog-title">Een notitie in het Nederlands.</h1>
-            <p class="lead">Deze pagina laat het SageDocs-artikel zien. <a href="../blog.html" hreflang="en" lang="en">De andere gidsen zijn in het Engels</a>.</p>
+            <p class="lead">Deze pagina laat de SageDocs-artikelen zien. <a href="../blog.html" hreflang="en" lang="en">De andere gidsen zijn in het Engels</a>.</p>
         </div>
     </section>
     <section class="blog-list" aria-label="Artikelen">
@@ -140,22 +162,35 @@
                     <span class="flag">Nieuwste</span>
                     <div class="entry-meta">
                         <span class="chip chip--amber">Documenten</span>
-                        <time datetime="2026-11-07">7 nov. 2026</time>
+                        <time datetime="2026-11-10">10 nov. 2026</time>
                         <span aria-hidden="true">·</span>
-                        <span>6 min lezen</span>
+                        <span>7 min lezen</span>
                     </div>
-                    <h2 id="featured-title"><a href="blog/sagedocs-encrypted-documents.html">SageDocs: waar een versleutelde documentkluis voor dient</a></h2>
-                    <p>Wat SageDocs doet, hoe het documenten beschermt en wanneer een versleutelde kluis de moeite waard is in plaats van een lokale map of gewone cloudopslag.</p>
-                    <a class="btn btn--primary" href="blog/sagedocs-encrypted-documents.html">Lees het artikel <span aria-hidden="true">→</span></a>
+                    <h2 id="featured-title"><a href="blog/sagedocs-document-organization.html">Hoe je documenten ordent in SageDocs: categorieën, uitgever en notities</a></h2>
+                    <p>Een eenvoudige regel voor de naam van documenten en voor titel, categorie, uitgever en notities in SageDocs, met voorbeelden van een identiteitskaart, een RCA-polis en een contract.</p>
+                    <a class="btn btn--primary" href="blog/sagedocs-document-organization.html">Lees het artikel <span aria-hidden="true">→</span></a>
                 </div>
                 <dl class="spec">
-                    <div><dt>Product</dt><dd>SageDocs</dd></div>
-                    <div><dt>Apparaten</dt><dd>iPhone, iPad en Mac</dd></div>
-                    <div><dt>Bijlagen</dt><dd>AES-256-GCM</dd></div>
-                    <div><dt>Toegang</dt><dd>PIN, Face ID, Touch ID</dd></div>
+                    <div><dt>Velden</dt><dd>titel, categorie, uitgever, notities</dd></div>
+                    <div><dt>Categorie</dt><dd>één per document</dd></div>
+                    <div><dt>Uitgever</dt><dd>precies zoals op papier</dd></div>
+                    <div><dt>Voorbeelden</dt><dd>buletin, RCA, contract</dd></div>
                     <div><dt>Auteur</dt><dd>Florin Nica</dd></div>
                 </dl>
             </article>
+            <ol class="log">
+                <li class="log__item">
+                    <a class="log__link" href="blog/sagedocs-encrypted-documents.html">
+                        <span class="log__date"><b>01</b><time datetime="2026-11-07">7 nov. 2026</time></span>
+                        <span class="log__body">
+                            <span class="entry-meta"><span class="chip chip--amber">Documenten</span><span>6 min lezen</span></span>
+                            <span class="log__title">SageDocs: waar een versleutelde documentkluis voor dient</span>
+                            <span class="log__excerpt">Wat SageDocs doet, hoe het documenten beschermt en wanneer een versleutelde kluis de moeite waard is in plaats van een lokale map of gewone cloudopslag.</span>
+                        </span>
+                        <span class="log__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+            </ol>
             <div class="en-list">
                 <h2>Andere gidsen</h2>
                 <p>Die blijven bereikbaar in de <a href="../blog.html" hreflang="en" lang="en">Engelstalige blog</a>, ook de drie documentgidsen waarnaar het artikel verwijst.</p>

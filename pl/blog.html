@@ -20,7 +20,7 @@
     <meta name="twitter:description" content="Polska notatka o SageDocs, zaszyfrowanym sejfie na dokumenty. Pozostałe przewodniki są po angielsku.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/blog.png">
     <meta name="theme-color" content="#191724">
-    <meta name="lastmod" content="2026-11-07">
+    <meta name="lastmod" content="2026-11-10">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/pl/blog.html">
     <link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog.html">
@@ -49,6 +49,13 @@
         }
     },
     "blogPost": [
+        {
+            "@type": "BlogPosting",
+            "headline": "Jak porządkować dokumenty w SageDocs: kategorie, wydawca i notatki",
+            "url": "https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html",
+            "datePublished": "2026-11-10T00:00:00+02:00",
+            "inLanguage": "pl"
+        },
         {
             "@type": "BlogPosting",
             "headline": "SageDocs: do czego służy sejf na zaszyfrowane dokumenty",
@@ -99,6 +106,21 @@
             .featured { grid-template-columns: 7fr 5fr; align-items: stretch; padding: 36px; }
             .featured .spec { align-self: end; margin-bottom: 0; }
         }
+            .log { list-style: none; border-top: 1px dashed var(--line); margin: 8px 0 28px; padding: 0; }
+        .log__item { border-bottom: 1px dashed var(--line); }
+        .log__link { display: grid; grid-template-columns: 1fr; gap: 10px; padding: 24px 4px; color: var(--paper); }
+        .log__link:hover { color: var(--paper); }
+        .log__date { font-family: var(--font-mono); font-size: 12px; color: var(--dim); display: flex; gap: 10px; align-items: baseline; }
+        .log__date b { font-size: 22px; font-weight: 100; font-stretch: 75%; color: var(--amber); letter-spacing: -.03em; }
+        .log__title { font-family: var(--font-display); font-size: clamp(19px, 2.4vw, 24px); font-weight: 700; letter-spacing: -.035em; line-height: 1.25; display: block; }
+        .log__excerpt { color: var(--paper-2); font-size: 16px; max-width: 64ch; display: block; }
+        .log__arrow { font-family: var(--font-mono); color: var(--dim); }
+        @media (min-width: 760px) {
+            .log__link { grid-template-columns: 150px 1fr 40px; gap: 8px 28px; align-items: start; padding: 28px 8px; }
+            .log__date { flex-direction: column; gap: 4px; padding-top: 4px; }
+            .log__body { display: grid; gap: 10px; }
+            .log__arrow { align-self: center; justify-self: end; font-size: 18px; }
+        }
     </style>
 </head>
 <body>
@@ -130,7 +152,7 @@
         <div class="container">
             <p class="kicker"><span class="dot" aria-hidden="true"></span> Blog Sagelight Studio</p>
             <h1 id="blog-title">Notatka po polsku.</h1>
-            <p class="lead">Ta strona pokazuje artykuł o SageDocs. <a href="../blog.html" hreflang="en" lang="en">Pozostałe przewodniki są po angielsku</a>.</p>
+            <p class="lead">Ta strona pokazuje artykuły o SageDocs. <a href="../blog.html" hreflang="en" lang="en">Pozostałe przewodniki są po angielsku</a>.</p>
         </div>
     </section>
     <section class="blog-list" aria-label="Artykuły">
@@ -140,25 +162,38 @@
                     <span class="flag">Najnowszy</span>
                     <div class="entry-meta">
                         <span class="chip chip--amber">Dokumenty</span>
-                        <time datetime="2026-11-07">7 lis. 2026</time>
+                        <time datetime="2026-11-10">10 lis. 2026</time>
                         <span aria-hidden="true">·</span>
-                        <span>4 min czytania</span>
+                        <span>6 min czytania</span>
                     </div>
-                    <h2 id="featured-title"><a href="blog/sagedocs-encrypted-documents.html">SageDocs: do czego służy sejf na zaszyfrowane dokumenty</a></h2>
-                    <p>Co robi SageDocs, jak chroni dokumenty i kiedy zaszyfrowany sejf ma sens zamiast lokalnego folderu albo zwykłego przechowywania w chmurze.</p>
-                    <a class="btn btn--primary" href="blog/sagedocs-encrypted-documents.html">Czytaj artykuł <span aria-hidden="true">→</span></a>
+                    <h2 id="featured-title"><a href="blog/sagedocs-document-organization.html">Jak porządkować dokumenty w SageDocs: kategorie, wydawca i notatki</a></h2>
+                    <p>Prosta reguła nazywania dokumentów i uzupełniania pól tytuł, kategoria, wydawca i notatki w SageDocs, z przykładami rumuńskiego dowodu, polisy RCA i umowy.</p>
+                    <a class="btn btn--primary" href="blog/sagedocs-document-organization.html">Czytaj artykuł <span aria-hidden="true">→</span></a>
                 </div>
                 <dl class="spec">
-                    <div><dt>Produkt</dt><dd>SageDocs</dd></div>
-                    <div><dt>Urządzenia</dt><dd>iPhone, iPad i Mac</dd></div>
-                    <div><dt>Załączniki</dt><dd>AES-256-GCM</dd></div>
-                    <div><dt>Dostęp</dt><dd>PIN, Face ID, Touch ID</dd></div>
+                    <div><dt>Pola</dt><dd>tytuł, kategoria, wydawca, notatki</dd></div>
+                    <div><dt>Kategoria</dt><dd>jedna na dokument</dd></div>
+                    <div><dt>Wydawca</dt><dd>dokładnie jak na papierze</dd></div>
+                    <div><dt>Przykłady</dt><dd>buletin, RCA, contract</dd></div>
                     <div><dt>Autor</dt><dd>Florin Nica</dd></div>
                 </dl>
             </article>
+            <ol class="log">
+                <li class="log__item">
+                    <a class="log__link" href="blog/sagedocs-encrypted-documents.html">
+                        <span class="log__date"><b>01</b><time datetime="2026-11-07">7 lis. 2026</time></span>
+                        <span class="log__body">
+                            <span class="entry-meta"><span class="chip chip--amber">Dokumenty</span><span>4 min czytania</span></span>
+                            <span class="log__title">SageDocs: do czego służy sejf na zaszyfrowane dokumenty</span>
+                            <span class="log__excerpt">Co robi SageDocs, jak chroni dokumenty i kiedy zaszyfrowany sejf ma sens zamiast lokalnego folderu albo zwykłego przechowywania w chmurze.</span>
+                        </span>
+                        <span class="log__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+            </ol>
             <div class="en-list">
                 <h2>Inne przewodniki</h2>
-                <p>Nadal są dostępne na <a href="../blog.html" hreflang="en" lang="en">angielskim blogu</a>, także trzy przewodniki o dokumentach, do których odsyła artykuł.</p>
+                <p>Nadal są dostępne na <a href="../blog.html" hreflang="en" lang="en">angielskim blogu</a>, także trzy przewodniki o dokumentach, do których odsyłają artykuły.</p>
             </div>
         </div>
     </section>
