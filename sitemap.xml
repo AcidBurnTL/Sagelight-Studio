@@ -29,7 +29,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/cz/</loc>
@@ -494,6 +494,23 @@
         <lastmod>2026-04-08</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/sagedocs-documente-criptate.html"/>
@@ -540,7 +557,24 @@
         <loc>https://sagelight-studio.com/cz/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/cz/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/cz/blog/sagedocs-encrypted-documents.html</loc>
@@ -668,7 +702,24 @@
         <loc>https://sagelight-studio.com/de/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/de/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/de/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/de/blog/sagedocs-encrypted-documents.html</loc>
@@ -776,7 +827,24 @@
         <loc>https://sagelight-studio.com/es/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/es/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/es/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/es/blog/sagedocs-encrypted-documents.html</loc>
@@ -884,7 +952,24 @@
         <loc>https://sagelight-studio.com/fr/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/fr/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/fr/blog/sagedocs-encrypted-documents.html</loc>
@@ -992,7 +1077,24 @@
         <loc>https://sagelight-studio.com/hu/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/hu/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/hu/blog/sagedocs-encrypted-documents.html</loc>
@@ -1120,7 +1222,24 @@
         <loc>https://sagelight-studio.com/it/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/it/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/it/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/it/blog/sagedocs-encrypted-documents.html</loc>
@@ -1228,7 +1347,24 @@
         <loc>https://sagelight-studio.com/nl/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/nl/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/nl/blog/sagedocs-encrypted-documents.html</loc>
@@ -1336,7 +1472,24 @@
         <loc>https://sagelight-studio.com/pl/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/pl/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/pl/blog/sagedocs-encrypted-documents.html</loc>
@@ -1464,7 +1617,24 @@
         <loc>https://sagelight-studio.com/pt/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/pt/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/pt/blog/sagedocs-encrypted-documents.html</loc>
@@ -1573,7 +1743,7 @@
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/blog/acte-de-pastrat-dupa-cumparare-masina-casa.html</loc>
@@ -1623,6 +1793,23 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/building-maintenance-fees-romania.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/building-maintenance-fees-romania.html"/>
         <lastmod>2026-11-02</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/blog/reminder-expirare-pasaport-buletin.html</loc>
@@ -1771,7 +1958,24 @@
         <loc>https://sagelight-studio.com/sv/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/sv/blog.html"/>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-document-organization.html"/>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html</loc>

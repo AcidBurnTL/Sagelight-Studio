@@ -20,7 +20,7 @@
     <meta name="twitter:description" content="La nota en español sobre SageDocs, el cofre de documentos cifrados. El resto de las guías está en inglés.">
     <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/blog.png">
     <meta name="theme-color" content="#191724">
-    <meta name="lastmod" content="2026-11-07">
+    <meta name="lastmod" content="2026-11-10">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://sagelight-studio.com/es/blog.html">
     <link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog.html">
@@ -49,6 +49,13 @@
         }
     },
     "blogPost": [
+        {
+            "@type": "BlogPosting",
+            "headline": "Cómo organizar tus documentos en SageDocs: categorías, emisor y notas",
+            "url": "https://sagelight-studio.com/es/blog/sagedocs-document-organization.html",
+            "datePublished": "2026-11-10T00:00:00+02:00",
+            "inLanguage": "es"
+        },
         {
             "@type": "BlogPosting",
             "headline": "SageDocs: para qué sirve un cofre de documentos cifrados",
@@ -99,6 +106,21 @@
             .featured { grid-template-columns: 7fr 5fr; align-items: stretch; padding: 36px; }
             .featured .spec { align-self: end; margin-bottom: 0; }
         }
+            .log { list-style: none; border-top: 1px dashed var(--line); margin: 8px 0 28px; padding: 0; }
+        .log__item { border-bottom: 1px dashed var(--line); }
+        .log__link { display: grid; grid-template-columns: 1fr; gap: 10px; padding: 24px 4px; color: var(--paper); }
+        .log__link:hover { color: var(--paper); }
+        .log__date { font-family: var(--font-mono); font-size: 12px; color: var(--dim); display: flex; gap: 10px; align-items: baseline; }
+        .log__date b { font-size: 22px; font-weight: 100; font-stretch: 75%; color: var(--amber); letter-spacing: -.03em; }
+        .log__title { font-family: var(--font-display); font-size: clamp(19px, 2.4vw, 24px); font-weight: 700; letter-spacing: -.035em; line-height: 1.25; display: block; }
+        .log__excerpt { color: var(--paper-2); font-size: 16px; max-width: 64ch; display: block; }
+        .log__arrow { font-family: var(--font-mono); color: var(--dim); }
+        @media (min-width: 760px) {
+            .log__link { grid-template-columns: 150px 1fr 40px; gap: 8px 28px; align-items: start; padding: 28px 8px; }
+            .log__date { flex-direction: column; gap: 4px; padding-top: 4px; }
+            .log__body { display: grid; gap: 10px; }
+            .log__arrow { align-self: center; justify-self: end; font-size: 18px; }
+        }
     </style>
 </head>
 <body>
@@ -130,7 +152,7 @@
         <div class="container">
             <p class="kicker"><span class="dot" aria-hidden="true"></span> Blog de Sagelight Studio</p>
             <h1 id="blog-title">Una nota en español.</h1>
-            <p class="lead">Esta página presenta el artículo de SageDocs. <a href="../blog.html" hreflang="en" lang="en">Las demás guías están en inglés</a>.</p>
+            <p class="lead">Esta página presenta los artículos de SageDocs. <a href="../blog.html" hreflang="en" lang="en">Las demás guías están en inglés</a>.</p>
         </div>
     </section>
     <section class="blog-list" aria-label="Artículos">
@@ -140,25 +162,38 @@
                     <span class="flag">El más reciente</span>
                     <div class="entry-meta">
                         <span class="chip chip--amber">Documentos</span>
-                        <time datetime="2026-11-07">7 nov. 2026</time>
+                        <time datetime="2026-11-10">10 nov. 2026</time>
                         <span aria-hidden="true">·</span>
-                        <span>6 min de lectura</span>
+                        <span>8 min de lectura</span>
                     </div>
-                    <h2 id="featured-title"><a href="blog/sagedocs-encrypted-documents.html">SageDocs: para qué sirve un cofre de documentos cifrados</a></h2>
-                    <p>Qué hace SageDocs, cómo protege los documentos y cuándo conviene un cofre cifrado en lugar de una carpeta local o del almacenamiento habitual en la nube.</p>
-                    <a class="btn btn--primary" href="blog/sagedocs-encrypted-documents.html">Leer el artículo <span aria-hidden="true">→</span></a>
+                    <h2 id="featured-title"><a href="blog/sagedocs-document-organization.html">Cómo organizar tus documentos en SageDocs: categorías, emisor y notas</a></h2>
+                    <p>Una regla simple para nombrar documentos y completar título, categoría, emisor y notas en SageDocs, con ejemplos de documento de identidad, póliza RCA y contrato.</p>
+                    <a class="btn btn--primary" href="blog/sagedocs-document-organization.html">Leer el artículo <span aria-hidden="true">→</span></a>
                 </div>
                 <dl class="spec">
-                    <div><dt>Producto</dt><dd>SageDocs</dd></div>
-                    <div><dt>Dispositivos</dt><dd>iPhone, iPad y Mac</dd></div>
-                    <div><dt>Adjuntos</dt><dd>AES-256-GCM</dd></div>
-                    <div><dt>Acceso</dt><dd>PIN, Face ID, Touch ID</dd></div>
+                    <div><dt>Campos</dt><dd>título, categoría, emisor, notas</dd></div>
+                    <div><dt>Categoría</dt><dd>una por documento</dd></div>
+                    <div><dt>Emisor</dt><dd>tal como en el papel</dd></div>
+                    <div><dt>Ejemplos</dt><dd>buletin, RCA, contract</dd></div>
                     <div><dt>Autor</dt><dd>Florin Nica</dd></div>
                 </dl>
             </article>
+            <ol class="log">
+                <li class="log__item">
+                    <a class="log__link" href="blog/sagedocs-encrypted-documents.html">
+                        <span class="log__date"><b>01</b><time datetime="2026-11-07">7 nov. 2026</time></span>
+                        <span class="log__body">
+                            <span class="entry-meta"><span class="chip chip--amber">Documentos</span><span>6 min de lectura</span></span>
+                            <span class="log__title">SageDocs: para qué sirve un cofre de documentos cifrados</span>
+                            <span class="log__excerpt">Qué hace SageDocs, cómo protege los documentos y cuándo conviene un cofre cifrado en lugar de una carpeta local o del almacenamiento habitual en la nube.</span>
+                        </span>
+                        <span class="log__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+            </ol>
             <div class="en-list">
                 <h2>Otras guías</h2>
-                <p>Siguen disponibles en el <a href="../blog.html" hreflang="en" lang="en">blog en inglés</a>, incluidas las tres guías de documentos que cita el artículo.</p>
+                <p>Siguen disponibles en el <a href="../blog.html" hreflang="en" lang="en">blog en inglés</a>, incluidas las tres guías de documentos que citan los artículos.</p>
             </div>
         </div>
     </section>
