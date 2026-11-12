@@ -29,7 +29,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html"/>
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/cz/</loc>
@@ -488,6 +488,23 @@
         <lastmod>2026-11-02</lastmod>
     </url>
     <url>
+        <loc>https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
         <loc>https://sagelight-studio.com/blog/sagebills-v1-launch.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-v1-launch.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-v1-launch.html"/>
@@ -557,7 +574,24 @@
         <loc>https://sagelight-studio.com/cz/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/cz/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/cz/blog/sagedocs-document-organization.html</loc>
@@ -702,7 +736,24 @@
         <loc>https://sagelight-studio.com/de/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/de/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/de/blog/sagedocs-document-organization.html</loc>
@@ -827,7 +878,24 @@
         <loc>https://sagelight-studio.com/es/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/es/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/es/blog/sagedocs-document-organization.html</loc>
@@ -952,7 +1020,24 @@
         <loc>https://sagelight-studio.com/fr/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/fr/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/fr/blog/sagedocs-document-organization.html</loc>
@@ -1077,7 +1162,24 @@
         <loc>https://sagelight-studio.com/hu/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/hu/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/hu/blog/sagedocs-document-organization.html</loc>
@@ -1222,7 +1324,24 @@
         <loc>https://sagelight-studio.com/it/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/it/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/it/blog/sagedocs-document-organization.html</loc>
@@ -1347,7 +1466,24 @@
         <loc>https://sagelight-studio.com/nl/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/nl/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/nl/blog/sagedocs-document-organization.html</loc>
@@ -1472,7 +1608,24 @@
         <loc>https://sagelight-studio.com/pl/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/pl/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/pl/blog/sagedocs-document-organization.html</loc>
@@ -1617,7 +1770,24 @@
         <loc>https://sagelight-studio.com/pt/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/pt/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/pt/blog/sagedocs-document-organization.html</loc>
@@ -1743,7 +1913,7 @@
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/blog/acte-de-pastrat-dupa-cumparare-masina-casa.html</loc>
@@ -1834,6 +2004,23 @@
         <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagedocs-encrypted-documents.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagedocs-encrypted-documents.html"/>
         <lastmod>2026-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/blog/scanari-pasaport-buletin-in-siguranta.html</loc>
@@ -1958,7 +2145,24 @@
         <loc>https://sagelight-studio.com/sv/blog.html</loc>
         <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/sv/blog.html"/>
-        <lastmod>2026-11-10</lastmod>
+        <lastmod>2026-11-13</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/scanare-arhivare-facturi-utilitati-iphone.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagebills-utility-bills-scanning.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagebills-utility-bills-scanning.html"/>
+        <lastmod>2026-11-13</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/sv/blog/sagedocs-document-organization.html</loc>
