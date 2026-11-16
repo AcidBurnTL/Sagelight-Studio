@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../assets/gtag.js?v=20261102a"></script>
+    <title>Értekezletek átírása iPhone-on: mi marad a telefonon, és mi jut el az OpenAI-hoz</title>
+    <meta name="description" content="A SageMeetben a felvétel az iPhone-on marad. A hang és a szöveg az OpenAI-hoz megy, a te kulcsoddal, csak az AI-funkciókhoz. A Privát mód mindent leállít.">
+    <meta property="og:title" content="Értekezletek átírása iPhone-on: mi marad a telefonon, és mi jut el az OpenAI-hoz">
+    <meta property="og:description" content="A SageMeetben a felvétel az iPhone-on marad. A hang és a szöveg az OpenAI-hoz megy, a te kulcsoddal, csak az AI-funkciókhoz. A Privát mód mindent leállít.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sagelight-studio.com/hu/blog/sagemeet-transcription-openai.html">
+    <meta property="og:site_name" content="Sagelight Studio">
+    <meta property="og:locale" content="hu_HU">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ro_RO">
+    <meta property="og:locale:alternate" content="pl_PL">
+    <meta property="og:locale:alternate" content="cs_CZ">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="nl_NL">
+    <meta property="og:locale:alternate" content="pt_PT">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:image" content="https://sagelight-studio.com/assets/og/blog.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="article:published_time" content="2026-11-17">
+    <meta property="article:modified_time" content="2026-11-17">
+    <meta property="article:author" content="Florin Nica">
+    <meta property="article:section" content="Útmutató">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Értekezletek átírása iPhone-on: mi marad a telefonon, és mi jut el az OpenAI-hoz">
+    <meta name="twitter:description" content="A SageMeetben a felvétel az iPhone-on marad. A hang és a szöveg az OpenAI-hoz megy, a te kulcsoddal, csak az AI-funkciókhoz. A Privát mód mindent leállít.">
+    <meta name="twitter:image" content="https://sagelight-studio.com/assets/og/blog.png">
+    <meta name="theme-color" content="#191724">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://sagelight-studio.com/hu/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/transcriere-sedinte-iphone-openai.html">
+    <link rel="alternate" hreflang="hu" href="https://sagelight-studio.com/hu/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="pl" href="https://sagelight-studio.com/pl/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="cs" href="https://sagelight-studio.com/cz/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="de" href="https://sagelight-studio.com/de/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="fr" href="https://sagelight-studio.com/fr/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="es" href="https://sagelight-studio.com/es/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="it" href="https://sagelight-studio.com/it/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="nl" href="https://sagelight-studio.com/nl/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="pt-PT" href="https://sagelight-studio.com/pt/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="sv" href="https://sagelight-studio.com/sv/blog/sagemeet-transcription-openai.html">
+    <link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/sagemeet-transcription-openai.html">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="preload" href="../../assets/fonts/InstrumentSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../assets/fonts/MartianMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../../assets/sage.css?v=20261102a">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Értekezletek átírása iPhone-on: mi marad a telefonon, és mi jut el az OpenAI-hoz",
+    "description": "A SageMeetben a felvétel az iPhone-on marad. A hang és a szöveg az OpenAI-hoz megy, a te kulcsoddal, csak az AI-funkciókhoz. A Privát mód mindent leállít.",
+    "datePublished": "2026-11-17T00:00:00+02:00",
+    "dateModified": "2026-11-17T00:00:00+02:00",
+    "author": {
+        "@type": "Person",
+        "@id": "https://sagelight-studio.com/#florin-nica",
+        "name": "Florin Nica",
+        "url": "https://sagelight-studio.com/about.html"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Sagelight Studio",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://sagelight-studio.com/icon-512.png"
+        }
+    },
+    "inLanguage": "hu",
+    "image": "https://sagelight-studio.com/assets/og/blog.png",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://sagelight-studio.com/hu/blog/sagemeet-transcription-openai.html"
+    },
+    "isPartOf": {
+        "@type": "Blog",
+        "name": "Sagelight Studio blog",
+        "url": "https://sagelight-studio.com/hu/blog.html"
+    },
+    "articleSection": "Útmutató",
+    "wordCount": 917,
+    "translationOfWork": {
+        "@id": "https://sagelight-studio.com/blog/sagemeet-transcription-openai.html"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Kezdőlap",
+            "item": "https://sagelight-studio.com/hu/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://sagelight-studio.com/hu/blog.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Értekezletek átírása iPhone-on: mi marad a telefonon, és mi jut el az OpenAI-hoz",
+            "item": "https://sagelight-studio.com/hu/blog/sagemeet-transcription-openai.html"
+        }
+    ]
+}
+    </script>
+    <style>
+        /* Blog article ("Data Manifest") */
+        .article-page { padding-top: calc(var(--nav-height) + 48px); padding-bottom: 72px; }
+        .article-page__container { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+        .article-page__breadcrumb { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--dim); margin-bottom: 20px; }
+        .article-page__breadcrumb a { color: var(--paper-2); display: inline-flex; align-items: center; min-height: 44px; }
+        .article-page__breadcrumb a:hover { color: var(--amber); }
+        .article-page__meta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 22px; font-family: var(--font-mono); font-size: 12px; letter-spacing: .04em; color: var(--dim); }
+        .article-page__category { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--amber-line); background: var(--amber-fade); color: var(--amber); font-weight: 500; }
+        .article-page__dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line); display: inline-block; }
+        .article-page h1 { font-family: var(--font-display); font-size: clamp(30px, 5.6vw, 54px); font-weight: 800; font-stretch: 112.5%; line-height: 1.05; letter-spacing: -.05em; margin: 0 0 32px; color: var(--paper); overflow-wrap: break-word; }
+        .article-page__body { font-size: 18px; line-height: 1.75; color: var(--paper-2); }
+        .article-page__body > * { max-width: 68ch; }
+        .article-page__body p { margin: 0 0 22px; }
+        .article-page__body > p:first-child { font-size: 19px; color: var(--paper); }
+        .article-page__body h2 { font-family: var(--font-display); font-size: clamp(21px, 3vw, 26px); font-weight: 700; letter-spacing: -.035em; line-height: 1.2; color: var(--paper); margin: 48px 0 16px; padding-top: 18px; border-top: 1px dashed var(--line); overflow-wrap: break-word; }
+        .article-page__body h3 { font-family: var(--font-display); font-size: 18px; font-weight: 700; letter-spacing: -.02em; color: var(--paper); margin: 32px 0 12px; }
+        .article-page__body strong { color: var(--paper); font-weight: 600; }
+        .article-page__body em { font-style: italic; }
+        .article-page__body a { color: var(--amber); text-decoration: underline; text-decoration-color: var(--amber-line); text-underline-offset: 3px; }
+        .article-page__body a:hover { text-decoration-color: var(--amber); }
+        .article-page__body ul, .article-page__body ol { margin: 0 0 24px; padding-left: 1.4em; }
+        .article-page__body li { margin-bottom: 10px; padding-left: 4px; }
+        .article-page__body ul li::marker { color: var(--amber); content: "▸  "; }
+        .article-page__body ol li::marker { color: var(--amber); font-family: var(--font-mono); font-size: .85em; }
+        .article-page__body blockquote { margin: 32px 0; padding: 4px 0 4px 22px; border-left: 3px solid var(--amber); font-family: var(--font-display); font-weight: 200; font-stretch: 87.5%; font-size: 21px; line-height: 1.45; letter-spacing: -.02em; color: var(--paper); }
+        .article-page__body code { font-family: var(--font-mono); font-size: .85em; background: var(--ink-3); border: 1px solid var(--line); padding: 2px 6px; border-radius: 5px; color: var(--paper); }
+        .article-page__body table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 16px; display: block; overflow-x: auto; }
+        .article-page__body th { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--dim); text-align: left; padding: 10px 12px; border-bottom: 1px dashed var(--line); }
+        .article-page__body td { padding: 12px; border-bottom: 1px solid var(--line-soft); }
+        .article-page__body .callout { background: var(--card-bg); border: 1px solid var(--line); border-left: 3px solid var(--amber); border-radius: 12px; padding: 20px 22px; margin: 32px 0; }
+        .article-page__body .callout p { margin: 0; color: var(--paper); }
+        .article-page__body .stat-row { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 32px 0; max-width: none; }
+        .article-page__body .stat-box { background: var(--card-bg); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+        .article-page__body .stat-num { display: block; font-family: var(--font-display); font-size: 32px; font-weight: 800; font-stretch: 112.5%; letter-spacing: -.05em; color: var(--amber); margin-bottom: 4px; }
+        .article-page__body .stat-label { display: block; font-family: var(--font-mono); font-size: 12px; letter-spacing: .04em; color: var(--paper-2); line-height: 1.5; }
+        @media (min-width: 640px) { .article-page__body .stat-row { grid-template-columns: repeat(3, 1fr); } }
+
+        .post-cta { margin: 48px 0 0; }
+        .post-cta .kicker { margin-bottom: 10px; }
+        .post-cta__apps { display: grid; gap: 28px; }
+        .post-cta__title { font-family: var(--font-display); font-size: clamp(28px, 5vw, 40px); font-weight: 800; font-stretch: 112.5%; letter-spacing: -.05em; line-height: 1; margin: 0 0 10px; color: var(--paper); }
+        .post-cta__title span { font-weight: 100; font-stretch: 75%; color: var(--dim); }
+        .post-cta__tag { color: var(--paper-2); margin: 0 0 18px; max-width: 52ch; }
+        .post-cta .spec { margin-bottom: 20px; }
+        .post-cta__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+        .post-cta__actions .textlink { display: inline-flex; align-items: center; min-height: 44px; font-family: var(--font-mono); font-size: 13px; color: var(--paper); }
+        .post-cta__actions .textlink:hover { color: var(--amber); }
+        @media (min-width: 720px) { .post-cta__apps--two { grid-template-columns: 1fr 1fr; } }
+
+        .post-nav { margin-top: 48px; display: grid; gap: 12px; }
+        .post-nav a { display: grid; gap: 6px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--card-bg); color: var(--paper); transition: border-color .2s; }
+        .post-nav a:hover { border-color: var(--amber-line); color: var(--paper); }
+        .post-nav small { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--amber); }
+        .post-nav span { font-weight: 600; line-height: 1.4; }
+        .post-nav .next { text-align: right; }
+        @media (min-width: 640px) { .post-nav { grid-template-columns: 1fr 1fr; } .post-nav .next { grid-column: 2; } }
+
+        .related { margin-top: 48px; padding-top: 28px; border-top: 1px dashed var(--line); }
+        .related__title { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); margin: 0 0 18px; }
+        .related__grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+        @media (min-width: 640px) { .related__grid { grid-template-columns: repeat(3, 1fr); } }
+        .related__card { display: block; padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--card-bg); color: var(--paper); transition: border-color .2s; }
+        .related__card:hover { border-color: var(--amber-line); color: var(--paper); }
+        .related__card-cat { font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--amber); }
+        .related__card-title { display: block; margin-top: 8px; font-size: 16px; font-weight: 600; line-height: 1.4; }
+
+        .article-page__footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+        .article-page__back { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-family: var(--font-mono); font-size: 14px; color: var(--amber); }
+        .article-page__back:hover { gap: 12px; }
+        @media (prefers-reduced-motion: reduce) { .article-page__back:hover { gap: 8px; } }
+            .lang-versions { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 4px 14px; }
+        .lang-versions a { display: inline-flex; align-items: center; min-height: 44px; }
+            .article-page__body .sources { font-size: 15px; line-height: 1.6; }
+        .article-page__body .sources li { font-size: 15px; line-height: 1.6; margin-bottom: 8px; }
+        .article-page__body .sources a { overflow-wrap: anywhere; }
+    </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+
+<nav class="nav" aria-label="Fő navigáció">
+    <div class="nav__inner">
+        <a href="../" class="nav__logo" aria-label="Sagelight Studio, főoldal">
+            <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Sagelight <span>Studio</span>
+        </a>
+        <ul class="nav__tabs" id="navTabs">
+            <li><a href="../sagedocs.html" class="nav__tab">SageDocs</a></li>
+            <li><a href="../sagebills.html" class="nav__tab">SageBills</a></li>
+            <li><a href="../sagemeet.html" class="nav__tab">SageMeet</a></li>
+            <li><a href="../blog.html" class="nav__tab nav__tab--active" aria-current="page">Blog</a></li>
+            <li><a href="../../partners.html" class="nav__tab">Partners</a></li>
+            <li><a href="../../press-kit.html" class="nav__tab">Sajtó</a></li>
+            <li><a href="../request.html" class="nav__tab">Kérés</a></li>
+        </ul>
+        <div class="nav__actions">
+            <button class="nav__icon-btn mobile-menu-btn" id="mobileMenuBtn" type="button" onclick="toggleMobileMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="navTabs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h10"/></svg></button>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+    <article class="article-page">
+        <div class="article-page__container">
+            <nav class="article-page__breadcrumb" aria-label="Breadcrumb">
+                <a href="../">Kezdőlap</a> / <a href="../blog.html">Blog</a> / Útmutató
+            </nav>
+            <div class="article-page__meta-row">
+                <span class="article-page__category">Útmutató</span>
+                <span class="article-page__dot" aria-hidden="true"></span>
+                <span>5 perc olvasás</span>
+                <span class="article-page__dot" aria-hidden="true"></span>
+                <span><time datetime="2026-11-17">2026. november 17.</time></span>
+                <span class="article-page__dot" aria-hidden="true"></span>
+                <span>Szerző: <a href="../../about.html" rel="author">Florin Nica</a></span>
+            </div>
+                        <h1>Értekezletek átírása iPhone-on: mi marad a telefonon, és mi jut el az OpenAI-hoz</h1>
+            <div class="article-page__body">
+<div class="callout"><p><strong>Röviden:</strong> a SageMeetben az értekezlet felvétele az iPhone-on készül, és ott is marad. Az átírás, az összefoglaló és a jelentés szerinti keresés viszont az OpenAI-t használja. Ezekhez a hang vagy a szöveg az OpenAI-hoz megy, a saját API-kulcsoddal, csak akkor, amikor AI-funkciót futtatsz. A Sagelight felé nem megy semmi. Ha azt akarod, hogy semmi ne hagyja el a telefont, bekapcsolod a Privát módot. Lentebb megtalálod, melyik adat hová megy, és mit mond az OpenAI, hogy mit csinál velük.</p></div>
+<p>Egy rögzített értekezlet tartalmazhat olyasmit, amit nyilvánosan nem mondanál el: számokat, neveket, döntéseket, néha személyes dolgokat. Ezért érdemes pontosan tudni, merre megy minden darab.</p>
+<h2>Mi marad az iPhone-on</h2>
+<p>Maga a felvétel helyi. A SageMeet a hangot az iPhone-on menti, M4A-fájlként, streamelés és feltöltés nélkül.</p>
+<p>Szintén a telefonon marad:</p>
+<ul>
+<li><strong>a felvételek</strong>, az átiratok és a generált jegyzetek;</li>
+<li><strong>a jelentés szerinti keresés indexe</strong>, egy helyi SQLite-adatbázisban;</li>
+<li><strong>az OpenAI-kulcsod</strong>, az iOS Keychainben.</li>
+</ul>
+<p>A SageMeet a naptárt is olvassa, hogy tudja, melyik értekezletről van szó. A hozzáférés csak olvasásra szól: az alkalmazás nem módosít semmit a naptárban.</p>
+<p>A Sagelight Studiónak nincs szervere a SageMeethez. Nem kapunk felvételeket, átiratokat és a kulcsodat sem. Az alkalmazás használati statisztikát és hibajelentést sem gyűjt.</p>
+<h2>Mi jut el az OpenAI-hoz, és mikor</h2>
+<p>A SageMeet AI-funkciói az OpenAI szerverein futnak, nem a telefonon. Az adatvédelmi szabályzat mindet felsorolja:</p>
+<ul>
+<li><strong>Az átírás.</strong> A hang a Whisperhez megy, az OpenAI átíró szolgáltatásához, a szöveg pedig visszajön az iPhone-ra.</li>
+<li><strong>Az összefoglaló.</strong> Az értekezlet szövege a GPT-4o-hoz megy, amely megírja az összefoglalót, a döntéseket és a teendőket.</li>
+<li><strong>A jelentés szerinti keresés.</strong> A szöveget elküldi, hogy vektorokká alakítsa. A vektorok utána helyben maradnak.</li>
+<li><strong>A beszélők elemzése.</strong> A beszédidőt és a részvételt a GPT-4o-mini számolja ki.</li>
+</ul>
+<p>A SageMeet oldalán a szabály egyszerű: a hang és a szöveg csak akkor jut el az OpenAI-hoz, amikor AI-funkciót futtatsz. Mielőtt az AI-funkciókat használnád, az alkalmazás hozzájárulást kér az OpenAI-n keresztüli feldolgozáshoz.</p>
+<p>Ha nem akarod, hogy egy adott értekezlet hangja az OpenAI-hoz jusson, kapcsold be a Privát módot, mielőtt rögzítenél.</p>
+<p>Az adatok az interneten mennek. Az OpenAI API-infrastruktúrája az Egyesült Államokban van, tehát egy átírás adattovábbítás az EU-n kívülre.</p>
+<h2>A te kulcsod, a te fiókod</h2>
+<p>A SageMeet a BYOK (Bring Your Own Key) modellt használja: a saját OpenAI API-kulcsodat hozod. A kérések egyenesen az iPhone-ról indulnak az OpenAI felé, a te kulcsoddal hitelesítve. A kulcs az iOS Keychainben marad, és nem jut el hozzánk.</p>
+<p>Ennek két gyakorlati következménye van:</p>
+<ul>
+<li><strong>A költség.</strong> Az alkalmazás ingyenes. Közvetlenül az OpenAI-nak fizetsz annyit, amennyit használsz, nálunk előfizetés nélkül. A fogyasztást az OpenAI-fiókodban látod.</li>
+<li><strong>A viszony az OpenAI-jal.</strong> Az OpenAI API-ját a saját fiókodon keresztül használod, nem a miénken. Az elküldött adatokra az OpenAI API-szabályai vonatkoznak.</li>
+</ul>
+<p>A kulcsot az alkalmazásban adod meg, mielőtt az AI-funkciókat használnád.</p>
+<h2>Mit csinál az OpenAI az API-n keresztül küldött adatokkal</h2>
+<p>Elolvastuk az OpenAI dokumentációját, nem csak azt, amit mi mondunk az oldalon. Röviden:</p>
+<ul>
+<li><strong>A modellek tanítása.</strong> Az OpenAI azt írja, hogy 2023. március 1. óta az API-n keresztül küldött adatokat nem használja a modellek tanítására vagy javítására, kivéve, ha kifejezetten úgy döntesz, hogy megosztod őket.</li>
+<li><strong>Az ideiglenes megőrzés.</strong> Az OpenAI az API-n keresztül küldött adatokat legfeljebb 30 napig őrizheti meg, hogy visszaéléseket észleljen. Utána törli őket, ha a törvény nem írja elő, hogy tovább őrizze. A dokumentáció táblázatában a hangátírás megőrzési idő nélkül szerepel. Szövegre, tehát összefoglalókra és keresésre, a 30 napos határ vonatkozik.</li>
+<li><strong>Kinek van hozzáférése.</strong> Ezekhez az adatokhoz csak feljogosított munkatársak és titoktartáshoz kötött vállalkozók férnek hozzá, technikai támogatáshoz, a visszaélések kivizsgálásához és jogi kötelezettségekhez.</li>
+<li><strong>Az EU-ból való továbbítás.</strong> Az OpenAI adatfeldolgozási megállapodása az Európai Bizottság által jóváhagyott általános szerződési feltételeken vagy a Bizottság megfelelőségi határozatain alapul.</li>
+</ul>
+<p>Az OpenAI szabályai változhatnak. A hivatalos oldalakra mutató linkek a végén vannak.</p>
+<h2>Privát mód: csak helyi felvétel</h2>
+<p>A Privát mód egyetlen kapcsoló, amely leállítja az összes külső hívást. Ha be van kapcsolva, a SageMeet helyi diktafonná válik. Rögzítesz, visszahallgatsz és rendezed az értekezleteket, de semmi nem megy az OpenAI-hoz vagy máshová.</p>
+<p>Amit elveszítesz: az átírást, az összefoglalókat és a jelentés szerinti keresést, mert mind az OpenAI-tól függ.</p>
+<p>A kapcsolót az alkalmazásban kapcsolod be.</p>
+<p>Jó választás egy olyan értekezlethez, amelyet csak hangként akarsz megtartani.</p>
+<h2>Az iCloud nem az OpenAI</h2>
+<p>A SageMeet opcionálisan szinkronizálhatja az értekezleteket iCloudon keresztül, hogy a többi Apple-eszközödön is meglegyenek. Ez külön út, a telefon és az iCloud-fiókod között, amelyet az Apple kezel. Az adatokat az Apple titkosítja átvitel közben és tároláskor.</p>
+<p>Ha azt sem akarod, hogy az értekezletek az iCloudba jussanak, tartsd kikapcsolva az iCloud-szinkronizálást.</p>
+<h2>Egy kényes értekezlet előtt</h2>
+<p>Néhány egyszerű szokás:</p>
+<ul>
+<li><strong>Mondd el az értekezleten lévőknek, hogy rögzítesz</strong>, és ha így van, azt is, hogy az átírás az OpenAI-n megy keresztül.</li>
+<li><strong>Döntsd el előre</strong>, hogy az értekezlethez kell-e átírás. Ha nem, kapcsold be a Privát módot.</li>
+<li><strong>Ellenőrizd az összefoglalót.</strong> Automatikusan készül. A neveket, a számokat és a határidőket érdemes megnézni az átiratban vagy a felvételen.</li>
+<li><strong>Töröld, amit már nem használsz.</strong> Egy felvételt vagy az összes adatot bármikor törölheted, a Beállításokban.</li>
+<li><strong>Használj külön API-kulcsot</strong>, és kövesd a fogyasztását az OpenAI-fiókban.</li>
+</ul>
+<p>A SageMeet ingyenes az App Store-ban. A részletek <a href="../sagemeet.html">a SageMeet oldalán</a> vannak, és hogy mit őriz meg az egyes alkalmazás, azt <a href="../privacy-policy.html">az adatvédelmi szabályzat</a> magyarázza el.</p>
+<h2 id="sources">Források</h2>
+<ol class="sources">
+<li><a href="../sagemeet.html">SageMeet – termékoldal (HU)</a> (megtekintve: 2026. nov. 16.).</li>
+<li><a href="../../sagemeet.html">SageMeet – termékoldal (EN)</a> (megtekintve: 2026. nov. 16.).</li>
+<li><a href="../privacy-policy.html">A Sagelight Studio adatvédelmi szabályzata, 03–05. és 08–10. szakasz, SageMeet</a> (megtekintve: 2026. nov. 16.).</li>
+<li><a href="https://apps.apple.com/app/sagemeet/id6761443109" target="_blank" rel="noopener">SageMeet az App Store-ban</a> (megtekintve: 2026. nov. 16.).</li>
+<li><a href="https://platform.openai.com/docs/guides/your-data" target="_blank" rel="noopener">OpenAI – Data controls in the OpenAI platform</a> (megtekintve: 2026. nov. 16.).</li>
+<li><a href="https://openai.com/enterprise-privacy/" target="_blank" rel="noopener">OpenAI – Enterprise privacy at OpenAI</a> (megtekintve: 2026. nov. 16.).</li>
+<li><a href="https://openai.com/policies/data-processing-addendum/" target="_blank" rel="noopener">OpenAI – Data Processing Addendum</a>, 4. szakasz (megtekintve: 2026. nov. 16.).</li>
+</ol>
+            </div>
+
+            <aside class="post-cta manifest card--flag" aria-labelledby="cta-title">
+                <p class="kicker"><span class="dot" aria-hidden="true"></span> A mi alkalmazásunk · <b>ingyenes</b></p>
+                <div class="post-cta__apps">
+                    <div>
+                        <h2 class="post-cta__title" id="cta-title">Sage<span>Meet</span></h2>
+                        <p class="post-cta__tag">A SageMeet őszinte a hálózatot illetően: az AI-funkciók az OpenAI-t használják a saját kulcsoddal. Kapcsold be a Privát módot, és semmi sem távozik.</p>
+                        <dl class="spec">
+                            <div><dt>Rögzít</dt><dd>Értekezleteket, helyben az iPhone-on (M4A)</dd></div>
+                            <div><dt>Átír</dt><dd>Whisper, a saját OpenAI-kulcsoddal</dd></div>
+                            <div><dt>Privát mód</dt><dd class="zero">0 bájt, sehová</dd></div>
+                            <div><dt>A Sagelight felé</dt><dd class="zero">0 bájt</dd></div>
+                            <div><dt>Ár</dt><dd>Ingyenes · a használatért közvetlenül az OpenAI-nak fizetsz</dd></div>
+                        </dl>
+                        <div class="post-cta__actions">
+                            <a class="app-store-badge-link" href="https://apps.apple.com/app/sagemeet/id6761443109" target="_blank" rel="noopener" onclick="gtagReportConversion('AW-17758801825/RE8zCOai2aocEKGfh5RC');"><img src="../../assets/badges/app-store-badge.svg" alt="SageMeet letöltése az App Store-ból" width="156" height="52"></a>
+                            <a class="textlink" href="../sagemeet.html">Részletek a SageMeetről →</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="related" aria-label="Kapcsolódó cikkek">
+                <h2 class="related__title">Olvasd el ezt is</h2>
+                <div class="related__grid"><a class="related__card" href="../privacy-policy.html"><span class="related__card-cat">Adatvédelem</span><span class="related__card-title">A Sagelight Studio adatvédelmi szabályzata</span></a></div>
+            </section>
+            <div class="article-page__footer">
+                <a href="../blog.html" class="article-page__back">&larr; Minden cikk</a>
+                <nav class="lang-versions" aria-label="Más nyelvek">
+                <a href="../../blog/sagemeet-transcription-openai.html" hreflang="en" lang="en">English</a>
+                <a href="../../ro/blog/transcriere-sedinte-iphone-openai.html" hreflang="ro" lang="ro">Română</a>
+                <a href="../../pl/blog/sagemeet-transcription-openai.html" hreflang="pl" lang="pl">Polski</a>
+                <a href="../../cz/blog/sagemeet-transcription-openai.html" hreflang="cs" lang="cs">Čeština</a>
+                <a href="../../de/blog/sagemeet-transcription-openai.html" hreflang="de" lang="de">Deutsch</a>
+                <a href="../../fr/blog/sagemeet-transcription-openai.html" hreflang="fr" lang="fr">Français</a>
+                <a href="../../es/blog/sagemeet-transcription-openai.html" hreflang="es" lang="es">Español</a>
+                <a href="../../it/blog/sagemeet-transcription-openai.html" hreflang="it" lang="it">Italiano</a>
+                <a href="../../nl/blog/sagemeet-transcription-openai.html" hreflang="nl" lang="nl">Nederlands</a>
+                <a href="../../pt/blog/sagemeet-transcription-openai.html" hreflang="pt-PT" lang="pt-PT">Português</a>
+                <a href="../../sv/blog/sagemeet-transcription-openai.html" hreflang="sv" lang="sv">Svenska</a>
+                </nav>
+            </div>
+        </div>
+    </article>
+</main>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__brand-block">
+            <div class="footer__brand">
+                <svg class="nav__logo-leaf" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 19.5C4.5 10.9 11.4 4 20 4c0 8.6-6.9 15.5-15.5 15.5Z" fill="currentColor"/><path d="M6.5 17.5 17.5 6.5" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round"/></svg>
+                Sagelight <span>Studio</span>
+            </div>
+            <p class="footer__tagline">Adatvédelem világossággal. Local-first iOS és macOS alkalmazások Romániából, EU.</p>
+            <p class="footer__tagline"><a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></p>
+        </div>
+        <div>
+            <div class="footer__col-title">Alkalmazások</div>
+            <ul class="footer__list">
+                <li><a href="../sagedocs.html">SageDocs</a></li>
+                <li><a href="../sagebills.html">SageBills</a></li>
+                <li><a href="../sagemeet.html">SageMeet</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer__col-title">Stúdió</div>
+            <ul class="footer__list">
+                <li><a href="../../about.html">Rólam</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../../partners.html">Partners</a></li>
+                <li><a href="../../press-kit.html">Press Kit</a></li>
+                <li><a href="../request.html">Kis app kérése</a></li>
+                <li><a href="mailto:contact@sagelight-studio.com">Kapcsolat</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer__col-title">Jogi</div>
+            <ul class="footer__list">
+                <li><a href="../privacy-policy.html">Adatvédelmi Szabályzat</a></li>
+                <li><a href="../gdpr.html">GDPR</a></li>
+                <li><a href="../terms.html">Feltételek</a></li>
+                <li><button type="button" class="cookie-pref-link" onclick="window.sageConsentOpen && window.sageConsentOpen()">Süti beállítások</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <span>© 2026 Sagelight Studio · Romániában készült, EU</span>
+        <span>hozzánk küldve: 0 bájt</span>
+    </div>
+</footer>
+<script src="../../assets/theme.js?v=20261102a"></script>
+<script src="../../assets/consent.js?v=20261013f" defer></script>
+</body>
+</html>
