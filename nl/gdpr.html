@@ -64,7 +64,7 @@
         "name": "AVG-verklaring — Sagelight Studio",
         "url": "https://sagelight-studio.com/nl/gdpr.html",
         "description": "AVG-verklaring op grond van de artikelen 13 en 14 van Verordening (EU) 2016/679 voor SageBills, SageMeet en SageDocs.",
-        "dateModified": "2026-05-21T00:00:00+03:00",
+        "dateModified": "2026-11-22T00:00:00+02:00",
         "inLanguage": "nl",
         "isPartOf": {
             "@type": "WebSite",
@@ -122,7 +122,7 @@
             <h1 class="doc-header__title">AVG-<em>verklaring</em></h1>
             <p class="doc-header__subtitle">Informatie die op grond van de artikelen 13 en 14 van de Algemene verordening gegevensbescherming (EU) 2016/679 (AVG) moet worden verstrekt over de gegevensverwerking via de apps van Sagelight Studio (SageBills, SageMeet en SageDocs). Dit is een vertaling; bij verschillen tussen deze tekst en de <a href="../gdpr.html">Engelse versie</a> is de Engelse versie leidend.</p>
             <div class="doc-header__meta">
-                <span>Laatst bijgewerkt: 21 mei 2026</span>
+                <span>Laatst bijgewerkt: 22 november 2026</span>
                 <span>AVG (EU) 2016/679</span>
             </div>
         </header>
@@ -136,7 +136,7 @@
             <div class="key-point">
                 <span class="key-point__icon">⚖️</span>
                 <div class="key-point__title">Rechtsgrond</div>
-                <div class="key-point__desc">SageBills &amp; SageDocs: toestemming. SageMeet: toestemming + noodzaak voor de uitvoering van een overeenkomst.</div>
+                <div class="key-point__desc">SageBills &amp; SageDocs: toestemming; gebruiksstatistieken van SageDocs: gerechtvaardigd belang. SageMeet: toestemming + noodzaak voor de uitvoering van een overeenkomst.</div>
             </div>
             <div class="key-point">
                 <span class="key-point__icon">🤝</span>
@@ -187,7 +187,7 @@
                 <li><strong>E-mail:</strong> <a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></li>
             </ul>
             <p>Op grond van <strong>artikel 13, lid 1, onder a)</strong>, is Florin Nica, handelend in eigen naam als natuurlijke persoon onder de handelsnaam Sagelight Studio, de verwerkingsverantwoordelijke. Hij bepaalt persoonlijk de doeleinden en middelen van de verwerking voor alle apps van Sagelight Studio.</p>
-            <p>Op grond van <strong>artikel 13, lid 1, onder a)</strong>, en <strong>artikel 14, lid 1, onder a)</strong>, is de ontwikkelaar de verwerkingsverantwoordelijke voor alle apps van Sagelight Studio. Bij SageBills ontvangt, raadpleegt of bewaart de verwerkingsverantwoordelijke geen enkel persoonsgegeven. Bij SageMeet worden gegevens lokaal verwerkt, behalve wanneer de gebruiker AI-functies start (OpenAI als verwerker, art. 28). Bij SageDocs worden alle gegevens lokaal verwerkt en optioneel versleuteld gesynchroniseerd met de privé-iCloud van de gebruiker.</p>
+            <p>Op grond van <strong>artikel 13, lid 1, onder a)</strong>, en <strong>artikel 14, lid 1, onder a)</strong>, is de ontwikkelaar de verwerkingsverantwoordelijke voor alle apps van Sagelight Studio. Bij SageBills ontvangt, raadpleegt of bewaart de verwerkingsverantwoordelijke geen enkel persoonsgegeven. Bij SageMeet worden gegevens lokaal verwerkt, behalve wanneer de gebruiker AI-functies start (OpenAI als verwerker, art. 28). Bij SageDocs worden documenten lokaal verwerkt en optioneel versleuteld gesynchroniseerd met de privé-iCloud van de gebruiker; vanaf versie 1.0.14 worden anonieme gebruiksstatistieken naar TelemetryDeck verzonden (verwerker, art. 28).</p>
         </section>
 
         <section class="section" id="g2">
@@ -248,6 +248,7 @@
                         <tr><td><strong>Authenticatiegegevens</strong></td><td>Hash van de pincode, status van biometrische registratie (sleutelhanger)</td><td>Nee</td></tr>
                         <tr><td><strong>Versleutelingsmateriaal</strong></td><td>Salt, afgeleide sleutel (sleutelhanger, biometrisch beveiligd)</td><td>Nee</td></tr>
                         <tr><td><strong>Technische gegevens</strong></td><td>Status van onboarding, blokkeringsstatus</td><td>Nee</td></tr>
+                        <tr><td><strong>Anonieme gebruiksstatistieken</strong> (versie 1.0.14 en later; uit te schakelen)</td><td>Een vaste lijst met app-gebeurtenissen (configuratiestappen, kluis ontgrendeld, document toegevoegd, upgradescherm, uitkomst van een aankoop), technische gegevens (app- en systeemversie, apparaatmodel, taal, regio) en een willekeurige, gehashte installatie-ID. Nooit documentnamen of -inhoud</td><td>Nee</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -308,6 +309,7 @@
                         <tr><td>26</td><td><strong>Herinneringen</strong></td><td>Lokale meldingen voor verlopende documenten</td></tr>
                         <tr><td>27</td><td><strong>Veilig delen</strong></td><td>Tijdelijke ontsleuteling voor delen dat de gebruiker zelf start</td></tr>
                         <tr><td>28</td><td><strong>iCloud-synchronisatie</strong></td><td>Versleutelde documenten synchroniseren via CloudKit</td></tr>
+                        <tr><td>29</td><td><strong>Anonieme gebruiksstatistieken</strong></td><td>Zien welke stappen van de configuratie, het dagelijks gebruik en het upgraden mensen bereiken, om de app te verbeteren (TelemetryDeck; uit te schakelen)</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -316,6 +318,7 @@
         <section class="section" id="g5">
             <h2 class="section__heading"><span class="section__num">05</span> Rechtsgrond</h2>
             <p><strong>SageBills &amp; SageDocs:</strong> op grond van <strong>artikel 6, lid 1, onder a)</strong>: <strong>toestemming.</strong> Je geeft tijdens de onboarding uitdrukkelijke toestemming.</p>
+            <p><strong>Anonieme gebruiksstatistieken van SageDocs</strong> (versie 1.0.14 en later): op grond van <strong>artikel 6, lid 1, onder f)</strong>: <strong>gerechtvaardigd belang</strong> om te begrijpen hoe de app wordt gebruikt en om deze te verbeteren. Staat standaard aan; je kunt op elk moment bezwaar maken door <em>Instellingen &rarr; Privacy en beveiliging &rarr; Deel anonieme gebruiksstatistieken</em> uit te schakelen.</p>
             <p><strong>SageMeet:</strong> op grond van <strong>artikel 6, lid 1, onder a)</strong>, en <strong>artikel 6, lid 1, onder b)</strong>:</p>
             <ul>
                 <li><strong>Toestemming</strong> (art. 6, lid 1, onder a)) &mdash; voor optionele AI-functies en gegevensverwerking tijdens de onboarding.</li>
@@ -346,10 +349,11 @@
                     <thead><tr><th scope="col">Ontvanger</th><th scope="col">Rol</th><th scope="col">Ontvangen gegevens</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Apple (iCloud/CloudKit)</strong></td><td>Opslagaanbieder</td><td>Versleutelde documentgegevens wanneer iCloud-synchronisatie is ingeschakeld</td></tr>
+                        <tr><td><strong>TelemetryDeck GmbH</strong> (Augsburg, Duitsland)</td><td>Verwerker (art. 28)</td><td>Anonieme gebruiksstatistieken (versie 1.0.14 en later), tenzij uitgeschakeld</td></tr>
                     </tbody>
                 </table>
             </div>
-            <p>Geen advertentienetwerken, aanbieders van analytics of andere derden ontvangen gegevens vanuit een van de apps. De marketingwebsite (sagelight-studio.com) wordt afzonderlijk behandeld &mdash; zie hieronder.</p>
+            <p>Geen advertentienetwerken of andere derden ontvangen gegevens vanuit een van de apps, en geen andere aanbieder van analytics dan TelemetryDeck (alleen SageDocs). De marketingwebsite (sagelight-studio.com) wordt afzonderlijk behandeld &mdash; zie hieronder.</p>
 
             <h3 class="section__subheading">Marketingwebsite (sagelight-studio.com)</h3>
             <p>De marketingwebsite laadt de conversietag van Google Ads (<code>AW-17758801825</code>) onder <strong>Google Consent Mode v2 (Advanced)</strong>. Alle vier de signalen staan standaard op &lsquo;denied&rsquo; (geweigerd); daarnaast is de tag geconfigureerd met <code>ads_data_redaction: true</code> (Google verwijdert identificerende gegevens uit cookieloze pings) en <code>url_passthrough: true</code> (klik-ID's worden via URL-parameters doorgegeven, nooit via cookies, zolang er geen toestemming is).</p>
@@ -372,7 +376,7 @@
             <p>Op grond van <strong>artikel 13, lid 1, onder f)</strong>:</p>
             <p><strong>SageBills:</strong> er vinden geen internationale doorgiften plaats.</p>
             <p><strong>SageMeet:</strong> gegevens worden doorgegeven aan de VS (OpenAI) op basis van <strong>twee elkaar aanvullende mechanismen uit hoofdstuk V van de AVG</strong>: het <strong>EU-VS-kader voor gegevensbescherming</strong> (Uitvoeringsbesluit (EU) 2023/1795 van de Commissie) en de <strong>modelcontractbepalingen (SCC's)</strong> (Uitvoeringsbesluit (EU) 2021/914 van de Commissie), opgenomen in de Data Processing Addendum van OpenAI. Als het DPF ongeldig wordt verklaard, blijven de SCC's de zelfstandige rechtmatige grondslag. Geen doorgiften wanneer de Privémodus is ingeschakeld.</p>
-            <p><strong>SageDocs:</strong> geen internationale doorgiften aan derden. iCloud-synchronisatie wordt door Apple beheerd onder de eigen overeenkomsten van Apple.</p>
+            <p><strong>SageDocs:</strong> geen internationale doorgiften aan derden. iCloud-synchronisatie wordt door Apple beheerd onder de eigen overeenkomsten van Apple. Anonieme gebruiksstatistieken worden door TelemetryDeck opgeslagen op servers in de Europese Unie (Duitsland en Nederland).</p>
             <p><strong>Marketingwebsite (sagelight-studio.com):</strong> cookieloze pings van de tag worden doorgegeven aan Google LLC (Verenigde Staten) op basis van het <strong>EU-VS-kader voor gegevensbescherming</strong> en de <strong>modelcontractbepalingen (SCC's)</strong> die zijn opgenomen in de Controller-Controller Data Protection Terms van Google. Als het DPF ongeldig wordt verklaard, blijven de SCC's het zelfstandige doorgiftemechanisme.</p>
         </section>
 
@@ -390,10 +394,11 @@
                         <tr><td><strong>App-voorkeuren</strong></td><td>Tot ze opnieuw worden ingesteld of de app wordt verwijderd</td><td>Controle door de gebruiker</td></tr>
                         <tr><td><strong>Versleutelingssleutels</strong></td><td>Tot de kluis opnieuw wordt ingesteld of de app wordt verwijderd</td><td>Beveiliging</td></tr>
                         <tr><td><strong>Tijdstempel van toestemming</strong></td><td>Tot de app wordt verwijderd</td><td>Wettelijke naleving</td></tr>
+                        <tr><td><strong>Anonieme gebruiksstatistieken (SageDocs)</strong></td><td>Bewaard door TelemetryDeck, dat geen vast verwijderschema heeft en aangeeft dat het verwacht gebeurtenissen na 7 tot 10 jaar te verwijderen</td><td>Gerechtvaardigd belang</td></tr>
                     </tbody>
                 </table>
             </div>
-            <div class="callout"><strong>Jij bepaalt de bewaring volledig.</strong> Verwijder afzonderlijke records of alle gegevens, of verwijder de app, wanneer je maar wilt.</div>
+            <div class="callout"><strong>Jij bepaalt de bewaring volledig.</strong> Verwijder afzonderlijke records of alle gegevens, of verwijder de app, wanneer je maar wilt. De uitzondering zijn de anonieme gebruiksstatistieken van SageDocs, die niet aan jou zijn gekoppeld en niet afzonderlijk kunnen worden verwijderd; je kunt ze stopzetten in Instellingen.</div>
         </section>
 
         <section class="section" id="g9">
@@ -480,7 +485,7 @@
                 <li><strong>Oplopende blokkering</strong> na mislukte authenticatie</li>
                 <li><strong>Privacyvriendelijke logging</strong> (bevat nooit pincodes, sleutels of inhoud)</li>
                 <li><strong>Veilige tijdelijke bestanden</strong> die direct na het delen worden opgeruimd</li>
-                <li><strong>Geen code van derden:</strong> geen enkele externe SDK</li>
+                <li><strong>Eén SDK van derden:</strong> TelemetryDeck, voor anonieme gebruiksstatistieken (uit te schakelen); deze ontvangt geen documentgegevens</li>
             </ul>
         </section>
 

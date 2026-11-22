@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../assets/gtag.js?v=20261102a"></script>
     <title>Privacybeleid — Apps van Sagelight Studio</title>
-    <meta name="description" content="Privacybeleid voor de apps van Sagelight Studio — SageBills, SageMeet en SageDocs. Local-first en AVG-conform. Geen analytics. Geen tracking.">
+    <meta name="description" content="Privacybeleid voor de apps van Sagelight Studio — SageBills, SageMeet en SageDocs. Local-first en AVG-conform. Geen advertenties, geen tracking tussen apps.">
     <meta property="og:title" content="Privacybeleid — Sagelight Studio">
-    <meta property="og:description" content="Hoe Sagelight Studio met je gegevens omgaat. Local-first, AVG-conform, geen tracking. Geldt voor SageBills, SageMeet en SageDocs.">
+    <meta property="og:description" content="Hoe Sagelight Studio met je gegevens omgaat. Local-first, AVG-conform, geen advertenties, geen tracking tussen apps. Geldt voor SageBills, SageMeet en SageDocs.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sagelight-studio.com/nl/privacy-policy.html">
     <meta property="og:site_name" content="Sagelight Studio">
@@ -64,7 +64,7 @@
         "url": "https://sagelight-studio.com/nl/privacy-policy.html",
         "description": "Privacybeleid voor SageBills, SageMeet en SageDocs van Sagelight Studio.",
         "datePublished": "2026-05-21T00:00:00+03:00",
-        "dateModified": "2026-06-14T00:00:00+03:00",
+        "dateModified": "2026-11-22T00:00:00+02:00",
         "inLanguage": "nl",
         "isPartOf": {
             "@type": "WebSite",
@@ -123,7 +123,7 @@
             <h1 class="doc-header__title">Privacy<em>beleid</em></h1>
             <p class="doc-header__subtitle">Dit beleid geldt voor alle apps van Sagelight Studio, waaronder SageBills, SageMeet en SageDocs. Je gegevens zijn van jou. Dit is een vertaling; bij verschillen tussen deze tekst en de <a href="../privacy-policy.html">Engelse versie</a> is de Engelse versie leidend.</p>
             <div class="doc-header__meta">
-                <span>Laatst bijgewerkt: 14 juni 2026</span>
+                <span>Laatst bijgewerkt: 22 november 2026</span>
                 <span>Van kracht: 21 mei 2026</span>
             </div>
         </header>
@@ -142,12 +142,12 @@
             <div class="key-point">
                 <span class="key-point__icon">🛡️</span>
                 <div class="key-point__title">SageDocs: versleutelde kluis</div>
-                <div class="key-point__desc">AES-256-GCM-versleuteling, beveiliging met biometrie/pincode, iCloud-synchronisatie van versleutelde gegevens. Geen AI, geen derden.</div>
+                <div class="key-point__desc">AES-256-GCM-versleuteling, beveiliging met biometrie/pincode, iCloud-synchronisatie van versleutelde gegevens. Geen AI. Anonieme gebruiksstatistieken die je kunt uitschakelen.</div>
             </div>
             <div class="key-point">
                 <span class="key-point__icon">🚫</span>
-                <div class="key-point__title">Geen tracking</div>
-                <div class="key-point__desc">Geen analytics, geen advertentie-ID's en geen telemetrie in al onze apps.</div>
+                <div class="key-point__title">Geen advertenties, geen tracking</div>
+                <div class="key-point__desc">Geen advertenties, geen advertentie-ID's en geen tracking tussen apps in al onze apps. SageBills en SageMeet versturen geen analytics; SageDocs verstuurt anonieme gebruiksstatistieken die je kunt uitschakelen.</div>
             </div>
             <div class="key-point">
                 <span class="key-point__icon">🔐</span>
@@ -195,7 +195,7 @@
                     <li><strong>Geverifieerde ontwikkelaar:</strong> <a href="https://apps.apple.com/developer/florin-nica/id1889684772" target="_blank" rel="noopener">apps.apple.com/developer/florin-nica/id1889684772</a> &mdash; Apple heeft de identiteit van de verwerkingsverantwoordelijke geverifieerd als onderdeel van de inschrijving in het Apple Developer Program.</li>
                     <li><strong>Contact:</strong> <a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></li>
                 </ul>
-                <p>Voor de toepassing van de AVG treedt de ontwikkelaar op als verwerkingsverantwoordelijke. Bij SageBills vindt alle gegevensverwerking lokaal plaats en bereiken je gegevens ons nooit. Bij SageMeet worden gegevens lokaal verwerkt, behalve wanneer je AI-functies gebruikt; die verzenden gegevens naar OpenAI (zie secties 9 en 10). Bij SageDocs worden gegevens lokaal opgeslagen en gesynchroniseerd met je privé-iCloud-account; er worden geen gegevens verzonden naar Sagelight Studio of naar enige andere derde dan Apple.</p>
+                <p>Voor de toepassing van de AVG treedt de ontwikkelaar op als verwerkingsverantwoordelijke. Bij SageBills vindt alle gegevensverwerking lokaal plaats en bereiken je gegevens ons nooit. Bij SageMeet worden gegevens lokaal verwerkt, behalve wanneer je AI-functies gebruikt; die verzenden gegevens naar OpenAI (zie secties 9 en 10). Bij SageDocs worden je documenten lokaal opgeslagen en gesynchroniseerd met je privé-iCloud-account; er worden geen documentgegevens verzonden naar Sagelight Studio of naar enige andere derde dan Apple. Vanaf versie 1.0.14 verstuurt SageDocs daarnaast anonieme gebruiksstatistieken naar TelemetryDeck (zie secties 4, 6 en 9).</p>
             </section>
 
             <section class="section" id="p3">
@@ -226,13 +226,13 @@
                     <li><strong>AES-256-GCM-versleuteling.</strong> Alle documentbijlagen worden vóór opslag versleuteld met een sleutel die is afgeleid via PBKDF2-SHA256 (600.000 iteraties).</li>
                     <li><strong>Authenticatie met biometrie of pincode.</strong> De kluis is vergrendeld achter Face ID, Touch ID of een hoofdpincode.</li>
                     <li><strong>iCloud-synchronisatie.</strong> Versleutelde documenten worden via Apple CloudKit gesynchroniseerd met je privé-iCloud-account. Gegevens worden versleuteld voordat ze iCloud bereiken.</li>
-                    <li><strong>Geen AI-functies.</strong> SageDocs gebruikt geen kunstmatige intelligentie en stuurt geen gegevens naar externe API's.</li>
-                    <li><strong>Geen analytics of tracking.</strong> Geen telemetrie, crashrapporten of SDK's van derden.</li>
+                    <li><strong>Geen AI-functies.</strong> SageDocs gebruikt geen kunstmatige intelligentie, en er worden geen documentgegevens naar externe API's gestuurd.</li>
+                    <li><strong>Anonieme gebruiksstatistieken, geen tracking.</strong> Vanaf versie 1.0.14 verstuurt SageDocs een korte, vaste lijst met anonieme gebruiksgebeurtenissen naar TelemetryDeck, een privacygerichte analysedienst, zodat we kunnen zien waar mensen vastlopen. Je kunt dit uitschakelen in Instellingen. Er is geen crashrapportage, geen advertentie-SDK en niets dat je volgt in andere apps of op andere websites.</li>
                     <li><strong>Privacyvriendelijke logging.</strong> Beveiligingsgebeurtenissen die via OSLog worden gelogd, bevatten nooit pincodes, versleutelingssleutels of documentinhoud.</li>
                 </ul>
 
                 <div class="callout">
-                    <strong>Eenvoudig gezegd:</strong> gegevens van SageBills verlaten je apparaat nooit. Gegevens van SageMeet blijven lokaal, tenzij je AI-functies gebruikt. SageDocs versleutelt alles en synchroniseert alleen versleutelde gegevens met je privé-iCloud.
+                    <strong>Eenvoudig gezegd:</strong> gegevens van SageBills verlaten je apparaat nooit. Gegevens van SageMeet blijven lokaal, tenzij je AI-functies gebruikt. SageDocs versleutelt alles en synchroniseert alleen versleutelde gegevens met je privé-iCloud; het enige andere dat de app verstuurt, zijn anonieme gebruiksstatistieken, die je kunt uitschakelen.
                 </div>
             </section>
 
@@ -351,6 +351,26 @@
                         </ul>
                     </div>
                 </details>
+
+                <p>Vanaf versie 1.0.14 <strong>verstuurt SageDocs ook anonieme gebruiksstatistieken naar TelemetryDeck</strong> (TelemetryDeck GmbH, Duitsland), een privacygerichte analysedienst, tenzij je ze uitschakelt. Ze bevatten nooit een document, titel, categorie, notitie, bestandsnaam, pincode of versleutelingssleutel:</p>
+
+                <details class="collapsible">
+                    <summary>Anonieme gebruiksstatistieken (versie 1.0.14 en later)</summary>
+                    <div class="collapsible__body">
+                        <ul>
+                            <li><strong>Configuratie</strong> &mdash; welke onboardingstap werd getoond, en dat de configuratie is voltooid</li>
+                            <li><strong>Kluis ontgrendeld</strong> &mdash; met de status van je toegang (proefperiode en resterende dagen, geabonneerd, alleen-lezen of toegang als vroege gebruiker)</li>
+                            <li><strong>Document toegevoegd</strong> &mdash; en of het een vervaldatum heeft (nooit de naam of de inhoud)</li>
+                            <li><strong>Upgradescherm</strong> &mdash; dat het werd getoond of gesloten, en welke functie het opende</li>
+                            <li><strong>Aankopen</strong> &mdash; dat een aankoop is gestart, voltooid, niet voltooid of mislukt, en welk abonnement (maandelijks of jaarlijks); bij een voltooide aankoop ook het product, het App Store-land (storefront), de valuta en de prijs</li>
+                            <li><strong>Aankopen herstellen</strong> &mdash; dat erop is getikt</li>
+                            <li><strong>Overzicht aan het einde van de proefperiode</strong> &mdash; dat het werd getoond</li>
+                            <li><strong>Technische gegevens die aan elke gebeurtenis worden toegevoegd</strong> &mdash; appversie en build en hoe de app is geïnstalleerd (App Store, TestFlight of een ontwikkelbuild); versie van het besturingssysteem, apparaatmodel, processortype, platform, schermgrootte en schermstand; taal, regio, tijdzone, tekstrichting en lichte of donkere weergave; toegankelijkheidsinstellingen zoals tekstgrootte, vette tekst en verminderde beweging; het uur, de weekdag en de datum van de gebeurtenis; en gebruikstellers die op je apparaat worden bijgehouden (aantal sessies, aantal verschillende gebruiksdagen, sessieduur, datum van eerste gebruik)</li>
+                            <li><strong>Willekeurige ID</strong> &mdash; door de app op je apparaat aangemaakt en vóór verzending gehasht. Het is niet je Apple Account, geen apparaat-ID en geen advertentie-ID, en de ID is niet gekoppeld aan je naam of e-mailadres (we vragen nooit om een van beide)</li>
+                        </ul>
+                        <p><strong>Zo schakel je het uit:</strong> Instellingen &rarr; Privacy en beveiliging &rarr; Deel anonieme gebruiksstatistieken. Als je dit uitschakelt, stopt het verzenden en wordt de ID van je apparaat verwijderd; als je het weer inschakelt, wordt er een nieuwe aangemaakt. De widget en de deelextensie van SageDocs versturen nooit statistieken.</p>
+                    </div>
+                </details>
             </section>
 
             <section class="section" id="p5">
@@ -392,7 +412,7 @@
                 </div>
 
                 <h3 class="section__subheading">SageDocs</h3>
-                <p>Alle gegevens van SageDocs blijven op je apparaat en in je privé-iCloud-account:</p>
+                <p>Je documenten blijven op je apparaat en in je privé-iCloud-account:</p>
                 <div class="table-wrap">
                     <table>
                         <thead><tr><th>Doel</th><th>Omschrijving</th></tr></thead>
@@ -405,6 +425,7 @@
                             <tr><td><strong>Herinneringen</strong></td><td>Lokale meldingen voor documenten die binnenkort verlopen</td></tr>
                             <tr><td><strong>Veilig delen</strong></td><td>Tijdelijke ontsleuteling voor delen dat de gebruiker zelf start</td></tr>
                             <tr><td><strong>iCloud-synchronisatie</strong></td><td>Versleutelde documenten synchroniseren tussen je Apple-apparaten</td></tr>
+                            <tr><td><strong>Anonieme gebruiksstatistieken</strong></td><td>Zien welke stappen van de configuratie, het dagelijks gebruik en het upgraden mensen bereiken, zodat we de app kunnen verbeteren (verzonden naar TelemetryDeck; uit te schakelen)</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -418,6 +439,7 @@
                     <li><strong>Toestemming</strong> (art. 6, lid 1, onder a)) &mdash; voor optionele AI-functies en gegevensverwerking tijdens de onboarding.</li>
                     <li><strong>Noodzaak voor de uitvoering van een overeenkomst</strong> (art. 6, lid 1, onder b)) &mdash; voor kernfuncties van AI-verwerking die integraal deel uitmaken van de dienst (transcriptie, generatie van notities).</li>
                 </ul>
+                <p><strong>Anonieme gebruiksstatistieken van SageDocs</strong> (versie 1.0.14 en later): onze rechtsgrond is ons <strong>gerechtvaardigd belang</strong> (art. 6, lid 1, onder f)) om te begrijpen hoe de app wordt gebruikt en om deze te verbeteren. De statistieken staan standaard aan; je kunt op elk moment bezwaar maken door <em>Instellingen &rarr; Privacy en beveiliging &rarr; Deel anonieme gebruiksstatistieken</em> uit te schakelen.</p>
                 <p>Je kunt je toestemming op elk moment intrekken via de Instellingen van elke app. Intrekking doet geen afbreuk aan de rechtmatigheid van de verwerking die vóór de intrekking heeft plaatsgevonden.</p>
             </section>
 
@@ -456,7 +478,7 @@
                     <li><strong>Verwijder de app</strong> om alle bijbehorende gegevens te wissen</li>
                     <li><strong>SageDocs: zet de kluis opnieuw in</strong> om alle documenten en versleutelingssleutels te verwijderen</li>
                 </ul>
-                <p>We bewaren geen kopie van je gegevens, omdat we ze nooit ontvangen.</p>
+                <p>We bewaren geen kopie van je documenten of appgegevens, omdat we ze nooit ontvangen. De enige uitzondering zijn de anonieme gebruiksstatistieken van SageDocs (versie 1.0.14 en later), die TelemetryDeck namens ons bewaart. TelemetryDeck heeft momenteel geen vast verwijderschema voor opgeslagen gebeurtenissen en geeft aan dat het verwacht ze na 7 tot 10 jaar te verwijderen. Omdat de statistieken niet aan jou zijn gekoppeld, kunnen we de gebeurtenissen van één persoon niet identificeren, exporteren of verwijderen (art. 11 AVG); als je de schakelaar uitzet, worden er geen nieuwe gebeurtenissen meer verzonden en wordt de ID van je apparaat verwijderd.</p>
             </section>
 
             <section class="section" id="p9">
@@ -475,21 +497,24 @@
                 </ul>
                 <p>OpenAI gebruikt API-gegevens niet om zijn modellen te trainen. OpenAI is gecertificeerd onder het <strong>EU-VS-kader voor gegevensbescherming</strong> (Data Privacy Framework, DPF). Je authenticeert met je eigen API-sleutel; wij hebben geen toegang tot je OpenAI-account.</p>
 
+                <h3 class="section__subheading">TelemetryDeck (alleen SageDocs, versie 1.0.14 en later)</h3>
+                <p>SageDocs verstuurt de in sectie 4 beschreven anonieme gebruiksstatistieken naar <strong>TelemetryDeck GmbH</strong>, Von-der-Tann-Str. 54, 86159 Augsburg, Duitsland. TelemetryDeck treedt op als <strong>verwerker</strong> in de zin van artikel 28 AVG, op grond van zijn <a href="https://telemetrydeck.com/dpa/" target="_blank" rel="noopener">verwerkersovereenkomst</a>, en slaat de gegevens op servers in de Europese Unie (Duitsland en Nederland) op. TelemetryDeck verklaart dat het nooit IP-adressen opslaat. Zie de <a href="https://telemetrydeck.com/privacy/" target="_blank" rel="noopener">privacy-informatie van TelemetryDeck</a>. De widget en de deelextensie van SageDocs versturen niets.</p>
+
                 <h3 class="section__subheading">SageBills &amp; SageDocs: geen andere derden</h3>
-                <p>SageBills en SageDocs bevatten <strong>geen SDK's, frameworks, bibliotheken of diensten van derden</strong> naast de eigen frameworks van Apple. We delen, verkopen of verstrekken je gegevens aan geen enkele derde.</p>
+                <p>SageBills bevat <strong>geen SDK's, frameworks, bibliotheken of diensten van derden</strong> naast de eigen frameworks van Apple. SageDocs bevat er één, de hierboven beschreven TelemetryDeck-SDK, en geen SDK voor advertenties, crashrapportage of andere analytics. We verkopen je gegevens niet, en afgezien van de in deze sectie genoemde verwerkers delen we ze niet met derden en verstrekken we ze niet aan derden.</p>
             </section>
 
             <section class="section" id="p10">
                 <h2 class="section__heading"><span class="section__num">10</span> Internationale doorgiften van gegevens</h2>
                 <p><strong>SageBills</strong> geeft je gegevens niet door aan het buitenland. Je gegevens blijven te allen tijde op je apparaat.</p>
                 <p><strong>SageMeet</strong> geeft gegevens door aan de Verenigde Staten wanneer je AI-functies gebruikt, omdat de API-infrastructuur van OpenAI zich in de VS bevindt. Deze doorgiften vinden plaats op basis van <strong>twee elkaar aanvullende rechtmatige mechanismen</strong>: (1) het <strong>EU-VS-kader voor gegevensbescherming (DPF)</strong> op grond van Uitvoeringsbesluit (EU) 2023/1795 van de Commissie, waarvan OpenAI LLC een gecertificeerde deelnemer is; en (2) de <strong>modelcontractbepalingen (Standard Contractual Clauses, SCC's)</strong> op grond van Uitvoeringsbesluit (EU) 2021/914 van de Commissie, opgenomen in de Data Processing Addendum van OpenAI (art. 46, lid 2, onder c)). Als het DPF ongeldig wordt verklaard, blijven de SCC's de zelfstandige rechtmatige grondslag. Wanneer de Privémodus is ingeschakeld, vinden er geen internationale doorgiften plaats.</p>
-                <p><strong>SageDocs</strong> geeft je gegevens aan geen enkele derde door. iCloud-synchronisatie wordt door Apple beheerd onder de eigen AVG-verplichtingen van Apple.</p>
+                <p><strong>SageDocs</strong> geeft je documenten aan geen enkele derde door; iCloud-synchronisatie wordt door Apple beheerd onder de eigen AVG-verplichtingen van Apple. De anonieme gebruiksstatistieken worden verzonden naar TelemetryDeck, dat ze opslaat op servers in de Europese Unie (Duitsland en Nederland).</p>
             </section>
 
             <section class="section" id="p11">
                 <h2 class="section__heading"><span class="section__num">11</span> Cookies en tracking</h2>
                 <h3 class="section__subheading">In onze apps</h3>
-                <p>Geen enkele app van Sagelight Studio (SageBills, SageMeet, SageDocs) gebruikt cookies, webbeacons, pixels, device fingerprinting, advertentie-ID's of welke andere trackingtechnologie dan ook. Geen enkele app bevat advertenties.</p>
+                <p>Geen enkele app van Sagelight Studio (SageBills, SageMeet, SageDocs) gebruikt cookies, webbeacons, pixels, device fingerprinting of advertentie-ID's, en geen enkele app volgt je in andere apps of op andere websites. Geen enkele app bevat advertenties. Vanaf versie 1.0.14 verstuurt SageDocs anonieme gebruiksstatistieken die zijn gekoppeld aan een willekeurige ID die de app op je apparaat aanmaakt (zie sectie 4); deze wordt vóór verzending gehasht, is geen apparaat-ID of advertentie-ID en wordt verwijderd wanneer je de statistieken uitschakelt.</p>
 
                 <h3 class="section__subheading">Op deze marketingwebsite (sagelight-studio.com)</h3>
                 <p>De marketingwebsite laadt de conversietag van <strong>Google Ads</strong> (<code>AW-17758801825</code>) om de effectiviteit te meten van betaalde advertentiecampagnes die naar de App Store linken.</p>

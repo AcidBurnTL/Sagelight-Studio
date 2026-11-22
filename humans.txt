@@ -13,5 +13,5 @@ Typography: Martian Mono · Instrument Sans (self-hosted)
 Brand colors: #f6c177 (Amber) and #a6c79a (Sage) on #191724 (Ink)
 
 /* PHILOSOPHY */
-Privacy by design. Local-first by default. No accounts, no analytics, no third-party SDKs.
+Privacy by design. Local-first by default. No accounts, no ads, no cross-app tracking.
 Built with care in Romania, EU.

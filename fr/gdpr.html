@@ -64,7 +64,7 @@
         "name": "Déclaration RGPD — Sagelight Studio",
         "url": "https://sagelight-studio.com/fr/gdpr.html",
         "description": "Déclaration RGPD au titre des articles 13 et 14 du règlement (UE) 2016/679 pour SageBills, SageMeet et SageDocs.",
-        "dateModified": "2026-05-21T00:00:00+03:00",
+        "dateModified": "2026-11-22T00:00:00+02:00",
         "inLanguage": "fr",
         "isPartOf": {
             "@type": "WebSite",
@@ -123,7 +123,7 @@
             <p class="doc-header__subtitle">Informations requises au titre des articles 13 et 14 du Règlement général sur la protection des données (UE) 2016/679 concernant le traitement des données au moyen des apps Sagelight Studio (SageBills, SageMeet et SageDocs).</p>
             <p class="doc-header__subtitle"><em>Ce document est une traduction. En cas de divergence, la <a href="../gdpr.html">version anglaise</a> fait foi.</em></p>
             <div class="doc-header__meta">
-                <span>Dernière mise à jour : 21 mai 2026</span>
+                <span>Dernière mise à jour : 22 novembre 2026</span>
                 <span>RGPD (UE) 2016/679</span>
             </div>
         </header>
@@ -137,7 +137,7 @@
             <div class="key-point">
                 <span class="key-point__icon">⚖️</span>
                 <div class="key-point__title">Base juridique</div>
-                <div class="key-point__desc">SageBills et SageDocs : consentement. SageMeet : consentement + nécessité contractuelle.</div>
+                <div class="key-point__desc">SageBills et SageDocs : consentement ; statistiques d'utilisation de SageDocs : intérêt légitime. SageMeet : consentement + nécessité contractuelle.</div>
             </div>
             <div class="key-point">
                 <span class="key-point__icon">🤝</span>
@@ -188,7 +188,7 @@
                 <li><strong>E-mail :</strong> <a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></li>
             </ul>
             <p>Conformément à l'<strong>article 13, paragraphe 1, point a)</strong>, Florin Nica, agissant en son nom propre en tant que personne physique sous le nom commercial Sagelight Studio, est le responsable du traitement. Il détermine personnellement les finalités et les moyens du traitement pour toutes les apps Sagelight Studio.</p>
-            <p>Conformément à l'<strong>article 13, paragraphe 1, point a)</strong>, et à l'<strong>article 14, paragraphe 1, point a)</strong>, le développeur est le responsable du traitement pour toutes les apps Sagelight Studio. Pour SageBills, le responsable du traitement ne reçoit, ne consulte ni ne stocke aucune donnée personnelle. Pour SageMeet, les données sont traitées localement, sauf lorsque l'utilisateur lance les fonctionnalités d'IA (OpenAI en qualité de sous-traitant, art. 28). Pour SageDocs, toutes les données sont traitées localement et, de manière facultative, synchronisées sous forme chiffrée avec l'iCloud privé de l'utilisateur.</p>
+            <p>Conformément à l'<strong>article 13, paragraphe 1, point a)</strong>, et à l'<strong>article 14, paragraphe 1, point a)</strong>, le développeur est le responsable du traitement pour toutes les apps Sagelight Studio. Pour SageBills, le responsable du traitement ne reçoit, ne consulte ni ne stocke aucune donnée personnelle. Pour SageMeet, les données sont traitées localement, sauf lorsque l'utilisateur lance les fonctionnalités d'IA (OpenAI en qualité de sous-traitant, art. 28). Pour SageDocs, les documents sont traités localement et, de manière facultative, synchronisés sous forme chiffrée avec l'iCloud privé de l'utilisateur ; à partir de la version 1.0.14, des statistiques d'utilisation anonymes sont envoyées à TelemetryDeck (sous-traitant, art. 28).</p>
         </section>
 
         <section class="section" id="g2">
@@ -249,6 +249,7 @@
                         <tr><td><strong>Données d'authentification</strong></td><td>Empreinte du code PIN, état de l'enregistrement biométrique (trousseau)</td><td>Non</td></tr>
                         <tr><td><strong>Éléments cryptographiques</strong></td><td>Sel, clé dérivée (trousseau, protégés par biométrie)</td><td>Non</td></tr>
                         <tr><td><strong>Données techniques</strong></td><td>État de la prise en main, état de verrouillage</td><td>Non</td></tr>
+                        <tr><td><strong>Statistiques d'utilisation anonymes</strong> (version 1.0.14 et ultérieures ; désactivables)</td><td>Une liste fixe d'événements de l'app (étapes de la prise en main, coffre-fort déverrouillé, document ajouté, écran d'abonnement, résultat de l'achat), des détails techniques (version de l'app et du système, modèle de l'appareil, langue, région) et un identifiant d'installation aléatoire et haché. Jamais le nom ni le contenu des documents</td><td>Non</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -309,6 +310,7 @@
                         <tr><td>26</td><td><strong>Rappels</strong></td><td>Notifications locales pour les documents arrivant à expiration</td></tr>
                         <tr><td>27</td><td><strong>Partage sécurisé</strong></td><td>Déchiffrement temporaire pour un partage lancé par l'utilisateur</td></tr>
                         <tr><td>28</td><td><strong>Synchronisation iCloud</strong></td><td>Synchroniser les documents chiffrés via CloudKit</td></tr>
+                        <tr><td>29</td><td><strong>Statistiques d'utilisation anonymes</strong></td><td>Voir quelles étapes de la prise en main, de l'utilisation quotidienne et du passage à l'abonnement les utilisateurs atteignent, afin d'améliorer l'app (TelemetryDeck ; désactivables)</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -317,6 +319,7 @@
         <section class="section" id="g5">
             <h2 class="section__heading"><span class="section__num">05</span> Base juridique</h2>
             <p><strong>SageBills et SageDocs :</strong> conformément à l'<strong>article 6, paragraphe 1, point a)</strong> : <strong>consentement.</strong> Vous donnez votre consentement explicite lors de la prise en main.</p>
+            <p><strong>Statistiques d'utilisation anonymes de SageDocs</strong> (version 1.0.14 et ultérieures) : conformément à l'<strong>article 6, paragraphe 1, point f)</strong> : <strong>intérêt légitime</strong> à comprendre comment l'app est utilisée et à l'améliorer. Activées par défaut ; vous pouvez vous y opposer à tout moment en désactivant <em>Réglages &rarr; Confidentialité et sécurité &rarr; Partager des statistiques d’utilisation anonymes</em>.</p>
             <p><strong>SageMeet :</strong> conformément à l'<strong>article 6, paragraphe 1, point a)</strong>, et à l'<strong>article 6, paragraphe 1, point b)</strong> :</p>
             <ul>
                 <li><strong>Consentement</strong> (art. 6, par. 1, point a)) &mdash; pour les fonctionnalités d'IA facultatives et le traitement des données lors de la prise en main.</li>
@@ -347,10 +350,11 @@
                     <thead><tr><th scope="col">Destinataire</th><th scope="col">Rôle</th><th scope="col">Données reçues</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Apple (iCloud/CloudKit)</strong></td><td>Fournisseur de stockage</td><td>Données chiffrées des documents lorsque la synchronisation iCloud est activée</td></tr>
+                        <tr><td><strong>TelemetryDeck GmbH</strong> (Augsburg, Allemagne)</td><td>Sous-traitant (art. 28)</td><td>Statistiques d'utilisation anonymes (version 1.0.14 et ultérieures), sauf si elles sont désactivées</td></tr>
                     </tbody>
                 </table>
             </div>
-            <p>Aucun réseau publicitaire, fournisseur d'outils d'analyse ou autre tiers ne reçoit de données provenant de l'intérieur d'une app. Le site marketing (sagelight-studio.com) est traité séparément &mdash; voir ci-dessous.</p>
+            <p>Aucun réseau publicitaire ni autre tiers ne reçoit de données provenant de l'intérieur d'une app, et aucun fournisseur d'outils d'analyse autre que TelemetryDeck (SageDocs uniquement). Le site marketing (sagelight-studio.com) est traité séparément &mdash; voir ci-dessous.</p>
 
             <h3 class="section__subheading">Site marketing (sagelight-studio.com)</h3>
             <p>Le site marketing charge la balise de conversion Google Ads (<code>AW-17758801825</code>) selon le <strong>mode Consentement Google v2 (avancé)</strong>. Les quatre signaux sont réglés par défaut sur « refusé » (denied) ; en outre, la balise est configurée avec <code>ads_data_redaction: true</code> (Google masque les données identifiantes des pings sans cookie) et <code>url_passthrough: true</code> (les identifiants de clic transitent par les paramètres d'URL, jamais par des cookies, tant que le consentement est refusé).</p>
@@ -373,7 +377,7 @@
             <p>Conformément à l'<strong>article 13, paragraphe 1, point f)</strong> :</p>
             <p><strong>SageBills :</strong> aucun transfert international n'a lieu.</p>
             <p><strong>SageMeet :</strong> données transférées vers les États-Unis (OpenAI) sur le fondement de <strong>deux mécanismes complémentaires prévus au chapitre V du RGPD</strong> : le <strong>cadre de protection des données UE-États-Unis</strong> (décision d'exécution (UE) 2023/1795 de la Commission) et les <strong>clauses contractuelles types</strong> (décision d'exécution (UE) 2021/914 de la Commission), intégrées à l'avenant relatif au traitement des données (Data Processing Addendum) d'OpenAI. Si le DPF venait à être invalidé, les CCT demeureraient la base juridique autonome. Aucun transfert lorsque le Mode privé est activé.</p>
-            <p><strong>SageDocs :</strong> aucun transfert international vers des tiers. La synchronisation iCloud est gérée par Apple dans le cadre de ses propres accords.</p>
+            <p><strong>SageDocs :</strong> aucun transfert international vers des tiers. La synchronisation iCloud est gérée par Apple dans le cadre de ses propres accords. Les statistiques d'utilisation anonymes sont stockées par TelemetryDeck sur des serveurs situés dans l'Union européenne (Allemagne et Pays-Bas).</p>
             <p><strong>Site marketing (sagelight-studio.com) :</strong> les pings sans cookie de la balise sont transférés à Google LLC (États-Unis) dans le cadre du <strong>cadre de protection des données UE-États-Unis</strong> et des <strong>clauses contractuelles types</strong> intégrées aux Conditions de protection des données entre responsables du traitement de Google (Controller-Controller Data Protection Terms). Si le DPF venait à être invalidé, les CCT demeureraient le mécanisme de transfert autonome.</p>
         </section>
 
@@ -391,10 +395,11 @@
                         <tr><td><strong>Préférences de l'app</strong></td><td>Jusqu'à la réinitialisation ou la désinstallation</td><td>Contrôle par l'utilisateur</td></tr>
                         <tr><td><strong>Clés de chiffrement</strong></td><td>Jusqu'à la réinitialisation du coffre-fort ou la désinstallation</td><td>Sécurité</td></tr>
                         <tr><td><strong>Horodatage du consentement</strong></td><td>Jusqu'à la désinstallation</td><td>Conformité légale</td></tr>
+                        <tr><td><strong>Statistiques d'utilisation anonymes (SageDocs)</strong></td><td>Conservées par TelemetryDeck, qui n'a pas de calendrier de suppression fixe et déclare prévoir de supprimer les événements au bout de 7 à 10 ans</td><td>Intérêt légitime</td></tr>
                     </tbody>
                 </table>
             </div>
-            <div class="callout"><strong>Vous contrôlez entièrement la conservation.</strong> Supprimez des enregistrements individuels, toutes les données, ou désinstallez l'app à tout moment.</div>
+            <div class="callout"><strong>Vous contrôlez entièrement la conservation.</strong> Supprimez des enregistrements individuels, toutes les données, ou désinstallez l'app à tout moment. Font exception les statistiques d'utilisation anonymes de SageDocs, qui ne sont pas liées à vous et ne peuvent pas être supprimées individuellement ; vous pouvez les arrêter dans les Réglages.</div>
         </section>
 
         <section class="section" id="g9">
@@ -481,7 +486,7 @@
                 <li><strong>Verrouillage progressif</strong> après des échecs d'authentification</li>
                 <li><strong>Journalisation respectueuse de la vie privée</strong> (ne contient jamais de code PIN, de clé ni de contenu)</li>
                 <li><strong>Fichiers temporaires sécurisés</strong>, effacés immédiatement après le partage</li>
-                <li><strong>Aucun code tiers :</strong> zéro SDK externe</li>
+                <li><strong>Un seul SDK tiers :</strong> TelemetryDeck, pour les statistiques d'utilisation anonymes (désactivables) ; il ne reçoit aucune donnée de vos documents</li>
             </ul>
         </section>
 

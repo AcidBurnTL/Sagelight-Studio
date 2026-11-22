@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="../assets/sage.css?v=20261102a">
     <link rel="stylesheet" href="../assets/legal.css?v=20261013f">
     <script type="application/ld+json">
-    {"@context": "https://schema.org", "@type": "WebPage", "name": "Informační Povinnost GDPR — Sagelight Studio (čl. 13 a 14)", "url": "https://sagelight-studio.com/cz/gdpr.html", "description": "Informační povinnost GDPR (čl. 13 a 14) pro SageBills, SageMeet a SageDocs: správce, účely zpracování, příjemci a vaše práva.", "dateModified": "2026-05-21T00:00:00+03:00", "inLanguage": "cs", "isPartOf": {"@type": "WebSite", "name": "Sagelight Studio", "url": "https://sagelight-studio.com/"}}
+    {"@context": "https://schema.org", "@type": "WebPage", "name": "Informační Povinnost GDPR — Sagelight Studio (čl. 13 a 14)", "url": "https://sagelight-studio.com/cz/gdpr.html", "description": "Informační povinnost GDPR (čl. 13 a 14) pro SageBills, SageMeet a SageDocs: správce, účely zpracování, příjemci a vaše práva.", "dateModified": "2026-11-22T00:00:00+02:00", "inLanguage": "cs", "isPartOf": {"@type": "WebSite", "name": "Sagelight Studio", "url": "https://sagelight-studio.com/"}}
     </script>
     <script type="application/ld+json">
     {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://sagelight-studio.com/cz/"}, {"@type": "ListItem", "position": 2, "name": "Informační povinnost GDPR", "item": "https://sagelight-studio.com/cz/gdpr.html"}]}
@@ -90,12 +90,12 @@
             <div class="doc-header__badge">Právní</div>
             <h1 class="doc-header__title">Informační <em>Povinnost GDPR</em></h1>
             <p class="doc-header__subtitle">Informace vyžadované podle článků 13 a 14 Obecného nařízení o ochraně osobních údajů (EU) 2016/679 ohledně zpracování údajů aplikacemi Sagelight Studio.</p>
-            <div class="doc-header__meta"><span>Poslední aktualizace: 21. května 2026</span><span>GDPR (EU) 2016/679</span></div>
+            <div class="doc-header__meta"><span>Poslední aktualizace: 22. listopadu 2026</span><span>GDPR (EU) 2016/679</span></div>
         </header>
 
         <div class="key-points animate-in animate-in--d1">
             <div class="key-point"><span class="key-point__icon">🏛</span><div class="key-point__title">Správce v EU</div><div class="key-point__desc">Fyzická osoba se sídlem v Rumunsku.</div></div>
-            <div class="key-point"><span class="key-point__icon">⚖️</span><div class="key-point__title">Právní základ</div><div class="key-point__desc">SageBills, SageDocs: souhlas. SageMeet: souhlas + smlouva.</div></div>
+            <div class="key-point"><span class="key-point__icon">⚖️</span><div class="key-point__title">Právní základ</div><div class="key-point__desc">SageBills, SageDocs: souhlas; statistiky používání SageDocs: oprávněný zájem. SageMeet: souhlas + smlouva.</div></div>
             <div class="key-point"><span class="key-point__icon">🤝</span><div class="key-point__title">SageMeet: OpenAI</div><div class="key-point__desc">OpenAI dostává audio/text při použití AI (čl. 28).</div></div>
             <div class="key-point"><span class="key-point__icon">🛡️</span><div class="key-point__title">SageDocs: AES-256</div><div class="key-point__desc">Všechny přílohy AES-256-GCM.</div></div>
             <div class="key-point"><span class="key-point__icon">🌐</span><div class="key-point__title">iCloud Synchronizace</div><div class="key-point__desc">Přes Apple.</div></div>
@@ -131,7 +131,7 @@
                 <li><strong>Ověřený vývojář:</strong> <a href="https://apps.apple.com/developer/florin-nica/id1889684772" target="_blank" rel="noopener">apps.apple.com/developer/florin-nica/id1889684772</a></li>
                 <li><strong>E-mail:</strong> <a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></li>
             </ul>
-            <p>Florin Nica je správcem údajů pro všechny aplikace. Pro SageBills správce nedostává, nepřistupuje ani neukládá osobní údaje. Pro SageMeet jsou údaje zpracovávány lokálně kromě AI funkcí (OpenAI jako zpracovatel, čl. 28). Pro SageDocs jsou všechny údaje zpracovávány lokálně a volitelně synchronizovány šifrovaně.</p>
+            <p>Florin Nica je správcem údajů pro všechny aplikace. Pro SageBills správce nedostává, nepřistupuje ani neukládá osobní údaje. Pro SageMeet jsou údaje zpracovávány lokálně kromě AI funkcí (OpenAI jako zpracovatel, čl. 28). Pro SageDocs jsou dokumenty zpracovávány lokálně a volitelně synchronizovány šifrovaně; od verze 1.0.14 se anonymní statistiky používání odesílají službě TelemetryDeck (zpracovatel, čl. 28).</p>
         </section>
 
         <section class="section" id="g2">
@@ -181,6 +181,7 @@
                     <tr><td><strong>Autentizace</strong></td><td>Hash PIN, biometrie</td><td>Ne</td></tr>
                     <tr><td><strong>Šifrovací materiál</strong></td><td>Sůl, klíč</td><td>Ne</td></tr>
                     <tr><td><strong>Technické</strong></td><td>Onboarding, uzamčení</td><td>Ne</td></tr>
+                    <tr><td><strong>Anonymní statistiky používání</strong> (verze 1.0.14 a novější; lze vypnout)</td><td>Pevně daný seznam událostí v aplikaci (kroky nastavení, odemčení trezoru, přidání dokumentu, obrazovka s nabídkou předplatného, výsledek nákupu), technické údaje (verze aplikace a systému, model zařízení, jazyk, region) a náhodný, hashovaný identifikátor instalace. Nikdy názvy ani obsah dokumentů</td><td>Ne</td></tr>
                 </tbody>
             </table></div>
             <p><strong>Nezpracováváme žádné zvláštní kategorie osobních údajů</strong> (čl. 9).</p>
@@ -193,12 +194,13 @@
             <h3 class="section__subheading">SageMeet</h3>
             <ul><li>Nahrávání, přepis, AI shrnutí, sémantické hledání, analytika, kalendář, iCloud</li></ul>
             <h3 class="section__subheading">SageDocs</h3>
-            <ul><li>Správa dokumentů, skenování, šifrování, autentizace, expirace, CloudKit</li></ul>
+            <ul><li>Správa dokumentů, skenování, šifrování, autentizace, expirace, CloudKit</li><li>Anonymní statistiky používání: zjišťování, ke kterým krokům nastavení, běžného používání a přechodu na předplatné lidé dojdou, abychom mohli aplikaci zlepšovat (TelemetryDeck; lze vypnout)</li></ul>
         </section>
 
         <section class="section" id="g5">
             <h2 class="section__heading"><span class="section__num">05</span> Právní Základ</h2>
             <p><strong>SageBills a SageDocs:</strong> čl. 6 odst. 1 písm. a) &mdash; <strong>Souhlas</strong>.</p>
+            <p><strong>Anonymní statistiky používání SageDocs</strong> (verze 1.0.14 a novější): čl. 6 odst. 1 písm. f) &mdash; <strong>Oprávněný zájem</strong> na tom, abychom rozuměli, jak se aplikace používá, a mohli ji zlepšovat. Ve výchozím nastavení zapnuto; kdykoli můžete vznést námitku vypnutím <em>Nastavení &rarr; Soukromí a zabezpečení &rarr; Sdílet anonymní statistiky používání</em>.</p>
             <p><strong>SageMeet:</strong> čl. 6(1)(a) a (1)(b) &mdash; souhlas + smluvní nezbytnost.</p>
             <p>Souhlas svobodný, konkrétní, informovaný a jednoznačný. Odvolatelný v Nastavení.</p>
         </section>
@@ -218,7 +220,10 @@
             <p><strong>SageDocs:</strong></p>
             <div class="table-wrap"><table>
                 <thead><tr><th>Příjemce</th><th>Role</th><th>Údaje</th></tr></thead>
-                <tbody><tr><td><strong>Apple (iCloud/CloudKit)</strong></td><td>Poskytovatel úložiště</td><td>Šifrovaná data dokumentů</td></tr></tbody>
+                <tbody>
+                    <tr><td><strong>Apple (iCloud/CloudKit)</strong></td><td>Poskytovatel úložiště</td><td>Šifrovaná data dokumentů</td></tr>
+                    <tr><td><strong>TelemetryDeck GmbH</strong> (Augsburg, Německo)</td><td>Zpracovatel (čl. 28)</td><td>Anonymní statistiky používání (verze 1.0.14 a novější), pokud nejsou vypnuté</td></tr>
+                </tbody>
             </table></div>
             <h3 class="section__subheading">Marketingový web</h3>
             <p>Web načítá Google Ads v Consent Mode v2. Příjemci: Google Ireland Limited (EU) a Google LLC (USA) v rámci EU-US DPF.</p>
@@ -228,7 +233,7 @@
             <h2 class="section__heading"><span class="section__num">07</span> Mezinárodní Přenosy</h2>
             <p><strong>SageBills:</strong> Bez přenosů.</p>
             <p><strong>SageMeet:</strong> Přenosy do USA (OpenAI) v rámci <strong>EU-US DPF</strong> (2023/1795) a <strong>SCC</strong> (2021/914). V Soukromém režimu žádné.</p>
-            <p><strong>SageDocs:</strong> Bez přenosů třetím stranám.</p>
+            <p><strong>SageDocs:</strong> Bez mezinárodních přenosů třetím stranám. Anonymní statistiky používání ukládá TelemetryDeck na serverech v Evropské unii (Německo a Nizozemsko).</p>
         </section>
 
         <section class="section" id="g8">
@@ -240,8 +245,10 @@
                     <tr><td><strong>Nahrávky</strong></td><td>Do smazání</td><td>Kontrola uživatele</td></tr>
                     <tr><td><strong>Dokumenty (SageDocs)</strong></td><td>Do smazání nebo resetu</td><td>Kontrola uživatele</td></tr>
                     <tr><td><strong>Šifrovací klíče</strong></td><td>Do resetu trezoru</td><td>Bezpečnost</td></tr>
+                    <tr><td><strong>Anonymní statistiky používání (SageDocs)</strong></td><td>Uchovává je TelemetryDeck, který nemá pevně stanovený harmonogram mazání a uvádí, že události předpokládá smazat po 7 až 10 letech</td><td>Oprávněný zájem</td></tr>
                 </tbody>
             </table></div>
+            <p>Anonymní statistiky používání SageDocs nejsou spojeny s vaší osobou a nelze je jednotlivě smazat; jejich odesílání můžete zastavit v Nastavení.</p>
         </section>
 
         <section class="section" id="g9">

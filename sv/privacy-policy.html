@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../assets/gtag.js?v=20261102a"></script>
     <title>Integritetspolicy — Sagelight Studios appar</title>
-    <meta name="description" content="Integritetspolicy för Sagelight Studios appar — SageBills, SageMeet och SageDocs. Lokalt i första hand, GDPR-kompatibelt. Ingen analys. Ingen spårning.">
+    <meta name="description" content="Integritetspolicy för Sagelight Studios appar — SageBills, SageMeet och SageDocs. Lokalt i första hand, GDPR-kompatibelt. Inga annonser, ingen spårning mellan appar.">
     <meta property="og:title" content="Integritetspolicy — Sagelight Studio">
-    <meta property="og:description" content="Så hanterar Sagelight Studio dina data. Lokalt i första hand, GDPR-kompatibelt, ingen spårning. Gäller SageBills, SageMeet och SageDocs.">
+    <meta property="og:description" content="Så hanterar Sagelight Studio dina data. Lokalt i första hand, GDPR-kompatibelt, inga annonser, ingen spårning mellan appar. Gäller SageBills, SageMeet och SageDocs.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sagelight-studio.com/sv/privacy-policy.html">
     <meta property="og:site_name" content="Sagelight Studio">
@@ -64,7 +64,7 @@
         "url": "https://sagelight-studio.com/sv/privacy-policy.html",
         "description": "Integritetspolicy för SageBills, SageMeet och SageDocs från Sagelight Studio.",
         "datePublished": "2026-05-21T00:00:00+03:00",
-        "dateModified": "2026-06-14T00:00:00+03:00",
+        "dateModified": "2026-11-22T00:00:00+02:00",
         "inLanguage": "sv",
         "isPartOf": {
             "@type": "WebSite",
@@ -123,7 +123,7 @@
             <h1 class="doc-header__title"><em>Integritetspolicy</em></h1>
             <p class="doc-header__subtitle">Denna policy gäller samtliga appar från Sagelight Studio, däribland SageBills, SageMeet och SageDocs. Dina data tillhör dig. Detta är en översättning; vid eventuella avvikelser har den <a href="../privacy-policy.html" lang="en">engelska versionen</a> företräde.</p>
             <div class="doc-header__meta">
-                <span>Senast uppdaterad: 14 juni 2026</span>
+                <span>Senast uppdaterad: 22 november 2026</span>
                 <span>Gäller från: 21 maj 2026</span>
             </div>
         </header>
@@ -142,12 +142,12 @@
             <div class="key-point">
                 <span class="key-point__icon">🛡️</span>
                 <div class="key-point__title">SageDocs: Krypterat valv</div>
-                <div class="key-point__desc">AES-256-GCM-kryptering, skydd med biometri/PIN, iCloud-synk av krypterade data. Ingen AI, inga tredje parter.</div>
+                <div class="key-point__desc">AES-256-GCM-kryptering, skydd med biometri/PIN, iCloud-synk av krypterade data. Ingen AI. Anonym användningsstatistik som du kan stänga av.</div>
             </div>
             <div class="key-point">
                 <span class="key-point__icon">🚫</span>
-                <div class="key-point__title">Noll spårning</div>
-                <div class="key-point__desc">Ingen analys, inga annons-ID:n och ingen telemetri i någon av våra appar.</div>
+                <div class="key-point__title">Inga annonser, ingen spårning</div>
+                <div class="key-point__desc">Inga annonser, inga annons-ID:n och ingen spårning mellan appar i någon av våra appar. SageBills och SageMeet skickar inga analysdata; SageDocs skickar anonym användningsstatistik som du kan stänga av.</div>
             </div>
             <div class="key-point">
                 <span class="key-point__icon">🔐</span>
@@ -195,7 +195,7 @@
                     <li><strong>Verifierad registrerad utvecklare:</strong> <a href="https://apps.apple.com/developer/florin-nica/id1889684772" target="_blank" rel="noopener">apps.apple.com/developer/florin-nica/id1889684772</a> &mdash; Apple har verifierat den personuppgiftsansvariges identitet i samband med registreringen i Apple Developer Program.</li>
                     <li><strong>Kontakt:</strong> <a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></li>
                 </ul>
-                <p>Vid tillämpningen av GDPR agerar utvecklaren som personuppgiftsansvarig. För SageBills sker all databehandling lokalt och dina data når aldrig oss. För SageMeet behandlas data lokalt, utom när du använder AI-funktioner som överför data till OpenAI (se avsnitt 9 och 10). För SageDocs lagras data lokalt och synkas till ditt privata iCloud-konto; inga data överförs till Sagelight Studio eller till någon annan tredje part än Apple.</p>
+                <p>Vid tillämpningen av GDPR agerar utvecklaren som personuppgiftsansvarig. För SageBills sker all databehandling lokalt och dina data når aldrig oss. För SageMeet behandlas data lokalt, utom när du använder AI-funktioner som överför data till OpenAI (se avsnitt 9 och 10). För SageDocs lagras dina dokument lokalt och synkas till ditt privata iCloud-konto; inga dokumentdata överförs till Sagelight Studio eller till någon annan tredje part än Apple. Från och med version 1.0.14 skickar SageDocs även anonym användningsstatistik till TelemetryDeck (se avsnitt 4, 6 och 9).</p>
             </section>
 
             <section class="section" id="p3">
@@ -226,13 +226,13 @@
                     <li><strong>AES-256-GCM-kryptering.</strong> Alla dokumentbilagor krypteras före lagring med en nyckel som härleds via PBKDF2-SHA256 (600 000 iterationer).</li>
                     <li><strong>Autentisering med biometri eller PIN.</strong> Valvet är låst bakom Face ID, Touch ID eller en huvud-PIN.</li>
                     <li><strong>iCloud-synk.</strong> Krypterade dokument synkas via Apple CloudKit till ditt privata iCloud-konto. Data krypteras innan de når iCloud.</li>
-                    <li><strong>Inga AI-funktioner.</strong> SageDocs använder inte artificiell intelligens och skickar inga data till något externt API.</li>
-                    <li><strong>Ingen analys eller spårning.</strong> Ingen telemetri, inga kraschrapporter, inga SDK:er från tredje part.</li>
+                    <li><strong>Inga AI-funktioner.</strong> SageDocs använder inte artificiell intelligens, och inga dokumentdata skickas till något externt API.</li>
+                    <li><strong>Anonym användningsstatistik, ingen spårning.</strong> Från och med version 1.0.14 skickar SageDocs en kort, fast lista med anonyma användningshändelser till TelemetryDeck, en integritetsinriktad analystjänst, så att vi kan se var användare kör fast. Du kan stänga av detta i Inställningar. Det finns ingen kraschrapportering, inget annons-SDK och inget som följer dig mellan andra appar eller webbplatser.</li>
                     <li><strong>Integritetsvänlig loggning.</strong> Säkerhetshändelser som loggas via OSLog innehåller aldrig PIN-koder, krypteringsnycklar eller dokumentinnehåll.</li>
                 </ul>
 
                 <div class="callout">
-                    <strong>Enkelt uttryckt:</strong> Data i SageBills lämnar aldrig din enhet. Data i SageMeet stannar lokalt om du inte använder AI-funktioner. SageDocs krypterar allt och synkar endast krypterade data till ditt privata iCloud.
+                    <strong>Enkelt uttryckt:</strong> Data i SageBills lämnar aldrig din enhet. Data i SageMeet stannar lokalt om du inte använder AI-funktioner. SageDocs krypterar allt och synkar endast krypterade data till ditt privata iCloud; det enda appen skickar därutöver är anonym användningsstatistik, som du kan stänga av.
                 </div>
             </section>
 
@@ -351,6 +351,26 @@
                         </ul>
                     </div>
                 </details>
+
+                <p>Från och med version 1.0.14 <strong>skickar SageDocs även anonym användningsstatistik till TelemetryDeck</strong> (TelemetryDeck GmbH, Tyskland), en integritetsinriktad analystjänst, om du inte stänger av den. Den innehåller aldrig dokument, titlar, kategorier, anteckningar, filnamn, PIN-koder eller krypteringsnycklar:</p>
+
+                <details class="collapsible">
+                    <summary>Anonym användningsstatistik (version 1.0.14 och senare)</summary>
+                    <div class="collapsible__body">
+                        <ul>
+                            <li><strong>Konfigurering</strong> &mdash; vilket steg i introduktionen som visades och att konfigureringen slutfördes</li>
+                            <li><strong>Valvet upplåst</strong> &mdash; med status för din åtkomst (provperiod och dagar kvar, prenumeration, skrivskyddat läge eller åtkomst som tidig användare)</li>
+                            <li><strong>Dokument tillagt</strong> &mdash; och om det har ett utgångsdatum (aldrig dess namn eller innehåll)</li>
+                            <li><strong>Uppgraderingsskärmen</strong> &mdash; att den visades eller stängdes och vilken funktion som öppnade den</li>
+                            <li><strong>Köp</strong> &mdash; att ett köp påbörjades, slutfördes, inte slutfördes eller misslyckades och vilken plan det gällde (månad eller år); för ett slutfört köp även produkt, App Store-land (storefront), valuta och pris</li>
+                            <li><strong>Återställ köp</strong> &mdash; att knappen trycktes</li>
+                            <li><strong>Sammanfattning vid provperiodens slut</strong> &mdash; att den visades</li>
+                            <li><strong>Tekniska uppgifter som läggs till i varje händelse</strong> &mdash; appversion och build samt hur appen installerades (App Store, TestFlight eller en utvecklingsbuild); operativsystemets version, enhetsmodell, processortyp, plattform, skärmstorlek och orientering; språk, region, tidszon, textriktning och ljust eller mörkt utseende; hjälpmedelsinställningar såsom textstorlek, fet text och minskad rörelse; händelsens timme, veckodag och datum; samt användningsräknare som förs på din enhet (antal sessioner, antal olika användningsdagar, sessionslängd, datum för första användning)</li>
+                            <li><strong>Slumpmässig identifierare</strong> &mdash; skapas av appen på din enhet och hashas innan den skickas. Den är inte ditt Apple-konto, ingen enhetsidentifierare och ingen annonsidentifierare, och den är inte kopplad till ditt namn eller din e-postadress (vi ber aldrig om någotdera)</li>
+                        </ul>
+                        <p><strong>Så stänger du av den:</strong> Inställningar &rarr; Integritet och säkerhet &rarr; Dela anonym användningsstatistik. När du stänger av den upphör sändningen och identifieraren raderas från din enhet; om du slår på den igen skapas en ny. SageDocs widget och delningstillägg skickar aldrig någon statistik.</p>
+                    </div>
+                </details>
             </section>
 
             <section class="section" id="p5">
@@ -392,7 +412,7 @@
                 </div>
 
                 <h3 class="section__subheading">SageDocs</h3>
-                <p>Alla data i SageDocs stannar på din enhet och i ditt privata iCloud-konto:</p>
+                <p>Dina dokument stannar på din enhet och i ditt privata iCloud-konto:</p>
                 <div class="table-wrap">
                     <table>
                         <thead><tr><th>Ändamål</th><th>Beskrivning</th></tr></thead>
@@ -405,6 +425,7 @@
                             <tr><td><strong>Påminnelser</strong></td><td>Lokala aviseringar om dokument som snart går ut</td></tr>
                             <tr><td><strong>Säker delning</strong></td><td>Tillfällig dekryptering för delning som du själv initierar</td></tr>
                             <tr><td><strong>iCloud-synk</strong></td><td>Synka krypterade dokument mellan dina Apple-enheter</td></tr>
+                            <tr><td><strong>Anonym användningsstatistik</strong></td><td>Se vilka steg i konfigureringen, den dagliga användningen och uppgraderingen som användare når, så att vi kan förbättra appen (skickas till TelemetryDeck; kan stängas av)</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -418,6 +439,7 @@
                     <li><strong>Samtycke</strong> (art. 6.1 a) &mdash; för valfria AI-funktioner och databehandling under introduktionen.</li>
                     <li><strong>Avtalsenlig nödvändighet</strong> (art. 6.1 b) &mdash; för centrala AI-funktioner som är en integrerad del av tjänsten (transkribering, skapande av anteckningar).</li>
                 </ul>
+                <p><strong>Anonym användningsstatistik i SageDocs</strong> (version 1.0.14 och senare): Vår rättsliga grund är vårt <strong>berättigade intresse</strong> (art. 6.1 f) av att förstå hur appen används och att förbättra den. Statistiken är påslagen som standard; du kan när som helst invända genom att stänga av <em>Inställningar &rarr; Integritet och säkerhet &rarr; Dela anonym användningsstatistik</em>.</p>
                 <p>Du kan när som helst återkalla ditt samtycke via inställningarna i respektive app. Återkallandet påverkar inte lagligheten av behandling som utförts innan samtycket återkallades.</p>
             </section>
 
@@ -456,7 +478,7 @@
                     <li><strong>Avinstallera appen</strong> för att ta bort alla tillhörande data</li>
                     <li><strong>SageDocs: Återställ valvet</strong> för att radera alla dokument och krypteringsnycklar</li>
                 </ul>
-                <p>Vi behåller inga kopior av dina data, eftersom vi aldrig tar emot dem.</p>
+                <p>Vi behåller inga kopior av dina dokument eller appdata, eftersom vi aldrig tar emot dem. Det enda undantaget är den anonyma användningsstatistiken i SageDocs (version 1.0.14 och senare), som TelemetryDeck lagrar för vår räkning. TelemetryDeck har för närvarande inget fast raderingsschema för lagrade händelser och uppger att de räknar med att radera dem efter 7 till 10 år. Eftersom statistiken inte är kopplad till dig kan vi inte identifiera, exportera eller radera en enskild persons händelser (art. 11 i GDPR); när du stänger av reglaget skickas inga nya händelser och identifieraren raderas från din enhet.</p>
             </section>
 
             <section class="section" id="p9">
@@ -475,21 +497,24 @@
                 </ul>
                 <p>OpenAI använder inte API-data för att träna sina modeller. OpenAI är certifierat enligt <strong>ramen för dataskydd mellan EU och USA</strong> (EU-US Data Privacy Framework, DPF). Du autentiserar dig med din egen API-nyckel; vi har ingen åtkomst till ditt OpenAI-konto.</p>
 
+                <h3 class="section__subheading">TelemetryDeck (endast SageDocs, version 1.0.14 och senare)</h3>
+                <p>SageDocs skickar den anonyma användningsstatistik som beskrivs i avsnitt 4 till <strong>TelemetryDeck GmbH</strong>, Von-der-Tann-Str. 54, 86159 Augsburg, Tyskland. TelemetryDeck agerar <strong>personuppgiftsbiträde</strong> enligt artikel 28 i GDPR, i enlighet med sitt <a href="https://telemetrydeck.com/dpa/" target="_blank" rel="noopener">personuppgiftsbiträdesavtal</a>, och lagrar uppgifterna på servrar i Europeiska unionen (Tyskland och Nederländerna). TelemetryDeck uppger att de aldrig lagrar IP-adresser. Se <a href="https://telemetrydeck.com/privacy/" target="_blank" rel="noopener">TelemetryDecks integritetsinformation</a>. SageDocs widget och delningstillägg skickar ingenting.</p>
+
                 <h3 class="section__subheading">SageBills &amp; SageDocs: inga andra tredje parter</h3>
-                <p>SageBills och SageDocs innehåller <strong>inga SDK:er, ramverk, bibliotek eller tjänster från tredje part</strong> utöver Apples egna ramverk. Vi delar inte, säljer inte och lämnar inte ut dina data till någon tredje part.</p>
+                <p>SageBills innehåller <strong>inga SDK:er, ramverk, bibliotek eller tjänster från tredje part</strong> utöver Apples egna ramverk. SageDocs innehåller ett, det TelemetryDeck-SDK som beskrivs ovan, och inget SDK för annonser, kraschrapportering eller annan analys. Vi säljer inte dina data, och utöver de personuppgiftsbiträden som anges i detta avsnitt delar vi dem inte med och lämnar inte ut dem till någon tredje part.</p>
             </section>
 
             <section class="section" id="p10">
                 <h2 class="section__heading"><span class="section__num">10</span> Internationella dataöverföringar</h2>
                 <p><strong>SageBills</strong> överför inte dina data internationellt. Dina data stannar på din enhet hela tiden.</p>
                 <p><strong>SageMeet</strong> överför data till USA när du använder AI-funktioner, eftersom OpenAI:s API-infrastruktur finns i USA. Dessa överföringar sker med stöd av <strong>två kompletterande rättsliga mekanismer</strong>: (1) <strong>ramen för dataskydd mellan EU och USA (DPF)</strong> enligt kommissionens genomförandebeslut (EU) 2023/1795, där OpenAI LLC är certifierad deltagare; och (2) <strong>standardavtalsklausulerna (SCC)</strong> enligt kommissionens genomförandebeslut (EU) 2021/914, som ingår i OpenAI:s personuppgiftsbiträdesavtal (Data Processing Addendum) (art. 46.2 c). Om DPF skulle ogiltigförklaras utgör standardavtalsklausulerna en självständig rättslig grund. När Privat läge är aktiverat sker inga internationella överföringar.</p>
-                <p><strong>SageDocs</strong> överför inte dina data till någon tredje part. iCloud-synken hanteras av Apple enligt Apples egna åtaganden under GDPR.</p>
+                <p><strong>SageDocs</strong> överför inte dina dokument till någon tredje part; iCloud-synken hanteras av Apple enligt Apples egna åtaganden under GDPR. Den anonyma användningsstatistiken skickas till TelemetryDeck, som lagrar den på servrar i Europeiska unionen (Tyskland och Nederländerna).</p>
             </section>
 
             <section class="section" id="p11">
                 <h2 class="section__heading"><span class="section__num">11</span> Cookies och spårning</h2>
                 <h3 class="section__subheading">I våra appar</h3>
-                <p>Ingen app från Sagelight Studio (SageBills, SageMeet, SageDocs) använder cookies, webbfyrar, pixlar, fingeravtryck av enheter, annonsidentifierare eller någon annan spårningsteknik. Ingen app innehåller någon reklam.</p>
+                <p>Ingen app från Sagelight Studio (SageBills, SageMeet, SageDocs) använder cookies, webbfyrar, pixlar, fingeravtryck av enheter eller annonsidentifierare, och ingen av dem spårar dig mellan andra appar eller webbplatser. Ingen app innehåller någon reklam. Från och med version 1.0.14 skickar SageDocs anonym användningsstatistik som är knuten till en slumpmässig identifierare som appen skapar på din enhet (se avsnitt 4); den hashas innan den skickas, är varken en enhetsidentifierare eller en annonsidentifierare och raderas när du stänger av statistiken.</p>
 
                 <h3 class="section__subheading">På denna marknadsföringswebbplats (sagelight-studio.com)</h3>
                 <p>Marknadsföringswebbplatsen laddar konverteringstaggen från <strong>Google Ads</strong> (<code>AW-17758801825</code>) för att mäta effekten av betalda annonskampanjer som länkar till App Store.</p>

@@ -10,7 +10,7 @@
 
 ## Legal
 
-- [Privacy Policy](https://sagelight-studio.com/privacy-policy.html): How Sagelight Studio handles user data. Local-first, GDPR-compliant, zero analytics, zero tracking.
+- [Privacy Policy](https://sagelight-studio.com/privacy-policy.html): How Sagelight Studio handles user data. Local-first, GDPR-compliant, no ads, no cross-app tracking. SageDocs (from version 1.0.14) sends anonymous usage statistics through TelemetryDeck that the user can switch off.
 - [GDPR Disclosure](https://sagelight-studio.com/gdpr.html): Articles 13 and 14 disclosure under EU Regulation 2016/679. Controller, lawful basis, recipients, transfers, retention, supervisory authority (ANSPDCP).
 - [Terms of Service](https://sagelight-studio.com/terms.html): Romanian governing law with full EU consumer rights preserved. SageBills and SageMeet are free; SageDocs is a $2.99/month or $24.99/year App Store subscription.
 
@@ -25,7 +25,7 @@
 - Sagelight Studio is the trading name of Florin Nica, an independent individual developer (natural person) based in Romania, EU. No separate legal entity.
 - Apple Developer (publicly verified): https://apps.apple.com/developer/florin-nica/id1889684772
 - Contact: contact@sagelight-studio.com
-- All apps are built entirely with Apple frameworks (SwiftData, SwiftUI, Vision, CoreSpotlight, CloudKit). No third-party SDKs, no analytics, no telemetry inside any app.
+- All apps are built with Apple frameworks (SwiftData, SwiftUI, Vision, CoreSpotlight, CloudKit). SageBills and SageMeet contain no third-party SDKs, no analytics and no telemetry. SageDocs (from version 1.0.14) includes one third-party SDK, TelemetryDeck, for anonymous usage statistics that the user can switch off; it never sends document data.
 - All web fonts are self-hosted on sagelight-studio.com — no visitor data is sent to Google Fonts or any font CDN.
 - The marketing website (sagelight-studio.com) loads the Google Ads conversion tag (AW-17758801825) under Google Consent Mode v2 with all signals defaulted to "denied" — cookieless modeled measurement only, until a visitor explicitly opts in. No GA4, no remarketing, no profile-building.
 - Lawful basis for processing under GDPR Art. 6(1)(a) (consent) for SageBills and SageDocs; consent + contractual necessity (Art. 6(1)(b)) for SageMeet.

@@ -57,7 +57,7 @@
     <link rel="stylesheet" href="../assets/sage.css?v=20261102a">
     <link rel="stylesheet" href="../assets/legal.css?v=20261013f">
     <script type="application/ld+json">
-    {"@context": "https://schema.org", "@type": "WebPage", "name": "Notă de Informare RGPD — Sagelight Studio (Articolele 13 și 14)", "url": "https://sagelight-studio.com/ro/gdpr.html", "description": "Notă de Informare RGPD (UE 2016/679 Art. 13 și 14) pentru SageBills, SageMeet și SageDocs. Operator, temei juridic, destinatari, păstrare și drepturile tale.", "dateModified": "2026-05-21T00:00:00+03:00", "inLanguage": "ro", "isPartOf": {"@type": "WebSite", "name": "Sagelight Studio", "url": "https://sagelight-studio.com/"}}
+    {"@context": "https://schema.org", "@type": "WebPage", "name": "Notă de Informare RGPD — Sagelight Studio (Articolele 13 și 14)", "url": "https://sagelight-studio.com/ro/gdpr.html", "description": "Notă de Informare RGPD (UE 2016/679 Art. 13 și 14) pentru SageBills, SageMeet și SageDocs. Operator, temei juridic, destinatari, păstrare și drepturile tale.", "dateModified": "2026-11-22T00:00:00+02:00", "inLanguage": "ro", "isPartOf": {"@type": "WebSite", "name": "Sagelight Studio", "url": "https://sagelight-studio.com/"}}
     </script>
     <script type="application/ld+json">
     {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://sagelight-studio.com/ro/"}, {"@type": "ListItem", "position": 2, "name": "Notă de Informare RGPD", "item": "https://sagelight-studio.com/ro/gdpr.html"}]}
@@ -98,7 +98,7 @@
             <h1 class="doc-header__title">Notă de Informare <em>RGPD</em></h1>
             <p class="doc-header__subtitle">Informații cerute conform Articolelor 13 și 14 din Regulamentul General privind Protecția Datelor (UE) 2016/679 privind prelucrarea datelor prin aplicațiile Sagelight Studio (SageBills, SageMeet și SageDocs).</p>
             <div class="doc-header__meta">
-                <span>Ultima actualizare: 21 mai 2026</span>
+                <span>Ultima actualizare: 22 noiembrie 2026</span>
                 <span>RGPD (UE) 2016/679</span>
             </div>
         </header>
@@ -112,7 +112,7 @@
             <div class="key-point">
                 <span class="key-point__icon">⚖️</span>
                 <div class="key-point__title">Temei Juridic</div>
-                <div class="key-point__desc">SageBills și SageDocs: consimțământ. SageMeet: consimțământ + necesitate contractuală.</div>
+                <div class="key-point__desc">SageBills și SageDocs: consimțământ; statisticile de utilizare SageDocs: interes legitim. SageMeet: consimțământ + necesitate contractuală.</div>
             </div>
             <div class="key-point">
                 <span class="key-point__icon">🤝</span>
@@ -163,7 +163,7 @@
                 <li><strong>Email:</strong> <a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></li>
             </ul>
             <p>Conform <strong>Articolului 13(1)(a)</strong>, Florin Nica, acționând în nume propriu ca persoană fizică sub denumirea comercială Sagelight Studio, este operatorul de date. Acesta determină personal scopurile și mijloacele prelucrării pentru toate aplicațiile Sagelight Studio.</p>
-            <p>Conform <strong>Articolelor 13(1)(a)</strong> și <strong>14(1)(a)</strong>, dezvoltatorul este operatorul de date pentru toate aplicațiile Sagelight Studio. Pentru SageBills, operatorul nu primește, accesează sau stochează niciun fel de date cu caracter personal. Pentru SageMeet, datele sunt prelucrate local cu excepția cazului în care utilizatorul inițiază funcții AI (OpenAI ca persoană împuternicită, Art. 28). Pentru SageDocs, toate datele sunt prelucrate local și sincronizate opțional criptate în iCloud-ul privat al utilizatorului.</p>
+            <p>Conform <strong>Articolelor 13(1)(a)</strong> și <strong>14(1)(a)</strong>, dezvoltatorul este operatorul de date pentru toate aplicațiile Sagelight Studio. Pentru SageBills, operatorul nu primește, accesează sau stochează niciun fel de date cu caracter personal. Pentru SageMeet, datele sunt prelucrate local cu excepția cazului în care utilizatorul inițiază funcții AI (OpenAI ca persoană împuternicită, Art. 28). Pentru SageDocs, documentele sunt prelucrate local și sincronizate opțional criptate în iCloud-ul privat al utilizatorului; începând cu versiunea 1.0.14, statistici anonime de utilizare sunt trimise către TelemetryDeck (persoană împuternicită, Art. 28).</p>
         </section>
 
         <section class="section" id="g2">
@@ -221,6 +221,7 @@
                         <tr><td><strong>Date autentificare</strong></td><td>Hash PIN, stare înrolare biometrică (Keychain)</td><td>Nu</td></tr>
                         <tr><td><strong>Material criptografic</strong></td><td>Salt, cheie derivată (Keychain, protejat biometric)</td><td>Nu</td></tr>
                         <tr><td><strong>Date tehnice</strong></td><td>Stare onboarding, stare blocare</td><td>Nu</td></tr>
+                        <tr><td><strong>Statistici anonime de utilizare</strong> (versiunea 1.0.14 și ulterioare; pot fi dezactivate)</td><td>O listă fixă de evenimente din aplicație (pași de configurare, seif deblocat, document adăugat, ecran de upgrade, rezultatul achiziției), detalii tehnice (versiunea aplicației și a sistemului, modelul dispozitivului, limba, regiunea) și un identificator de instalare aleatoriu, trecut printr-o funcție hash. Niciodată nume sau conținut de documente</td><td>Nu</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -278,6 +279,7 @@
                         <tr><td>26</td><td><strong>Memento-uri</strong></td><td>Notificări locale pentru expirări documente</td></tr>
                         <tr><td>27</td><td><strong>Partajare sigură</strong></td><td>Decriptare temporară pentru partajare inițiată de utilizator</td></tr>
                         <tr><td>28</td><td><strong>Sincronizare iCloud</strong></td><td>Sincronizare documente criptate prin CloudKit</td></tr>
+                        <tr><td>29</td><td><strong>Statistici anonime de utilizare</strong></td><td>Înțelegerea pașilor la care ajung oamenii în configurare, în utilizarea de zi cu zi și la upgrade, pentru îmbunătățirea aplicației (TelemetryDeck; pot fi dezactivate)</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -286,6 +288,7 @@
         <section class="section" id="g5">
             <h2 class="section__heading"><span class="section__num">05</span> Temei Juridic</h2>
             <p><strong>SageBills și SageDocs:</strong> Conform <strong>Articolului 6(1)(a)</strong>: <strong>Consimțământ.</strong> Furnizezi consimțământ explicit în timpul onboarding-ului.</p>
+            <p><strong>Statisticile anonime de utilizare din SageDocs</strong> (versiunea 1.0.14 și ulterioare): Conform <strong>Articolului 6(1)(f)</strong>: <strong>Interes legitim</strong> de a înțelege cum este folosită aplicația și de a o îmbunătăți. Activate implicit; te poți opune oricând dezactivând <em>Setări &rarr; Confidențialitate și securitate &rarr; Partajează statistici anonime de utilizare</em>.</p>
             <p><strong>SageMeet:</strong> Conform <strong>Articolelor 6(1)(a)</strong> și <strong>6(1)(b)</strong>:</p>
             <ul>
                 <li><strong>Consimțământ</strong> (Art. 6(1)(a)) &mdash; pentru funcțiile AI opționale și prelucrare în timpul onboarding-ului.</li>
@@ -314,10 +317,11 @@
                     <thead><tr><th scope="col">Destinatar</th><th scope="col">Rol</th><th scope="col">Date Primite</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Apple (iCloud/CloudKit)</strong></td><td>Furnizor stocare</td><td>Date document criptate când sincronizarea iCloud este activată</td></tr>
+                        <tr><td><strong>TelemetryDeck GmbH</strong> (Augsburg, Germania)</td><td>Persoană împuternicită (Art. 28)</td><td>Statistici anonime de utilizare (versiunea 1.0.14 și ulterioare), dacă nu sunt dezactivate</td></tr>
                     </tbody>
                 </table>
             </div>
-            <p>Nicio rețea publicitară, furnizor de analitică sau altă terță parte nu primește date din interiorul vreunei aplicații. Site-ul de marketing (sagelight-studio.com) este tratat separat &mdash; vezi mai jos.</p>
+            <p>Nicio rețea publicitară sau altă terță parte nu primește date din interiorul vreunei aplicații și niciun furnizor de analitică în afară de TelemetryDeck (doar SageDocs). Site-ul de marketing (sagelight-studio.com) este tratat separat &mdash; vezi mai jos.</p>
 
             <h3 class="section__subheading">Site-ul de marketing (sagelight-studio.com)</h3>
             <p>Site-ul de marketing încarcă tag-ul Google Ads de conversie (<code>AW-17758801825</code>) sub <strong>Google Consent Mode v2 (Advanced)</strong>. Toate cele patru semnale sunt setate implicit la "refuzat"; în plus, tag-ul este configurat cu <code>ads_data_redaction: true</code> și <code>url_passthrough: true</code>.</p>
@@ -339,7 +343,7 @@
             <p>Conform <strong>Articolului 13(1)(f)</strong>:</p>
             <p><strong>SageBills:</strong> Nu au loc transferuri internaționale.</p>
             <p><strong>SageMeet:</strong> Date transferate către SUA (OpenAI) sub <strong>două mecanisme complementare ale Capitolului V RGPD</strong>: <strong>EU-US Data Privacy Framework</strong> (Decizia (UE) 2023/1795) și <strong>Clauzele Contractuale Standard</strong> (Decizia (UE) 2021/914), încorporate în Acordul de Prelucrare a Datelor OpenAI. Dacă DPF este invalidat, SCC rămân ca temei legal independent. Niciun transfer când Modul Privat este activat.</p>
-            <p><strong>SageDocs:</strong> Niciun transfer internațional către terți. Sincronizarea iCloud gestionată de Apple sub propriile acorduri Apple.</p>
+            <p><strong>SageDocs:</strong> Niciun transfer internațional către terți. Sincronizarea iCloud gestionată de Apple sub propriile acorduri Apple. Statisticile anonime de utilizare sunt stocate de TelemetryDeck pe servere din Uniunea Europeană (Germania și Țările de Jos).</p>
             <p><strong>Site-ul de marketing (sagelight-studio.com):</strong> Ping-urile tag-ului fără cookie-uri sunt transferate către Google LLC (Statele Unite) sub <strong>EU-US Data Privacy Framework</strong> și <strong>Clauzele Contractuale Standard</strong> încorporate în Termenii de Protecție a Datelor Controller-Controller ai Google.</p>
         </section>
 
@@ -356,10 +360,11 @@
                         <tr><td><strong>Preferințe aplicație</strong></td><td>Până la resetare sau dezinstalare</td><td>Control utilizator</td></tr>
                         <tr><td><strong>Chei criptare</strong></td><td>Până la resetare seif sau dezinstalare</td><td>Securitate</td></tr>
                         <tr><td><strong>Marcaj consimțământ</strong></td><td>Până la dezinstalare</td><td>Conformitate legală</td></tr>
+                        <tr><td><strong>Statistici anonime de utilizare (SageDocs)</strong></td><td>Păstrate de TelemetryDeck, care nu are un calendar fix de ștergere și declară că se așteaptă să șteargă evenimentele după 7 până la 10 ani</td><td>Interes legitim</td></tr>
                     </tbody>
                 </table>
             </div>
-            <div class="callout"><strong>Controlezi păstrarea integral.</strong> Șterge înregistrări individuale, toate datele sau dezinstalează aplicația oricând.</div>
+            <div class="callout"><strong>Controlezi păstrarea integral.</strong> Șterge înregistrări individuale, toate datele sau dezinstalează aplicația oricând. Excepție fac statisticile anonime de utilizare din SageDocs, care nu sunt asociate cu tine și nu pot fi șterse individual; le poți opri din Setări.</div>
         </section>
 
         <section class="section" id="g9">
@@ -446,7 +451,7 @@
                 <li><strong>Blocare progresivă</strong> după autentificări eșuate</li>
                 <li><strong>Logare care respectă confidențialitatea</strong></li>
                 <li><strong>Fișiere temporare sigure</strong> cu curățare imediată</li>
-                <li><strong>Fără cod terț:</strong> Zero SDK-uri externe</li>
+                <li><strong>Un singur SDK terț:</strong> TelemetryDeck, pentru statistici anonime de utilizare (pot fi dezactivate); nu primește nicio dată din documente</li>
             </ul>
         </section>
 

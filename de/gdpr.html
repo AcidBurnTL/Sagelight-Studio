@@ -64,7 +64,7 @@
         "name": "DSGVO-Informationen — Sagelight Studio",
         "url": "https://sagelight-studio.com/de/gdpr.html",
         "description": "DSGVO-Informationen nach Artikel 13 und 14 der Verordnung (EU) 2016/679 für SageBills, SageMeet und SageDocs.",
-        "dateModified": "2026-05-21T00:00:00+03:00",
+        "dateModified": "2026-11-22T00:00:00+02:00",
         "inLanguage": "de",
         "isPartOf": {
             "@type": "WebSite",
@@ -123,7 +123,7 @@
             <p class="doc-header__subtitle">Informationen gemäß Artikel 13 und 14 der Datenschutz-Grundverordnung (EU) 2016/679 zur Datenverarbeitung durch die Apps von Sagelight Studio (SageBills, SageMeet und SageDocs).</p>
             <p class="doc-header__subtitle">Dies ist eine Übersetzung. Bei Abweichungen ist die <a href="../gdpr.html" lang="en">englische Fassung</a> maßgeblich.</p>
             <div class="doc-header__meta">
-                <span>Zuletzt aktualisiert: 21. Mai 2026</span>
+                <span>Zuletzt aktualisiert: 22. November 2026</span>
                 <span>DSGVO (EU) 2016/679</span>
             </div>
         </header>
@@ -137,7 +137,7 @@
             <div class="key-point">
                 <span class="key-point__icon">⚖️</span>
                 <div class="key-point__title">Rechtsgrundlage</div>
-                <div class="key-point__desc">SageBills &amp; SageDocs: Einwilligung. SageMeet: Einwilligung + Vertragserfüllung.</div>
+                <div class="key-point__desc">SageBills &amp; SageDocs: Einwilligung; Nutzungsstatistiken in SageDocs: berechtigtes Interesse. SageMeet: Einwilligung + Vertragserfüllung.</div>
             </div>
             <div class="key-point">
                 <span class="key-point__icon">🤝</span>
@@ -188,7 +188,7 @@
                 <li><strong>E-Mail:</strong> <a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></li>
             </ul>
             <p>Gemäß <strong>Artikel 13 Abs. 1 lit. a</strong> ist Florin Nica, der im eigenen Namen als natürliche Person unter der Geschäftsbezeichnung Sagelight Studio handelt, der Verantwortliche. Er legt die Zwecke und Mittel der Verarbeitung für alle Apps von Sagelight Studio persönlich fest.</p>
-            <p>Gemäß <strong>Artikel 13 Abs. 1 lit. a</strong> und <strong>Artikel 14 Abs. 1 lit. a</strong> ist der Entwickler der Verantwortliche für alle Apps von Sagelight Studio. Bei SageBills erhält, sieht oder speichert der Verantwortliche keinerlei personenbezogene Daten. Bei SageMeet werden Daten lokal verarbeitet, außer wenn der Nutzer KI-Funktionen auslöst (OpenAI als Auftragsverarbeiter, Art. 28). Bei SageDocs werden alle Daten lokal verarbeitet und optional verschlüsselt mit der privaten iCloud des Nutzers synchronisiert.</p>
+            <p>Gemäß <strong>Artikel 13 Abs. 1 lit. a</strong> und <strong>Artikel 14 Abs. 1 lit. a</strong> ist der Entwickler der Verantwortliche für alle Apps von Sagelight Studio. Bei SageBills erhält, sieht oder speichert der Verantwortliche keinerlei personenbezogene Daten. Bei SageMeet werden Daten lokal verarbeitet, außer wenn der Nutzer KI-Funktionen auslöst (OpenAI als Auftragsverarbeiter, Art. 28). Bei SageDocs werden Dokumente lokal verarbeitet und optional verschlüsselt mit der privaten iCloud des Nutzers synchronisiert; ab Version 1.0.14 werden anonyme Nutzungsstatistiken an TelemetryDeck gesendet (Auftragsverarbeiter, Art. 28).</p>
         </section>
 
         <section class="section" id="g2">
@@ -249,6 +249,7 @@
                         <tr><td><strong>Authentifizierungsdaten</strong></td><td>PIN-Hash, Status der biometrischen Registrierung (Schlüsselbund)</td><td>Nein</td></tr>
                         <tr><td><strong>Schlüsselmaterial</strong></td><td>Salt, abgeleiteter Schlüssel (Schlüsselbund, biometrisch geschützt)</td><td>Nein</td></tr>
                         <tr><td><strong>Technische Daten</strong></td><td>Onboarding-Status, Sperrstatus</td><td>Nein</td></tr>
+                        <tr><td><strong>Anonyme Nutzungsstatistiken</strong> (ab Version 1.0.14; abschaltbar)</td><td>Eine feste Liste von App-Ereignissen (Einrichtungsschritte, Tresor entsperrt, Dokument hinzugefügt, Upgrade-Bildschirm, Ergebnis eines Kaufs), technische Angaben (App- und Systemversion, Gerätemodell, Sprache, Region) und eine zufällige, gehashte Installationskennung. Niemals Dokumentnamen oder -inhalte</td><td>Nein</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -309,6 +310,7 @@
                         <tr><td>26</td><td><strong>Erinnerungen</strong></td><td>Lokale Benachrichtigungen zum Ablauf von Dokumenten</td></tr>
                         <tr><td>27</td><td><strong>Sicheres Teilen</strong></td><td>Vorübergehende Entschlüsselung für vom Nutzer ausgelöstes Teilen</td></tr>
                         <tr><td>28</td><td><strong>iCloud-Synchronisierung</strong></td><td>Synchronisieren verschlüsselter Dokumente über CloudKit</td></tr>
+                        <tr><td>29</td><td><strong>Anonyme Nutzungsstatistiken</strong></td><td>Erkennen, welche Schritte der Einrichtung, der täglichen Nutzung und des Upgrades Nutzer erreichen, um die App zu verbessern (TelemetryDeck; abschaltbar)</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -317,6 +319,7 @@
         <section class="section" id="g5">
             <h2 class="section__heading"><span class="section__num">05</span> Rechtsgrundlage</h2>
             <p><strong>SageBills &amp; SageDocs:</strong> Gemäß <strong>Artikel 6 Abs. 1 lit. a</strong>: <strong>Einwilligung.</strong> Sie erteilen Ihre ausdrückliche Einwilligung beim Onboarding.</p>
+            <p><strong>Anonyme Nutzungsstatistiken in SageDocs</strong> (ab Version 1.0.14): Gemäß <strong>Artikel 6 Abs. 1 lit. f</strong>: <strong>Berechtigtes Interesse</strong> daran, zu verstehen, wie die App genutzt wird, und sie zu verbessern. Standardmäßig aktiviert; Sie können jederzeit widersprechen, indem Sie <em>Einstellungen &rarr; Datenschutz &amp; Sicherheit &rarr; Anonyme Nutzungsstatistiken teilen</em> ausschalten.</p>
             <p><strong>SageMeet:</strong> Gemäß <strong>Artikel 6 Abs. 1 lit. a</strong> und <strong>Artikel 6 Abs. 1 lit. b</strong>:</p>
             <ul>
                 <li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a) &mdash; für optionale KI-Funktionen und die Datenverarbeitung beim Onboarding.</li>
@@ -347,10 +350,11 @@
                     <thead><tr><th scope="col">Empfänger</th><th scope="col">Rolle</th><th scope="col">Erhaltene Daten</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Apple (iCloud/CloudKit)</strong></td><td>Speicheranbieter</td><td>Verschlüsselte Dokumentdaten bei aktivierter iCloud-Synchronisierung</td></tr>
+                        <tr><td><strong>TelemetryDeck GmbH</strong> (Augsburg, Deutschland)</td><td>Auftragsverarbeiter (Art. 28)</td><td>Anonyme Nutzungsstatistiken (ab Version 1.0.14), sofern nicht abgeschaltet</td></tr>
                     </tbody>
                 </table>
             </div>
-            <p>Weder Werbenetzwerke noch Analyseanbieter oder sonstige Dritte erhalten Daten aus einer der Apps. Die Marketing-Website (sagelight-studio.com) wird gesondert behandelt &mdash; siehe unten.</p>
+            <p>Weder Werbenetzwerke noch sonstige Dritte erhalten Daten aus einer der Apps, und kein Analyseanbieter außer TelemetryDeck (nur SageDocs). Die Marketing-Website (sagelight-studio.com) wird gesondert behandelt &mdash; siehe unten.</p>
 
             <h3 class="section__subheading">Marketing-Website (sagelight-studio.com)</h3>
             <p>Die Marketing-Website lädt das Conversion-Tag von Google Ads (<code>AW-17758801825</code>) im <strong>Google Consent Mode v2 (Advanced)</strong>. Alle vier Signale sind standardmäßig auf „denied“ (abgelehnt) gesetzt; zusätzlich ist das Tag mit <code>ads_data_redaction: true</code> (Google entfernt identifizierende Daten aus cookielosen Pings) und <code>url_passthrough: true</code> (Klick-IDs werden bei abgelehnter Einwilligung über URL-Parameter weitergegeben, nie über Cookies) konfiguriert.</p>
@@ -373,7 +377,7 @@
             <p>Gemäß <strong>Artikel 13 Abs. 1 lit. f</strong>:</p>
             <p><strong>SageBills:</strong> Es finden keine internationalen Übermittlungen statt.</p>
             <p><strong>SageMeet:</strong> Daten werden in die USA (OpenAI) auf Grundlage <strong>zweier sich ergänzender Mechanismen nach Kapitel V DSGVO</strong> übermittelt: des <strong>EU-US Data Privacy Framework</strong> (Durchführungsbeschluss (EU) 2023/1795 der Kommission) und der <strong>Standardvertragsklauseln</strong> (Durchführungsbeschluss (EU) 2021/914 der Kommission), die in den Data Processing Addendum von OpenAI aufgenommen sind. Sollte das DPF für ungültig erklärt werden, bleiben die SCCs die eigenständige Rechtsgrundlage. Bei aktiviertem Privatmodus finden keine Übermittlungen statt.</p>
-            <p><strong>SageDocs:</strong> Keine internationalen Übermittlungen an Dritte. Die iCloud-Synchronisierung wird von Apple auf Grundlage von Apples eigenen Vereinbarungen verwaltet.</p>
+            <p><strong>SageDocs:</strong> Keine internationalen Übermittlungen an Dritte. Die iCloud-Synchronisierung wird von Apple auf Grundlage von Apples eigenen Vereinbarungen verwaltet. Anonyme Nutzungsstatistiken werden von TelemetryDeck auf Servern in der Europäischen Union (Deutschland und Niederlande) gespeichert.</p>
             <p><strong>Marketing-Website (sagelight-studio.com):</strong> Cookielose Tag-Pings werden an Google LLC (Vereinigte Staaten) auf Grundlage des <strong>EU-US Data Privacy Framework</strong> und der <strong>Standardvertragsklauseln</strong> übermittelt, die in Googles Controller-Controller Data Protection Terms aufgenommen sind. Sollte das DPF für ungültig erklärt werden, bleiben die SCCs der eigenständige Übermittlungsmechanismus.</p>
         </section>
 
@@ -391,10 +395,11 @@
                         <tr><td><strong>App-Einstellungen</strong></td><td>Bis zum Zurücksetzen oder zur Deinstallation</td><td>Kontrolle durch den Nutzer</td></tr>
                         <tr><td><strong>Schlüssel</strong></td><td>Bis zum Zurücksetzen des Tresors oder zur Deinstallation</td><td>Sicherheit</td></tr>
                         <tr><td><strong>Zeitstempel der Einwilligung</strong></td><td>Bis zur Deinstallation</td><td>Erfüllung rechtlicher Pflichten</td></tr>
+                        <tr><td><strong>Anonyme Nutzungsstatistiken (SageDocs)</strong></td><td>Bei TelemetryDeck gespeichert, das keinen festen Löschplan hat und angibt, Ereignisse voraussichtlich nach 7 bis 10 Jahren zu löschen</td><td>Berechtigtes Interesse</td></tr>
                     </tbody>
                 </table>
             </div>
-            <div class="callout"><strong>Sie bestimmen die Speicherdauer vollständig selbst.</strong> Löschen Sie jederzeit einzelne Einträge oder alle Daten, oder deinstallieren Sie die App.</div>
+            <div class="callout"><strong>Sie bestimmen die Speicherdauer vollständig selbst.</strong> Löschen Sie jederzeit einzelne Einträge oder alle Daten, oder deinstallieren Sie die App. Die Ausnahme sind die anonymen Nutzungsstatistiken von SageDocs, die nicht mit Ihnen verknüpft sind und nicht einzeln gelöscht werden können; Sie können sie in den Einstellungen abschalten.</div>
         </section>
 
         <section class="section" id="g9">
@@ -481,7 +486,7 @@
                 <li><strong>Stufenweise Sperre</strong> nach fehlgeschlagener Authentifizierung</li>
                 <li><strong>Datenschutzfreundliche Protokollierung</strong> (enthält niemals PINs, Schlüssel oder Inhalte)</li>
                 <li><strong>Sichere temporäre Dateien</strong> mit sofortiger Bereinigung nach dem Teilen</li>
-                <li><strong>Kein Code von Drittanbietern:</strong> Null externe SDKs</li>
+                <li><strong>Ein SDK eines Drittanbieters:</strong> TelemetryDeck, für anonyme Nutzungsstatistiken (abschaltbar); es erhält keine Dokumentdaten</li>
             </ul>
         </section>
 

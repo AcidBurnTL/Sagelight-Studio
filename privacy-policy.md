@@ -1,6 +1,6 @@
 # Sagelight Studio Privacy Policy
 
-**Last Updated:** June 14, 2026 | **Effective:** May 21, 2026
+**Last Updated:** November 22, 2026 | **Effective:** May 21, 2026
 
 ---
 
@@ -13,7 +13,7 @@
 - **SageBills: 100% Local Data** — All your data stays on your device. No servers, no cloud, no exceptions.
 - **SageMeet: Local + Optional AI** — Data is stored locally. When you use AI features, audio and text are sent to OpenAI APIs. A Private Mode disables all external transmission.
 - **SageDocs: Local + iCloud + Enhanced Security** — Sensitive documents are encrypted with AES-256-GCM and protected by biometric authentication or a master PIN. iCloud sync keeps your vault in sync across devices.
-- **Zero Tracking** — No analytics, no advertising IDs, no telemetry in any of our apps.
+- **No Ads, No Tracking** — No ads, no advertising IDs and no cross-app tracking in any of our apps. SageBills and SageMeet send no analytics; SageDocs sends anonymous usage statistics you can turn off.
 - **Encrypted at Rest** — Data is protected by Apple's NSFileProtectionComplete when your device is locked. SageDocs adds an additional layer of AES-256-GCM encryption for all attachments.
 
 ---
@@ -55,7 +55,7 @@ Sagelight Studio is the trading name under which **Florin Nica**, an independent
 - **Verified developer of record:** [apps.apple.com/developer/sagelight-studio](https://apps.apple.com/developer/sagelight-studio) — Apple has verified the identity of the controller as part of the Apple Developer Program enrollment
 - **Contact (general & data subject requests):** contact@sagelight-studio.com
 
-For the purposes of the GDPR, the developer acts as the data controller. For SageBills, all data processing occurs locally on your device and your data never reaches us. For SageMeet, data is processed locally except when you explicitly use AI features, which transmit data to OpenAI (see Sections 9 and 10). For SageDocs, data is stored locally and synced to your private iCloud account; no data is transmitted to Sagelight Studio or any third party other than Apple.
+For the purposes of the GDPR, the developer acts as the data controller. For SageBills, all data processing occurs locally on your device and your data never reaches us. For SageMeet, data is processed locally except when you explicitly use AI features, which transmit data to OpenAI (see Sections 9 and 10). For SageDocs, your documents are stored locally and synced to your private iCloud account; no document data is transmitted to Sagelight Studio or any third party other than Apple. From version 1.0.14, SageDocs also sends anonymous usage statistics to TelemetryDeck (see Sections 4, 6 and 9).
 
 ## 3. Privacy-First Architecture
 
@@ -89,9 +89,9 @@ SageDocs is a **personal document vault** with enhanced security for sensitive d
 - **AES-256-GCM encryption.** All document attachments (scans, photos, PDFs) are encrypted before storage using AES-256-GCM with a key derived from your master PIN via PBKDF2-SHA256 (600,000 iterations).
 - **Biometric or PIN authentication.** The vault is locked behind Face ID, Touch ID, or a master PIN. The app cannot be accessed without authentication.
 - **iCloud sync.** Document metadata and encrypted attachments sync via Apple CloudKit to your private iCloud account. Data is encrypted before it reaches iCloud and cannot be read by Apple or Sagelight Studio.
-- **No AI features.** SageDocs does not use artificial intelligence or send data to any external API.
-- **No analytics or tracking.** SageDocs does not collect usage analytics, crash reports, or telemetry.
-- **No third-party SDKs.** The app is built entirely with Apple frameworks. Zero external dependencies.
+- **No AI features.** SageDocs does not use artificial intelligence, and no document data is sent to any external API.
+- **Anonymous usage statistics, no tracking.** From version 1.0.14, SageDocs sends a short, fixed list of anonymous usage events to TelemetryDeck, a privacy-focused analytics service, so we can see where people get stuck. You can turn this off in Settings. There is no crash reporting, no advertising SDK, and nothing that follows you across other apps or websites.
+- **One third-party SDK.** Apart from the TelemetryDeck SDK, the app is built entirely with Apple frameworks.
 - **Privacy-respecting logging.** Security events (authentication, lockout) are logged via Apple's OSLog system. Logs never contain PIN values, encryption keys, or document content.
 
 > SageDocs stores your documents on your device and optionally in your private iCloud account. All attachments are encrypted with your personal key. We cannot read your documents.
@@ -132,6 +132,20 @@ The following data is stored **on your device and in your private iCloud account
 - **Reminder Settings:** Expiry reminder intervals for documents that have expiration dates.
 - **Keychain Data:** Master PIN hash (salted PBKDF2-SHA256), encryption salt, biometric enrollment state, derived encryption key (biometric-protected), lockout state, and onboarding status. No plaintext PINs are ever stored.
 - **Security Events:** Privacy-respecting logs of authentication successes/failures, lockouts, and vault operations via Apple's OSLog. Logs never contain personal data, PINs, or encryption keys.
+
+From version 1.0.14, SageDocs also **sends anonymous usage statistics to TelemetryDeck** (TelemetryDeck GmbH, Germany), a privacy-focused analytics service, unless you turn them off. They never include a document, title, category, note, file name, PIN or encryption key:
+
+- **Setup:** which onboarding step was shown, and that setup was finished.
+- **Vault unlocked:** with your plan state (trial and days left, subscribed, read-only, or early-adopter access).
+- **Document added:** and whether it has an expiry date (never its name or contents).
+- **Upgrade screen:** that it was shown or closed, and which feature opened it.
+- **Purchases:** that a purchase was started, completed, not completed or failed, and which plan (monthly or yearly); for a completed purchase also the product, storefront country, currency and price.
+- **Restore Purchases:** that it was tapped.
+- **End-of-trial summary:** that it was shown.
+- **Technical details added to every event:** app version and build and how the app was installed (App Store, TestFlight or a development build); operating system version, device model, processor type, platform, screen size and orientation; language, region, time zone, text direction and light or dark appearance; accessibility settings such as text size, bold text and reduce motion; the hour, weekday and date of the event; and usage counters kept on your device (number of sessions, distinct days of use, session length, date of first use).
+- **Random identifier:** created by the app on your device and hashed before it is sent. It is not your Apple Account, a device identifier or an advertising identifier, and it is not linked to your name or email (we never ask for either).
+
+**How to turn it off:** Settings → Privacy & Security → Share anonymous usage statistics. Turning it off stops sending and deletes the identifier from your device; turning it on again creates a new one. The SageDocs widget and share extension never send statistics.
 
 ## 5. How We Use Your Data
 
@@ -177,6 +191,7 @@ Because all data stays on your device and in your private iCloud, "use" means lo
 | **Reminders** | Sending local notifications for upcoming document expirations |
 | **Secure sharing** | Decrypting documents temporarily for sharing via system share sheet |
 | **iCloud sync** | Syncing encrypted documents across your Apple devices |
+| **Anonymous usage statistics** | Seeing which steps of setup, everyday use and upgrading people reach, so we can improve the app (sent to TelemetryDeck; can be turned off) |
 
 ## 6. Legal Basis for Processing
 
@@ -228,7 +243,7 @@ Your data is retained on your device for as long as you keep the app installed a
 - **Uninstall the app** to remove all associated data
 - **SageDocs: Reset vault** to delete all documents and encryption keys
 
-We do not retain any copy of your data because we never receive it.
+We do not retain any copy of your documents or app data because we never receive it. The one exception is the SageDocs anonymous usage statistics (version 1.0.14 and later), which TelemetryDeck holds on our behalf. TelemetryDeck currently has no fixed deletion schedule for stored events and states that it expects to delete them after 7 to 10 years. Because the statistics are not linked to you, we cannot identify, export or delete one person's events (Art. 11 GDPR); turning the switch off stops new events and deletes the identifier from your device.
 
 ## 9. Third-Party Services
 
@@ -251,7 +266,7 @@ You authenticate with OpenAI using your own API key. We do not have access to yo
 
 ### 9.3 SageBills & SageDocs: No Other Third Parties
 
-SageBills and SageDocs contain **no third-party SDKs, frameworks, libraries, or services** beyond Apple's own frameworks. We do not share, sell, or disclose your data to any third party.
+SageBills contains **no third-party SDKs, frameworks, libraries, or services** beyond Apple's own frameworks. SageDocs contains one, the TelemetryDeck SDK, and no advertising, crash-reporting or other analytics SDK: from version 1.0.14 it sends the anonymous usage statistics described in Section 4 to **TelemetryDeck GmbH**, Von-der-Tann-Str. 54, 86159 Augsburg, Germany, which acts as a data processor (Art. 28 GDPR) under its [data processing agreement](https://telemetrydeck.com/dpa/) and stores the data on servers in the European Union (Germany and the Netherlands). TelemetryDeck states that it never stores IP addresses; see [TelemetryDeck's privacy information](https://telemetrydeck.com/privacy/). We do not sell your data, and apart from the processors named in this section we do not share or disclose it to any third party.
 
 ## 10. International Data Transfers
 
@@ -266,11 +281,11 @@ If the DPF is invalidated by a future court decision (as occurred with the earli
 
 **Website (Google Ads):** Cookieless tag pings are transferred to Google LLC (US) under the same dual mechanism — DPF + SCCs incorporated into Google's Controller-Controller Data Protection Terms.
 
-**SageDocs** does not transfer your data to any third party. iCloud sync is handled by Apple under Apple's own GDPR commitments and data processing agreements.
+**SageDocs** does not transfer your documents to any third party. iCloud sync is handled by Apple under Apple's own GDPR commitments and data processing agreements. The anonymous usage statistics are sent to TelemetryDeck, which stores them on servers in the European Union (Germany and the Netherlands).
 
 ## 11. Cookies and Tracking
 
-**Apps:** No Sagelight Studio app uses cookies, web beacons, pixels, device fingerprinting, advertising identifiers, or any other tracking technology. No app contains advertising.
+**Apps:** No Sagelight Studio app uses cookies, web beacons, pixels, device fingerprinting or advertising identifiers, and none tracks you across other apps or websites. No app contains advertising. From version 1.0.14, SageDocs sends anonymous usage statistics tied to a random identifier that the app creates on your device (see Section 4); it is hashed before it is sent, is not a device or advertising identifier, and is deleted when you turn the statistics off.
 
 **Website (sagelight-studio.com):** The Sagelight Studio website loads the Google Ads conversion tag (`AW-17758801825`) operated by Google Ireland Limited, with Google LLC (US) as sub-processor, to measure the effectiveness of paid advertising campaigns that link to the App Store.
 

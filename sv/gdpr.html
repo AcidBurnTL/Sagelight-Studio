@@ -64,7 +64,7 @@
         "name": "GDPR-information — Sagelight Studio",
         "url": "https://sagelight-studio.com/sv/gdpr.html",
         "description": "Information enligt artiklarna 13 och 14 i förordning (EU) 2016/679 (GDPR) för SageBills, SageMeet och SageDocs.",
-        "dateModified": "2026-05-21T00:00:00+03:00",
+        "dateModified": "2026-11-22T00:00:00+02:00",
         "inLanguage": "sv",
         "isPartOf": {
             "@type": "WebSite",
@@ -122,7 +122,7 @@
             <h1 class="doc-header__title">GDPR-<em>information</em></h1>
             <p class="doc-header__subtitle">Information som krävs enligt artiklarna 13 och 14 i den allmänna dataskyddsförordningen (EU) 2016/679 (GDPR) om databehandling genom Sagelight Studios appar (SageBills, SageMeet och SageDocs). Detta är en översättning; vid eventuella avvikelser har den <a href="../gdpr.html" lang="en">engelska versionen</a> företräde.</p>
             <div class="doc-header__meta">
-                <span>Senast uppdaterad: 21 maj 2026</span>
+                <span>Senast uppdaterad: 22 november 2026</span>
                 <span>GDPR (EU) 2016/679</span>
             </div>
         </header>
@@ -136,7 +136,7 @@
             <div class="key-point">
                 <span class="key-point__icon">⚖️</span>
                 <div class="key-point__title">Rättslig grund</div>
-                <div class="key-point__desc">SageBills &amp; SageDocs: samtycke. SageMeet: samtycke + avtalsenlig nödvändighet.</div>
+                <div class="key-point__desc">SageBills &amp; SageDocs: samtycke; användningsstatistik i SageDocs: berättigat intresse. SageMeet: samtycke + avtalsenlig nödvändighet.</div>
             </div>
             <div class="key-point">
                 <span class="key-point__icon">🤝</span>
@@ -187,7 +187,7 @@
                 <li><strong>E-post:</strong> <a href="mailto:contact@sagelight-studio.com">contact@sagelight-studio.com</a></li>
             </ul>
             <p>Enligt <strong>artikel 13.1 a</strong> är Florin Nica, som agerar i eget namn som fysisk person under verksamhetsnamnet Sagelight Studio, personuppgiftsansvarig. Han bestämmer personligen ändamålen med och medlen för behandlingen i samtliga appar från Sagelight Studio.</p>
-            <p>Enligt <strong>artikel 13.1 a</strong> och <strong>artikel 14.1 a</strong> är utvecklaren personuppgiftsansvarig för samtliga appar från Sagelight Studio. För SageBills tar den personuppgiftsansvarige inte emot, får inte åtkomst till och lagrar inga personuppgifter. För SageMeet behandlas data lokalt, utom när användaren startar AI-funktioner (OpenAI som personuppgiftsbiträde, art. 28). För SageDocs behandlas alla data lokalt och synkas, om användaren väljer det, krypterat till användarens privata iCloud.</p>
+            <p>Enligt <strong>artikel 13.1 a</strong> och <strong>artikel 14.1 a</strong> är utvecklaren personuppgiftsansvarig för samtliga appar från Sagelight Studio. För SageBills tar den personuppgiftsansvarige inte emot, får inte åtkomst till och lagrar inga personuppgifter. För SageMeet behandlas data lokalt, utom när användaren startar AI-funktioner (OpenAI som personuppgiftsbiträde, art. 28). För SageDocs behandlas dokument lokalt och synkas, om användaren väljer det, krypterat till användarens privata iCloud; från och med version 1.0.14 skickas anonym användningsstatistik till TelemetryDeck (personuppgiftsbiträde, art. 28).</p>
         </section>
 
         <section class="section" id="g2">
@@ -248,6 +248,7 @@
                         <tr><td><strong>Autentiseringsuppgifter</strong></td><td>PIN-hash, status för biometrisk registrering (nyckelring)</td><td>Nej</td></tr>
                         <tr><td><strong>Krypteringsmaterial</strong></td><td>Salt, härledd nyckel (nyckelring, biometriskt skyddad)</td><td>Nej</td></tr>
                         <tr><td><strong>Tekniska uppgifter</strong></td><td>Status för introduktion, spärrstatus</td><td>Nej</td></tr>
+                        <tr><td><strong>Anonym användningsstatistik</strong> (version 1.0.14 och senare; kan stängas av)</td><td>En fast lista med apphändelser (konfigureringssteg, valvet upplåst, dokument tillagt, uppgraderingsskärmen, resultat av köp), tekniska uppgifter (app- och systemversion, enhetsmodell, språk, region) och en slumpmässig, hashad installationsidentifierare. Aldrig dokumentnamn eller dokumentinnehåll</td><td>Nej</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -308,6 +309,7 @@
                         <tr><td>26</td><td><strong>Påminnelser</strong></td><td>Lokala aviseringar om dokument som går ut</td></tr>
                         <tr><td>27</td><td><strong>Säker delning</strong></td><td>Tillfällig dekryptering för delning som användaren initierar</td></tr>
                         <tr><td>28</td><td><strong>iCloud-synk</strong></td><td>Synka krypterade dokument via CloudKit</td></tr>
+                        <tr><td>29</td><td><strong>Anonym användningsstatistik</strong></td><td>Se vilka steg i konfigureringen, den dagliga användningen och uppgraderingen som användare når, för att förbättra appen (TelemetryDeck; kan stängas av)</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -316,6 +318,7 @@
         <section class="section" id="g5">
             <h2 class="section__heading"><span class="section__num">05</span> Rättslig grund</h2>
             <p><strong>SageBills &amp; SageDocs:</strong> Enligt <strong>artikel 6.1 a</strong>: <strong>Samtycke.</strong> Du lämnar ditt uttryckliga samtycke under introduktionen.</p>
+            <p><strong>Anonym användningsstatistik i SageDocs</strong> (version 1.0.14 och senare): Enligt <strong>artikel 6.1 f</strong>: <strong>Berättigat intresse</strong> av att förstå hur appen används och att förbättra den. Påslagen som standard; du kan när som helst invända genom att stänga av <em>Inställningar &rarr; Integritet och säkerhet &rarr; Dela anonym användningsstatistik</em>.</p>
             <p><strong>SageMeet:</strong> Enligt <strong>artikel 6.1 a</strong> och <strong>artikel 6.1 b</strong>:</p>
             <ul>
                 <li><strong>Samtycke</strong> (art. 6.1 a) &mdash; för valfria AI-funktioner och databehandling under introduktionen.</li>
@@ -346,10 +349,11 @@
                     <thead><tr><th scope="col">Mottagare</th><th scope="col">Roll</th><th scope="col">Mottagna data</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Apple (iCloud/CloudKit)</strong></td><td>Lagringsleverantör</td><td>Krypterade dokumentdata när iCloud-synk är aktiverad</td></tr>
+                        <tr><td><strong>TelemetryDeck GmbH</strong> (Augsburg, Tyskland)</td><td>Personuppgiftsbiträde (art. 28)</td><td>Anonym användningsstatistik (version 1.0.14 och senare), om den inte är avstängd</td></tr>
                     </tbody>
                 </table>
             </div>
-            <p>Inga annonsnätverk, analysleverantörer eller andra tredje parter tar emot data från någon av apparna. Marknadsföringswebbplatsen (sagelight-studio.com) behandlas separat &mdash; se nedan.</p>
+            <p>Inga annonsnätverk eller andra tredje parter tar emot data från någon av apparna, och ingen annan analysleverantör än TelemetryDeck (endast SageDocs). Marknadsföringswebbplatsen (sagelight-studio.com) behandlas separat &mdash; se nedan.</p>
 
             <h3 class="section__subheading">Marknadsföringswebbplatsen (sagelight-studio.com)</h3>
             <p>Marknadsföringswebbplatsen laddar konverteringstaggen från Google Ads (<code>AW-17758801825</code>) med <strong>Google Consent Mode v2 (avancerat läge)</strong>. Alla fyra signaler är som standard satta till ”denied” (nekad); dessutom är taggen konfigurerad med <code>ads_data_redaction: true</code> (Google maskerar identifierande uppgifter i cookielösa pingar) och <code>url_passthrough: true</code> (klick-ID:n överförs via URL-parametrar, aldrig via cookies, medan samtycke saknas).</p>
@@ -372,7 +376,7 @@
             <p>Enligt <strong>artikel 13.1 f</strong>:</p>
             <p><strong>SageBills:</strong> Inga internationella överföringar sker.</p>
             <p><strong>SageMeet:</strong> Data överförs till USA (OpenAI) med stöd av <strong>två kompletterande mekanismer enligt kapitel V i GDPR</strong>: <strong>ramen för dataskydd mellan EU och USA</strong> (kommissionens genomförandebeslut (EU) 2023/1795) och <strong>standardavtalsklausulerna</strong> (kommissionens genomförandebeslut (EU) 2021/914), som ingår i OpenAI:s personuppgiftsbiträdesavtal (Data Processing Addendum). Om DPF skulle ogiltigförklaras utgör standardavtalsklausulerna en självständig rättslig grund. Inga överföringar sker när Privat läge är aktiverat.</p>
-            <p><strong>SageDocs:</strong> Inga internationella överföringar till tredje parter. iCloud-synken hanteras av Apple enligt Apples egna avtal.</p>
+            <p><strong>SageDocs:</strong> Inga internationella överföringar till tredje parter. iCloud-synken hanteras av Apple enligt Apples egna avtal. Anonym användningsstatistik lagras av TelemetryDeck på servrar i Europeiska unionen (Tyskland och Nederländerna).</p>
             <p><strong>Marknadsföringswebbplatsen (sagelight-studio.com):</strong> Cookielösa pingar från taggen överförs till Google LLC (USA) med stöd av <strong>ramen för dataskydd mellan EU och USA</strong> och de <strong>standardavtalsklausuler</strong> som ingår i Googles Controller-Controller Data Protection Terms. Om DPF skulle ogiltigförklaras utgör standardavtalsklausulerna en självständig överföringsmekanism.</p>
         </section>
 
@@ -390,10 +394,11 @@
                         <tr><td><strong>Appinställningar</strong></td><td>Tills återställning eller avinstallation</td><td>Användarens kontroll</td></tr>
                         <tr><td><strong>Krypteringsnycklar</strong></td><td>Tills valvet återställs eller appen avinstalleras</td><td>Säkerhet</td></tr>
                         <tr><td><strong>Tidsstämpel för samtycke</strong></td><td>Tills avinstallation</td><td>Efterlevnad av lagkrav</td></tr>
+                        <tr><td><strong>Anonym användningsstatistik (SageDocs)</strong></td><td>Lagras av TelemetryDeck, som inte har något fast raderingsschema och uppger att de räknar med att radera händelser efter 7 till 10 år</td><td>Berättigat intresse</td></tr>
                     </tbody>
                 </table>
             </div>
-            <div class="callout"><strong>Du har full kontroll över lagringen.</strong> Radera enskilda poster, alla data eller avinstallera appen när som helst.</div>
+            <div class="callout"><strong>Du har full kontroll över lagringen.</strong> Radera enskilda poster, alla data eller avinstallera appen när som helst. Undantaget är den anonyma användningsstatistiken i SageDocs, som inte är kopplad till dig och inte kan raderas individuellt; du kan stoppa den i Inställningar.</div>
         </section>
 
         <section class="section" id="g9">
@@ -480,7 +485,7 @@
                 <li><strong>Stegvis spärr</strong> efter misslyckad autentisering</li>
                 <li><strong>Integritetsvänlig loggning</strong> (innehåller aldrig PIN-koder, nycklar eller innehåll)</li>
                 <li><strong>Säkra tillfälliga filer</strong> som rensas omedelbart efter delning</li>
-                <li><strong>Ingen kod från tredje part:</strong> Noll externa SDK:er</li>
+                <li><strong>Ett SDK från tredje part:</strong> TelemetryDeck, för anonym användningsstatistik (kan stängas av); det tar inte emot några dokumentdata</li>
             </ul>
         </section>
 

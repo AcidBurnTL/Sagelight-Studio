@@ -1,6 +1,6 @@
 # Sagelight Studio GDPR Data Processing Disclosure
 
-**Last Updated:** May 21, 2026 | **GDPR (EU) 2016/679**
+**Last Updated:** November 22, 2026 | **GDPR (EU) 2016/679**
 
 ---
 
@@ -97,6 +97,7 @@ Per **Article 13(1)(d)** and **14(1)(d)**:
 | **Authentication data** | Master PIN hash, biometric enrollment state (Keychain) | No |
 | **Encryption material** | Encryption salt, derived key (Keychain, biometric-protected) | No |
 | **Technical data** | Onboarding status, lockout state, notification preferences | No |
+| **Anonymous usage statistics** (version 1.0.14 and later; can be turned off) | A fixed list of app events (setup steps, vault unlocked, document added, upgrade screen, purchase outcome), technical details (app and system version, device model, language, region) and a random, hashed installation identifier. Never document names or contents | No |
 
 **No special categories of personal data** (Article 9) are processed by any Sagelight Studio app. While SageDocs may store documents relating to health (medical records) or financial status, these are user-provided files stored in encrypted form — the app does not process, analyze, or extract data from document content.
 
@@ -142,6 +143,7 @@ Per **Article 13(1)(c)** and **14(1)(c)**:
 | 26 | **Reminders** | Local notifications for document expirations |
 | 27 | **Secure sharing** | Temporary decryption for user-initiated sharing |
 | 28 | **iCloud sync** | Syncing encrypted documents via CloudKit |
+| 29 | **Anonymous usage statistics** | Seeing which steps of setup, everyday use and upgrading people reach, to improve the app (TelemetryDeck; can be turned off) |
 
 ## 5. Lawful Basis
 
@@ -152,6 +154,8 @@ Per **Article 13(1)(c)** and **14(1)(c)**:
 - **Contractual necessity** (Art. 6(1)(b)) — for core AI processing features (transcription, note generation) that are integral to the service.
 
 **SageDocs:** Per **Article 6(1)(a)**: **Consent.** You provide explicit consent during onboarding. The processing of sensitive personal documents is justified by the enhanced security measures (AES-256-GCM encryption, biometric/PIN authentication) which exceed standard data protection requirements.
+
+**SageDocs anonymous usage statistics** (version 1.0.14 and later): Per **Article 6(1)(f)**: **Legitimate interest** in understanding how the app is used and improving it. On by default; you can object at any time by turning off Settings → Privacy & Security → Share anonymous usage statistics.
 
 Consent is freely given, specific, informed, and unambiguous. You may withdraw consent at any time via Settings, which takes effect immediately.
 
@@ -185,8 +189,9 @@ OpenAI does not use API data to train its models. No advertising networks, analy
 | Recipient | Role | Data Received | Legal Basis |
 |---|---|---|---|
 | **Apple (iCloud/CloudKit)** | Storage provider | Encrypted document data when iCloud sync is enabled | Apple's GDPR commitments |
+| **TelemetryDeck GmbH** (Augsburg, Germany) | Data processor (Art. 28) | Anonymous usage statistics (version 1.0.14 and later), unless turned off | Data processing agreement |
 
-**No other recipients.** SageDocs does not share data with any third party. All attachments synced to iCloud are encrypted with your personal key before transmission.
+**No other recipients.** SageDocs does not share data with any other third party. All attachments synced to iCloud are encrypted with your personal key before transmission.
 
 ## 7. International Transfers
 
@@ -198,7 +203,7 @@ Per **Article 13(1)(f)**:
 
 **Website (sagelight-studio.com — Google Ads):** Cookieless tag pings from the marketing website are transferred to Google LLC (US) under the same dual mechanism — DPF + SCCs incorporated into Google's Controller-Controller Data Protection Terms.
 
-**SageDocs:** No international transfers to third parties occur. iCloud sync is managed by Apple under Apple's own international data transfer agreements and GDPR commitments.
+**SageDocs:** No international transfers to third parties occur. iCloud sync is managed by Apple under Apple's own international data transfer agreements and GDPR commitments. Anonymous usage statistics are stored by TelemetryDeck on servers in the European Union (Germany and the Netherlands).
 
 ## 8. Retention Periods
 
@@ -215,8 +220,9 @@ Per **Article 13(2)(a)** and **14(2)(a)**:
 | **App preferences** | Until reset or uninstall | User control |
 | **Consent timestamp** | Until uninstallation | Legal compliance |
 | **Encryption keys (SageDocs)** | Until vault reset or uninstallation | Security |
+| **Anonymous usage statistics (SageDocs)** | Held by TelemetryDeck, which has no fixed deletion schedule and states that it expects to delete events after 7 to 10 years | Legitimate interest |
 
-> **You control retention entirely.** Delete individual records, all data, or uninstall the app at any time.
+> **You control retention entirely.** Delete individual records, all data, or uninstall the app at any time. The exception is the SageDocs anonymous usage statistics, which are not linked to you and cannot be deleted individually; you can stop them in Settings.
 
 ## 9. Data Subject Rights
 
@@ -250,7 +256,8 @@ Per **Article 32**:
 ### All Apps
 - **Encryption at rest:** NSFileProtectionComplete (data encrypted when device is locked)
 - **Privacy by design** (Art. 25(1)) and **privacy by default** (Art. 25(2))
-- **No third-party code** (SageBills, SageDocs): Zero external SDKs eliminates supply-chain risk
+- **No third-party code** (SageBills): Zero external SDKs eliminates supply-chain risk
+- **One third-party SDK** (SageDocs): TelemetryDeck, for anonymous usage statistics (can be turned off); it receives no document data
 
 ### SageBills
 - **Keychain security:** Hardware-backed encryption for consent timestamps
