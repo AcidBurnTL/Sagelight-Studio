@@ -348,7 +348,7 @@
                         <li><strong>SageMeet</strong>: a free AI meeting recorder that pairs with the user's own OpenAI API key. Audio recording is fully local; only AI features (transcription via Whisper, summaries via GPT-4o, semantic search) reach OpenAI, and only when the user explicitly triggers them. A Private Mode toggle disables all external transmission. Available since April 2026.</li>
                         <li><strong>SageDocs</strong>: the encrypted document vault described above. Now generally available as a subscription product (May 2026).</li>
                     </ul>
-                    <p>All three apps are built exclusively on Apple's first-party frameworks: SwiftData, SwiftUI, Vision, CoreSpotlight, CloudKit, Core ML, CryptoKit. None contains a third-party analytics SDK, advertising identifier, crash reporter, or telemetry framework. The studio has no backend that holds user data for any of the three products.</p>
+                    <p>All three apps are built on Apple's first-party frameworks: SwiftData, SwiftUI, Vision, CoreSpotlight, CloudKit, Core ML, CryptoKit. None contains an advertising SDK, an advertising identifier or a crash reporter. SageBills and SageMeet contain no analytics; SageDocs (from version 1.0.14) includes one third-party SDK, TelemetryDeck, for anonymous usage statistics that can be turned off in Settings. The studio has no backend that holds user data for any of the three products.</p>
 
                     <h4>Pricing Across the Suite</h4>
                     <ul>
@@ -414,7 +414,7 @@
                 <article class="glass-card angle reveal">
                     <div class="angle__num">03 / A three-app privacy suite</div>
                     <h3>SageDocs, SageBills, SageMeet: One Architecture</h3>
-                    <p>Sagelight Studio ships three apps that all share the same foundation: no third-party SDKs, no analytics, no telemetry, no studio-operated servers holding user data. SageDocs handles documents, SageBills handles utility bills, SageMeet handles meetings. Each is privacy-first by architecture, not by policy promise.</p>
+                    <p>Sagelight Studio ships three apps that all share the same foundation: no ads, no accounts, no studio-operated servers holding user data. SageDocs handles documents, SageBills handles utility bills, SageMeet handles meetings. SageDocs sends anonymous usage statistics (TelemetryDeck) that can be turned off in Settings; SageBills and SageMeet send none. Each is privacy-first by architecture, not by policy promise.</p>
                 </article>
                 <article class="glass-card angle reveal">
                     <div class="angle__num">04 / Sustainable without surveillance</div>
@@ -467,7 +467,7 @@
                     <div class="ans">
                         <p><strong>SageBills</strong> is a free utility bill tracker for European households. It ships with 39 pre-loaded providers across 27 EU countries, 40+ bill categories, on-device OCR for paper invoices via Apple's Vision framework, and Core ML cost predictions that run entirely offline. Available since April 2026 on iOS 17+ and macOS 14+.</p>
                         <p><strong>SageMeet</strong> is a free AI meeting recorder for iPhone with a Bring-Your-Own-Key model: users supply their own OpenAI API key, and the app pairs that with Apple's audio frameworks to deliver Whisper transcription and GPT-4o summaries. Recording itself is fully local; AI features run only when the user explicitly triggers them. Private Mode disables all external transmission. Available since April 2026.</p>
-                        <p>Both apps share SageDocs's privacy posture: no third-party SDKs, no analytics, no telemetry, no studio-operated servers holding user data.</p>
+                        <p>Both apps are built the same privacy-first way as SageDocs, with no studio-operated servers holding user data, and neither contains a third-party SDK, analytics or telemetry. (SageDocs itself sends anonymous usage statistics that can be turned off.)</p>
                     </div>
                 </details>
                 <details>
@@ -476,7 +476,7 @@
                 </details>
                 <details>
                     <summary>What data does the studio collect?</summary>
-                    <div class="ans"><p><strong>From the apps: none.</strong> No analytics SDKs, no telemetry, no crash reporters, no advertising identifiers, no usage tracking of any kind in any of the three apps. Sagelight Studio has no backend that holds user data. From the marketing website (sagelight-studio.com): a single Google Ads conversion tag runs under Google Consent Mode v2 with all signals defaulted to denied, transmitting cookieless modeled pings only until a visitor explicitly opts in. The full disclosure is published at <a href="gdpr.html">sagelight-studio.com/gdpr.html</a>.</p></div>
+                    <div class="ans"><p><strong>From SageBills and SageMeet: none.</strong> No analytics SDKs, no telemetry, no crash reporters. <strong>From SageDocs: anonymous usage statistics only</strong> (version 1.0.14 and later): a short, fixed list of events such as &ldquo;setup finished&rdquo; or &ldquo;upgrade screen shown&rdquo;, sent to TelemetryDeck (Germany, EU servers). They never include document content, are not tied to a name, email or Apple Account, and can be turned off in Settings. None of the three apps uses advertising identifiers or cross-app tracking, and Sagelight Studio has no backend that holds user data. From the marketing website (sagelight-studio.com): a single Google Ads conversion tag runs under Google Consent Mode v2 with all signals defaulted to denied, transmitting cookieless modeled pings only until a visitor explicitly opts in. The full disclosure is published at <a href="gdpr.html">sagelight-studio.com/gdpr.html</a>.</p></div>
                 </details>
                 <details>
                     <summary>Is there an Android version?</summary>

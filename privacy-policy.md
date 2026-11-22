@@ -4,7 +4,7 @@
 
 ---
 
-> **In brief:** This policy covers all apps published by Sagelight Studio, including **SageBills**, **SageMeet**, and **SageDocs**. Your data belongs to you. SageBills and SageDocs use a local-first architecture; SageMeet optionally sends data to OpenAI when you use AI features. SageDocs adds enhanced security with AES-256-GCM encryption and biometric/PIN protection.
+> **In brief:** This policy covers the Sage apps published by Sagelight Studio: **SageBills**, **SageMeet** and **SageDocs**. The game Wildflower Cottage has [its own privacy policy](https://sagelight-studio.com/privacy-wildflower-cottage.html). Your data belongs to you. SageBills and SageDocs use a local-first architecture; SageMeet optionally sends data to OpenAI when you use AI features. SageDocs adds enhanced security with AES-256-GCM encryption and biometric/PIN protection.
 
 ---
 
@@ -13,7 +13,7 @@
 - **SageBills: 100% Local Data** — All your data stays on your device. No servers, no cloud, no exceptions.
 - **SageMeet: Local + Optional AI** — Data is stored locally. When you use AI features, audio and text are sent to OpenAI APIs. A Private Mode disables all external transmission.
 - **SageDocs: Local + iCloud + Enhanced Security** — Sensitive documents are encrypted with AES-256-GCM and protected by biometric authentication or a master PIN. iCloud sync keeps your vault in sync across devices.
-- **No Ads, No Tracking** — No ads, no advertising IDs and no cross-app tracking in any of our apps. SageBills and SageMeet send no analytics; SageDocs sends anonymous usage statistics you can turn off.
+- **No Ads, No Tracking** — No ads, no advertising IDs and no cross-app tracking in SageBills, SageMeet or SageDocs. SageBills and SageMeet send no analytics; SageDocs sends anonymous usage statistics you can turn off.
 - **Encrypted at Rest** — Data is protected by Apple's NSFileProtectionComplete when your device is locked. SageDocs adds an additional layer of AES-256-GCM encryption for all attachments.
 
 ---
@@ -285,7 +285,7 @@ If the DPF is invalidated by a future court decision (as occurred with the earli
 
 ## 11. Cookies and Tracking
 
-**Apps:** No Sagelight Studio app uses cookies, web beacons, pixels, device fingerprinting or advertising identifiers, and none tracks you across other apps or websites. No app contains advertising. From version 1.0.14, SageDocs sends anonymous usage statistics tied to a random identifier that the app creates on your device (see Section 4); it is hashed before it is sent, is not a device or advertising identifier, and is deleted when you turn the statistics off.
+**Apps:** None of the apps covered by this policy (SageBills, SageMeet, SageDocs) uses cookies, web beacons, pixels, device fingerprinting or advertising identifiers, and none tracks you across other apps or websites. None of them contains advertising. From version 1.0.14, SageDocs sends anonymous usage statistics tied to a random identifier that the app creates on your device (see Section 4); it is hashed before it is sent, is not a device or advertising identifier, and is deleted when you turn the statistics off.
 
 **Website (sagelight-studio.com):** The Sagelight Studio website loads the Google Ads conversion tag (`AW-17758801825`) operated by Google Ireland Limited, with Google LLC (US) as sub-processor, to measure the effectiveness of paid advertising campaigns that link to the App Store.
 
