@@ -397,8 +397,9 @@
     <url>
         <loc>https://sagelight-studio.com/blog/family-documents-organization.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/family-documents-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-familie.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/family-documents-organization.html"/>
-        <lastmod>2026-11-02</lastmod>
+        <lastmod>2026-11-24</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/blog/icloud-google-drive-identity-documents.html</loc>
@@ -2259,7 +2260,7 @@
         <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog.html"/>
-        <lastmod>2026-11-20</lastmod>
+        <lastmod>2026-11-24</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/blog/acte-de-pastrat-dupa-cumparare-masina-casa.html</loc>
@@ -2326,6 +2327,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/building-maintenance-fees-romania.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/building-maintenance-fees-romania.html"/>
         <lastmod>2026-11-02</lastmod>
+    </url>
+    <url>
+        <loc>https://sagelight-studio.com/ro/blog/organizare-acte-familie.html</loc>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://sagelight-studio.com/ro/blog/organizare-acte-familie.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sagelight-studio.com/blog/family-documents-organization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sagelight-studio.com/blog/family-documents-organization.html"/>
+        <lastmod>2026-11-24</lastmod>
     </url>
     <url>
         <loc>https://sagelight-studio.com/ro/blog/organizare-acte-sagedocs-categorii-emitent.html</loc>
